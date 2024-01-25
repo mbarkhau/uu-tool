@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.4em;
+}
+
+h1, h2 {
+  line-height: 1.1em;
+}
+
+.main {
+  max-width: 35em;
+  margin: 1em auto;
+}
+
+.listbox {
+  margin: 1em auto;
+}
+
+.listbox p, .listbox ul, .listbox ol {
+  margin: 0;
+}
+
+.listbox li {
+  line-height: 1.2em;
+  margin: 0.3em 0;
+}
+
+.small {
+  font-size: 0.7em;
+  color: #333;
+}
+
+.form-field label {
+  vertical-align: top;
+  display: inline-block;
+  min-width: 10em;
+  margin: 0.3em 0;
+}
+
+.ts-control {
+  border-radius: 0;
+  border: 2px solid #888;
+  width: 13em;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 0.5em;
+}
+
+div.ts-wrapper div.ts-control {
+  /* hack to match sizing with inputs */
+  box-sizing: unset;
+  padding: 0.3em 1em !important;
+}
+
+.form-field {
+  min-height: 2.3em;
+}
+.form-field > div {
+  display: inline-block;
+}
+
+.form-field > input {
+  width: 13em;
+  margin-bottom: 0.5em;
+}
+
+.form-field > input, .form-field > button {
+  border: 2px solid #888;
+  padding: 0.3em 1em;
+}
+
+button {
+  color: #000;
+  background: #EEE;
+  transition: 300ms background, 300ms border;
+}
+
+button {
+  border: 2px solid #888;
+}
+
+button:disabled {
+  background: #EEE;
+  color: #333;
+}
+
+button:enabled {
+  background: #FFF;
+  color: #000;
+}
+
+button:enabled:hover {
+  cursor: pointer;
+  border: 2px solid #000;
+}
+
+.pseudoform {
+  width: 25em;
+  margin: 1em auto;
+}
+.pseudoform input {
+  font-size: 14px;
+}
+.pseudoform button {
+  margin: 1em auto;
+  display: block;
+}
+
+.admin-address-wrap  {
+  font-size: 0.8em;
+  line-height: 1.3em;
+}
+.admin-address {
+  min-height: 7.5em;
+}
+
+.admin-address-wrap span {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 11em;
+  max-width: 14em;
+}

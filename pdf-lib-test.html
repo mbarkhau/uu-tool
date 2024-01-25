@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="pdf-lib.js"></script>
+  <script src="download.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF-Lib.js test</title>
+  <script type="text/javascript">
+    const { degrees, PDFDocument, rgb, StandardFonts } = PDFLib
+
+    async function modifyPdf() {
+      const url = 'pdf-lib-example_with_update_sections.pdf'
+      const existingPdfBytes = await fetch(url).then(res => res.arrayBuffer())
+
+      const pdfDoc = await PDFDocument.load(existingPdfBytes)
+      const helveticaFont = await pdfDoc.embedFont(StandardFonts.Helvetica)
+
+      const pages = pdfDoc.getPages()
+      const firstPage = pages[0]
+      const { width, height } = firstPage.getSize()
+
+      firstPage.drawText('This text was added with JavaScript!', {
+        x: 5,
+        y: height / 2 + 300,
+        size: 50,
+        font: helveticaFont,
+        color: rgb(0.95, 0.1, 0.1),
+        rotate: degrees(-45),
+      })
+
+      const pdfBytes = await pdfDoc.save()
+
+      // Trigger the browser to download the PDF document
+      download(pdfBytes, "pdf-lib_modification_example.pdf", "application/pdf");
+    }
+  </script>
+</head>
+
+  <body>
+    <p>Click the button to modify an existing PDF document with <code>pdf-lib</code></p>
+    <button onclick="modifyPdf()">Modify PDF</button>
+    <p class="small">(Your browser will download the resulting file)</p>
+  </body>
+
+</html>

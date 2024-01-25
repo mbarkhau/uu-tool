@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unterstützungsunterschrift Formular</title>
+
+<link rel="stylesheet" href="tom-select.css" />
+<link rel="stylesheet" href="uu_styles.css" />
+
+<script type="text/javascript" src="pdf-lib.js"></script>
+<script type="text/javascript" src="download.js"></script>
+<script type="text/javascript" src="tom-select.complete.js"></script>
+
+</head>
+
+<body>
+  <div class="main">
+
+  <h1>Unterstützungsunterschrift Tool</h1>
+
+  <p>Damit die Partei der Vernunft an der Europawahl 2024 antreten kann müssen 4.000 bescheinigte Unterschriften bis zum 29.02.2024 gesammelt werden.</p>
+
+  <p>Mehr Infos zur Wahl finden Sie auf <a href="https://parteidervernunft.de/europawahl-2024-unterstuetzen-sie-die-partei-der-vernunft/">parteidervernunft.de</a>, sowie auf <a href="https://www.bundeswahlleiter.de/europawahlen/2024/informationen-wahlbewerber.html">bundeswahlleiter.de</a>.</p>
+
+  <h2>Voraussetzungen für eine gültige Unterstützungsunterschrift</h2>
+
+  <ul>
+    <li>Sie müssen zum Wahltermin das <b>16. Lebensjahr</b> vollendet haben.</li>
+    <li>Sie müssen die <b>deutsche Staatsbürgerschaft</b> besitzen.</li>
+    <li>Sie dürfen für jede Wahl <b>nur eine Unterstützungsunterschrift</b> für einen Wahlvorschlag leisten.</li>
+    <li>Sie dürfen nicht vom Wahlrecht ausgeschlossen sein.</li>
+  </ul>
+
+  <h2>Anleitung</h2>
+
+  <div class="listbox">
+    <ul>
+      <li>
+        <b>Anforderungen</b>
+        <ol>
+          <li>Einen Drucker.</li>
+          <li>Drei DIN A4 Seiten.</li>
+          <li>Zwei Briefumschläge.</li>
+          <li>Mindestens eine € 0,85 Briefmarke (zwei, wenn Sie den Behördengang persönlich übernehmen).</li>
+        </ol>
+      </li>
+      <li>
+        <b>Vorbereitung</b>
+        <ol>
+          <li>Füllen Sie unten Ihren Namen, Geburtsdatum und die Adresse von Ihrem Hauptwohnsitz aus.</li>
+          <li>Drucken Sie die pdf Datei aus (idealerweise beidseitig).</li>
+          <li>Falls Sie nicht beidseitig Drucken können, müssen Sie das Formblatt und den Datenschutzhinweis zusammenhefen.</li>
+        </ol>
+      </li>
+      <li>
+        <b>Unterschreiben</b>
+        <ol>
+          <li>Bekunden Sie Ihre Unterstützung, durch Ihre <b>persönliche und handschriftliche Unterschrift</b> auf dem Formblatt.</li>
+          <li>Unterschreiben Sie auch den Datenschutzhinweis.</li>
+        </ol>
+      </li>
+      <li>
+        <b>Versand an Ihre Gemeindebehörde</b>
+        <ol>
+          <li>Erstellen Sie den Behördenumschlag, adressiert an Ihre Gemeindebehörde.</li>
+          <li>Erstellen Sie den Antwortumschlag, adressiert an die Sammelstelle der Partei.</li>
+          <li>Frankieren Sie den Behördenumschlag (es sei denn, Sie gehen persönlich zur Behörde).</li>
+          <li>Frankieren Sie den Antwortumschlag (die Behörde übernimmt die Portokosten in der Regel nicht).</li>
+          <li>Legen Sie alle Ausdrucke und den leeren Antwortumschlag in den Behördenumschlag.</li>
+          <li>Versenden Sie oder überbringen Sie den Behördenumschlag an Ihre Gemeindebehörde.</li>
+        </ol>
+      </li>
+    </ul>
+
+
+  </div>
+
+  <h2>PDF Generieren</h2>
+
+  <div class="pseudoform">
+    <div class="form-field">
+      <label for="lastname">Familienname:</label>
+      <input type="text" name="lastname" placeholder="Mustermann" required/>
+    </div>
+
+    <div class="form-field">
+      <label for="firstname">Vorname:</label>
+      <input type="text" name="firstname" placeholder="Max" required/>
+    </div>
+
+    <div class="form-field">
+      <label for="birthday">Geburtsdatum:</label>
+      <input type="date" name="birthday" required/>
+    </div>
+
+    <div class="form-field">
+      <label for="street">Straße, Hausnummer</label>
+      <input type="text" name="street" placeholder="Musterstraße 123a"  required/>
+    </div>
+
+    <div class="form-field">
+      <label for="postleitzahl">Ort/Stadt:</label>
+      <div>
+        <select name="postleitzahl" placeholder=""></select>
+      </div>
+    </div>
+
+    <button name="download" disabled onclick="downloadPDF()">PDF generieren und herunterladen</button>
+
+    <div class="listbox small">
+      <p>Datenschutzhinweis:</p>
+      <ul>
+      <li>Die Verarbeitung Ihrer persönlichen Daten findet <em>ausschließlich auf Ihrem Endgerät</em> statt.</li>
+      <li>Eine Übermittlung oder Verarbeitung Ihrer persönlichen Daten an/durch andere Systeme <em>findet nicht statt</em>.</li>
+      </ul>
+    </div>
+
+    <div class="admin-address-wrap">
+      <p><b>Zuständige Behörde</b></p>
+      <p class="admin-address">-</p>
+      <p>Sollte Ihrem Hauptwohnsitz keine Behörde, oder eine nicht zuständige Behörde zugeordnet werden, bitten wir Sie diesen Fehler bei uns zu melden.</p>
+      <p>Gerne können Sie die Richtigkeit der obigen obigen Angaben anfragen: <a href="https://www.google.com/search?q=">Google Suche nach Telefonnummer</a>. Fragen Sie dazu nach der "Zuständigkeit für die Bescheinigung des Wahlrechts für eine Unterstützungsunterschrift". Die zuständige Behörde führt dazu ein Wählerverzeichnis.</p>
+    </div>
+
+  </div>
+
+  <h2>Vielen Dank für Ihre Unterstützung!</h2>
+
+  </div>
+
+  <script type="text/javascript" src="uu_app.js"></script>
+</body>
+
+</html>
