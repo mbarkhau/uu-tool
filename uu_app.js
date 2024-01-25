@@ -7,18 +7,24 @@ const CONFIGS = {
         'minimum_age'     : "16",
         'minimum_support' : "4000",
         'pdf_form'        : "pdf_data/EUWahl2024_PDV_UU_Formular_v2.pdf",
-        'pdf_cover_letter': "pdf_data/Gemeindebuero_Anschreiben_PDV_v2.pdf",
+        'pdf_cover_letter': "pdf_data/Gemeindebuero_Anschreiben_PDV_v3.pdf",
         'download_name'   : "PDV_Unterstuetzungsunterschrift_EUWahl2024.pdf",
         'sender_phone'    : "+49 (0)152 5403 4785",         // pdv
         'sender_email'    : "info@parteidervernunft.de",
+        // 'sender_addr'     : [
+        //     "Partei der Vernunft",
+        //     "Bundesgeschäftsstelle",
+        //     "Postfach 10 15 24",
+        //     "01691 Freital",
+        // ],
         'sender_addr'     : [
-            "Partei der Vernunft",
-            "Bundesgeschäftsstelle",
-            "Postfach 10 15 24",
-            "01691 Freital",
+            "Florian Handwerker",
+            "Wallbergstr. 4",
+            "83620 Feldkirchen-Westerham",
         ],
         'return_addr'     : [
             "Florian Handwerker",
+            "PDV Sammelstelle",
             "Wallbergstr. 4",
             "83620 Feldkirchen-Westerham",
         ],
@@ -135,11 +141,14 @@ async function downloadPDF() {
 
   const config = CONFIGS['pdv-eu-2024'];
 
-  const existingPdfBytes1 = await fetch(config['pdf_form']).then(res => res.arrayBuffer())
-  const pdfDoc1 = await PDFDocument.load(existingPdfBytes1, {ignoreEncryption: true})
+  async function loadPDF(url) {
+    var isHTTPS = false;
+    const pdfBytes = await fetch(url).then(res => res.arrayBuffer())
+    return await PDFDocument.load(pdfBytes, {ignoreEncryption: !isHTTPS})
+  }
 
-  const existingPdfBytes2 = await fetch(config['pdf_cover_letter']).then(res => res.arrayBuffer())
-  const pdfDoc2 = await PDFDocument.load(existingPdfBytes2, {ignoreEncryption: true})
+  const pdfDoc1 = await loadPDF(config['pdf_form'])
+  const pdfDoc2 = await loadPDF(config['pdf_cover_letter'])
 
   const [page1, page2] = await pdfDoc.copyPages(pdfDoc1, [0, 1])
   const [page3] = await pdfDoc.copyPages(pdfDoc2, [0])
@@ -168,6 +177,24 @@ async function downloadPDF() {
   drawText(page3, 71, 688, sansBold, "Bürgerbüro")
   drawText(page3, 71, 672, sansRegular, cityStreetField.innerText)
   drawText(page3, 71, 656, sansRegular, cityPlzField.innerText)
+
+  for (var i = 0; i < config['sender_addr'].length; i++) {
+      var line = config['sender_addr'][i];
+      if (i == 0) {
+          drawText(page3, 400, 735 - i * 15, sansBold, line)
+      } else {
+          drawText(page3, 400, 735 - i * 15, sansRegular, line)
+      }
+  }
+
+  for (var i = 0; i < config['return_addr'].length; i++) {
+      var line = config['return_addr'][i];
+      if (i == 0) {
+          drawText(page3, 235, 295 - i * 13, sansBold, line)
+      } else {
+          drawText(page3, 235, 295 - i * 13, sansRegular, line)
+      }
+  }
 
   pdfDoc.addPage(page1)
   pdfDoc.addPage(page2)

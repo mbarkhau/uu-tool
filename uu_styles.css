@@ -1,16 +1,23 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.4em;
+  padding-bottom: 4em;
 }
 
 h1, h2 {
   line-height: 1.1em;
 }
 
-.main {
+.main, .footer {
   max-width: 35em;
   margin: 1em auto;
 }
+
+.footer {
+  font-size: 0.8em;
+  line-height: 1.3em;
+}
+.footer p { margin: 0em; }
 
 .listbox {
   margin: 1em auto;
