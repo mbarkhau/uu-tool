@@ -75,6 +75,10 @@ async function populateAdminAddress(value) {
         <div><span>Ort: </span><span id='city-plz'>${bestCity['PLZ']}, ${bestCity['ort']}</span></div>
     `;
 
+    const teleRefNode = document.querySelector("a[href^='https://www.google.com/search']")
+    const teleQuery = encodeURIComponent(`Telefonnummer Bürgerbüro ${bestCity['gemeinde']} ${bestCity['strasse']} ${bestCity['PLZ']}, ${bestCity['ort']}`)
+    teleRefNode.href = "https://www.google.com/search?q=" + teleQuery
+
     formField('download').disabled = false;
 }
 
