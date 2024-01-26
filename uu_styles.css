@@ -2,15 +2,35 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.4em;
   padding-bottom: 4em;
+  background: #DDD;
 }
 
 h1, h2 {
   line-height: 1.1em;
 }
 
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+.center {
+  text-align: center;
+}
+
 .main, .footer {
-  max-width: 35em;
+  max-width: 37em;
   margin: 1em auto;
+  padding: 1em 2em;
+}
+
+.main {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0px 0px 20px #888;
 }
 
 .footer {
@@ -34,7 +54,8 @@ h1, h2 {
 
 .small {
   font-size: 0.7em;
-  color: #333;
+  line-height: 1.2em;
+  color: #444;
 }
 
 .form-field label {
@@ -87,8 +108,8 @@ button {
 }
 
 button:disabled {
-  background: #EEE;
-  color: #333;
+  background: #FAFAFA;
+  color: #777;
 }
 
 button:enabled {
