@@ -204,21 +204,13 @@ async function downloadPDF() {
   drawText(page3, 71, 656, sansRegular, cityPlzField.innerText)
 
   for (var i = 0; i < config['sender_addr'].length; i++) {
-      var line = config['sender_addr'][i];
-      if (i == 0) {
-          drawText(page3, 400, 735 - i * 15, sansBold, line)
-      } else {
-          drawText(page3, 400, 735 - i * 15, sansRegular, line)
-      }
+    var line = config['sender_addr'][i];
+    drawText(page3, 340, 735 - i * 15, (i ? sansRegular : sansBold), line)
   }
 
   for (var i = 0; i < config['return_addr'].length; i++) {
-      var line = config['return_addr'][i];
-      if (i == 0) {
-          drawText(page3, 235, 295 - i * 13, sansBold, line)
-      } else {
-          drawText(page3, 235, 295 - i * 13, sansRegular, line)
-      }
+    var line = config['return_addr'][i];
+    drawText(page3, 235, 295 - i * 13, (i ? sansRegular : sansBold), line)
   }
 
   for (var i = 0; i < config['sender_sign'].length; i++) {
