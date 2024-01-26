@@ -1,8 +1,11 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.4em;
-  padding-bottom: 4em;
   background: #DDD;
+  padding: 0;
+  margin: 0;
+
+  padding-bottom: 4em;
 }
 
 h1, h2 {
@@ -10,6 +13,7 @@ h1, h2 {
 }
 
 h1 {
+  font-weight: bold;
   text-align: center;
 }
 
@@ -41,6 +45,10 @@ h2 {
 
 .listbox {
   margin: 1em auto;
+}
+
+ul, ol {
+  padding-inline-start: 20px;
 }
 
 .listbox p, .listbox ul, .listbox ol {
@@ -92,7 +100,7 @@ div.ts-wrapper div.ts-control {
   margin-bottom: 0.5em;
 }
 
-.form-field > input, .form-field > button {
+.form-field > input {
   border: 2px solid #888;
   padding: 0.3em 1em;
 }
@@ -100,7 +108,9 @@ div.ts-wrapper div.ts-control {
 button {
   color: #000;
   background: #EEE;
-  transition: 300ms background, 300ms border;
+  transition: 300ms background, 300ms border, 300ms box-shadow;
+  padding: 0.3em 1em;
+  box-shadow: none;
 }
 
 button {
@@ -115,6 +125,7 @@ button:disabled {
 button:enabled {
   background: #FFF;
   color: #000;
+  box-shadow: 0 0 5px #888;
 }
 
 button:enabled:hover {
@@ -140,11 +151,32 @@ button:enabled:hover {
 }
 .admin-address {
   min-height: 4.5em;
+  max-width: 18em;
+  margin: 0 auto;
 }
 
 .admin-address-wrap span {
   display: inline-block;
   vertical-align: top;
-  min-width: 11em;
-  max-width: 14em;
+  min-width: 8em;
+  max-width: 9em;
+}
+
+@media screen and (max-device-width: 600px) {
+  h1 {font-size: 1.8em;}
+  h2 {
+    font-size: 1.3em;
+    hyphens: auto;
+  }
+  .main {
+    margin: 0;
+    padding: 1em;
+    min-width: unset;
+  }
+  .pseudoform {
+    width: 14em;
+  }
+  .form-field label {
+    width: 100%;
+  }
 }
