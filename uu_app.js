@@ -7,7 +7,7 @@ const CONFIGS = {
         'minimum_age'     : "16",
         'minimum_support' : "4000",
         'pdf_form'        : "pdf_data/EUWahl2024_PDV_UU_Formular_v2.pdf",
-        'pdf_cover_letter': "pdf_data/Gemeindebuero_Anschreiben_PDV_v3.pdf",
+        'pdf_cover_letter': "pdf_data/Gemeindebuero_Anschreiben_PDV_v4.pdf",
         'download_name'   : "PDV_Unterstuetzungsunterschrift_EUWahl2024.pdf",
         'sender_phone'    : "+49 (0)152 5403 4785",         // pdv
         'sender_email'    : "info@parteidervernunft.de",
@@ -21,12 +21,18 @@ const CONFIGS = {
             "Florian Handwerker",
             "Wallbergstr. 4",
             "83620 Feldkirchen-Westerham",
+            "florian.handwerker@die-libertaeren.de",
         ],
         'return_addr'     : [
             "Florian Handwerker",
             "PDV Sammelstelle",
             "Wallbergstr. 4",
             "83620 Feldkirchen-Westerham",
+        ],
+        'sender_sign'     : [
+            "Hochachtungsvoll",
+            "Florian Handwerker",
+            "Bundesgeschäftsführer, Die Libertären e.V.",
         ],
     }
 }
@@ -194,6 +200,11 @@ async function downloadPDF() {
       } else {
           drawText(page3, 235, 295 - i * 13, sansRegular, line)
       }
+  }
+
+  for (var i = 0; i < config['sender_sign'].length; i++) {
+      var line = config['sender_sign'][i];
+      drawText(page3, 71, 129 - i * 14, sansRegular, line)
   }
 
   pdfDoc.addPage(page1)
