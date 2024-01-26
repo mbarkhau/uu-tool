@@ -87,6 +87,25 @@ async function populateAdminAddress(value) {
         <div><span>Ort: </span><span id='city-plz'>${bestCity['PLZ']}, ${bestCity['ort']}</span></div>
     `;
 
+    const githubIssueRefNode = document.querySelector("a[href^='https://github.com/']")
+    const githubIssueURL = new URL(githubIssueRefNode.href)
+    const title = encodeURIComponent(`Datenfehler für ${plz}, ${ort}`);
+    const body = encodeURIComponent([
+        `Für die PLZ: "${plz}" und Ort/Stadt: "${ort}" wurde die falsche Behörde aufgelöst.`,
+        "",
+        "Folgende Korrekturen sind nötig:",
+        "",
+        "<Korrekte Daten der zuständigen Behörde hier Ergänzen>",
+        "",
+        "Die Daten zur aufgelösten Stadt:",
+        "",
+        "```json",
+        JSON.stringify(curCity, null, 4),
+        "```",
+    ].join("\n"));
+    githubIssueURL.search = ["?title=", title, "&body=", body].join("");
+    githubIssueRefNode.href = githubIssueURL.href
+
     const teleRefNode = document.querySelector("a[href^='https://www.google.com/search']")
     const teleQuery = encodeURIComponent(`Telefonnummer Bürgerbüro ${bestCity['gemeinde']} ${bestCity['strasse']} ${bestCity['PLZ']}, ${bestCity['ort']}`)
     teleRefNode.href = "https://www.google.com/search?q=" + teleQuery
