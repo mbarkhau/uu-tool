@@ -32,10 +32,40 @@ const CONFIGS = {
         'sender_sign'     : [
             "Hochachtungsvoll",
             "Florian Handwerker",
-            "Bundesgeschäftsführer, Die Libertären e.V.",
+            "Bundesgeschäftsführer, DIE LIBERTÄREN e.V.",
         ],
     }
 }
+
+function levenshtein(s1, s2) {
+    // CC BY-SA 3.0 - https://stackoverflow.com/q/18516942/62997
+    if (s1 === s2) {return 0;}
+
+    var s1_len = s1.length, s2_len = s2.length;
+    if (s1_len == 0 || s2_len == 0) {
+        return s1_len + s2_len;
+    }
+
+    var i1 = 0, i2 = 0, a, b, c, c2, row = [];
+    while (i1 < s1_len) {
+        row[i1] = ++i1;
+    }
+
+    while (i2 < s2_len) {
+        c2 = s2.charCodeAt(i2);
+        a = i2;
+        ++i2;
+        b = i2;
+        for (i1 = 0; i1 < s1_len; ++i1) {
+            c = a + (s1.charCodeAt(i1) === c2 ? 0 : 1);
+            a = row[i1];
+            b = b < a ? (b < c ? b + 1 : c) : (a < c ? a + 1 : c);
+            row[i1] = b;
+        }
+    }
+    return b;
+};
+
 
 function formField(name) {
     var field = document.getElementsByName(name)[0];
@@ -59,28 +89,77 @@ async function populateAdminAddress(value) {
     const citiesBytes = new TextDecoder().decode(citiesBuffer);
     const citiesData = JSON.parse(citiesBytes)
 
-    var bestCity = null;
-    for (var i = citiesData.length - 1; i >= 0; i--) {
-        var curCity = citiesData[i];
-        if (curCity['PLZ'] == plz && curCity['ort'] == ort) {
-            bestCity = curCity;
-        }
-        if (!bestCity && curCity['ort'] == ort) {
-            bestCity = curCity;
-        }
-        // else if (curCity['PLZ'].slice(0, 4) == plz.slice(0, 4)) {
-        //     bestCity = curCity;
-        //     console.log("populate addr from plz 4", curCity);
-        // } else if (curCity['PLZ'].slice(0, 3) == plz.slice(0, 3)) {
-        //     bestCity = curCity;
-        //     console.log("populate addr from plz 5", curCity);
-        // } else if (curCity['ort'] == ort) {
-        //     bestCity = curCity;
-        //     console.log("populate addr from city", curCity);
-        // }
+    const matchingCities = []
+
+    function fuzzyEqualsString(a, b) {
+        a = a.replaceAll(' ', '').toLowerCase()
+        b = b.replaceAll(' ', '').toLowerCase()
+        return a.includes(b)
     }
 
+    // Try to get an exact match, and fall back on looser matches
+    // if none can be found.
+    for (var i = citiesData.length - 1; i >= 0; i--) {
+        var curCity = citiesData[i];
+        if (curCity['PLZ'].substring(0, 3) != plz.substring(0, 3)) {
+            continue
+        }
+
+        if (curCity['PLZ'] == plz && fuzzyEqualsString(curCity['ort'], ort)) {
+            matchingCities.push(curCity)
+        } else if (fuzzyEqualsString(curCity['gemeinde'], ort)) {
+            matchingCities.push(curCity)
+        } else if (fuzzyEqualsString(curCity['ort'], ort)) {
+            matchingCities.push(curCity)
+        } else if (curCity['PLZ'] == plz) {
+            matchingCities.push(curCity)
+        }
+    }
+
+    matchingCities.sort((a, b) => {
+        var aIsMatch = a['PLZ'] == plz && fuzzyEqualsString(a['gemeinde'], ort)
+        if (aIsMatch) { return -1; }
+        var bIsMatch = b['PLZ'] == plz && fuzzyEqualsString(b['gemeinde'], ort)
+        if (bIsMatch) { return 1; }
+
+        aIsMatch = a['PLZ'] == plz && fuzzyEqualsString(a['ort'], ort)
+        if (aIsMatch) { return -1; }
+        bIsMatch = b['PLZ'] == plz && fuzzyEqualsString(b['ort'], ort)
+        if (bIsMatch) { return 1; }
+
+        aIsMatch = fuzzyEqualsString(a['gemeinde'], ort)
+        if (aIsMatch) { return -1; }
+        bIsMatch = fuzzyEqualsString(b['gemeinde'], ort)
+        if (bIsMatch) { return 1; }
+        
+        aIsMatch = fuzzyEqualsString(a['ort'], ort)
+        if (aIsMatch) { return -1; }
+        bIsMatch = fuzzyEqualsString(b['ort'], ort)
+        if (bIsMatch) { return 1; }
+        
+        aIsMatch = fuzzyEqualsString(a['PLZ'], ort)
+        if (aIsMatch) { return -1; }
+        bIsMatch = fuzzyEqualsString(b['PLZ'], ort)
+        if (bIsMatch) { return 1; }
+        
+        return b['population'] - a['population']
+    });
+
     const addressNode = document.querySelector('.admin-address')
+
+    if (matchingCities.length == 0) {
+        addressNode.innerHTML = "-"
+        formField('download').disabled = true;
+        return
+    }
+
+    console.log("----------")
+    for (var i = 0; i < matchingCities.length; i++) {
+        console.log(matchingCities[i])
+    }
+
+    var bestCity = matchingCities[0];
+
     addressNode.innerHTML = `
         <div><span>Gemeinde/Stadt: </span><span id='city-name'>${bestCity['gemeinde']}</span></div>
         <div><span>Straße: </span><span id='city-street'>${bestCity['strasse']}</span></div>
@@ -107,12 +186,11 @@ async function populateAdminAddress(value) {
     githubIssueRefNode.href = githubIssueURL.href
 
     const teleRefNode = document.querySelector("a[href^='https://www.google.com/search']")
-    const teleQuery = encodeURIComponent(`Telefonnummer Bürgerbüro ${bestCity['gemeinde']} ${bestCity['strasse']} ${bestCity['PLZ']}, ${bestCity['ort']}`)
+    const teleQuery = encodeURIComponent(`Telefonnummer Bürgeramt ${bestCity['gemeinde']} ${bestCity['strasse']} ${bestCity['PLZ']}, ${bestCity['ort']}`)
     teleRefNode.href = "https://www.google.com/search?q=" + teleQuery
 
     formField('download').disabled = false;
 }
-
 
 async function validateForm() {
     const plzBuffer = await fetch("postleitzahlen_2023.json").then(res => res.arrayBuffer());
@@ -198,10 +276,10 @@ async function downloadPDF() {
   drawText(page1, 66, 460, serifBold, streetField.value)
   drawText(page1, 66, 435, serifBold, plzField.value)
 
-  drawText(page3, 71, 704, sansBold, cityNameField.innerText)
-  drawText(page3, 71, 688, sansBold, "Bürgerbüro")
-  drawText(page3, 71, 672, sansRegular, cityStreetField.innerText)
-  drawText(page3, 71, 656, sansRegular, cityPlzField.innerText)
+  drawText(page3, 71, 690, sansBold, cityNameField.innerText)
+  drawText(page3, 71, 674, sansBold, "Gemeindeverwaltung/Bürgeramt")
+  drawText(page3, 71, 658, sansRegular, cityStreetField.innerText)
+  drawText(page3, 71, 642, sansRegular, cityPlzField.innerText)
 
   for (var i = 0; i < config['sender_addr'].length; i++) {
     var line = config['sender_addr'][i];

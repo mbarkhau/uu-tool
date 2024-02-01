@@ -17,6 +17,10 @@ h1 {
   text-align: center;
 }
 
+hr {
+  margin: 3em;
+}
+
 h2 {
   margin-top: 2em;
 }
