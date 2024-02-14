@@ -50,7 +50,7 @@ const CONFIGS = {
         'minimum_age'     : "16",
         'minimum_support' : "4000",
         'pdf_form'        : "pdf_data/EUWahl2024_DIE_PARTEI_UU_Formular_v2.pdf",
-        'pdf_cover_letter': "pdf_data/Gemeindebuero_Anschreiben_PDV_v6.pdf",
+        'pdf_cover_letter': "pdf_data/EU24_Die_Partei_UU_v2.pdf",
         'download_name'   : "DIE_PARTEI_Unterstuetzungsunterschrift_EUWahl2024.pdf",
         'sender_phone'    : "+49 (0)152 5403 4785",         // pdv
         'sender_email'    : "info@parteidervernunft.de",
