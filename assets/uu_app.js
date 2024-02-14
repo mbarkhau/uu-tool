@@ -46,9 +46,6 @@ const CONFIGS = {
         'deadline'        : "29.02.2024",
         'partyHref'       : "https://www.die-partei.de/europawahl-2024/",
         'partyHrefText'   : "die-partei.de/europawahl-2024/",
-
-        // parteidervernunft.de&ZeroWidthSpace;/europawahl-2024/",
-
         'deadline'        : "29.02.2024",
         'minimum_age'     : "16",
         'minimum_support' : "4000",
@@ -448,9 +445,9 @@ async function downloadPDF() {
   const config = CONFIGS[selectedConfig];
 
   async function loadPDF(url) {
-    var isHTTPS = false;
+    var isHTTP = location.protocol == 'http:';
     const pdfBytes = await fetch(url).then(res => res.arrayBuffer())
-    return await PDFDocument.load(pdfBytes, {ignoreEncryption: !isHTTPS})
+    return await PDFDocument.load(pdfBytes, {ignoreEncryption: isHTTPS})
   }
 
   const pdfDoc1 = await loadPDF(config['pdf_form'])
