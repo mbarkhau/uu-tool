@@ -8,6 +8,27 @@ body {
   padding-bottom: 4em;
 }
 
+#js-player {cursor: pointer;}
+#js-player img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+iframe, #js-player {
+  display: block;
+  margin: 1em auto;
+  width: 320px;
+  height: 180px;
+}
+
+@media screen and (min-device-width: 600px) {
+  iframe, #js-player {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+
 h1, h2 {
   line-height: 1.1em;
 }
@@ -18,7 +39,7 @@ h1 {
 }
 
 hr {
-  margin: 3em;
+  margin: 2em;
 }
 
 h2 {
@@ -39,6 +60,47 @@ h2 {
   background: white;
   border-radius: 4px;
   box-shadow: 0px 0px 20px #888;
+}
+
+.config-options {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-device-width: 600px) {
+  .config-options {
+    flex-direction: column;
+  }
+}
+
+
+.config-form .config-option:hover {
+  background: #DDD;
+}
+.config-form .config-option.selected {
+  background: #BBB;
+}
+
+.config-form .config-option {
+  background: #EEE;
+  transition: background 300ms;
+
+  flex: 1;
+  display: block;
+  min-width: 200px;
+  cursor: pointer;
+
+  border-radius: 8px;
+  border: 4px solid white;
+}
+
+.config-form .config-option img {
+  display: block;
+  margin: 0.3em auto;
+}
+
+.config-texts a {
+  white-space: nowrap;
 }
 
 .footer {
@@ -70,6 +132,10 @@ ul, ol {
   color: #444;
 }
 
+.warn {
+  background: #FF7;
+}
+
 .form-field label {
   vertical-align: top;
   display: inline-block;
@@ -77,10 +143,30 @@ ul, ol {
   margin: 0.3em 0;
 }
 
+.form-field.postleitzahl {
+  min-height: 2.3em;
+}
+
+.admin-address-wrap {
+  min-height: 16em;
+}
+
+.admin-address-wrap p {
+  font-size: 1rem;
+}
+
+.admin-address-wrap .ts-wrapper {
+  width: 17em;
+  margin: 0 auto;
+}
+
+.form-field .ts-wrapper {
+  width: 11.37em;
+}
+
 .ts-control {
   border-radius: 0;
   border: 2px solid #888;
-  width: 13em;
   font-family: Arial, sans-serif;
   font-size: 14px;
   margin-bottom: 0.5em;
@@ -145,7 +231,7 @@ button:enabled:hover {
   font-size: 14px;
 }
 .pseudoform button {
-  margin: 1em auto;
+  margin: 1em auto 3em auto;
   display: block;
 }
 
@@ -153,17 +239,29 @@ button:enabled:hover {
   font-size: 0.8em;
   line-height: 1.3em;
 }
+.admin-address-wrap select {
+  display: none;
+}
+.admin-address-wrap .ts-control {
+  margin: 1em auto;
+}
+.admin-address-wrap .ts-control {
+  width: 13em;
+}
 .admin-address {
   min-height: 4.5em;
   max-width: 18em;
   margin: 0 auto;
 }
+.admin-address-wrap .ts-control input {
+  display: none !important;
+}
 
 .admin-address-wrap span {
   display: inline-block;
   vertical-align: top;
-  min-width: 8em;
-  max-width: 9em;
+  min-width: 6em;
+  max-width: 11em;
 }
 
 @media screen and (max-device-width: 600px) {
