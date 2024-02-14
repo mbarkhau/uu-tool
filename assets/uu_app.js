@@ -447,7 +447,7 @@ async function downloadPDF() {
   async function loadPDF(url) {
     var isHTTP = location.protocol == 'http:';
     const pdfBytes = await fetch(url).then(res => res.arrayBuffer())
-    return await PDFDocument.load(pdfBytes, {ignoreEncryption: isHTTPS})
+    return await PDFDocument.load(pdfBytes, {ignoreEncryption: isHTTP})
   }
 
   const pdfDoc1 = await loadPDF(config['pdf_form'])
