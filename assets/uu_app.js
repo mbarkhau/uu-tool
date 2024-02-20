@@ -73,8 +73,18 @@ const CONFIGS = {
     },
 }
 
-function updateConfigText(configId) {
-    const cfg = CONFIGS[configId]
+const configOptionNodes = document.querySelectorAll(".config-option");
+
+var selectedConfigId = localStorage.getItem("uu-tool.selected-config");
+
+function updateConfig(configId) {
+    selectedConfigId = configId
+    localStorage.setItem('uu-tool.selected-config', selectedConfigId)
+
+    configOptionNodes.forEach(elem => elem.classList.remove('selected'))
+    document.querySelector("#" + selectedConfigId).classList.add('selected')
+
+    const cfg = CONFIGS[selectedConfigId]
     const htmlText = `
     <p>Damit die <b>${cfg.name}</b> zur ${cfg.election} antreten kann, müssen 4.000 bescheinigte Unterschriften bis zum ${cfg.deadline} gesammelt werden.</p>
 
@@ -83,28 +93,13 @@ function updateConfigText(configId) {
     document.querySelector('.config-texts').innerHTML = htmlText;
 }
 
-const configOptionNodes = document.querySelectorAll(".config-option")
-
-var selectedConfig = null;
-
-
 function configClickHandler(id) {
-    return function() {
-        selectedConfig = id
-        updateConfigText(selectedConfig)
-        configOptionNodes.forEach(elem => elem.classList.remove('selected'))
-        document.querySelector("#" + id).classList.add('selected')
-    }
+    return function() {updateConfig(id)}
 }
 
 configOptionNodes.forEach(function(opt) {
     if (CONFIGS[opt.id] == null) {
         console.warn("Invalid config (maybe typo)", opt.id);
-    }
-
-    if (opt.classList.contains('selected')) {
-        selectedConfig = opt.id
-        updateConfigText(selectedConfig)
     }
     opt.addEventListener('click', configClickHandler(opt.id))
     return null;
@@ -230,7 +225,7 @@ async function populateAdminAddress(value) {
     });
 
     function setSelectedAdminAddress(admin) {
-        console.log([admin])
+        // console.log([admin])
         const adminAddrNode = document.querySelector('.admin-address')
         if (admin == null || admin == "<br>") {
             adminAddrNode.innerHTML = "<div><span>Gemeinde: Unbekannt</span></div>";
@@ -324,7 +319,6 @@ async function populateAdminAddress(value) {
             adminSelect.blur();
             for (var i = adminOptions.length - 1; i >= 0; i--) {
                 if (cityText(adminOptions[i].city) == text) {
-                    console.log("------", i)
                     setSelectedAdminAddress(adminOptions[i].city);
                 }
             }
@@ -378,6 +372,12 @@ function validateForm() {
 var plzSelect = null;
 
 async function initForm() {
+    if (selectedConfigId == null) {
+        updateConfig('pdv-eu-2024')
+    } else {
+        updateConfig(selectedConfigId)
+    }
+
     const fieldNames = [
         'lastname',
         'firstname',
@@ -442,7 +442,7 @@ async function downloadPDF() {
     })
   }
 
-  const config = CONFIGS[selectedConfig];
+  const config = CONFIGS[selectedConfigId];
 
   async function loadPDF(url) {
     var isHTTP = location.protocol == 'http:';

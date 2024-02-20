@@ -16,7 +16,7 @@ body {
 
 iframe, #js-player {
   display: block;
-  margin: 1em auto;
+  margin: 1.5em auto;
   width: 320px;
   height: 180px;
 }
