@@ -13,6 +13,14 @@
 <link rel="stylesheet" href="assets/tom-select.css" />
 <link rel="stylesheet" href="assets/uu_styles.css" />
 
+<!-- Preload critical data files -->
+<link rel="prefetch" href="assets/config.json" as="fetch">
+<link rel="prefetch" href="plz_data/postleitzahlen_2023_v3.json" as="fetch">
+
+<!-- DNS prefetch for external resources -->
+<link rel="dns-prefetch" href="//www.youtube.com">
+<link rel="dns-prefetch" href="//www.youtube-nocookie.com">
+
 <script type="text/javascript" src="assets/pdf-lib.js"></script>
 <script type="text/javascript" src="assets/download.js"></script>
 <script type="text/javascript" src="assets/tom-select.complete.js"></script>
@@ -28,7 +36,7 @@
   <h2>Erstelle <u>U</u>nterstützungs<u>u</u>nterschriften für deine Partei/Wahlvorschag</h2>
 
   <div class="config-option" id="die-partei-eu-2024">
-    <img height="50" src="assets/die-partei-logo.png">
+    <img height="50" src="assets/logo_eu_2024_die-partei.png">
   </div>
 
   <div id="js-player">
@@ -40,8 +48,12 @@
   <div class="config-form">
 
     <div class="config-options">
+      <div class="config-option" id="die-libertaeren-btw-2025">
+        <img height="50" src="assets/logo_btw_2025_die-libertaeren.png">
+      </div>
+
       <div class="config-option" id="pdv-eu-2024">
-        <img height="50" src="assets/pdv-logo.png">
+        <img height="50" src="assets/logo_eu_2024_pdv.png">
       </div>
 
     </div>
@@ -53,13 +65,13 @@
 
   <div class="pseudoform">
     <div class="form-field">
-      <label for="lastname">Familienname:</label>
-      <input type="text" name="lastname" placeholder="Mustermann" required/>
+      <label for="firstname">Vorname:</label>
+      <input type="text" name="firstname" placeholder="Max" required/>
     </div>
 
     <div class="form-field">
-      <label for="firstname">Vorname:</label>
-      <input type="text" name="firstname" placeholder="Max" required/>
+      <label for="lastname">Familienname:</label>
+      <input type="text" name="lastname" placeholder="Mustermann" required/>
     </div>
 
     <div class="form-field">
@@ -79,10 +91,10 @@
       </div>
     </div>
 
-    <div class="admin-address-wrap">
+    <div class="buero-address-wrap">
       <p>Zuständes Amt</p>
-      <select id="admin-address-select"></select>
-      <div class="admin-address">-</div>
+      <select id="buero-address-select"></select>
+      <div class="buero-address">-</div>
     </div>
 
     <button name="download" disabled onclick="uu_app.downloadPDF()">
@@ -113,10 +125,11 @@
   <h2 id="voraussetzungen">Voraussetzungen für eine gültige Unterstützungsunterschrift</h2>
 
   <ul>
-    <li>Sie müssen das <b>16. Lebensjahr</b> vollendet haben.</li>
-    <li>Sie müssen <b>deutscher Staatsbürger</b> sein.</li>
-    <li>Sie dürfen nicht vom Wahlrecht ausgeschlossen sein.</li>
     <li>Sie dürfen <b>nur eine Unterstützungsunterschrift</b> leisten. Sie dürfen nicht mehrere Parteien/Wahlvorschläge zur gleichen Wahl unterstützen.</li>
+    <li>Am Tag der Unterschrift mindestens <b>16 Jahre</b> alt sein.</li>
+    <li>Sie müssen <b>deutscher Staatsbürger</b> sein.</li>
+    <li>Sie müssen mindestens drei Monate mit <b>Erstwohnsitz im Bundesland</b> gemeldet sein.
+    <li>Sie dürfen nicht vom Wahlrecht ausgeschlossen sein.</li>
   </ul>
 
   <h2 id="anleitung">Anleitung</h2>
@@ -169,7 +182,7 @@
   <div class="footer">
     <p>Quellcode: <a href="https://github.com/mbarkhau/uu-tool">github.com/mbarkhau/uu-tool</a></p>
     <p>Erstellt mit freundlicher Unterstützung von <a href="https://die-libertaeren.de">die-libertaeren.de</a>.</p>
-    <p>Copyright © 2024 Manuel Barkhau Alle Rechte vorbehalten.</p>
+    <p>Copyright © 2025 Manuel Barkhau. Alle Rechte vorbehalten.</p>
   </div>
 
 </body>

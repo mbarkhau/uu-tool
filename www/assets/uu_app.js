@@ -2,75 +2,41 @@ var uu_app = (function () {
 
 const { PDFDocument, StandardFonts, rgb } = PDFLib;
 
-const CONFIGS = {
-    'pdv-eu-2024': {
-        'name'            : "Partei der Vernunft",
-        'election'        : "Europawahl 2024",
-        'deadline'        : "29.02.2024",
-        'partyHref'       : "https://parteidervernunft.de/europawahl-2024-unterstuetzen-sie-die-partei-der-vernunft/",
-        'partyHrefText'   : "parteidervernunft.de&ZeroWidthSpace;/europawahl-2024/",
-        'minimum_age'     : "16",
-        'minimum_support' : "4000",
-        'pdf_form'        : "pdf_data/EUWahl2024_PDV_UU_Formular_v2.pdf",
-        'pdf_cover_letter': "pdf_data/Gemeindebuero_Anschreiben_PDV_v6.pdf",
-        'download_name'   : "PDV_Unterstuetzungsunterschrift_EUWahl2024.pdf",
-        'sender_phone'    : "+49 (0)152 5403 4785",         // pdv
-        'sender_email'    : "info@parteidervernunft.de",
-        // 'sender_addr'     : [
-        //     "Partei der Vernunft",
-        //     "Bundesgeschäftsstelle",
-        //     "Postfach 10 15 24",
-        //     "01691 Freital",
-        // ],
-        'sender_addr'     : [
-            "Florian Handwerker",
-            "Wallbergstr. 4",
-            "83620 Feldkirchen-Westerham",
-            "florian.handwerker@die-libertaeren.de",
-        ],
-        'return_addr'     : [
-            "Florian Handwerker",
-            "PDV Sammelstelle",
-            "Wallbergstr. 4",
-            "83620 Feldkirchen-Westerham",
-        ],
-        'sender_sign'     : [
-            "Hochachtungsvoll",
-            "Florian Handwerker",
-            "Bundesgeschäftsführer, DIE LIBERTÄREN e.V.",
-        ],
-    },
-    'die-partei-eu-2024': {
-        'name'            : "Die PARTEI",
-        'election'        : "Europawahl 2024",
-        'deadline'        : "29.02.2024",
-        'partyHref'       : "https://www.die-partei.de/europawahl-2024/",
-        'partyHrefText'   : "die-partei.de/europawahl-2024/",
-        'deadline'        : "29.02.2024",
-        'minimum_age'     : "16",
-        'minimum_support' : "4000",
-        'pdf_form'        : "pdf_data/EU24_Die_Partei_UU_v2.pdf",
-        'pdf_cover_letter': "pdf_data/Gemeindebuero_Anschreiben_PDV_v6.pdf",
-        'download_name'   : "DIE_PARTEI_Unterstuetzungsunterschrift_EUWahl2024.pdf",
-        'sender_phone'    : "+49 (0)152 5403 4785",         // pdv
-        'sender_email'    : "info@parteidervernunft.de",
-        'sender_addr'     : [
-            "Die PARTEI",
-            "Kopischstr. 10",
-            "10965 Berlin",
-            "mail@die-partei.de",
-        ],
-        'return_addr'     : [
-            "Die PARTEI",
-            "Kopischstr. 10",
-            "10965 Berlin",
-        ],
-        'sender_sign'     : [
-            // "Hochachtungsvoll",
-            // "Martin Sonneborn",
-            // "Vorsitzender, DIE PARTEI",
-        ],
-    },
+// Global variables for loaded data
+let CONFIGS = {};
+let configDataLoaded = false;
+
+// Cache for loaded data
+const dataCache = new Map();
+
+// Optimized data loading with caching
+async function loadJSONData(url, cacheKey) {
+    if (dataCache.has(cacheKey)) {
+        return dataCache.get(cacheKey);
+    }
+    
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        dataCache.set(cacheKey, data);
+        return data;
+    } catch (error) {
+        console.error(`Failed to load ${url}:`, error);
+        throw error;
+    }
+}
+
+async function loadConfigData() {
+    try {
+        const configData = await loadJSONData('assets/config.json', 'config');
+        CONFIGS = configData.CONFIGS || {};
+    } catch (error) {
+        console.error('Failed to load config data:', error);
+        CONFIGS = {};
+    }
 }
 
 const configOptionNodes = document.querySelectorAll(".config-option");
@@ -86,7 +52,7 @@ function updateConfig(configId) {
 
     const cfg = CONFIGS[selectedConfigId]
     const htmlText = `
-    <p>Damit die <b>${cfg.name}</b> zur ${cfg.election} antreten kann, müssen 4.000 bescheinigte Unterschriften bis zum ${cfg.deadline} gesammelt werden.</p>
+    <p>Damit die <b>${cfg.name}</b> zur ${cfg.election} antreten kann, müssen ${cfg.minimum_support} bescheinigte Unterschriften bis zum <b>${cfg.deadline}</b> gesammelt werden.</p>
 
     <p>Mehr Infos zur Wahl und zu den Kandidaten der Partei finden Sie auf <a target="_blank" rel="noopener noreferrer nofollow" href="${cfg.partyHref}">${cfg.partyHrefText}</a>, sowie auf <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.bundeswahlleiter.de/europawahlen/2024/informationen-wahlbewerber.html">bundeswahlleiter.de&ZeroWidthSpace;/europawahlen/2024/</a>.</p>
     `
@@ -148,9 +114,9 @@ function formField(name) {
 
 function cityText(city) {
 return `
-Bürgerbüro ${city['gemeinde']}<br>
-${city['strasse']},<br>
-${city['PLZ']}, ${city['ort']}
+Bürgerbüro ${city['name']}<br>
+${city['str']},<br>
+${city['plz']}, ${city['ort']}
 `.trim()
 }
 
@@ -162,7 +128,7 @@ async function populateAdminAddress(value) {
     const valueParts = value.split(", ")
     const plz = valueParts[0]
     const ort = valueParts[1]
-    const citiesUrl = "city_data/adr_" + plz.slice(0, 1) + ".json"
+    const citiesUrl = "city_data/buero_" + plz.slice(0, 1) + ".json"
 
     const citiesBuffer = await fetch(citiesUrl).then(res => res.arrayBuffer());
     const citiesBytes = new TextDecoder().decode(citiesBuffer);
@@ -179,36 +145,35 @@ async function populateAdminAddress(value) {
     // Try to get an exact match, and fall back on looser matches
     // if none can be found.
     for (var i = citiesData.length - 1; i >= 0; i--) {
-        var curCity = citiesData[i];
-        if (curCity['PLZ'].substring(0, 3) != plz.substring(0, 3)) {
+        const curCity = citiesData[i];
+        if (curCity['plz'].substring(0, 3) != plz.substring(0, 3)) {
             continue
         }
-
-        if (curCity['PLZ'] == plz && levenshtein(curCity['ort'], ort) < 2) {
+        if (curCity['plz'] == plz && levenshtein(curCity['ort'], ort) < 2) {
             matchingCities.push(curCity)
-        } else if (levenshtein(curCity['gemeinde'], ort) < 3) {
+        } else if (curCity['name'] && levenshtein(curCity['name'], ort) < 3) {
             matchingCities.push(curCity)
         } else if (levenshtein(curCity['ort'], ort) < 3) {
             matchingCities.push(curCity)
-        } else if (curCity['PLZ'] == plz) {
+        } else if (curCity['plz'] == plz) {
             matchingCities.push(curCity)
         }
     }
 
     matchingCities.sort((a, b) => {
-        var aIsMatch = a['PLZ'] == plz && levenshtein(a['gemeinde'], ort) < 2
+        var aIsMatch = a['plz'] == plz && a['name'] && levenshtein(a['name'], ort) < 2
         if (aIsMatch) { return -1; }
-        var bIsMatch = b['PLZ'] == plz && levenshtein(b['gemeinde'], ort) < 2
+        var bIsMatch = b['plz'] == plz && a['name'] && levenshtein(b['name'], ort) < 2
         if (bIsMatch) { return 1; }
 
-        aIsMatch = a['PLZ'] == plz && levenshtein(a['ort'], ort) < 2
+        aIsMatch = a['plz'] == plz && levenshtein(a['ort'], ort) < 2
         if (aIsMatch) { return -1; }
-        bIsMatch = b['PLZ'] == plz && levenshtein(b['ort'], ort) < 2
+        bIsMatch = b['plz'] == plz && levenshtein(b['ort'], ort) < 2
         if (bIsMatch) { return 1; }
 
-        aIsMatch = levenshtein(a['gemeinde'], ort) < 2
+        aIsMatch = levenshtein(a['name'], ort) < 2
         if (aIsMatch) { return -1; }
-        bIsMatch = levenshtein(b['gemeinde'], ort) < 2
+        bIsMatch = levenshtein(b['name'], ort) < 2
         if (bIsMatch) { return 1; }
         
         aIsMatch = levenshtein(a['ort'], ort) < 2
@@ -216,32 +181,32 @@ async function populateAdminAddress(value) {
         bIsMatch = levenshtein(b['ort'], ort) < 2
         if (bIsMatch) { return 1; }
         
-        aIsMatch = levenshtein(a['PLZ'], ort) < 2
+        aIsMatch = levenshtein(a['plz'], ort) < 2
         if (aIsMatch) { return -1; }
-        bIsMatch = levenshtein(b['PLZ'], ort) < 2
+        bIsMatch = levenshtein(b['plz'], ort) < 2
         if (bIsMatch) { return 1; }
         
         return b['population'] - a['population']
     });
 
-    function setSelectedAdminAddress(admin) {
-        // console.log([admin])
-        const adminAddrNode = document.querySelector('.admin-address')
-        if (admin == null || admin == "<br>") {
+    function setSelectedAdminAddress(buero) {
+        // console.log([buero])
+        const adminAddrNode = document.querySelector('.buero-address')
+        if (buero == null || buero == "<br>") {
             adminAddrNode.innerHTML = "<div><span>Gemeinde: Unbekannt</span></div>";
             return
         }
         adminAddrNode.innerHTML = `
             <div><span>Gemeinde: </span>
-                <span id='city-name'>${admin['gemeinde']}</span></div>
+                <span id='city-name'>${buero['name']}</span></div>
             <div><span>Straße: </span>
-                <span id='city-street'>${admin['strasse']}</span></div>
+                <span id='city-street'>${buero['str']}</span></div>
             <div><span>Ort: </span>
-                <span id='city-plz'>${admin['PLZ']}, ${admin['ort']}</span></div>
+                <span id='city-plz'>${buero['plz']}, ${buero['ort']}</span></div>
             <div><span>Phone: </span>
-                <span id='city-phone'>${admin['phone'] || "-"}</span></div>
+                <span id='city-phone'>${buero['phone'] || "-"}</span></div>
             <div><span>Email: </span>
-                <span id='city-email'>${admin['email'] || "-"}</span></div>
+                <span id='city-email'>${buero['email'] || "-"}</span></div>
         `
 
         const title = encodeURIComponent(`Datenfehler für ${plz}, ${ort}`);
@@ -255,7 +220,7 @@ async function populateAdminAddress(value) {
             "Die Daten zur aufgelösten Stadt:",
             "",
             "```json",
-            JSON.stringify(admin, null, 4),
+            JSON.stringify(buero, null, 4),
             "```",
         ].join("\n"));
 
@@ -266,34 +231,34 @@ async function populateAdminAddress(value) {
         githubIssueRefNode.href = githubIssueURL.href
 
         const teleRefNode = document.querySelector("a[href^='https://www.google.com/search']")
-        const teleQuery = encodeURIComponent(`Telefonnummer Bürgeramt ${admin['gemeinde']} ${admin['strasse']} ${admin['PLZ']}, ${admin['ort']}`)
+        const teleQuery = encodeURIComponent(`Telefonnummer Bürgeramt ${buero['ort'] || buero['name']} ${buero['str']} ${buero['PLZ']}, ${buero['ort']}`)
         teleRefNode.href = "https://www.google.com/search?q=" + teleQuery
     }
 
     if (matchingCities.length == 0) {
-        document.querySelector('.admin-address').innerHTML = "-"
+        document.querySelector('.buero-address').innerHTML = "-"
         return
     }
 
-    var adminOptions = [
+    var bueroOptions = [
         {'value': "<br>", 'text': "bitte wählen", 'city': "<br>"}
     ]
 
     for (var i = 0; i < matchingCities.length; i++) {
         var city = matchingCities[i];
-        adminOptions.push({
+        bueroOptions.push({
             'value': cityText(city),
             'text' : cityText(city),
             'city' : city,
         });
     }
 
-    if (adminSelect != null) {
-        adminSelect.destroy();
-        adminSelect = null;
+    if (bueroSelect != null) {
+        bueroSelect.destroy();
+        bueroSelect = null;
     }
 
-    const addressSelectNode = document.querySelector('#admin-address-select')
+    const addressSelectNode = document.querySelector('#buero-address-select')
 
     if (matchingCities.length == 0) {
         addressSelectNode.innerHTML = "-";
@@ -302,8 +267,8 @@ async function populateAdminAddress(value) {
         setSelectedAdminAddress(matchingCities[0]);
     } else {
         addressSelectNode.innerHTML = '';
-        adminSelect = new TomSelect("#admin-address-select", {
-            options: adminOptions,
+        bueroSelect = new TomSelect("#buero-address-select", {
+            options: bueroOptions,
             allowEmptyOption: true,
             maxOptions: 20,
             maxItems: 1,
@@ -314,9 +279,9 @@ async function populateAdminAddress(value) {
             }
         });
 
-        adminSelect.on('change', function(text) {
+        bueroSelect.on('change', function(text) {
             setSelectedAdminAddress(null)
-            adminSelect.blur();
+            bueroSelect.blur();
             for (var i = adminOptions.length - 1; i >= 0; i--) {
                 if (cityText(adminOptions[i].city) == text) {
                     setSelectedAdminAddress(adminOptions[i].city);
@@ -324,7 +289,7 @@ async function populateAdminAddress(value) {
             }
         });
 
-        adminSelect.setValue(adminOptions[0].value);
+        bueroSelect.setValue(adminOptions[0].value);
         setSelectedAdminAddress(adminOptions[0].city);
     }
 }
@@ -372,27 +337,42 @@ function validateForm() {
 var plzSelect = null;
 
 async function initForm() {
-    if (selectedConfigId == null) {
-        updateConfig('pdv-eu-2024')
-    } else {
-        updateConfig(selectedConfigId)
-    }
+    try {
+        // Load config and PLZ data in parallel
+        const [configPromise, plzPromise] = await Promise.allSettled([
+            loadConfigData(),
+            loadPLZData()
+        ]);
+        
+        if (configPromise.status === 'rejected') {
+            console.error('Config loading failed:', configPromise.reason);
+        }
+        
+        if (plzPromise.status === 'rejected') {
+            console.error('PLZ data loading failed:', plzPromise.reason);
+            return;
+        }
+        
+        // Initialize config selection
+        if (selectedConfigId == null) {
+            updateConfig('pdv-eu-2024')
+        } else {
+            updateConfig(selectedConfigId)
+        }
 
-    const fieldNames = [
-        'lastname',
-        'firstname',
-        'birthday',
-        'street',
-        'postleitzahl',
-    ];
+        const fieldNames = [
+            'lastname',
+            'firstname',
+            'birthday',
+            'street',
+            'postleitzahl',
+        ];
 
-    for (var i = fieldNames.length - 1; i >= 0; i--) {
-        formField(fieldNames[i]).addEventListener('change', validateForm);
-    }
+        for (var i = fieldNames.length - 1; i >= 0; i--) {
+            formField(fieldNames[i]).addEventListener('change', validateForm);
+        }
 
-    const plzBuffer = await fetch("postleitzahlen_2023_v3.json").then(res => res.arrayBuffer());
-    const plzBytes = new TextDecoder().decode(plzBuffer);
-    const plzData = JSON.parse(plzBytes)
+        const plzData = plzPromise.value;
 
     const plzOptions = (function() {
         var options = []
@@ -419,10 +399,32 @@ async function initForm() {
     plzSelect.on('dropdown_open', function() {
         plzSelect.clear()
     });
+    
+    } catch (error) {
+        console.error('Form initialization failed:', error);
+        throw error;
+    }
 }
 
-window.addEventListener('load', initForm);
+// Optimized PLZ data loading
+async function loadPLZData() {
+    try {
+        return await loadJSONData('plz_data/postleitzahlen_2023_v3.json', 'plz');
+    } catch (error) {
+        console.error('Failed to load PLZ data:', error);
+        throw error;
+    }
+}
 
+async function initApp() {
+    try {
+        await initForm();
+    } catch (error) {
+        console.error('App initialization failed:', error);
+    }
+}
+
+window.addEventListener('load', initApp);
 
 async function downloadPDF() {
   const pdfDoc = await PDFDocument.create();
