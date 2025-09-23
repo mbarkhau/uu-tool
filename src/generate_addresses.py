@@ -1,3 +1,10 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.13"
+# dependencies = [
+#   "openpyxl",
+# ]
+# ///
 # Quelle:
 #
 # https://www.statistikportal.de/de/veroeffentlichungen/anschriftenverzeichnis

@@ -1,0 +1,5491 @@
+# Ortsamt Altstadt
+Ortsteile: Altstadt, Friedrichstadt, Johannstadt, Pirnaische Vorstadt, Seevorstadt, Wilsdruffer Vorstadt
+
+Theaterstr. 11-15
+01067 Dresden
+Telefon: 0351-488-6001
+Email: ortsamt-altstadt@dresden.de
+
+
+# Ortsamt Blasewitz
+Ortsteile: Blasewitz, Gruna, Seidnitz, Striesen, Tolkewitz
+
+Im Rathaus Blasewitz
+Naumannstr. 5
+01309 Dresden
+Telefon: 0351-488-8601
+Email: ortsamt-blasewitz@dresden.de
+
+
+# Bürgerbüro Blasewitz
+Naumannstr. 5
+01309 Dresden
+Telefon: 0351-488-8690
+Email: buergerbuero-blasewitz@dresden.de
+
+
+# Ortsamt Cotta
+Ortsteile: Altfranken, Briesnitz, Cotta, Dölzschen, Gorbitz, Kemnitz, Leutewitz, Löbtau, Neunimptsch, Omsewitz-Burgstädtl, Roßthal, Stetzsch, Wölfnitz
+
+Lübecker Str. 121
+01157 Dresden
+Telefon: 0351-488-5601
+Email: ortsamt-cotta@dresden.de
+
+
+# Ortsamt Klotzsche
+Ortsteile: Hellerau, Klotzsche, Rähnitz, Wilschdorf
+
+Im Rathaus Klotzsche
+Kieler Str. 52
+01109 Dresden
+Telefon: 0351-488-6501
+Email: ortsamt-klotzsche@dresden.de
+
+
+# Ortsamt Leuben
+Ortsteile: Alttolkewitz, Dobritz-Süd, Großzschachwitz, Kleinzschachwitz, Laubegast, Leuben, Meußlitz, Niedersedlitz-Ost, Sporbitz, Zschieren
+
+Ortsamt/Bürgerbüro
+Im Rathaus, Erdgeschoss
+Hertzstr. 23
+01257 Dresden
+Telefon: 0351-488-8101
+Email: ortsamt-leuben@dresden.de
+
+
+# Ortsamt Loschwitz
+Ortsteile: Bühlau, Hosterwitz, Dresdner Heide, Loschwitz, Niederpoyritz, Oberpoyritz, Pillnitz, Rochwitz, Wachwitz, Söbrigen, Weißer Hirsch, z. T. OS Schönfeld-Weißig
+
+Grundstr. 3
+01326 Dresden
+Telefon: 0351-488-8501
+Email: ortsamt-loschwitz@dresden.de
+
+
+# Ortsamt Neustadt
+Ortsteile: Albertstadt, Äußere neustadt, Innere Neustadt, Leipziger Vorstadt, Radeberger Vorstadt
+
+Atrium am Rosengarten
+Hoyerswerdaer Str. 3
+01099 Dresden
+Telefon: 0351-488-6601
+Email: ortsamt-neustadt@dresden.de
+
+
+# Ortsamt Plauen
+Ortsteile: Altstadt II, Coschütz, Gostritz, Gittersee, Kaitz, Klein-Pestitz, Mockritz, Plauen, Räcknitz, Zschertnitz
+
+Nöthnitzer Str. 2/5
+01187 Dresden
+Telefon: 0351-488-680
+Email: ortsamt-plauen@dresden.de1
+
+
+# Ortsamt Prohlis
+Ortsteile: Großluga, Kauscha, Kleinluga, Leubnitz-Neuostra, Lockwitz, Mockritz, Nickern, Niedersedlitz, Prohlis, Reick, Strehlen, Torna
+
+Prohliser Allee 10
+01239 Dresden
+Telefon: 0351-488-8301
+Email: ortsamt-prohlis@dresden.de
+
+
+# Ortsamt Cossebaude
+Dresdner Str. 3 OT Cossebaude
+01156 Dresden
+Telefon: 0351-488-7935
+
+
+# Ortsamt Gompitz
+Altnossener Str. 46a
+01156 Dresden
+Telefon: 0351-500-6220
+
+
+# Ortsamt Gompitz
+Ortschaftsbüro Mobschatz
+Am Tunnelsgrund 7b OT Mobschatz
+01156 Dresden
+Telefon: 0351-453-8631
+
+
+# Ortsamt Gompitz
+Ortsteile: Gompitz, Ockerwitz, Pennrich, Roitzsch, Steinbach, Unkersdorf, und Zöömen
+
+Altnossener Str. 46a
+01462 Gompitz
+Telefon: 0351-414090
+
+
+# Verwaltungsstelle Langebrück / Schörnborn
+Weißiger Str. 5
+01465 Langebrück
+Telefon: 0352-01816-0
+
+
+# Verwaltungsstelle Schönfeld-Weißig
+Bautzner Str. 3
+01328 Dresden
+Telefon: 0351-44487302
+Email: ortschaft-schoenfeld-weissig@dresden.de
+
+
+# Ortsamt Weixdorf
+Weixdorfer Rathausplatz 2
+01108 Weixdorf
+Telefon: 0351-8883611
+
+
+# Bürgerbüro Altstadt
+Theaterstr. 11
+01067 Dresden
+Telefon: 0351-488-6070
+Email: buergerbuero-altstadt@dresden.de
+
+
+# Bürgerbüro Cotta
+Amalie-Dietrich-Platz 3
+01169 Dresden
+Telefon: 0351-488-5690
+Email: buergerbuero-cotta@dresden.de
+
+
+# Bürgerbüro Klotzsche
+Kieler Str. 52
+01109 Dresden
+Telefon: 0351-488-6590
+Email: buergerbuero-klotzsche@dresden.de
+
+
+# Bürgerbüro Leuben
+Hertzstr. 23
+01257 Dresden
+
+Telefon: 0351-488-8190
+Email: buergerbuero-leuben@dresden.de
+
+
+
+# Bürgerbüro Neustadt
+Hoyerswerdaer Str. 3
+01099 Dresden
+
+Telefon: 0351-488-6655
+Email: buergerbuero-neustadt@dresden.de
+
+
+# Bürgerbüro Pieschen
+Bürgerstr. 63
+01127 Dresden
+Email: buergerbuero-pieschen@dresden.de
+
+
+# Bürgerbüro Plauen
+Nöthnitzer Str. 2
+01187 Dresden
+
+Telefon: 0351-488-6890
+Email: buergerbuero-plauen@dresden.de
+
+
+# Bürgerbüro Prohlis
+Prohliser Allee 10
+01239 Dresden
+
+Telefon: 0351-488-8390
+Email: buergerbuero-prohlis@dresden.de
+
+
+# Bürgerbüro Schönfeld/Weißig
+Bautzner Landstr. 291
+01328 Dresden
+
+Telefon: 0351-488-7967
+Email: ortschaft-schoenfeld-weissig-buergerbuero@dresden.de
+
+
+# Meldestelle Cossebaude
+Dresdner Str. 3
+01156 Dresden
+Telefon: 0351-488-7935
+Email: ortschaft-cossebaude@dresden.de
+
+
+
+# Meldestelle Weixdorf
+Weixdorfer Rathausplatz 2
+01108 Dresden
+
+Telefon: 0351-488-7948
+Email: ortschaft-weixdorf@dresden.de
+
+
+# Meldestelle Langebrück
+Weißiger Str. 5
+01465 Dresden
+
+Telefon: 0351-488-7977
+Email: ortschaft-langebrueck@dresden.de
+
+
+
+
+# Einwohnermeldeamt Dresden Altstadt
+Theaterstr. 11
+01067 Dresden
+
+Telefon: 0351-488-6070
+Email: buergerbuero-altstadt@dresden.de
+
+
+# Einwohnermeldeamt Dresden Blasewitz
+Naumannstr. 5
+01309 Dresden
+
+Telefon: 0351-4888-690
+Email: buergerbuero-blasewitz@dresden.de
+
+
+# Einwohnermeldeamt Dresden Plauen
+Nöthnitzer Str. 2
+01187 Dresden
+
+Telefon: 0351-4886-890
+Email: buergerbuero-plauen@dresden.de
+
+
+# Einwohnermeldeamt Dresden Neustadt
+Hoyerswerdaer Str. 3
+01099 Dresden
+
+Telefon: 0351-4886-655
+Email: buergerbuero-neustadt@dresden.de
+
+
+# Einwohnermeldeamt Dresden Pieschen
+Bürgerstr. 63
+01127 Dresden
+
+Telefon: 0351-4885-590
+Email: buergerbuero-pieschen@dresden.de
+
+
+# Ortsamt Pieschen
+Ortsteile: Kaditz, Pieschen, Trachenberge, Mickten, Trachau, Übigau
+
+Bürgerstr. 63
+01127 Dresden
+Telefon: 0351-488-5401
+Email: ortsamt-pieschen@dresden.de
+
+
+# Einwohnermeldeamt Dresden Klotzsche
+Kieler Str. 52
+01109 Dresden
+Telefon: 0351-4886-590
+Email: buergerbuero-klotzsche@dresden.de
+
+
+# Einwohnermeldeamt Dresden Leuben
+Hertzstr. 23
+01257 Dresden
+Telefon: 0351-4888-190
+Email: buergerbuero-leuben@dresden.de
+
+
+# Einwohnermeldeamt Dresden Prohlis
+Prohliser Allee 10
+01239 Dresden
+Telefon: 0351-4888-390
+Email: Buergerbuero-Prohlis@dresden.de
+
+
+# Einwohnermeldeamt Dresden Cotta
+Lübecker Str. 121
+01157 Dresden
+Telefon: 0351-4885-690
+Email: buergerbuero-cotta@dresden.de
+
+
+# Einwohnermeldeamt Dresden Schönfeld/Weißig
+Bautzner Landstr. 291
+01328 Dresden
+Telefon: 0351-4887-961
+Email: ortschaft-schoenfeld-weissig-buergerbuero@dresden.de
+
+
+# Einwohnermeldeamt Dresden Verwaltungsstelle Weixdorf
+Weixdorfer Rathausplatz 2
+01108 Dresden
+Telefon: 0351-4887-948
+Email: ortschaft-weixdorf@dresden.de
+
+
+# Einwohnermeldeamt Dresden Verwaltungsstelle Langebrück
+Weißiger Str. 5
+01465 Dresden
+Telefon: 0351-4887-977
+Email: ortschaft-weixdorf@dresden.de
+
+
+# Einwohnermeldeamt Dresden Verwaltungsstelle Cossebaude
+Dresdner Str. 3
+01156 Dresden
+Telefon: 0351-4887-935
+Email: ortschaft-cossebaude@dresden.de
+
+
+
+# Bürgeramt Frankfurt Zentrale
+Zeil 3
+60313 Frankfurt
+Telefon: 069 212-30600
+Email: buergeramt.zentrale@stadt-frankfurt.de
+
+
+# Bürgeramt Frankfurt Zentrale / Außenstelle Fechenheim
+Pfortenstr. 1
+60386 Frankfurt
+Email: buergeramt.zentrale@stadt-frankfurt.de
+
+
+# Bürgeramt Frankfurt Bergen-Enkheim
+Marktstr. 30
+60388 Frankfurt
+Telefon: 069 212-41246
+Email: buergeramt.zentrale@stadt-frankfurt.de
+
+
+# Bürgeramt Frankfurt Dornbusch
+Eschersheimer Landstr. 248
+60320 Frankfurt
+Telefon: 069 21242-292
+Email: buergeramt.zentrale@stadt-frankfurt.de
+
+
+# Bürgeramt Frankfurt Nieder-Eschbach
+Deuil-La-Barre-Str. 26
+60437 Frankfurt
+Telefon: 069 212-34281
+Email: buergeramt.zentrale@stadt-frankfurt.de
+
+
+# Bürgeramt Frankfurt Nieder-Eschbach / Außenstelle Harheim
+Philipp-Schnell-Str. 52
+60437 Frankfurt
+Telefon: 06101 42-335
+Email: buergeramt.zentrale@stadt-frankfurt.de
+
+
+# Bürgeramt Frankfurt Nieder-Eschbach / Außenstelle Nieder-Erlenbach
+Alt-Erlenbach 42
+60437 Frankfurt
+Telefon: 06101 42-388
+Email: buergeramt.zentrale@stadt-frankfurt.de
+
+
+# Bürgeramt Frankfurt Nordwest
+Nidaforum 5
+60439 Frankfurt
+Telefon: 069 21242-294
+Email: buergeramt.zentrale@stadt-frankfurt.de
+
+
+# Bürgeramt Frankfurt Sachsenhausen
+Große Rittergasse 103
+60594 Frankfurt
+Telefon: 069 21230-448
+Email: buergeramt.zentrale@stadt-frankfurt.de
+
+
+# Bürgeramt Frankfurt Nordwest / Außenstelle Kalbach
+Kalbacher Hauptstr. 36
+60437 Frankfurt
+Telefon: 069 501-071
+Email: buergeramt.zentrale@stadt-frankfurt.de
+
+
+# Bürgeramt Frankfurt Höchst - Team 1
+Dalbergstr. 14
+65929 Frankfurt
+Telefon: 069 212-45602, -30600
+Email: buergeramt.zentrale@stadt-frankfurt.de
+
+
+
+# Bürgeramt Berlin Mitte: Rathaus Tiergarten
+Mathilde-Jacob-Platz 1
+10551 Berlin
+Email: buergeramt@ba-mitte.berlin.de
+
+
+# Bürgeramt Berlin Heerstr.
+Heerstr. 12
+14052 Berlin
+Email: buergeramt@charlottenburg-wilmersdorf.de
+
+
+# Bürgeramt Berlin Hohenzollerdamm
+Hohenzollerndamm 177
+10713 Berlin
+Email: buergeramt@charlottenburg-wilmersdorf.de
+
+
+# Bürgeramt Berlin Wilmersdorfer Str.
+Wilmersdorfer Str. 46
+10627 Berlin
+Email: buergeramt@charlottenburg-wilmersdorf.de
+
+
+# Bürgeramt Berlin Yorckstaße
+Yorckstr. 4-11
+10965 Berlin
+Email: buergeramt@ba-fk.berlin.de
+
+
+# Bürgeramt Berlin Friedrichshain
+Frankfurter Allee 35/37
+10247 Berlin
+Email: buergeramt@ba-fk.berlin.de
+
+
+# Bürgeramt Berlin Neu- Hohenschönhausen
+Egon-Erwin-Kisch-Str. 106
+13059 Berlin
+Email: post.buergeramt@lichtenberg.berlin.de
+
+
+# Bürgeramt Berlin Lichtenberg
+Normannenstr. 1-2
+10367 Berlin
+Email: post.buergeramt@lichtenberg.berlin.de
+
+
+# Bürgeramt Berlin Friedrichsfelde Tierparkcenter
+Otto-Schmirgal-Str. 7
+Tierparkcenter, 1. Etage
+10319 Berlin
+Email: post.buergeramt@lichtenberg.berlin.de
+
+
+# Bürgeramt Berlin Alt- Hohenschönhausen
+Große-Leege-Str. 103
+13055 Berlin
+Email: post.buergeramt@lichtenberg.berlin.de
+
+
+# Bürgeramt Berlin Biesdorf - Center
+Elsterwerdaer Platz 3
+12683 Berlin
+Email: buergeramt.biesdorfcenter@ba-mh.berlin.de
+
+
+# Bürgeramt Berlin Helle Mitte
+Alice-Salomon-Platz 3
+12627 Berlin
+Email: buergeramt.hellemitte@ba-mh.berlin.de
+
+
+# Bürgeramt Berlin Marzahner Promenade
+Marzahner Promenade 11
+12679 Berlin
+Email: buergeramt.marzahnerpromenade@ba-mh.berlin.de
+
+
+# Bürgeramt Berlin Rathaus Mitte
+Karl-Marx-Allee 31
+10178 Berlin
+Email: buergeramt@ba-mitte.berlin.de
+
+
+# Bürgeramt Berlin Wedding
+Osloer Str. 36
+13359 Berlin
+Email: buergeramt@ba-mitte.berlin.de
+
+
+# Bürgeramt Berlin Rathaus Neukölln
+Donaustr. 29
+12043 Berlin
+Email: buergeramt@bezirksamt-neukoelln.de
+
+
+# Bürgeramt Berlin Sonnenallee
+Sonnenallee 107
+Eingang Wildenbruchstr. 1
+12045 Berlin
+Email: buergeramt@bezirksamt-neukoelln.de
+
+
+# Bürgeramt Berlin Blaschkoallee
+Blaschkoallee 32
+Haus 5
+12359 Berlin
+Email: buergeramt@bezirksamt-neukoelln.de
+
+
+# Bürgeramt Berlin Karow/Buch
+Franz-Schmidt-Str. 8-10
+13125 Berlin
+Email: buergeramt@ba-pankow.berlin.de
+
+
+# Bürgeramt Berlin Pankow
+Breite Str. 24A-26
+13187 Berlin
+Email: buergeramt@ba-pankow.berlin.de
+
+
+# Bürgeramt Berlin Prenzlauer Berg
+Fröbelstr. 17
+Haus 6
+10405 Berlin
+Email: buergeramt@ba-pankow.berlin.de
+
+
+# Bürgeramt Berlin Weißensee
+Berliner Allee 252-260
+13088 Berlin
+Email: buergeramt@ba-pankow.berlin.de
+
+
+# Bürgeramt Berlin Heiligensee
+Ruppiner Chaussee 268
+Auf dem Polizei-/Feuerwehrgelände, Eingang Links.
+13503 Berlin
+Email: buergeraemter@reinickendorf.berlin.de
+
+
+# Bürgeramt Berlin Märkisches Viertel
+Wilhelmsruher Damm 142c
+Im Fontane-Haus, Eingang Rechts.
+13435 Berlin
+Email: buergeraemter@reinickendorf.berlin.de
+
+
+# Bürgeramt Berlin Reinickendorf-Ost
+Teichstr. 65
+Haus 1
+13407 Berlin
+Email: buergeraemter@reinickendorf.berlin.de
+
+
+# Bürgeramt Berlin Tegel
+Berliner Str. 35
+Am Borsigtor
+13507 Berlin
+Email: buergeraemter@reinickendorf.berlin.de
+
+
+# Bürgeramt Berlin Rathaus Reinickendorf
+Eichborndamm 215
+13437 Berlin
+Email: buergeraemter@reinickendorf.berlin.de
+
+
+# Bürgeramt Berlin Rathaus Spandau
+Carl-Schurz-Str. 2/6
+13597 Berlin
+Email: buergeramt@ba-spandau.berlin.de
+
+
+# Bürgeramt Berlin Kladow
+Parnemannweg 22
+Nebengebäude der Nachbarschaftshauses Kladow
+14089 Berlin
+Email: buergeramt@ba-spandau.berlin.de
+
+
+# Bürgeramt Berlin Wasserstadt
+Hugo-Cassirer-Str. 48
+13587 Berlin
+Email: buergeramt@ba-spandau.berlin.de
+
+
+# Bürgeramt Berlin Lankwitz
+Gallwitzallee 87
+12249 Berlin
+Email: buergeramt@ba-sz.berlin.de
+
+
+# Bürgeramt Berlin Steglitz
+Schloßstr. 37
+12163 Berlin
+Email: buergeramt@ba-sz.berlin.de
+
+
+# Bürgeramt Berlin Zehlendorf
+Kirchstr. 1/3
+14163 Berlin
+Email: buergeramt@ba-sz.berlin.de
+
+
+# Bürgeramt Berlin Lichtenrade
+Briesingstr. 6
+12307 Berlin
+Email: buergeramt@ba-ts.berlin.de
+
+
+# Bürgeramt Berlin Schöneberg
+John-F.-Kennedy-Platz 1
+10825 Berlin
+Email: buergeramt@ba-ts.berlin.de
+
+
+# Bürgeramt Berlin Tempelhof
+Tempelhofer Damm 165
+12099 Berlin
+Email: buergeramt@ba-ts.berlin.de
+
+
+# Bürgeramt Berlin Köpenick
+Alt-Köpenick 21
+12555 Berlin
+Email: buergeramt1@ba-tk.berlin.de
+
+
+# Bürgeramt Berlin Schöneweide
+Michael-Brückner-Str. 1
+12439 Berlin
+Email: buergeramt-2@ba-tk.berlin.de
+
+
+# Bürgeramt Berlin Zwickauer Damm
+Zwickauer Damm 52
+12353 Berlin
+Email: buergeramt@bezirksamt-neukoelln.de
+
+
+# Bürgeramt Berlin Mobiles Bürgeramt Hermsdorf
+Kurhausstr. 30
+Im Dominikuskrankenhaus, Caritas Sozialstation, Etage 3
+13467 Berlin
+Email: buergeraemter@reinickendorf.berlin.de
+
+
+# Bürgeramt Berlin Zentrale Einwohnerangelegenheiten
+Friedrichstr. 219
+10969 Berlin
+Email: poststelle@labo.berlin.de
+
+
+# Bürgeramt Berlin Bezirksamt Reinickendorf: Mobiles Bürgeramt MV (barrierefrei)
+Senftenberger Ring 51
+Im Vitanas Senioren Centrum Märkisches Viertel
+13435 Berlin
+Email: buergeraemter@reinickendorf.berlin.de
+
+
+# Bürgeramt Berlin Mobiles Bürgeramt Ost
+Stargardtstr. 12-14
+Im Vitanas Senioren Centrum Am Schäfersee
+13405 Berlin
+Email: buergeraemter@reinickendorf.berlin.de
+
+
+# Bürgeramt Berlin Mobiles Bürgeramt Bibliothek Anton-Saefkow
+Anton-Saefkow-Platz 14
+10369 Berlin
+Telefon: 030 90296-7831, -7833
+Email: Post.Buergeramt@lichtenberg.berlin.de
+
+
+# Bürgeramt Berlin Mobiles Bürgeramt Stadtteilzentrum Ikarus
+Wandlitzstr. 13
+10318 Berlin
+Telefon: 030 90296-7831, -7833
+Email: Post.Buergeramt@lichtenberg.berlin.de
+
+
+# Bürgeramt Berlin Mobiles Bürgeramt Jobcenter
+Gotlindestr. 93
+10365 Berlin
+Telefon: 030 90296-7831, -7833,
+Email: Post.Buergeramt@lichtenberg.berlin.de
+
+
+# Bürgeramt Berlin Lichtenberg: Mobiles Bürgeramt KULTschule Friedrichsfelde
+Sewanstr.
+10319 Berlin
+
+
+# Bürgeramt Berlin Mobiles Bürgeramt Seniorenzentrum Am Obersee
+Degnerstr. 11
+13055 Berlin
+Telefon: 030 90296-7831, -7833
+Email: Post.Buergeramt@lichtenberg.berlin.de
+
+
+# Bürgeramt Berlin Halemweg (Außenstelle)
+Halemweg 18
+Im Stadtteilzentrum
+13627 Berlin
+Telefon: 030 9029-25222
+Email: buergeramt@charlottenburg-wilmersdorf.de
+
+
+# Bürgeramt Berlin Falkenhagener Feld
+Westerwaldstr. 13
+Haupteingang der "Stadtteilbibliothek Falkenhagener Feld"
+13589 Berlin
+Email: buergeramt@ba-spandau.berlin.de
+
+
+# Bürgeramt Berlin Mobiles Bürgeramt Rudow
+Alt-Rudow 60
+in der Alten Dorfschule
+12355 Berlin
+Email: buergeramt@bezirksamt-neukoelln.de
+
+
+# Bürgeramt Berlin Flüchtlingsbürgeramt
+Mathilde-Jacob-Platz 1
+10551 Berlin
+Email: buergeramt@ba-mitte.berlin.de
+
+
+# Bürgeramt Berlin Bürgeramt – Bereich Leistungen für Bildung und Teilhabe
+Müllerstr. 146
+13353 Berlin
+Email: buergeramt@ba-mitte.berlin.de
+
+
+# Bürgeramt Berlin
+Osloer Str. 36
+13359 Berlin
+Telefon: 030 9018-47693
+Email: buergeramt@ba-mitte.berlin.de
+
+
+# Bürgeramt Berlin Mobiles Bürgeramt Alt-Buckow
+Alt-Buckow 16
+12349 Berlin
+Email: buergeramt@bezirksamt-neukoelln.de
+
+
+# Bürgeramt Berlin Bürgeramt - Bereich Berlinpass
+Teichstr. 65
+13407 Berlin
+Email: buergeraemter@reinickendorf.berlin.de
+
+
+# Bürgeramt Berlin Mobiles Bürgeramt Reinickendorf
+Auguste-Viktoria-Allee 17a
+Im Mehrgenerationenhaus
+13405 Berlin
+Email: buergeraemter@reinickendorf.berlin.de
+
+
+# Bürgeramt Berlin Bürgeramt Schöneberg Ausbildungsarbeitsplätze
+John-F.-Kennedy-Platz
+10825 Berlin
+Email: buergeramt@ba-ts.berlin.de
+
+
+# Bürgeramt Berlin Bürgeramt Tempelhof-Schöneberg Backoffice
+John-F.-Kennedy-Platz
+10825 Berlin
+Email: buergeramt@ba-ts.berlin.de
+
+
+
+# Bürgeramt München Hauptabteilung II Einwohnerwesen
+Ruppertstr. 19
+80337 München
+Telefon: 089 23396-000
+Email: buergerbuero.kvr@muenchen.de
+
+
+# Bürgeramt München Pasing
+Landsberger Str. 486
+81241 München
+Telefon: 089 233 960-00
+Email: buergerbuero-pasing.kvr@muenchen.de
+
+
+# Bürgeramt München Orleansplatz
+Orleansstr. 50
+81667 München
+Telefon: 089 233 960-00
+Email: buergerbuero-orleansplatz.kvr@muenchen.de
+
+
+# Bürgeramt München Leonrodstr.
+Leonrodstr. 21
+80634 München
+Telefon: 089 233 960-00
+Email: buergerbuero-leonrodstr.kvr@muenchen.de
+
+
+# Bürgeramt München Riesenfeldstr.
+Riesenfeldstr. 75
+80809 München
+Telefon: 089 233 960-00
+Email: buergerbuero-riesenfeldstr.kvr@muenchen.de
+
+
+# Bürgeramt München Forstenrieder Allee
+Forstenrieder Allee 61a
+81476 München
+Telefon: 089 233 960-00
+Email: buergerbuero-forstenrieder.kvr@muenchen.de
+
+
+# Bürgeramt Hamburg Mitte
+Caffamacherreihe 1-3
+20355 Hamburg
+Telefon: 040 42854-5454, -5252
+Email: kundenzentrum@hamburg-mitte.hamburg.de
+
+
+# Bürgeramt Hamburg St. Pauli
+Hamburg St. Pauli
+Simon-von-Utrecht-Str. 4a
+Raum: EG
+20359 Hamburg
+Telefon: 040 42854-7966
+
+
+# Bürgeramt Hamburg Finkenwerder
+Butendeichsweg 2
+Raum: 1.OG
+21129 Hamburg
+Telefon: 040 42854-0
+Email: kundenzentrum-wilhelmsburg@hamburg-mitte.hamburg.de
+
+
+# Bürgeramt Hamburg Blankenese
+Sülldorfer Kirchenweg 2a
+Raum EG
+22587 Hamburg
+Telefon: 040 42811-5656
+Email: Kundenzentrum-Blankenese@altona.hamburg.de
+
+
+# Bürgeramt Hamburg Billstedt
+Öjendorfer Weg 9
+Raum: EG
+22111 Hamburg
+Telefon: 040 42854-0, -7269, -7511
+Email: kundenzentrum-billstedt@hamburg-mitte.hamburg.de
+
+
+# Bürgeramt Hamburg Eimsbüttel
+Grindelberg 62-66
+20144 Hamburg
+Telefon: 040 42801-2102
+Email: Kundenzentrum@eimsbuettel.hamburg.de
+
+
+# Bürgeramt Hamburg Bergedorf
+Weidenbaumsweg 21
+Raum: Eingang A 3.01.1
+21029 Hamburg
+Telefon: 040 42891-2891
+Email: Kundenzentrum@bergedorf.hamburg.de
+
+
+# Bürgeramt Hamburg Altona
+Ottenser Marktplatz 10
+Raum: EG
+22765 Hamburg
+Telefon: 040 42811-3636
+Email: Kundenzentrum@altona.hamburg.de
+
+
+# Bürgeramt Hamburg Lokstedt
+Garstedter Weg 11
+Raum: Kundenzentrum
+22453 Hamburg
+Telefon: 040 42801-4600
+Email: Kundenzentrum-Lokstedt@eimsbuettel.hamburg.de
+
+
+# Bürgeramt Hamburg Nord
+Lenhartzstr. 28
+Raum: Kundenzentrum
+20249 Hamburg
+Telefon: 040 42804-2000
+Email: Kundenzentrum@hamburg-nord.hamburg.de
+
+
+# Bürgeramt Hamburg Barmbek-Uhlenhorst
+Poppenhusenstr. 6
+Raum: Kundenzentrum
+22305 Hamburg
+Telefon: 040 42804-5252
+Email: kundenzentrum-barmbek-u@hamburg-nord.hamburg.de
+
+
+# Bürgeramt Hamburg Fuhlsbüttel
+Hummelsbütteler Landstr. 46
+Raum: Kundenzentrum
+22335 Hamburg
+Telefon: 040 42804-4222
+
+
+# Bürgeramt Hamburg Wandsbek
+Schloßstr. 60
+Raum: Kundenzentrum
+22041 Hamburg
+Telefon: 040 42828-0
+Email: Kundenzentrum@wandsbek.hamburg.de
+
+
+# Bürgeramt Hamburg Bramfeld
+Herthastr. 20
+22179 Hamburg
+Telefon: 040 42881-4114
+Email: Kundenzentrum-Bramfeld@wandsbek.hamburg.de
+
+
+# Bürgeramt Hamburg Alstertal
+Wentzelplatz 7
+Raum: Kundenzentrum
+22391 Hamburg
+Telefon: 040 42881-5353
+Email: Kundenzentrum-Alstertal@wandsbek.hamburg.de
+
+
+# Bürgeramt Hamburg Walddörfer
+Eulenkrugstr. 55-57
+Raum: Kundenzentrum
+22359 Hamburg
+Telefon: 040 42881-5616
+Email: Kundenzentrum-Walddoerfer@wandsbek.hamburg.de
+
+
+# Bürgeramt Hamburg Rahlstedt
+Rahlstedter Strasse 151-157
+Raum: Kundenzentrum
+22143 Hamburg
+Telefon: 040 42881-3923
+Email: Kundenzentrum-Rahlstedt@wandsbek.hamburg.de
+
+
+# Bürgeramt Hamburg Harburg
+Harburger Rathausforum 3
+Raum: EG
+21073 Hamburg
+Telefon: 040 42871-3460
+Email: KUZ@harburg.hamburg.de
+
+
+# Bürgeramt Hamburg Süderelbe
+Neugrabener Markt 5
+Raum: EG
+21149 Hamburg
+Telefon: 040 42871-5300
+Email: KUZ-Suederelbe@harburg.hamburg.de
+
+
+# Bürgeramt Hamburg Wilhelmsburg
+Mengestr. 19
+Raum: EG
+21107 Hamburg
+Telefon: 040 42828-0
+Email: kundenzentrum-wilhelmsburg@hamburg-mitte.hamburg.de
+
+
+# Bürgeramt Hamburg Langenhorn
+Langenhorner Markt 7
+Raum: Kundenzentrum
+22415 Hamburg
+Telefon: 040 42804-4222
+Email: kundenzentrum-langenhorn@hamburg-nord.hamburg.de
+
+
+
+# Bürgeramt Köln Kundenzentrum Chorweiler
+Athener Ring 5
+gegenüber dem Stadthaus
+50765 Köln
+Telefon: 0221 221-0
+Email: meldehalle-chorweiler-info@stadt-koeln.de
+
+
+# Bürgeramt Köln Kundenzentrum Ehrenfeld
+Venloer Str. 419-421
+50825 Köln
+Telefon: 0221 221-0
+Email: meldehalle-ehrenfeld-info@stadt-koeln.de
+
+
+# Bürgeramt Köln Kundenzentrum Kalk
+Kalker Hauptstr. 247-273
+51103 Köln
+Telefon: 0221 221-0
+Email: meldehalle-kalk-info@stadt-koeln.de
+
+
+# Bürgeramt Köln Kundenzentrum Lindenthal
+Aachener Str. 220
+50931 Köln
+Telefon: 0221 221-0
+Email: meldehalle-lindenthal-info@stadt-koeln.de
+
+
+# Bürgeramt Köln Kundenzentrum Mülheim
+Wiener Platz 2a
+51065 Köln
+Telefon: 0221 221-0
+Email: kundenzentrum-muelheim@stadt-koeln.de
+
+
+# Bürgeramt Köln Meldehalle Nippes
+Neusser Str. 450
+50733 Köln
+Telefon: 0221 221-0
+Email: meldehalle-nippes-info@stadt-koeln.de
+
+
+# Bürgeramt Köln Meldehalle Porz
+Friedrich-Ebert-Ufer 64-70
+51143 Köln
+Telefon: 0221 221-0
+Email: kundenzentrum-porz@stadt-koeln.de
+
+
+# Bürgeramt Köln Meldehalle Rodenkirchen
+Hauptstr. 85
+50996 Köln
+Telefon: 0221 221-0
+Email: meldehalle-rodenkirchen-info@stadt-koeln.de
+
+
+# Bürgeramt Köln
+Laurenzplatz 1-3
+50667 Köln
+Telefon: 0221 221-0
+Email: kundenzentrum-innenstadt@stadt-koeln.de
+
+
+# Bürgeramt Stuttgart Mitte, Gruppen 1, 2 und 3
+Eberhardstr. 39
+Schwabenzentrum B4 (Amt für öffentliche Ordnung)
+70173 Stuttgart
+Telefon: 0711 216-93740
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Stammheim
+Kornwestheimer Str. 5
+70439 Stuttgart
+Telefon: 0711 216-93730
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Mühlhausen
+Mönchfeldstr. 35
+70378 Stuttgart
+Telefon: 0711 216-93730
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Zuffenhausen
+Emil-Schuler-Platz 1
+70435 Stuttgart
+Telefon: 0711 216-93730
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Weilimdorf
+Löwen-Markt 1
+70499 Stuttgart
+Telefon: 0711 216-93730
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Münster
+Schussengasse 10
+70376 Stuttgart
+Telefon: 0711 216-93710
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Feuerbach
+Wilhelm-Geiger-Platz 10
+70469 Stuttgart
+Telefon: 0711 216-93730
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Bad Cannstatt
+Marktplatz (Ca) 10
+70372 Stuttgart
+Telefon: 0711 216-93720
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Nord
+Rosensteinstr. 24
+70191 Stuttgart
+Telefon: 0711 216-93710
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Botnang
+Klinglerstr. 7
+70195 Stuttgart
+Telefon: 0711 216-93710
+Email: buergerbueros@stuttgart.de, Termine.Buergerbueros@stuttgart.de*
+
+
+# Bürgeramt Stuttgart Bürgerzentrum West
+Bebelstr. 22
+70193 Stuttgart
+Telefon: 0711 216-93710
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Bürgerzentrum Ost
+Schönbühlstr. 65
+70188 Stuttgart
+Telefon: 0711 216-93720
+Email: buergerbueros@stuttgart.de, Termine.Buergerbueros@stuttgart.de*
+
+
+# Bürgeramt Stuttgart Wangen
+Wangener Marktplatz 1
+70327 Stuttgart
+Telefon: 0711 216-93720
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Untertürkheim
+Großglocknerstr. 24/26
+70327 Stuttgart
+Telefon: 0711 216-93720
+Email: buergerbueros@stuttgart.de, Termine.Buergerbueros@stuttgart.de*
+
+
+# Bürgeramt Stuttgart Obertürkheim
+Augsburger Str. 659
+70329 Stuttgart
+Telefon: 0711 216-93720
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Bürgerservicezentrum Süd
+Jella-Lepman-Str. 3
+70178 Stuttgart
+Telefon: 0711 216-93710
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Hedelfingen
+Heumadener Str. 1
+70329 Stuttgart
+Telefon: 0711 216-93720
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Vaihingen
+Rathausplatz 1
+70563 Stuttgart
+Telefon: 0711 216-93700
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Möhringen
+Oberdorfplatz 16
+Bezirksrathaus
+70567 Stuttgart
+Telefon: 0711 216-93700
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Degerloch
+Große Falterstr. 2
+70597 Stuttgart
+Telefon: 0711 216-93700
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Sillenbuch
+Aixheimer Str. 28
+70619 Stuttgart
+Telefon: 0711 216-93700
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Stuttgart Plieningen
+Filderhauptstr. 155
+70599 Stuttgart
+Telefon: 0711 216-93700
+Email: buergerbueros@stuttgart.de
+
+
+# Bürgeramt Düsseldorf Dienstleistungszentrum (Hauptstelle)
+Willi-Becker-Allee 7
+40227 Düsseldorf
+Telefon: 0211 89-91
+Email: Bürgeramt@duesseldorf.de
+
+
+# Bürgeramt Düsseldorf Garath
+Frankfurter Str. 231
+40595 Düsseldorf
+Telefon: 0211 89-91
+Email: Bürgeramt@duesseldorf.de
+
+
+# Bürgeramt Düsseldorf Gerresheim
+Neusser Tor 8
+40625 Düsseldorf
+Telefon: 0211 89-91
+Email: Bürgeramt@duesseldorf.de
+
+
+# Bürgeramt Düsseldorf Kaiserswerth
+Friedrich-von-Spee-Str. 30
+40489 Düsseldorf
+Telefon: 0211 89-91
+Email: Bürgeramt@duesseldorf.de
+
+
+# Bürgeramt Düsseldorf Oberkassel
+Luegallee 65
+Eingang Friesenstr.
+40545 Düsseldorf
+Telefon: 0211 89-91
+Email: Bürgeramt@duesseldorf.de
+
+
+# Bürgeramt Düsseldorf Rath
+Düsseldorf Rath
+Münsterstr. 508
+40472 Düsseldorf
+Telefon: 0211 89-91
+Email: Bürgeramt@duesseldorf.de
+
+
+# Bürgeramt Düsseldorf Wersten
+Düsseldorf Wersten
+Burscheider Str. 29
+40591 Düsseldorf
+Telefon: 0211 89-91
+Email: Bürgeramt@duesseldorf.de
+
+
+# Bürgeramt Düsseldorf Unterbach
+Düsseldorf Unterbach
+Breidenplatz 8
+40627 Düsseldorf
+Telefon: 0211 89-91
+Email: Bürgeramt@duesseldorf.de
+
+
+# Bürgeramt Düsseldorf Benrath
+Düsseldorf Benrath
+Benrodestr. 46
+40597 Düsseldorf
+Telefon: 0211 89-91
+Email: Bürgeramt@duesseldorf.de
+
+
+# Bürgeramt Düsseldorf Eller
+Düsseldorf Eller
+Gertrudisplatz 8
+40229 Düsseldorf
+Telefon: 0211 89-91
+Email: Bürgeramt@duesseldorf.de
+
+
+# Bürgeramt Düsseldorf Bilk
+Düsseldorf Bilk
+Bachstr. 145
+40217 Düsseldorf
+Telefon: 0211 89-91
+Email: Bürgeramt@duesseldorf.de
+
+
+# Bürgeramt Düsseldorf im Str.nverkehrsamt
+Höherweg 101
+40233 Düsseldorf
+Telefon: 0211 89-91
+Email: Bürgeramt@duesseldorf.de
+
+
+
+# Bürgeramt Leipzig Otto-Schill-Str. - Hauptamt
+Leipzig Otto-Schill-Str. - Hauptamt
+Markgrafenstr. 3
+04109 Leipzig
+Telefon: 0341 123-0
+Email: buergeramt@leipzig.de
+
+
+# Bürgeramt Leipzig Paunsdorf-Center
+Leipzig Paunsdorf-Center
+Paunsdorfer Allee 1
+04329 Leipzig
+Telefon: 0341 123-0
+Email: buergeramt@leipzig.de
+
+
+# Bürgeramt Leipzig Wiedebach-Passage
+Leipzig Wiedebach-Passage
+Biedermannstr. 9-13
+04277 Leipzig
+Telefon: 0341 123-0
+Email: buergeramt@leipzig.de
+
+
+# Bürgeramt Leipzig Südwest-Zentrum
+Leipzig Südwest-Zentrum
+Bismarckstr. 39
+04249 Leipzig
+Telefon: 0341 123-0
+Email: buergeramt@leipzig.de
+
+
+# Bürgeramt Leipzig Ratzelbogen
+Leipzig Ratzelbogen
+Kiewer Str. 1-3
+04209 Leipzig
+Telefon: 0341 123-0
+Email: buergeramt@leipzig.de
+
+
+# Bürgeramt Leipzig Leutzsch
+Leipzig Leutzsch
+Georg-Schwarz-Str. 140
+04179 Leipzig
+Telefon: 0341 123-0
+Email: buergeramt@leipzig.de
+
+
+# Bürgeramt Leipzig Schönefeld
+Leipzig Schönefeld
+Ossietzkystr. 37
+04347 Leipzig
+Telefon: 0341 123-0
+Email: buergeramt@leipzig.de
+
+
+# Bürgeramt Leipzig Gohlis-Center
+Leipzig Gohlis-Center
+Elsbethstr. 19-25
+04155 Leipzig
+Telefon: 0341 123-0
+Email: buergeramt@leipzig.de
+
+
+# Bürgeramt Leipzig Gohlis-Center (Lützschena-Stahmeln)
+Am Brunnen 4
+04159 Leipzig
+Telefon: 0341 123-0
+Email: buergeramt@leipzig.de
+
+
+# Bürgeramt Leipzig Stötteritzer Str.
+Stötteritzer Str. 28
+04317 Leipzig
+Telefon: 0341 123-0
+Email: buergeramt@leipzig.de
+
+
+# Bürgeramt Leipzig Böhlitz-Ehrenberg
+Am Markt 10
+04178 Leipzig
+Telefon: 0341 123-0
+Email: buergeramt@leipzig.de
+
+
+# Bürgeramt Leipzig Wiederitzsch
+Leipzig Wiederitzsch
+Delitzscher Landstr. 55
+04158 Leipzig
+Telefon: 0341 123-0
+Email: buergeramt@leipzig.de
+
+
+# Bürgeramt Leipzig Gohlis-Center Außenstelle Lindenthal
+Leipzig Gohlis-Center Außenstelle Lindenthal
+Erich-Thiele-Str. 2
+04158 Leipzig
+Telefon: 0341 123-0
+Email: buergeramt@leipzig.de
+
+
+# Bürgeramt Leipzig Liebertwolkwitz
+Leipzig Liebertwolkwitz
+Liebertwolkwitzer Markt 1
+04288 Leipzig
+Telefon: 0341 123-0
+Email: buergeramt@leipzig.de
+
+
+# Bürgeramt Leipzig Liebertwolkwitz Aussenstelle Holzhausen
+Leipzig Liebertwolkwitz Aussenstelle Holzhausen
+Hauptstr. 48 H
+04288 Leipzig
+Telefon: 0341 123-0
+Email: buergeramt@leipzig.de
+
+
+
+# Bürgeramt Dortmund
+Südwall 2-4
+44122 Dortmund
+Telefon: 0231 50-13331
+Email: buergerdienste@stadtdo.de
+
+
+# Bürgeramt Dortmund Brackel
+Brackeler Hellweg 170
+44309 Dortmund
+Telefon: 0231 50-13331
+Email: bvst-brackel@dortmund.de
+
+
+# Bürgeramt Dortmund Eving
+August-Wagner-Platz 2-4
+44339 Dortmund
+Telefon: 0231 50-13331
+Email: bvst-eving@dortmund.de
+
+
+# Bürgeramt Dortmund Hörde
+Hörder Bahnhofstr. 16
+44263 Dortmund
+Telefon: 0231 50-13331
+Email: bvst-hoerde@dortmund.de
+
+
+# Bürgeramt Dortmund Huckarde
+Dortmund Huckarde
+Rahmer Str. 15
+44369 Dortmund
+Telefon: 0231 50-13331
+Email: bvst-huckarde@dortmund.de
+
+
+# Bürgeramt Dortmund Lütgendortmund
+Dortmund Lütgendortmund
+Limbecker Str. 31
+44388 Dortmund
+Telefon: 0231 50-13331
+Email: bvst-luetgendortmund@stadtdo.de
+
+
+# Bürgeramt Dortmund Mengede
+Dortmund Mengede
+Am Amtshaus 1
+44359 Dortmund
+Telefon: 0231 50-13331
+Email: bvst-mengede@stadtdo.de
+
+
+# Bürgeramt Dortmund Scharnhorst
+Dortmund Scharnhorst
+Gleiwitzstr. 277
+44328 Dortmund
+Telefon: 0231 50 13331
+Email: bvst-scharnhorst@stadtdo.de
+
+
+# Bürgeramt Dortmund Aplerbeck
+Dortmund Aplerbeck
+Aplerbecker Marktplatz 21
+44287 Dortmund
+Telefon: 0231 50-11150
+Email: bvst-aplerbeck@stadtdo.de
+
+
+# Bürgeramt Dortmund Hombruch
+Dortmund Hombruch
+Harkortstr. 58
+Domänenstr. 1 barrierefreier Zugang
+44225 Dortmund
+Telefon: 0231 50-11150
+Email: bvst-hombruch@stadtdo.de
+
+
+
+
+# Bürgeramt Essen Kettwig
+Essen Kettwig
+Bürgermeister-Fiedler-Platz 1
+Rathaus
+45219 Essen
+Telefon: 0201 8833-222
+Email: buergeramt@einwohneramt.essen.de
+
+
+# Bürgeramt Essen Gildehof, Innenstadt
+Essen Gildehof, Innenstadt
+Hollestr. 3
+Erdgeschoss
+45127 Essen
+Telefon: 0201 8833-222
+Email: buergeramt@einwohneramt.essen.de
+
+
+# Bürgeramt Essen Borbeck
+Essen Borbeck
+Rudolf-Heinrich-Str. 1
+45355 Essen
+Telefon: 0201 8833-222
+Email: buergeramt@einwohneramt.essen.de
+
+
+# Bürgeramt Essen Frohnhausen
+Essen Frohnhausen
+Freytagstr. 29
+45144 Essen
+Telefon: 0201 8833-222
+Email: buergeramt@einwohneramt.essen.de
+
+
+# Bürgeramt Essen Kupferdreh
+Essen Kupferdreh
+Kupferdreher Str. 86
+45257 Essen
+Telefon: 0201 8833-222
+Email: buergeramt@einwohneramt.essen.de
+
+
+# Bürgeramt Essen Rüttenscheid
+Essen Rüttenscheid
+Alfredstr. 148
+45131 Essen
+Telefon: 0201 88-33-222
+Email: buergeramt@einwohneramt.essen.de
+
+
+# Bürgeramt Essen Steele
+Essen Steele
+Kaiser-Otto-Platz 1-5
+3. OG
+45276 Essen
+Telefon: 0201 8833-222
+Email: buergeramt@einwohneramt.essen.de
+
+
+# Bürgeramt Essen Stoppenberg
+Essen Stoppenberg
+Schwanhildenstr. 25
+45141 Essen
+Telefon: 0201 8833-222
+Email: buergeramt@einwohneramt.essen.de
+
+
+# Bürgeramt Essen Altenessen
+Essen Altenessen
+Altenessener Str. 196
+45326 Essen
+Telefon: 0201 8833-222
+Email: buergeramt@einwohneramt.essen.de
+
+
+
+# Bürgeramt Bremen Bürgeramt - BürgerServiceCenter - Mitte
+Bremen Bürgeramt - BürgerServiceCenter - Mitte
+Pelzerstr. 40
+28195 Bremen
+Telefon: 0421 361-88666
+Email: bscmitte@stadtamt.bremen.de
+
+
+# Bürgeramt Bremen BSU - BREMEN_SERVICE UNIVERSITÄT
+Bremen BSU - BREMEN_SERVICE UNIVERSITÄT
+Klagenfurter Str.
+Zentralbereich
+28359 Bremen
+Telefon: 0421 218-61026, -61027 (nur während der offenen Sprechzeiten besetzt), -61020 bis -61022 (Aufenthaltsangelegenheiten)
+Email: meldebehoerde-bsu@stadtamt.bremen.de, bsu@uni-bremen.de, auslaenderbehoerde-bsu@stadtamt.bremen.de
+
+
+# Bürgeramt Bremen Bürgeramt - BürgerServiceCenter - Nord
+Bremen Bürgeramt - BürgerServiceCenter - Nord
+Gerhard-Rohlfs-Str. 62
+28757 Bremen
+Telefon: 0421 361-88644, -88672
+Email: bscnord@stadtamt.bremen.de
+
+
+# Bürgeramt Bremen Bürgeramt - BürgerServiceCenter - Stresemannstr.
+Bremen Bürgeramt - BürgerServiceCenter - Stresemannstr.
+Stresemannstr. 48
+28207 Bremen
+Telefon: 0421 361-88696
+Email: bscstre@stadtamt.bremen.de
+
+
+
+
+# Bürgeramt Hannover Bemerode
+Hannover Bemerode
+Bemeroder Rathausplatz 1
+30539 Hannover
+Telefon: 0511 168-32000
+Email: buergeramt-bemerode@hannover-stadt.de
+
+
+# Bürgeramt Hannover Döhren
+Hannover Döhren
+Peiner Str. 9
+30519 Hannover
+Telefon: 0511 168-32000
+Email: buergeramt-doehren@hannover-stadt.de
+
+
+# Bürgeramt Hannover Herrenhausen
+Hannover Herrenhausen
+Meldaustr. 25/27
+30419 Hannover
+Telefon: 0511 168-32000
+Email: Buergeramt-Herrenhausen@Hannover-Stadt.de
+
+
+# Bürgeramt Hannover Aegi (ehemals Mitte)
+Hannover Aegi (ehemals Mitte)
+Aegidientorplatz 1
+30159 Hannover
+Telefon: 0511 168-32000
+Email: buergeramt-aegi@hannover-stadt.de
+
+
+# Bürgeramt Hannover Podbi-Park
+Hannover Podbi-Park
+Lister Str. 10
+30163 Hannover
+Telefon: 0511 168-32000
+Email: Buergeramt-Podbipark@Hannover-Stadt.de
+
+
+# Bürgeramt Hannover Ricklingen
+Hannover Ricklingen
+Ricklinger Stadtweg 1
+30459 Hannover
+Telefon: 0511 168-32000
+Email: Buergeramt-Ricklingen@Hannover-Stadt.de
+
+
+# Bürgeramt Hannover Sahlkamp
+Hannover Sahlkamp
+Elmstr. 15
+30657 Hannover
+Telefon: 0511 168-32000
+Email: Buergeramt-Sahlkamp@Hannover-Stadt.de
+
+
+# Bürgeramt Hannover Linden
+Hannover Linden
+Lindener Marktplatz 1
+Rathaus, 2. Etage
+30449 Hannover
+Telefon: 0511 168-32000
+Email: buergeramt-linden@hannover-stadt.de
+
+
+
+# Bürgeramt Nürnberg
+Nürnberg
+Äußere Laufer Gasse 25
+90403 Nürnberg
+Telefon: 0911 231-0, -4700
+
+
+# Bürgeramt Nürnberg Nord
+Nürnberg Nord
+Großgründlacher Hauptstr. 51
+90427 Nürnberg
+Telefon: 0911 231-4134
+
+
+# Bürgeramt Nürnberg Ost
+Nürnberg Ost
+Fischbacher Hauptstr. 121
+90475 Nürnberg
+Telefon: 0911 2315-061
+
+
+# Bürgeramt Nürnberg Süd
+Nürnberg Süd
+Hans-Traut-Str. 8
+90455 Nürnberg
+Telefon: 0911 2314-124
+
+
+
+# Bürgeramt Duisburg Bezirksamt Walsum
+Duisburg Bezirksamt Walsum
+Friedrich-Ebert-Str. 152
+47179 Duisburg
+Telefon: 0203 94-000
+Email: bza.walsum@stadt-duisburg.de
+
+
+# Bürgeramt Duisburg Bezirksamt Hamborn
+Duisburg Bezirksamt Hamborn
+Duisburger Str. 213
+47166 Duisburg
+Telefon: 0203 94-000
+Email: bza.hamborn@stadt-duisburg.de
+
+
+# Bürgeramt Duisburg Bezirksamt Meiderich/Beeck
+Duisburg Bezirksamt Meiderich/Beeck
+Von-der-Mark-Str. 36
+47137 Duisburg
+Telefon: 0203 94-000
+Email: bza.meiderich@stadt-duisburg.de
+
+
+# Bürgeramt Duisburg Bezirksamt Homberg/Ruhrort/Baerl
+Duisburg Bezirksamt Homberg/Ruhrort/Baerl
+Bismarckplatz 1
+47198 Duisburg
+Telefon: 0203 94-000
+Email: bza.homberg@stadt-duisburg.de
+
+
+# Bürgeramt Duisburg Bezirksamt Mitte
+Duisburg Bezirksamt Mitte
+Sonnenwall 73-75
+47051 Duisburg
+Telefon: 0203 940-00
+Email: bza.mitte@stadt-duisburg.de
+
+
+# Bürgeramt Duisburg Bezirksamt Rheinhausen
+Duisburg Bezirksamt Rheinhausen
+Körnerplatz 1
+47226 Duisburg
+Telefon: 02065 905-0, 0203 94-000 (Bürger-Service-Telefon)
+Email: bza.rheinhausen@stadt-duisburg.de
+
+
+# Bürgeramt Duisburg Bezirksamt Süd
+Duisburg Bezirksamt Süd
+Sittardsberger Allee 14
+47249 Duisburg
+Telefon: 0203 94-000
+Email: bza.sued@stadt-duisburg.de
+
+
+
+# Bürgeramt Bochum Mitte
+Bochum Mitte
+Willy-Brandt-Platz 2-6
+Rathaus Bochum
+44787 Bochum
+Telefon: 0234 9101-950
+Email: buergerbuero-mitte@bochum.de
+
+
+# Bürgeramt Bochum Wattenscheid
+Bochum Wattenscheid
+Friedrich-Ebert-Str. 7
+Rathaus Wattenscheid
+44866 Bochum
+Telefon: 0234 9106-200
+Email: buergerbuero-wattenscheid@bochum.de
+
+
+# Bürgeramt Bochum Gerthe
+Bochum Gerthe
+Heinrichstr. 42
+im Amtshaus Gerthe
+44805 Bochum
+Telefon: 0234 910-1950
+Email: buergerbuero-gerthe@bochum.de
+
+
+# Bürgeramt Bochum Langendreer
+Bochum Langendreer
+Carl-von-Ossietzky-Platz 1
+Altes Amtsgericht Langendreer
+44892 Bochum
+Telefon: 0234 9109-499
+Email: buergerbuero-langendreer@bochum.de
+
+
+# Bürgeramt Bochum Weitmar
+Bochum Weitmar
+Hattinger Str. 389
+neben dem Amtshaus
+44795 Bochum
+Telefon: 0234 910-8988
+Email: buergerbuero-weitmar@bochum.de
+
+
+# Bürgeramt Bochum Querenburg
+Bochum Querenburg
+Querenburger Höhe 256
+Uni-Center
+44801 Bochum
+Telefon: 0234 910-1950 (Terminvereinbarung), -9122
+Email: buergerbuero-querenburg@bochum.de
+
+
+# Bürgeramt Bochum
+Bulksmühle 17
+44809 Bochum
+Telefon: 0234 910-8282
+Email: strassenverkehrsamt@bochum.de
+
+
+
+# Bürgeramt Wuppertal ServiceCenter
+Steinweg 20
+42275 Wuppertal
+Telefon: 0202 563-0, -7575
+Email: ema-wuppertal@stadt.wuppertal.de
+
+
+# Bürgeramt Wuppertal Cronenberg
+Rathausplatz 4
+42349 Wuppertal
+Telefon: 0202 563-7425
+Email: buergerbuero-cronenberg@stadt.wuppertal.de
+
+
+# Bürgeramt Wuppertal Langerfeld
+Schwelmer Str. 15
+42389 Wuppertal
+Telefon: 0202 563-6265
+Email: buergerbuero-langerfeld@stadt.wuppertal.de
+
+
+# Bürgeramt Wuppertal Ronsdorf
+Marktstr. 21
+42369 Wuppertal
+Telefon: 0202 563-7220
+Email: buergerbuero-ronsdorf@stadt.wuppertal.de
+
+
+# Bürgeramt Wuppertal Vohwinkel
+Rubensstr. 4
+42329 Wuppertal
+Telefon: 0202 563-7345
+Email: buergerbuero-vohwinkel@stadt.wuppertal.de
+
+
+# Bürgeramt Wuppertal Außenstelle Beyenburg
+Am Kriegermal 22
+42399 Wuppertal
+Telefon: 0202 563-4974
+Email: buergerbuero-langerfeld@stadt.wuppertal.de
+
+
+# Bürgeramt Bielefeld Sennestadt
+Bielefeld Sennestadt
+Lindemann-Platz 3
+33689 Bielefeld
+Telefon: 0521 51-0 (BürgerServiceCenter)
+Email: buergerberatung@bielefeld.de
+
+
+# Bürgeramt Bielefeld Bürgerberatung Mitte
+Bielefeld Bürgerberatung Mitte
+Niederwall 23
+Neues Rathaus
+33602 Bielefeld
+Telefon: 0521 51-0 (BürgerServiceCenter)
+Email: buergerberatung@bielefeld.de
+
+
+# Bürgeramt Bielefeld Brackwede
+Bielefeld Brackwede
+Germanenstr. 22
+33647 Bielefeld
+Telefon: 0521 51-0 (BürgerServiceCenter)
+Email: buergerberatung@bielefeld.de
+
+
+# Bürgeramt Bielefeld Gadderbaum
+Bielefeld Gadderbaum
+Nazarethweg 7
+Bethelplatz
+33617 Bielefeld
+Telefon: 0521 51-0 (BürgerServiceCenter)
+Email: buergerberatung@bielefeld.de
+
+
+# Bürgeramt Bielefeld Heepen
+Bielefeld Heepen
+Salzufler Str. 13
+33719 Bielefeld
+Telefon: 0521 51-0 (BürgerServiceCenter)
+Email: buergerberatung@bielefeld.de
+
+
+# Bürgeramt Bielefeld Brake
+Bielefeld Brake
+Wefelshof 9
+33729 Bielefeld
+Telefon: 0521 51-0 (BürgerServiceCenter)
+Email: buergerberatung@bielefeld.de
+
+
+# Bürgeramt Bielefeld Dornberg
+Bielefeld Dornberg
+Wertherstr. 436
+33619 Bielefeld
+Telefon: 0521 51-0 (BürgerServiceCenter)
+Email: buergerberatung@bielefeld.de
+
+
+# Bürgeramt Bielefeld Jöllenbeck
+Bielefeld Jöllenbeck
+Amtsstr. 13
+33739 Bielefeld
+Telefon: 0521 51-0 (BürgerServiceCenter)
+Email: buergerberatung@bielefeld.de
+
+
+# Bürgeramt Bielefeld Schildesche
+Bielefeld Schildesche
+Margaretenweg 29
+33611 Bielefeld
+Telefon: 0521 51-0 (BürgerServiceCenter)
+Email: buergerberatung@bielefeld.de
+
+
+# Bürgeramt Bielefeld Senne
+Bielefeld Senne
+Windelsbleicher Str. 242
+33659 Bielefeld
+Telefon: 0521 51-0 (BürgerServiceCenter)
+Email: buergerberatung@bielefeld.de
+
+
+# Bürgeramt Bielefeld Hillegossen
+Bielefeld Hillegossen
+Detmolder Str. 617
+33699 Bielefeld
+Telefon: 0521 51-0 (BürgerServiceCenter)
+Email: buergerberatung@bielefeld.de
+
+
+
+
+# Bürgeramt Bonn Stadthaus
+Bonn Stadthaus
+Berliner Platz 2
+53111 Bonn
+Telefon: 0228 77-6677 (Servicetelefon)
+Email: buergeramt@bonn.de
+
+
+# Bürgeramt Bonn Bad Godesberg
+Bonn Bad Godesberg
+Kurfürstenallee 2-3
+53177 Bonn
+Telefon: 0228 77-0 (Bürgertelefon), -6677 (Servicetelefon)
+Email: buergeramt@bonn.de
+
+
+# Bürgeramt Bonn Beuel
+Bonn Beuel
+Friedrich-Breuer-Str. 65
+53225 Bonn
+Telefon: 0228 77-0 (Bürgertelefon), -6677
+Email: buergeramt@bonn.de
+
+
+# Bürgeramt Bonn Bürgeramt Hardtberg
+Bonn Bürgeramt Hardtberg
+Villemombler Str. 1
+53123 Bonn
+Telefon: 0228 77-0 (Bürgertelefon), -6677
+Email: buergeramt@bonn.de
+
+
+
+# Bürgeramt Münster Bezirksverwaltung Hiltrup
+Münster Bezirksverwaltung Hiltrup
+Patronatsstr. 20
+48165 Münster
+Telefon: 0251 492-1631
+Email: bezirksverwaltung-hiltrup@stadt-muenster.de
+
+
+# Bürgeramt Münster Bezirksverwaltung Nord
+Münster Bezirksverwaltung Nord
+Idenbrockplatz 8
+im Bürgerhaus Kinderhaus
+48159 Münster
+Telefon: 0251 492-1651
+Email: bezirksverwaltung-nord@stadt-muenster.de
+
+
+# Bürgeramt Münster Bezirksverwaltung Ost
+Münster Bezirksverwaltung Ost
+Vennemannstr. 5
+48157 Münster
+Telefon: 0251 21097-0
+Email: bezirksverwaltung-ost@stadt-muenster.de
+
+
+# Bürgeramt Münster Bezirksverwaltung Südost
+Münster Bezirksverwaltung Südost
+Münsterstr. 7
+48167 Münster
+Telefon: 02506 9319-0
+Email: bezirksverwaltung-suedost@stadt-muenster.de
+
+
+# Bürgeramt Münster Bezirksverwaltung West
+Münster Bezirksverwaltung West
+Pantaleonplatz 7
+48161 Münster
+Telefon: 02534 58854-0
+Email: bezirksverwaltung-west@stadt-muenster.de
+
+
+# Bürgeramt Münster Coerde
+Münster Coerde
+Hamannplatz 39
+48157 Münster
+Telefon: 0251 492-1659
+Email: buergerbuero-coerde@stadt-muenster.de
+
+
+# Bürgeramt Münster Gievenbeck
+Münster Gievenbeck
+Rüschhausweg 17
+48161 Münster
+Telefon: 0251 492-1647, -1649
+Email: buergerbuero-gievenbeck@stadt-muenster.de
+
+
+# Bürgeramt Münster Gremmendorf
+Münster Gremmendorf
+Albersloher Weg 550
+(1. OG)
+48167 Münster
+Telefon: 0251 492-1668, -1669
+Email: buergerbuero-gremmendorf@stadt-muenster.de
+
+
+# Bürgeramt Münster Mitte
+Münster Mitte
+Klemensstr. 10
+Stadthaus 1
+48143 Münster
+Telefon: 0251 492-0, -3333
+Email: buergerbuero-mitte@stadt-muenster.de
+
+
+
+# Bürgeramt Mannheim Innenstadt/Jungbusch
+Mannheim Innenstadt/Jungbusch
+K7
+68159 Mannheim
+Telefon: 0621 293-3269
+Email: buergerdienste@mannheim.de
+
+
+# Bürgeramt Mannheim Friedrichsfeld
+Mannheim Friedrichsfeld
+Vogesenstr. 65
+68229 Mannheim
+Telefon: 0621 471-228
+Email: buergerservice.friedrichsfeld@mannheim.de
+
+
+# Bürgeramt Mannheim Feudenheim
+Mannheim Feudenheim
+Hauptstr. 52
+68259 Mannheim
+Telefon: 0621 2938-200
+Email: buergerservice.feudenheim@mannheim.de
+
+
+# Bürgeramt Mannheim Käfertal
+Mannheim Käfertal
+Wormser Str. 1
+68305 Mannheim
+Telefon: 0621 2938-210
+Email: buergerservice.kaefertal@mannheim.de
+
+
+# Bürgeramt Mannheim Neckarau
+Mannheim Neckarau
+Rheingoldstr. 14
+68199 Mannheim
+Telefon: 0621 2936-800
+Email: buergerservice.neckarau@mannheim.de
+
+
+# Bürgeramt Mannheim Seckenheim
+Mannheim Seckenheim
+Seckenheimer Hauptstr. 68
+68239 Mannheim
+Telefon: 0621 2936-565
+Email: buergerservice.seckenheim@mannheim.de
+
+
+# Bürgeramt Mannheim Vogelstang
+Mannheim Vogelstang
+Freiberger Ring 6
+68309 Mannheim
+Telefon: 0621 293-8480
+Email: buergerservice.vogelstang@mannheim.de
+
+
+# Bürgeramt Mannheim Sandhofen
+Mannheim Sandhofen
+Obergasse 1
+68307 Mannheim
+Telefon: 0621 7898-416
+Email: buergerservice.sandhofen@mannheim.de
+
+
+# Bürgeramt Mannheim Schönau
+Mannheim Schönau
+Memeler Str. 51
+68307 Mannheim
+Telefon: 0621 4608-620
+Email: buergerservice.schoenau@mannheim.de
+
+
+# Bürgeramt Mannheim Zentrum Nord (Waldhof)
+Mannheim Zentrum Nord (Waldhof)
+Alte Frankfurter Str. 1-3
+68305 Mannheim
+Telefon: 0621 2937-600
+Email: buergerservice.waldhof@mannheim.de
+
+
+# Bürgeramt Mannheim Wallstadt
+Mannheim Wallstadt
+Mosbacher Str. 17
+68259 Mannheim
+Telefon: 0621 2938-205
+Email: buergerservice.wallstadt@mannheim.de
+
+
+# Bürgeramt Mannheim Neuostheim / Neuhermsheim
+Mannheim Neuostheim / Neuhermsheim
+Gerd-Dehof-Platz 1
+68163 Mannheim
+Telefon: 0621 2936-0
+Email: buergerservice.neuostheim-neuhermsheim@mannheim.de
+
+
+# Bürgeramt Mannheim Neckarstadt-West
+Mannheim Neckarstadt-West
+Gartenfeldstr. 42-46
+68167 Mannheim
+Telefon: 0621 2935-580
+Email: buergerservice.neckarstadt-west@mannheim.de
+
+
+# Bürgeramt Mannheim Lindenhof
+Mannheim Lindenhof
+Landteilstr. 16A
+68163 Mannheim
+Telefon: 0621 2936-860
+Email: buergerservice.lindenhof@mannheim.de
+
+
+# Bürgeramt Mannheim Rheinau
+Mannheim Rheinau
+Relaisstr. 124
+68219 Mannheim
+Telefon: 0621 2936-100
+Email: buergerservice.rheinau@mannheim.de
+
+
+
+# Bürgeramt Karlsruhe Mitte
+Karlsruhe Mitte
+Karl-Friedrich-Str. 10
+Rathaus am Marktplatz
+76124 Karlsruhe
+Email: buergerdienste@oa.karlsruhe.de
+
+
+# Bürgeramt Karlsruhe K8
+Kaiserallee 8
+76124 Karlsruhe
+Email: buergerdienste@oa.karlsruhe.de
+
+
+# Bürgeramt Karlsruhe H9-11
+Helmholtzstr. 9 - 11
+76124 Karlsruhe
+Email: buergerdienste@oa.karlsruhe.de
+
+
+# Bürgeramt Karlsruhe Ost
+Beuthener Str. 42
+76124 Karlsruhe
+Email: buergerdienste@oa.karlsruhe.de
+
+
+# Bürgeramt Karlsruhe Grötzingen
+Karlsruhe Grötzingen
+Rathausplatz 1
+Rathaus 2
+76229 Karlsruhe
+Telefon: 0721 94851-0
+Email: groetzingen@karlsruhe.de
+
+
+# Bürgeramt Karlsruhe Hohenwettersbach
+Karlsruhe Hohenwettersbach
+Kirchplatz 4
+76228 Karlsruhe
+Telefon: 0721 46449-0
+Email: hohenwet@karlsruhe.de
+
+
+# Bürgeramt Karlsruhe Ortsverwaltung Neureut
+Karlsruhe Ortsverwaltung Neureut
+Neureuter Hauptstr. 256-258
+Bürgerservice - Zimmer 7,8,9
+76149 Karlsruhe
+Telefon: 0721 7805-0, -101
+Email: neureut@karlsruhe.de
+
+
+# Bürgeramt Karlsruhe Ortsverwaltung Stupferich
+Karlsruhe Ortsverwaltung Stupferich
+Kleinsteinbacher Str. 16
+Zimmer 6
+76228 Karlsruhe
+Telefon: 0721 94761-0, -13
+Email: stupferich@karlsruhe.de
+
+
+# Bürgeramt Karlsruhe Ortsverwaltung Wettersbach
+Karlsruhe Ortsverwaltung Wettersbach
+Am Wetterbach 40
+76228 Karlsruhe
+Telefon: 0721 94550-0, -16, -17
+Email: wettersbach@karlsruhe.de
+
+
+# Bürgeramt Karlsruhe Ortsverwaltung Wolfartsweier
+Karlsruhe Ortsverwaltung Wolfartsweier
+Rathausstr.2
+76228 Karlsruhe
+Telefon: 0721 94376-0, -12
+Email: wolfartsweier@karlsruhe.de
+
+
+# Bürgeramt Karlsruhe Durlach
+Karlsruhe Durlach
+Pfinztalstr. 33
+76227 Karlsruhe
+Telefon: 0721 133-1920, -1912 (Kundeninformation)
+Email: durlach@karlsruhe.de
+
+
+
+# Bürgeramt Augsburg Stadtmitte
+Augsburg Stadtmitte
+An der Blauen Kappe 18
+86152 Augsburg
+Telefon: 0821 324-9999
+Email: einwohnerwesen@augsburg.de
+
+
+# Bürgeramt Augsburg Lechhausen
+Augsburg Lechhausen
+Neuburger Str. 20
+86167 Augsburg
+Telefon: 0821 324-0, -9999
+Email: einwohnerwesen@augsburg.de
+
+
+# Bürgeramt Augsburg Haunstetten
+Augsburg Haunstetten
+Tattenbachstr. 15
+86179 Augsburg
+Telefon: 0821 324-0, -9999
+Email: einwohnerwesen@augsburg.de
+
+
+# Bürgeramt Augsburg
+Augsburg
+Ulmer Str. 72
+86156 Augsburg
+Telefon: 0821 324-9999
+Email: einwohnerwesen@augsburg.de
+
+
+
+# Bürgeramt Wiesbaden Auringen
+Wiesbaden Auringen
+Kirchenhügel 3
+65207 Wiesbaden
+Telefon: 06127 70581-0
+Email: ortsverwaltung-auringen@wiesbaden.de
+
+
+# Bürgeramt Wiesbaden Biebrich
+Wiesbaden Biebrich
+Rathausstr. 63
+65203 Wiesbaden
+Telefon: 0611 31-9110, -9111
+Email: ortsverwaltung-biebrich@wiesbaden.de
+
+
+# Bürgeramt Wiesbaden
+Wiesbaden
+Marktstr. 18 (hinter dem alten Rathaus)
+65183 Wiesbaden
+Telefon: 0611 31-3344
+Email: buergerbuero@wiesbaden.de
+
+
+# Bürgeramt Mainz Kastel/Kostheim
+Mainz Kastel/Kostheim
+St. Veiter Platz 1
+55246 Mainz
+Telefon: 06134 603-0
+Email: ortsverwaltung-kastel-kostheim@wiesbaden.de
+
+
+# Bürgeramt Wiesbaden Bierstadt
+Wiesbaden Bierstadt
+Poststr. 11 A
+65191 Wiesbaden
+Telefon: 0611 31-7240
+Email: ortsverwaltung-bierstadt@wiesbaden.de
+
+
+# Bürgeramt Wiesbaden Breckenheim
+Wiesbaden Breckenheim
+Am Rathaus 5
+65207 Wiesbaden
+Telefon: 06122 132-94
+Email: ortsverwaltung-breckenheim@wiesbaden.de
+
+
+# Bürgeramt Wiesbaden Delkenheim
+Wiesbaden Delkenheim
+Rathausplatz 2
+65205 Wiesbaden
+Telefon: 06122 508-0
+Email: ortsverwaltung-delkenheim@wiesbaden.de
+
+
+# Bürgeramt Wiesbaden Dotzheim
+Wiesbaden Dotzheim
+Dörrgasse 2
+65199 Wiesbaden
+Telefon: 0611 31-8711
+Email: ortsverwaltung-dotzheim@wiesbaden.de
+
+
+# Bürgeramt Wiesbaden Medenbach
+Wiesbaden Medenbach
+Fritz-Erler-Str. 41
+65207 Wiesbaden
+Telefon: 06122 133-80
+Email: ortsverwaltung-medenbach@wiesbaden.de
+
+
+# Bürgeramt Wiesbaden Naurod
+Wiesbaden Naurod
+Fondetter Str. 2
+65207 Wiesbaden
+Telefon: 06127 99178-0, -13
+Email: ortsverwaltung-naurod@wiesbaden.de
+
+
+# Bürgeramt Wiesbaden Nordenstadt
+Wiesbaden Nordenstadt
+Hessenring 46
+65205 Wiesbaden
+Telefon: 06122 800-70
+Email: ortsverwaltung-nordenstadt@wiesbaden.de
+
+
+# Bürgeramt Wiesbaden Sonnenberg
+Wiesbaden Sonnenberg
+Kreuzbergstr. 6
+65193 Wiesbaden
+Telefon: 0611 31-3767, -3028
+Email: ortsverwaltung-sonnenberg@wiesbaden.de
+
+
+# Bürgeramt Wiesbaden Schierstein
+Wiesbaden Schierstein
+Karl-Lehr-Str. 6
+65201 Wiesbaden
+Telefon: 0611 31-8464
+Email: ortsverwaltung-schierstein@wiesbaden.de
+
+
+
+# Bürgeramt Mönchengladbach Meldestelle Vitus-Center
+Mönchengladbach Meldestelle Vitus-Center
+Goebenstr. 4 - 8
+(Vitus-Center), Zimmer E01
+41061 Mönchengladbach
+Telefon: 02161 25-53122 bis -53130
+Email: einwohnermeldeangelegenheiten@moenchengladbach.de
+
+
+# Bürgeramt Mönchengladbach Meldestelle Rheydt
+Mönchengladbach Meldestelle Rheydt
+Markt 11e
+Rathaus Rheydt Eingang F, Zimmer 146
+41236 Mönchengladbach
+Telefon: 02161 25-8130 bis -8139
+Email: Buergerservice_Meldewesen@moenchengladbach.de
+
+
+# Bürgeramt Mönchengladbach Außenstelle Odenkirchen
+Mönchengladbach Außenstelle Odenkirchen
+Wingertsplatz 1
+Zimmer 3
+41199 Mönchengladbach
+Telefon: 02161 25-7710
+Email: Buergerservice_Meldewesen@moenchengladbach.de
+
+
+# Bürgeramt Mönchengladbach Außenstelle Hardt
+Mönchengladbach Außenstelle Hardt
+Vorster Str. 443
+Zimmer 1
+41169 Mönchengladbach
+Telefon: 02161 25-7210
+Email: Buergerservice_Meldewesen@moenchengladbach.de
+
+
+# Bürgeramt Mönchengladbach Außenstelle Giesenkirchen
+Mönchengladbach Außenstelle Giesenkirchen
+Konstantinplatz 19
+Zimmer 3
+41238 Mönchengladbach
+Telefon: 02161 25-7810
+Email: Buergerservice_Meldewesen@moenchengladbach.de
+
+
+# Bürgeramt Mönchengladbach Außenstelle Neuwerk
+Mönchengladbach Außenstelle Neuwerk
+Liebfrauenstr. 52
+Zimmer 4
+41066 Mönchengladbach
+Telefon: 02161 25-7510
+Email: Buergerservice_Meldewesen@moenchengladbach.de
+
+
+# Bürgeramt Mönchengladbach Außenstelle Rheindahlen
+Mönchengladbach Außenstelle Rheindahlen
+Plektrudisstr. 25 - 27
+Zimmer 2
+41179 Mönchengladbach
+Telefon: 02161 25-7110
+Email: Buergerservice_Meldewesen@moenchengladbach.de
+
+
+# Bürgeramt Mönchengladbach Außenstelle Wickrath
+Mönchengladbach Außenstelle Wickrath
+Klosterstr. 8
+Zimmer 8
+41189 Mönchengladbach
+Telefon: 02161 25-7910
+Email: Buergerservice_Meldewesen@moenchengladbach.de
+
+
+
+# Bürgeramt Gelsenkirchen Rathaus Buer
+Gelsenkirchen Rathaus Buer
+Goldbergstr. 12
+45894 Gelsenkirchen
+Telefon: 0209 1692-100
+Email: buergercenter@gelsenkirchen.de
+
+
+# Bürgeramt Gelsenkirchen Cranger Str.
+Gelsenkirchen Cranger Str.
+Crangerstr. 262
+45891 Gelsenkirchen
+Telefon: 0209 1692-100
+Email: buergercenter@gelsenkirchen.de
+
+
+# Bürgeramt Gelsenkirchen Vorburg Schloss Horst
+Gelsenkirchen Vorburg Schloss Horst
+Turfstr. 21
+45899 Gelsenkirchen
+Telefon: 0209 1692-100
+Email: buergercenter@gelsenkirchen.de
+
+
+# Bürgeramt Gelsenkirchen Hans-Sachs-Haus
+Gelsenkirchen Hans-Sachs-Haus
+Ebertstr. 11
+45879 Gelsenkirchen
+Telefon: 0209 1692-100
+Email: buergercenter@gelsenkirchen.de
+
+
+
+# Bürgeramt Tettnang
+Tettnang
+Montfortplatz 7
+88069 Tettnang
+Telefon: 07542 510-150
+Email: Buergerbuero@Tettnang.de
+
+
+
+# Bürgeramt Oberkirch
+Oberkirch
+Eisenbahnstr. 1
+77704 Oberkirch
+Telefon: 07802 82-0, -555
+Email: buergerbuero@oberkirch.de
+
+
+
+# Bürgeramt Neunkirchen-Seelscheid Neunkirchen
+Neunkirchen-Seelscheid Neunkirchen
+Hauptstr. 78
+(im Erdgeschoß des Rathauses)
+53819 Neunkirchen-Seelscheid
+Telefon: 02247 303-0, -121, -122, -123
+Email: ema@neunkirchen-seelscheid.de
+
+
+
+# Bürgeramt Seelscheid Seelscheid
+Seelscheid Seelscheid
+Driescher Str. 2
+(in den Räumen der Gemeindebücherei Seelscheid)
+53819 Seelscheid
+Telefon: 02247 969-8744
+Email: ema@neunkirchen-seelscheid.de
+
+
+
+# Bürgeramt Leinefelde-Worbis Leinefelde
+Leinefelde-Worbis Leinefelde
+Bahnhofstr. 43
+Rathaus Wasserturm
+37327 Leinefelde-Worbis
+Telefon: 03605 200-0, -400
+Email: buergerbuero@leinefelde-worbis.de
+
+
+# Bürgeramt Leinefelde-Worbis Worbis
+Leinefelde-Worbis Worbis
+Rossmarkt 2
+37339 Leinefelde-Worbis
+Telefon: 036074 200-300
+Email: buergerbuero@leinefelde-worbis.de
+
+
+
+# Bürgeramt Holzminden
+Holzminden
+Neue Str. 12
+Rathaus, Zimmer 08
+37603 Holzminden
+Telefon: 05531 959-242, -243, -244
+Email: Stadt@holzminden.de
+
+
+
+# Bürgeramt Kürten
+Kürten
+Karlheinz-Stockhausen-Platz 1
+ehemals Marktfeld 1
+51515 Kürten
+Telefon: 02268 939-0, -100
+Email: EMA@kuerten.de
+
+
+
+# Bürgeramt Giengen an der Brenz
+Giengen an der Brenz
+Marktstr. 11
+Zimmer 5
+89537 Giengen an der Brenz
+Telefon: 07322 952-1001, -2565
+Email: buergeramt@giengen.de
+
+
+
+# Bürgeramt Aachen Bahnhofplatz und Katschhof (FB 12/1)
+Aachen Bahnhofplatz und Katschhof (FB 12/1)
+Hackländerstr. 1
+Verwaltungsgebäude Bahnhofplatz
+52064 Aachen
+Telefon: 0241 432-0
+Email: buergerservice@mail.aachen.de
+
+
+# Bürgeramt Aachen Brand (B 1)
+Aachen Brand (B 1)
+Paul-Küpper-Platz 1
+52078 Aachen
+Telefon: 0241 432-0, -8131
+Email: bezirksamt.brand@mail.aachen.de
+
+
+# Bürgeramt Aachen Eilendorf
+Aachen Eilendorf
+Heinrich-Thomas-Platz 1
+52080 Aachen
+Telefon: 0241 432-0
+Email: bezirksamt.eilendorf@mail.aachen.de
+
+
+# Bürgeramt Aachen Kornelimünster / Walheim (BA 4)
+Aachen Kornelimünster / Walheim (BA 4)
+Schulberg 20
+52076 Aachen
+Telefon: 0241 432-0, -8430, -8433
+Email: bezirksamt.kornelimuenster.walheim@mail.aachen.de
+
+
+# Bürgeramt Aachen Laurensberg (B 5)
+Aachen Laurensberg (B 5)
+Rathausstr. 12
+52072 Aachen
+Telefon: 0241 432-0, -8511, -8533
+Email: bezirksamt.laurensberg@mail.aachen.de
+
+
+# Bürgeramt Aachen Richterich (B 6)
+Aachen Richterich (B 6)
+Roermonder Str. 559
+52072 Aachen
+Telefon: 0241 432-0, -8610
+Email: bezirksamt.richterich@mail.aachen.de
+
+
+# Bürgeramt Aachen Haaren (BA 3)
+Aachen Haaren (BA 3)
+Germanusstr. 32-34
+52080 Aachen
+Telefon: 0241 432-0, - 8312
+Email: bezirksamt.haaren@mail.aachen.de
+
+
+# Bürgeramt Aachen Servicecenter Call (FB 12/2)
+Aachen Servicecenter Call (FB 12/2)
+Lagerhausstr. 20
+Verwaltungsgebäude am Marschiertor
+52064 Aachen
+Telefon: 0241 432-0
+Email: buergeramt@mail.aachen.de
+
+
+# Bürgeramt Aachen Katschhof (FB 12/1)
+Aachen Katschhof (FB 12/1)
+Johannes-Paul-II.-Str. 1
+52062 Aachen
+Telefon: 0241 432-0
+Email: buergerservice@mail.aachen.de
+
+
+
+# Bürgeramt Braunschweig Bürgerangelegenheiten
+Braunschweig Bürgerangelegenheiten
+Friedrich-Seele-Str. 7
+(3. OG)
+38122 Braunschweig
+Telefon: 0531 470-1
+Email: buergerangelegenheiten@braunschweig.de
+
+
+# Bürgeramt Braunschweig Bezirksgeschäftsstelle Nord
+Braunschweig Bezirksgeschäftsstelle Nord
+Veltenhöfer Str. 3
+38110 Braunschweig
+Telefon: 05307 940-230
+Email: verwaltungsstelle.wenden@braunschweig.de
+
+
+# Bürgeramt Braunschweig Bezirksgeschäftsstelle Ost
+Braunschweig Bezirksgeschäftsstelle Ost
+Am Remenhof 15
+38104 Braunschweig
+Telefon: 0531 2361-090
+Email: verwaltungsstelle.volkmarode@braunschweig.de
+
+
+# Bürgeramt Braunschweig Bezirksgeschäftsstelle Süd
+Braunschweig Bezirksgeschäftsstelle Süd
+Stöckheimer Markt 1
+38124 Braunschweig
+Telefon: 0531 261-1500
+Email: verwaltungsstelle.stoeckheim@braunschweig.de
+
+
+# Bürgeramt Braunschweig Bezirksgeschäftsstelle West
+Braunschweig Bezirksgeschäftsstelle West
+Kleine Grubestr. 3
+38122 Braunschweig
+Telefon: 0531 289-150
+Email: verwaltungsstelle.broitzem@braunschweig.de
+
+
+# Bürgeramt Braunschweig Bürgerberatung
+Braunschweig Bürgerberatung
+Platz der Deutschen Einheit 1
+38100 Braunschweig
+Telefon: 0531 470-1
+Email: buergerberatung@braunschweig.de
+
+
+
+# Bürgeramt Chemnitz Grüna
+Chemnitz Grüna
+Chemnitzer Str. 109
+09224 Chemnitz
+Telefon: 0371 8421-120
+Email: meldebehoerde@stadt-chemnitz.de
+
+
+# Bürgeramt Chemnitz Morgenleite
+Chemnitz Morgenleite
+Bruno-Granz-Str. 2
+09122 Chemnitz
+Telefon: 0371 115
+Email: meldebehoerde@stadt-chemnitz.de
+
+
+# Bürgeramt Chemnitz Sachsenallee
+Chemnitz Sachsenallee
+Thomas-Mann-Platz 2
+09130 Chemnitz
+Telefon: 0371 115
+Email: meldebehoerde@stadt-chemnitz.de
+
+
+# Bürgeramt Chemnitz Wittgensdorf
+Chemnitz Wittgensdorf
+Rathausplatz 1
+09228 Chemnitz
+Telefon: 037200 882-41
+Email: meldebehoerde@stadt-chemnitz.de
+
+
+# Bürgeramt Chemnitz Rabenstein
+Chemnitz Rabenstein
+Oberfrohnaer Str. 64
+09117 Chemnitz
+Telefon: 0371 115
+Email: meldebehoerde@stadt-chemnitz.de
+
+
+# Bürgeramt Chemnitz Am Wall
+Chemnitz Am Wall
+Düsseldorfer Platz 1
+09111 Chemnitz
+Telefon: 0371 115
+Email: meldebehoerde@stadt-chemnitz.de
+
+
+# Bürgeramt Chemnitz Einsiedel
+Chemnitz Einsiedel
+Einsiedler Hauptstr. 79
+09123 Chemnitz
+Telefon: 037209 664-0
+Email: meldebehoerde@stadt-chemnitz.de
+
+
+# Bürgeramt Chemnitz Euba
+Chemnitz Euba
+Drosselsteig 2
+09128 Chemnitz
+Telefon: 03726 2383
+Email: meldebehoerde@stadt-chemnitz.de
+
+
+# Bürgeramt Chemnitz Mittelbach
+Chemnitz Mittelbach
+Hofer Str. 27
+09224 Chemnitz
+Telefon: 0371 850-114
+Email: meldebehoerde@stadt-chemnitz.de
+
+
+# Bürgeramt Chemnitz Klaffenbach
+Chemnitz Klaffenbach
+Klaffenbacher Hauptstr. 73
+09123 Chemnitz
+Telefon: 0371 495-2500
+Email: meldebehoerde@stadt-chemnitz.de
+
+
+# Bürgeramt Chemnitz (Altenhain) Kleinolbersdorf - Altenhain
+Chemnitz (Altenhain) Kleinolbersdorf - Altenhain
+Zum Spitzberg 5
+09128 Chemnitz (Altenhain)
+Telefon: 0371 772-561
+Email: meldebehoerde@stadt-chemnitz.de
+
+
+# Bürgeramt Chemnitz Röhrsdorf
+Chemnitz Röhrsdorf
+Rathausplatz 4
+09247 Chemnitz
+Telefon: 03722 520-211
+Email: meldebehoerde@stadt-chemnitz.de
+
+
+
+# Bürgeramt Kiel Rathaus
+Kiel Rathaus
+Fleethörn 9
+24103 Kiel
+Telefon: 0431 901-900
+Email: ema@kiel.de
+
+
+# Bürgeramt Kiel Pries/Friedrichsort
+Kiel Pries/Friedrichsort
+An der Schanze 45
+24159 Kiel
+Telefon: 0431 901-900, -909
+Email: ema@kiel.de
+
+
+# Bürgeramt Kiel Neumühlen/Dietrichsdorf
+Kiel Neumühlen/Dietrichsdorf
+Tiefe Allee 45
+24149 Kiel
+Telefon: 0431 901-900, -904, -909
+Email: ema@kiel.de
+
+
+# Bürgeramt Kiel Elmschenhagen
+Kiel Elmschenhagen
+Reichenberger Allee 2c
+24146 Kiel
+Telefon: 0431 901-900
+Email: ema@kiel.de
+
+
+# Bürgeramt Kiel Stadtteilbürgeramt Hassee
+Kiel Stadtteilbürgeramt Hassee
+Saarbrückenstr. 147
+24113 Kiel
+Telefon: 0431 901-904
+Email: ema@kiel.de
+
+
+# Bürgeramt Kiel Stadtteilbürgeramt Gaarden
+Kiel Stadtteilbürgeramt Gaarden
+Schulstr. 35 a
+24143 Kiel
+Telefon: 0431 901-900, -909
+Email: ema@kiel.de
+
+
+# Bürgeramt Kiel Stadtteilbürgeramt Mettenhof
+Kiel Stadtteilbürgeramt Mettenhof
+Skandinaviendamm 299
+24109 Kiel
+Telefon: 0431 901-900, -909
+Email: ema@kiel.de
+
+
+# Bürgeramt Kiel Stadtteilbürgeramt Suchsdorf
+Kiel Stadtteilbürgeramt Suchsdorf
+Amrumring 2
+24107 Kiel
+Telefon: 0431 901-900, -909
+Email: ema@kiel.de
+
+
+# Bürgeramt Halle
+Halle
+Marktplatz 1
+Ratshof
+06108 Halle
+Telefon: 0345 221-0 (Terminvereinbarung), -4619
+Email: buergerservice@halle.de
+
+
+# Bürgeramt Halle
+Halle
+Am Stadion 6
+06122 Halle
+Telefon: 0345 221-0 (Terminvereinbarung), -4619
+Email: buergerservice@halle.de
+
+
+
+# Bürgeramt Magdeburg Mitte
+Leiterstr. 2a
+39104 Magdeburg
+Telefon: 0391 540-4302
+Email: bbm@buergerbuero.magdeburg.de
+
+
+# Bürgeramt Magdeburg West
+Bruno-Beye-Ring 50
+39130 Magdeburg
+Telefon: 0391 540-4950
+Email: bbw@buergerbuero.magdeburg.de
+
+
+# Bürgeramt Magdeburg Nord
+Lübecker Str. 32
+39124 Magdeburg
+Telefon: 0391 540-6278
+Email: bbn@buergerbuero.magdeburg.de
+
+
+# Bürgeramt Magdeburg Backoffice Bürgerservice
+Magdeburg Backoffice Bürgerservice
+Breiter Weg 222
+39104 Magdeburg
+Telefon: 0391 5404-329
+Email: auskunft@ewo.magdeburg.de
+
+
+# Bürgeramt Magdeburg Ost
+Tessenowstr. 15
+39114 Magdeburg
+Telefon: 0391 540-4429
+Email: bbo@buergerbuero.magdeburg.de
+
+
+# Bürgeramt Freiburg Rathaus im Stühlinger
+Freiburg Rathaus im Stühlinger
+Fehrenbachallee 12
+79106 Freiburg
+Telefon: 0761 201-0
+Email: buergeramt@stadt.freiburg.de
+
+
+
+
+# Bürgeramt Krefeld Fischeln
+Krefeld Fischeln
+Kölner Str. 517
+47807 Krefeld
+Telefon: 02151 30-900
+Email: FB31@krefeld.de
+
+
+# Bürgeramt Krefeld Süd
+Krefeld Süd
+Virchowstr. 130
+Fabrik Heeder
+47805 Krefeld
+Telefon: 02151 861-650
+Email: FB31@krefeld.de
+
+
+# Bürgeramt Krefeld Oppum
+Krefeld Oppum
+Hochfelder Str. 122
+47809 Krefeld
+Telefon: 02151 547-051
+Email: FB31@krefeld.de
+
+
+# Bürgeramt Krefeld Linn
+Krefeld Linn
+Rheinbabenstr. 110
+47809 Krefeld
+Telefon: 02151 572-031
+Email: FB31@krefeld.de
+
+
+# Bürgeramt Krefeld Mitte
+Krefeld Mitte
+Theaterplatz 1
+Seidenweberhaus
+47798 Krefeld
+Telefon: 02151 86-0, -1610
+Email: FB31@krefeld.de
+
+
+# Bürgeramt Krefeld Bockum
+Krefeld Bockum
+Uerdinger Str. 585
+Rathaus gegenüber des Bockumer Platzes
+47800 Krefeld
+Telefon: 02151 587-90
+Email: FB31@krefeld.de
+
+
+# Bürgeramt Krefeld Uerdingen
+Krefeld Uerdingen
+Am Marktplatz 1
+47829 Krefeld
+Telefon: 02151 861-621
+Email: FB31@krefeld.de
+
+
+# Bürgeramt Krefeld Nord
+Krefeld Nord
+Moritzplatz 8
+47803 Krefeld
+Telefon: 02151 756-260
+Email: FB31@krefeld.de
+
+
+# Bürgeramt Krefeld Hüls
+Krefeld Hüls
+Hülser Markt 11
+47839 Krefeld
+Telefon: 02151 748-90
+Email: FB31@krefeld.de
+
+
+# Bürgeramt Krefeld Traar
+Krefeld Traar
+Kemmerhofstr. 321
+Rathausmarkt
+47802 Krefeld
+Telefon: 02151 564-855
+Email: FB31@krefeld.de
+
+
+
+# Bürgeramt Mainz Altstadt
+Mainz Altstadt
+Jockel-Fuchs-Platz 1
+Rathaus
+55116 Mainz
+Telefon: 06131 122-932
+Email: ortsverwaltung.altstadt@stadt.mainz.de
+
+
+# Bürgeramt Mainz
+Mainz
+Kaiserstr. 3-5
+Stadthaus, Lauteren-Flügel
+55116 Mainz
+Telefon: 06131 12-0
+Email: buergeramt@stadt.mainz.de
+
+
+# Bürgeramt Mainz Bretzenheim
+Mainz Bretzenheim
+An der Wied 2
+55128 Mainz
+Telefon: 06131 338-260
+Email: ortsverwaltung.bretzenheim@stadt.mainz.de
+
+
+# Bürgeramt Mainz Drais
+Mainz Drais
+Daniel-Brendel-Str. 11
+55127 Mainz
+Telefon: 06131 940-991
+Email: ortsverwaltung.drais@stadt.mainz.de
+
+
+# Bürgeramt Mainz Ebersheim
+Mainz Ebersheim
+Römerstr. 17
+55129 Mainz
+Telefon: 06136 4107
+Email: ortsverwaltung.ebersheim@stadt.mainz.de
+
+
+# Bürgeramt Mainz Finthen
+Mainz Finthen
+Poststr. 42-44
+55126 Mainz
+Telefon: 06131 475-413
+Email: ortsverwaltung.finthen@stadt.mainz.de
+
+
+# Bürgeramt Mainz Gonsenheim
+Mainz Gonsenheim
+Pfarrstr. 1
+55124 Mainz
+Telefon: 06131 44651, 41842
+Email: ortsverwaltung.gonsenheim@stadt.mainz.de
+
+
+# Bürgeramt Mainz Hartenberg/Münchfeld
+Mainz Hartenberg/Münchfeld
+John F. Kennedy-Str. 7b
+55122 Mainz
+Telefon: 06131 371-612
+Email: ortsverwaltung.hartenberg-muenchfeld@stadt.mainz.de
+
+
+# Bürgeramt Mainz Hechtsheim
+Mainz Hechtsheim
+Morschstr. 1
+55129 Mainz
+Telefon: 06131 504-069
+Email: ortsverwaltung.hechtsheim@stadt.mainz.de
+
+
+# Bürgeramt Mainz Laubenheim
+Mainz Laubenheim
+Longchamplatz 1
+55130 Mainz
+Telefon: 06131 86-115
+Email: ortsverwaltung.laubenheim@stadt.mainz.de
+
+
+# Bürgeramt Mainz Lerchenberg
+Mainz Lerchenberg
+Hebbelstr. 2
+55127 Mainz
+Telefon: 06131 78-171
+Email: ortsverwaltung.lerchenberg@stadt.mainz.de
+
+
+# Bürgeramt Mainz Marienborn
+Mainz Marienborn
+Im Borner Grund 38
+55127 Mainz
+Telefon: 06131 366-631
+Email: ortsverwaltung.marienborn@stadt.mainz.de
+
+
+# Bürgeramt Mainz Mombach
+Mainz Mombach
+Hauptstr. 136
+55120 Mainz
+Telefon: 06131 680-303
+Email: ortsverwaltung.mombach@stadt.mainz.de
+
+
+# Bürgeramt Mainz Neustadt
+Mainz Neustadt
+Leibnizstr. 47
+55118 Mainz
+Telefon: 06131 604-147
+Email: ortsverwaltung.neustadt@stadt.mainz.de
+
+
+# Bürgeramt Mainz Oberstadt
+Mainz Oberstadt
+Gleiwitzer Str. 2
+55131 Mainz
+Telefon: 06131 574-870
+Email: ortsverwaltung.oberstadt@stadt.mainz.de
+
+
+# Bürgeramt Mainz Weisenau
+Mainz Weisenau
+Tanzplatz 3
+55130 Mainz
+Telefon: 06131 831-930
+Email: ortsverwaltung.weisenau@stadt.mainz.de
+
+
+
+# Bürgeramt Lübeck
+Lübeck
+Meesenring 7
+23566 Lübeck
+Telefon: 0451 115
+Email: ordnungsamt@luebeck.de
+
+
+
+# Bürgeramt Erfurt
+Erfurt
+Bürgermeister-Wagner-Str. 1
+99084 Erfurt
+Telefon: 0361 655-5444
+Email: Meldeangelegenheiten@Erfurt.de
+
+
+
+# Bürgeramt Oberhausen Alt-Oberhausen
+Oberhausen Alt-Oberhausen
+Schwartzstr. 72
+Rathaus Oberhausen
+46045 Oberhausen
+Telefon: 0208 825-3037
+Email: bzv-alt-oberhausen@oberhausen.de
+
+
+# Bürgeramt Oberhausen Sterkrade
+Oberhausen Sterkrade
+Bahnhofstr. 66
+Technisches Rathaus (Gebäudeteil B)
+46145 Oberhausen
+Telefon: 0208 825-3170, 3171
+Email: bzv-sterkrade@oberhausen.de
+
+
+# Bürgeramt Oberhausen Osterfeld
+Oberhausen Osterfeld
+Bottroper Str. 183
+Rathaus Osterfeld
+46117 Oberhausen
+Telefon: 0208 825-8141, -8161, -8177, -8142, -8163, -8162
+Email: bzv-osterfeld@oberhausen.de
+
+
+
+# Bürgeramt Rostock Ortsamt Nordwest 1 in Groß Klein
+Rostock Ortsamt Nordwest 1 in Groß Klein
+Albrecht-Tischbein-Str. 48
+18109 Rostock
+Telefon: 0381 381-2248, -2860 bis -2869
+Email: ortsamtnw1@rostock.de
+
+
+# Bürgeramt Rostock Ortsamt Nordwest 2 in Lütten Klein
+Rostock Ortsamt Nordwest 2 in Lütten Klein
+Warnowallee 30
+18107 Rostock
+Telefon: 0381 381-3119, -3123, -3176, -3101, -3102, -3178
+Email: ortsamtnw2@rostock.de
+
+
+# Bürgeramt Rostock Ortsamt West in Reutershagen
+Rostock Ortsamt West in Reutershagen
+Goerdelerstr. 53
+18069 Rostock
+Telefon: 0381 381-2800 bis -2805, -2808
+Email: ortsamtwest@rostock.de
+
+
+# Bürgeramt Rostock Ortsamt Mitte in Stadtmitte
+Rostock Ortsamt Mitte in Stadtmitte
+Neuer Markt 1a
+18055 Rostock
+Telefon: 0381 381-2230, -2232 bis -2241, -2243
+Email: ortsamtmitte@rostock.de
+
+
+# Bürgeramt Rostock Ortsamt Ost in Toitenwinkel
+Rostock Ortsamt Ost in Toitenwinkel
+Jawaharlal-Nehru-Str. 33
+18147 Rostock
+Telefon: 0381 381-5200, -5201, -5204, -5205
+Email: ortsamtost@rostock.de
+
+
+
+# Bürgeramt Kassel Mitte
+Kassel Mitte
+Obere Königsstr. 8
+Rathaus
+34117 Kassel
+Telefon: 0561 787-787 (Servicecenter), -2057
+Email: buergerbuero@kassel.de
+
+
+
+# Bürgeramt Hagen Zentrales Bürgeramt - Bürgerservice Mitte
+Hagen Zentrales Bürgeramt - Bürgerservice Mitte
+Rathausstr. 11
+58095 Hagen
+Telefon: 02331 207-5777
+Email: buergeramt@stadt-hagen.de
+
+
+# Bürgeramt Hagen Boele
+Hagen Boele
+Schwerter Str. 168
+58099 Hagen
+Telefon: 02331 207-4400
+Email: buergeramt@stadt-hagen.de
+
+
+# Bürgeramt Hagen Haspe
+Hagen Haspe
+Kölner Str. 1
+Torhaus Haspe
+58135 Hagen
+Telefon: 02331 207-4401
+Email: buergeramt@stadt-hagen.de
+
+
+# Bürgeramt Hagen Vorhalle
+Hagen Vorhalle
+Vorhaller Str. 36
+Stadtteilhaus
+58089 Hagen
+Email: buergeramt@stadt-hagen.de
+
+
+# Bürgeramt Hagen Hohenlimburg
+Hagen Hohenlimburg
+Freiheitstr. 3
+58119 Hagen
+Telefon: 02331 207-4402
+Email: buergeramt@stadt-hagen.de
+
+
+
+# Bürgeramt Potsdam
+Potsdam
+Friedrich-Ebert-Str. 79/81
+14469 Potsdam
+Telefon: 0331 289-1111
+Email: buergerservice@Rathaus.Potsdam.de
+
+
+
+# Bürgeramt Saarbrücken West
+Saarbrücken West
+Burbacher Markt 20
+66115 Saarbrücken
+Telefon: 0681 905-0
+Email: buergeramt@saarbruecken.de
+
+
+# Bürgeramt Saarbrücken City
+Saarbrücken City
+Gerberstr. 4
+66111 Saarbrücken
+Telefon: 0681 905-0
+Email: buergeramt@saarbruecken.de
+
+
+# Bürgeramt Saarbrücken Dudweiler
+Saarbrücken Dudweiler
+Am Markt 1
+66125 Saarbrücken
+Telefon: 0681 905-0
+Email: buergeramt@saarbruecken.de
+
+
+# Bürgeramt Saarbrücken Halberg
+Saarbrücken Halberg
+Kurt-Schumacher-Str.
+66130 Saarbrücken
+Telefon: 0681 905-0
+Email: buergeramt@saarbruecken.de
+
+
+
+# Bürgeramt Hamm Mitte
+Hamm Mitte
+Theodor-Heuss-Platz 16
+59065 Hamm
+Telefon: 02381 17-7777
+Email: ba-mitte@stadt.hamm.de
+
+
+# Bürgeramt Hamm Uentrop
+Hamm Uentrop
+Alter Grenzweg 2
+Verwaltungsgebäude
+59071 Hamm
+Telefon: 02381 17-7777
+Email: ba-uentrop@stadt.hamm.de
+
+
+# Bürgeramt Hamm Rhynern
+Hamm Rhynern
+Unnaer Str. 12
+59069 Hamm
+Telefon: 02381 17-7777
+Email: ba-rhynern@stadt.hamm.de
+
+
+# Bürgeramt Hamm Pelkum
+Hamm Pelkum
+Kamener Str. 177
+Amtshaus Pelkum
+59077 Hamm
+Telefon: 02381 17-7777
+Email: ba-pelkum@stadt.hamm.de
+
+
+# Bürgeramt Hamm Herringen
+Hamm Herringen
+Dortmunder Str. 245
+Verwaltungsgebäude
+59067 Hamm
+Telefon: 02381 17-7777
+Email: ba-herringen@stadt.hamm.de
+
+
+# Bürgeramt Hamm Bockum-Hövel
+Hamm Bockum-Hövel
+Teichweg 1
+Rathaus Bockum-Hövel
+59075 Hamm
+Telefon: 02381 17-7777
+Email: ba-bockum-hoevel@stadt.hamm.de
+
+
+# Bürgeramt Hamm Heessen
+Hamm Heessen
+Bockelweg 1
+59073 Hamm
+Telefon: 02381 17-7777
+Email: ba-heessen@stadt.hamm.de
+
+
+
+# Bürgeramt Ludwigshafen Rathaus
+Ludwigshafen Rathaus
+Rathausplatz 20
+67059 Ludwigshafen
+Telefon: 0621 504-0, 0621 115
+Email: buergerdienste@ludwigshafen.de
+
+
+# Bürgeramt Ludwigshafen Achtmorgenstr.
+Ludwigshafen Achtmorgenstr.
+Achtmorgenstr. 9
+67065 Ludwigshafen
+Telefon: 0621 504-0
+Email: buergerdienste@ludwigshafen.de
+
+
+# Bürgeramt Ludwigshafen Oggersheim
+Ludwigshafen Oggersheim
+Schillerplatz 2
+67071 Ludwigshafen
+Telefon: 0621 504-0
+Email: buergerdienste@ludwigshafen.de
+
+
+# Bürgeramt Ludwigshafen Oppau
+Ludwigshafen Oppau
+Edigheimer Str. 26
+67069 Ludwigshafen
+Telefon: 0621 504-0
+Email: buergerdienste@ludwigshafen.de
+
+
+
+
+# Bürgeramt Oldenburg Nord
+Oldenburg Nord
+Stiller Weg 10
+26121 Oldenburg
+Telefon: 0441 2354-444
+Email: buergerbuero-nord@stadt-oldenburg.de
+
+
+# Bürgeramt Oldenburg Mitte
+Oldenburg Mitte
+Pferdemarkt 14
+26121 Oldenburg
+Telefon: 0441 235-4444
+Email: buergerdienste@stadt-oldenburg.de
+
+
+# Bürgeramt Mülheim
+Mülheim
+Löhstr. 22-26
+45466 Mülheim
+Telefon: 0208 455-0
+
+
+# Bürgeramt Osnabrück
+Osnabrück
+Natruper-Tor-Wall 2
+Stadthaus 1
+49076 Osnabrück
+Telefon: 0541 323-0, -3006
+Email: buergeramt@osnabrueck.de
+
+
+
+# Bürgeramt Leverkusen Mitte
+Leverkusen Mitte
+Friedrich-Ebert-Platz 1
+Rathaus 4. OG
+51373 Leverkusen
+Telefon: 0214 406-0, -3301
+Email: 33@stadt.leverkusen.de
+
+
+
+# Bürgeramt Heidelberg Mitte (Bahnstadt, Bergheim, Südstadt, Weststadt)
+Heidelberg Mitte (Bahnstadt, Bergheim, Südstadt, Weststadt)
+Bergheimer Str. 69
+69115 Heidelberg
+Telefon: 06221 58-47980
+Email: Buergeramt-Mitte@Heidelberg.de
+
+
+# Bürgeramt Heidelberg Altstadt
+Heidelberg Altstadt
+Marktplatz 10
+69117 Heidelberg
+Telefon: 06221 58-13810
+Email: buergeramt-altstadt@heidelberg.de
+
+
+# Bürgeramt Heidelberg Boxberg/Emmertsgrund
+Heidelberg Boxberg/Emmertsgrund
+Emmertsgrundpassage 17
+69126 Heidelberg
+Telefon: 06221 5813-850
+Email: Buergeramt-Emmertsgrund@Heidelberg.de
+
+
+# Bürgeramt Heidelberg Handschuhsheim
+Heidelberg Handschuhsheim
+Dossenheimer Landstr. 13
+69121 Heidelberg
+Telefon: 06221 5813-820
+Email: Buergeramt-Handschuhsheim@Heidelberg.de
+
+
+# Bürgeramt Heidelberg Kirchheim
+Heidelberg Kirchheim
+Schwetzinger Str. 20
+69124 Heidelberg
+Telefon: 06221 5813-860
+Email: Buergeramt-Kirchheim@Heidelberg.de
+
+
+# Bürgeramt Heidelberg Neuenheim
+Heidelberg Neuenheim
+Rahmengasse 21
+69120 Heidelberg
+Telefon: 06221 5813-830
+Email: Buergeramt-Neuenheim@Heidelberg.de
+
+
+# Bürgeramt Heidelberg Pfaffengrund
+Heidelberg Pfaffengrund
+Am Markt 21
+69123 Heidelberg
+Telefon: 06221 5813-870
+Email: Buergeramt-Pfaffengrund@Heidelberg.de
+
+
+# Bürgeramt Heidelberg Ziegelhausen/Schlierbach
+Heidelberg Ziegelhausen/Schlierbach
+Kleingemünder Str. 18
+69118 Heidelberg
+Telefon: 06221 5813-840
+Email: Buergeramt-Ziegelhausen@Heidelberg.de
+
+
+# Bürgeramt Heidelberg Rohrbach
+Heidelberg Rohrbach
+Seckenheimer Gässchen 1
+69126 Heidelberg
+Telefon: 06221 5813-880
+Email: Buergeramt-Rohrbach@Heidelberg.de
+
+
+# Bürgeramt Heidelberg Wieblingen
+Heidelberg Wieblingen
+Mannheimer Str. 259
+69123 Heidelberg
+Telefon: 06221 5813-890
+Email: Buergeramt-Wieblingen@Heidelberg.de
+
+
+
+# Bürgeramt Darmstadt
+Darmstadt
+Luisenplatz 5
+Stadthaus Grafenstr., EG, Raum Einwohnerwesen - Zentrale
+64283 Darmstadt
+Telefon: 06151 115
+Email: meldeamt@darmstadt.de
+
+
+# Bürgeramt Darmstadt Wixhausen
+Darmstadt Wixhausen
+Falltorstr. 11
+64291 Darmstadt
+Telefon: 06150 18497-450
+Email: meldeamt@darmstadt.de
+
+
+# Bürgeramt Solingen Clemens-Galerien
+Solingen Clemens-Galerien
+Mummstr. 10
+42651 Solingen
+Telefon: 0212 290-0, -3201, 3202, -3203, -3204
+Email: buergerbuero@solingen.de
+
+
+# Bürgeramt Solingen Ohligs
+Solingen Ohligs
+Kieler Str. 15
+42697 Solingen
+Telefon: 0212 290-0, -3201, -3202, -3203, -3204
+Email: buergerbuero@solingen.de
+
+
+# Bürgeramt Solingen Höhscheid
+Solingen Höhscheid
+Gasstr. 22
+Verwaltungsgebäude
+42657 Solingen
+Telefon: 0212 290-0, -3201, -3202, -3203, -3204
+Email: buergerbuero@solingen.de
+
+
+# Bürgeramt Solingen Höhscheid mit Kfz-Zulassung
+Gasstr. 22
+42657 Solingen
+Telefon: 0212 290-0
+Email: buergerbuero@solingen.de
+
+
+# Bürgeramt Regensburg Burgweinting
+Regensburg Burgweinting
+Friedrich-Viehbacher-Allee 3
+(BUZ)
+93055 Regensburg
+Telefon: 0941 507-2888
+Email: buergerbuero@regensburg.de
+
+
+# Bürgeramt Regensburg Nord
+Regensburg Nord
+Brennesstr. 16
+ALEX-Center
+93059 Regensburg
+Telefon: 0941 507-1888
+Email: buergerbuero@regensburg.de
+
+
+# Bürgeramt Regensburg Stadtmitte
+Regensburg Stadtmitte
+D.-Martin-Luther-Str. 3
+Erdgeschoss
+93047 Regensburg
+Telefon: 0941 507-3333
+Email: buergerbuero@regensburg.de
+
+
+
+# Bürgeramt Herne Mitte
+Herne Mitte
+Friedrich-Ebert-Platz 5
+44623 Herne
+Telefon: 02323 161-633
+Email: einwohneramt@herne.de
+
+
+# Bürgeramt Herne Wanne
+Herne Wanne
+Rathausstr. 6
+Rathaus
+44649 Herne
+Telefon: 02323 163-076
+Email: einwohneramt@herne.de
+
+
+
+# Bürgeramt Paderborn
+Paderborn
+Marienplatz 2a
+33098 Paderborn
+Telefon: 05251 88-0, -1188
+Email: einwohneramt@paderborn.de
+
+
+# Bürgeramt Paderborn Schloß Neuhaus
+Paderborn Schloß Neuhaus
+Bielefelder Str. 3
+33104 Paderborn
+Telefon: 05251 881-188
+Email: einwohneramt@paderborn.de
+
+
+# Bürgeramt Paderborn Elsen
+Paderborn Elsen
+Von Ketteler Str. 63
+33106 Paderborn
+Telefon: 05251 881-188
+Email: einwohneramt@paderborn.de
+
+
+
+# Bürgeramt Neuss
+Neuss
+Markt 2
+41460 Neuss
+Telefon: 02131 903-232
+Email: buergeramt@stadt.neuss.de
+
+
+
+# Bürgeramt Ingolstadt Neues Rathaus
+Ingolstadt Neues Rathaus
+Rathausplatz 4
+EG Zimmer 002
+85049 Ingolstadt
+Telefon: 0841 305-1500
+Email: buergeramt@ingolstadt.de
+
+
+
+# Bürgeramt Offenbach
+Offenbach
+Herrnstr. 61
+Gebäude: Bernardbau
+63065 Offenbach
+Email: buergerbuero@offenbach.de
+
+
+Stadtverwaltung Offenbach am Main
+Berliner Str. 100
+63065 Offenbach am Main
+
+
+Bürgerbüro Offenbach am Main - Kaiserpalais
+Kaiserstr. 39
+63065 Offenbach
+Telefon: 069 8065-1
+Email: buergerbuero@offenbach.de
+
+
+# Bürgeramt Fürth Süd
+Fürth Süd
+Schwabacher Str. 170
+1. Stock/Zimmer 121
+90763 Fürth
+Telefon: 0911 974-2387 und -2331
+Email: ewo@fuerth.de
+
+
+# Bürgeramt Fürth Nord
+Fürth Nord
+Stadelner Hauptstr. 96
+1. Stock
+90765 Fürth
+Telefon: 0911 974-2394
+Email: ba@fuerth.de
+
+
+Bürger- und Ordnungsamt Darmstadt
+Luisenplatz 5,
+64283 Darmstadt
+06151115
+
+Rathaus der Stadt Mannheim
+E 5,
+68159 Mannheim
+06212930
+
+
+
+# Bürgeramt Ulm
+Dorfstr. 10
+89079 Ulm
+Telefon: 07305 7269
+Email: ov-eg@ulm.de
+
+
+# Bürgeramt Ulm Ortsverwaltung Einsingen
+Ulm Ortsverwaltung Einsingen
+Katharinenstr. 1
+89079 Ulm
+Telefon: 07305 931-060
+Email: ov-ei@ulm.de
+
+
+# Bürgeramt Ulm Ortsverwaltung Ermingen
+Ulm Ortsverwaltung Ermingen
+Waldstr. 29
+89079 Ulm
+Telefon: 07304 6697
+Email: ov-er@ulm.de
+
+
+# Bürgeramt Ulm Ortsverwaltung Gögglingen-Donaustetten
+Ulm Ortsverwaltung Gögglingen-Donaustetten
+Riedlenstr. 16
+89079 Ulm
+Telefon: 07305 9609-0
+Email: ov-goe-do@ulm.de
+
+
+# Bürgeramt Ulm Ortsverwaltung Jungingen
+Ulm Ortsverwaltung Jungingen
+Albstr. 5
+89081 Ulm
+Telefon: 0731 1611-220
+Email: ov-ju@ulm.de
+
+
+# Bürgeramt Ulm Ortsverwaltung Lehr
+Ulm Ortsverwaltung Lehr
+Loherstr. 18
+89081 Ulm
+Telefon: 0731 60-481
+Email: ov-le@ulm.de
+
+
+# Bürgeramt Ulm Dienstleistungszentrum Söflingen
+Ulm Dienstleistungszentrum Söflingen
+Klosterhof 14
+89077 Ulm
+Telefon: 0731 161-1164
+Email: telefonservice-bd@ulm.de
+
+
+# Bürgeramt Ulm Melde- und Ausweiswesen
+Ulm Melde- und Ausweiswesen
+Kornhausplatz 4
+89073 Ulm
+Telefon: 0731 161-3322
+Email: telefonservice-bd@ulm.de
+
+
+# Bürgeramt Ulm Ortsverwaltung Mähringen
+Ulm Ortsverwaltung Mähringen
+Rathausweg 1
+89081 Ulm
+Telefon: 0731 53221
+Email: ov-ma@ulm.de
+
+
+
+
+# Bürgeramt Heilbronn Zentrales Bürgeramt im Rathaus
+Heilbronn Zentrales Bürgeramt im Rathaus
+Marktplatz 7
+74072 Heilbronn
+Telefon: 07131 56-0, -3800
+Email: zentrales.buergeramt@stadt-heilbronn.de
+
+
+# Bürgeramt Heilbronn Biberach
+Heilbronn Biberach
+Am Ratsplatz 3
+74078 Heilbronn
+Telefon: 07066 911-990
+Email: buergeramt.biberach@heilbronn.de
+
+
+# Bürgeramt Heilbronn Böckingen
+Heilbronn Böckingen
+Großgartacher Str. 61
+74080 Heilbronn
+Telefon: 07131 563-801
+Email: buergeramt.boeckingen@heilbronn.de
+
+
+# Bürgeramt Heilbronn Frankenbach
+Heilbronn Frankenbach
+Speyerer Str. 13
+74078 Heilbronn
+Telefon: 07131 645-460
+Email: buergeramt.frankenbach@stadt-heilbronn.de
+
+
+# Bürgeramt Heilbronn Horkheim
+Heilbronn Horkheim
+Schleusenstr. 18
+74081 Heilbronn
+Telefon: 07131 251-118
+Email: buergeramt.horkheim@heilbronn.de
+
+
+# Bürgeramt Heilbronn Kirchhausen
+Heilbronn Kirchhausen
+Schlossplatz 2
+74078 Heilbronn
+Telefon: 07066 7044
+Email: buergeramt.kirchhausen@heilbronn.de
+
+
+# Bürgeramt Heilbronn Neckargartach
+Heilbronn Neckargartach
+Mittelstr. 3
+74078 Heilbronn
+Telefon: 07131 285-110
+Email: buergeramt.neckargartach@heilbronn.de
+
+
+# Bürgeramt Heilbronn Sontheim
+Heilbronn Sontheim
+Hauptstr. 7
+74081 Heilbronn
+Telefon: 07131 589-150
+Email: buergeramt.sontheim@heilbronn.de
+
+
+# Bürgeramt Heilbronn Verwaltungssprechstunden in Klingenberg
+Heilbronn Verwaltungssprechstunden in Klingenberg
+Theodor-Heuss-Str. 113
+74081 Heilbronn
+Telefon: 07131 398-800
+Email: buergeramt.boeckingen@heilbronn.de
+
+
+
+# Bürgeramt Pforzheim
+Pforzheim
+Östliche Karl-Friedrich-Str. 2-4
+Altes Rathaus
+75175 Pforzheim
+Telefon: 07231 39-1111
+Email: buergercentrum@pforzheim.de
+
+
+# Bürgeramt Pforzheim Ortsverwaltung Eutingen
+Pforzheim Ortsverwaltung Eutingen
+Hauptstr. 93
+Rathaus Eutingen
+75181 Pforzheim
+Telefon: 07231 39-0, -1071
+Email: ov-eutingen@pforzheim.de
+
+
+# Bürgeramt Pforzheim Ortsverwaltung Huchenfeld
+Pforzheim Ortsverwaltung Huchenfeld
+Huchenfelder Hauptstr. 129
+Rathaus Huchenfeld
+75181 Pforzheim
+Telefon: 07231 39-0, -1400
+Email: ov-huchenfeld@pforzheim.de
+
+
+# Bürgeramt Pforzheim Ortsverwaltung Büchenbronn
+Pforzheim Ortsverwaltung Büchenbronn
+Pforzheimer Str. 1
+Rathaus Büchenbronn
+75180 Pforzheim
+Telefon: 07231 39-0, -1152
+Email: ov-buechenbronn@pforzheim.de
+
+
+# Bürgeramt Pforzheim Ortsverwaltung Würm
+Pforzheim Ortsverwaltung Würm
+Schulstr. 8
+Rathaus Würm
+75181 Pforzheim
+Telefon: 07231 39-0, -1320
+Email: ov-wuerm@pforzheim.de
+
+
+# Bürgeramt Pforzheim Ortsverwaltung Hohenwart
+Pforzheim Ortsverwaltung Hohenwart
+Kastanienallee 5
+Rathaus Hohenwart
+75181 Pforzheim
+Telefon: 07231 39-0, -1380
+Email: ov-hohenwart@pforzheim.de
+
+
+
+# Bürgeramt Würzburg
+Würzburg
+Rückermainstr. 2
+97070 Würzburg
+Telefon: 0931 37-0, -2000
+Email: buergerbuero@stadt.wuerzburg.de
+
+
+
+# Bürgeramt Wolfsburg
+Wolfsburg
+Porschestr. 49
+Rathaus B, Zimmer B015
+38440 Wolfsburg
+Telefon: 05361 28-1234
+Email: servicecenter@stadt.wolfsburg.de
+
+
+
+# Bürgeramt Göttingen
+Göttingen
+Hiroshimaplatz 1-4
+Neues Rathaus
+37083 Göttingen
+Telefon: 0551 4004-044
+Email: meldeamt@goettingen.de
+
+
+
+# Bürgeramt Bottrop
+Bottrop
+Ernst-Wilczok-Platz 1
+Rathaus
+46236 Bottrop
+Telefon: 02041 703-0, -800
+Email: buergerbuero@bottrop.de
+
+
+
+
+# Bürgeramt Reutlingen
+Reutlingen
+Marktplatz 22
+im Erdgeschoss des Reutlinger Rathauses
+72764 Reutlingen
+Telefon: 07121 303-5577
+Email: buergeramt@reutlingen.de
+
+
+# Bürgeramt Reutlingen Bezirksamt Altenburg
+Reutlingen Bezirksamt Altenburg
+Bei der Schule 4
+72768 Reutlingen
+Telefon: 07121 670-353
+Email: bza.altenburg@reutlingen.de
+
+
+# Bürgeramt Reutlingen Bezirksamt Betzingen
+Reutlingen Bezirksamt Betzingen
+Wannweiler Str. 1
+72770 Reutlingen
+Telefon: 07121 303-2156
+Email: bza.betzingen@reutlingen.de
+
+
+# Bürgeramt Reutlingen Bezirksamt Bronnweiler
+Reutlingen Bezirksamt Bronnweiler
+Im Wiesaztal 18
+72770 Reutlingen
+Telefon: 07072 920-063
+Email: bza.bronnweiler@reutlingen.de
+
+
+# Bürgeramt Reutlingen Bezirksamt Degerschlacht
+Reutlingen Bezirksamt Degerschlacht
+Martin-Knapp-Str. 1
+72768 Reutlingen
+Telefon: 07121 600-101
+Email: bza.degerschlacht@reutlingen.de
+
+
+# Bürgeramt Reutlingen Bezirksamt Gönningen
+Reutlingen Bezirksamt Gönningen
+Stöfflerplatz 2
+72770 Reutlingen
+Telefon: 07072 7026
+Email: bza.goenningen@reutlingen.de
+
+
+# Bürgeramt Reutlingen Bezirksamt Mittelstadt
+Reutlingen Bezirksamt Mittelstadt
+Neckartenzlinger Str. 26
+72766 Reutlingen
+Telefon: 07127 972-313
+Email: bza.mittelstadt@reutlingen.de
+
+
+# Bürgeramt Reutlingen Bezirksamt Oferdingen
+Reutlingen Bezirksamt Oferdingen
+Mittelstädter Str. 12
+72768 Reutlingen
+Telefon: 07121 620-481
+Email: bza.oferdingen@reutlingen.de
+
+
+# Bürgeramt Reutlingen Bezirksamt Ohmenhausen
+Reutlingen Bezirksamt Ohmenhausen
+Auf der Lind 12
+72770 Reutlingen
+Telefon: 07121 54-355
+Email: bza.ohmenhausen@reutlingen.de
+
+
+# Bürgeramt Reutlingen Bezirksamt Reicheneck
+Reutlingen Bezirksamt Reicheneck
+Alte Dorfstr. 25
+72766 Reutlingen
+Telefon: 07121 493-151
+Email: bza.reicheneck@reutlingen.de
+
+
+# Bürgeramt Reutlingen Bezirksamt Rommelsbach
+Reutlingen Bezirksamt Rommelsbach
+Bei der Kirche 10
+72768 Reutlingen
+Telefon: 07121 303-5801
+Email: bza.rommelsbach@reutlingen.de
+
+
+# Bürgeramt Reutlingen Bezirksamt Sickenhausen
+Reutlingen Bezirksamt Sickenhausen
+Eichgartenstr. 8
+72768 Reutlingen
+Telefon: 07121 670-359
+Email: bza.sickenhausen@reutlingen.de
+
+
+# Bürgeramt Reutlingen Bezirksamt Sondelfingen
+Reutlingen Bezirksamt Sondelfingen
+Reichenecker Str. 73
+72766 Reutlingen
+Telefon: 07121 491-224
+Email: bza.sondelfingen@reutlingen.de
+
+
+# Bürgeramt Reutlingen Außenstelle Orschel-Hagen
+Reutlingen Außenstelle Orschel-Hagen
+Dresdner Platz 4
+72764 Reutlingen
+Telefon: 07121 966-086
+Email: buergeramt.buehner@reutlingen.de
+
+
+
+# Bürgeramt Erlangen Bürgeramt
+Erlangen Bürgeramt
+Rathausplatz 1
+EG
+91052 Erlangen
+Telefon: 09131 861-616
+Email: buergeramt@stadt.erlangen.de
+
+
+
+# Bürgeramt Bremerhaven Nord
+Bremerhaven Nord
+Hinrich-Schmalfeldt-Str. 30
+Stadthaus 5.1, Obergeschoss
+27576 Bremerhaven
+Telefon: 0471 590-3470, -3480
+Email: buergerbuero-nord@magistrat.bremerhaven.de
+
+
+# Bürgeramt Bremerhaven Mitte
+Bürgermeister-Smidt-Str. 10
+Hanse Carré, 1. Etage
+27576 Bremerhaven
+Telefon: 0471 590-3470, -3480
+Email: buergerbuero@magistrat.bremerhaven.de
+
+
+
+# Bürgeramt Koblenz
+Koblenz
+Gymnasialstr. 6
+56068 Koblenz
+Telefon: 0261 129-7000
+Email: buergeramt@stadt.koblenz.de
+
+
+
+# Bürgeramt Bergisch Gladbach Refrath
+Bergisch Gladbach Refrath
+Siebenmorgen 23
+Kreissparkasse Köln - Refrath
+51427 Bergisch Gladbach
+Telefon: 02202 14 23 22
+Email: buergerbuero@stadt-gl.de
+
+
+# Bürgeramt Bergisch Gladbach Stadtmitte
+Bergisch Gladbach Stadtmitte
+Konrad-Adenauer-Platz 9
+51465 Bergisch Gladbach
+Telefon: 02202 14-0, -2322
+Email: buergerbuero@stadt-gl.de
+
+
+# Bürgeramt Bergisch Gladbach Schildgen
+Bergisch Gladbach Schildgen
+Altenberger-Dom-Str. 128
+51467 Bergisch Gladbach
+Telefon: 02202 1423-22
+Email: buergerbuero@stadt-gl.de
+
+
+# Bürgeramt Bergisch Gladbach Paffrath
+Bergisch Gladbach Paffrath
+Paffrather Str. 316
+51469 Bergisch Gladbach
+Telefon: 02202 14 23 22
+Email: buergerbuero@stadt-gl.de
+
+
+# Bürgeramt Bergisch Gladbach Bensberg
+Bergisch Gladbach Bensberg
+Schloßstr. 82
+51429 Bergisch Gladbach
+Telefon: 02202 142-322
+Email: buergerbuero@stadt-gl.de
+
+
+# Bürgeramt Bergisch Gladbach Herkenrath
+Ball 12
+Kreissparkasse Köln - Herkenrath
+51429 Bergisch Gladbach
+Telefon: 02202 14-0, -2322
+Email: buergerbuero@stadt-gl.de
+
+
+
+# Bürgeramt Remscheid
+Elberfelder Str. 36
+42853 Remscheid
+Telefon: 02191 16-00, -2200 (Terminreservierung), -3225
+Email: meldebehoerde@remscheid.de
+
+
+
+# Bürgeramt Trier
+Am Augustinerhof 1
+54290 Trier
+Telefon: 0651 718-0
+Email: buergeramt@trier.de
+
+
+
+# Bürgeramt Recklinghausen
+Rathausplatz 4
+Stadthaus A / Raum 0.05
+45657 Recklinghausen
+Telefon: 02361 50-0, -1640, -1642
+Email: Bürgeramt@recklinghausen.de
+
+
+
+# Bürgeramt Jena
+Löbdergraben 12
+07743 Jena
+Telefon: 03641 493-700, -714, -717, -722, -724 bis -727
+Email: buergerservice@jena.de
+
+
+# Bürgeramt Moers Innenstadt
+Rathausplatz 1
+47441 Moers
+Telefon: 02841 201-0, -648, -653, -654, -666 (Terminvereinbarung)
+Email: buergerservice@moers.de
+
+
+# Bürgeramt Salzgitter Außenstelle Salzgitter-Bad
+Marktplatz 11
+38259 Salzgitter
+Telefon: 05341 839-2070
+Email: buergercenter@stadt.salzgitter.de
+
+
+# Bürgeramt Salzgitter Lebenstedt
+Joachim-Campe-Str. 6-8
+Rathaus
+38226 Salzgitter
+Telefon: 05341 8393-812
+Email: buergercenter@stadt.salzgitter.de
+
+
+# Bürgeramt Siegen Geisweid
+Lindenplatz 7
+Rathaus Geisweid (Raum 32)
+57078 Siegen
+Telefon: 0271 404-3401, -3402
+Email: buergerbuero@siegen.de
+
+
+# Bürgeramt Siegen
+Markt 2
+Rathaus Siegen (Raum 100)
+57072 Siegen
+Telefon: 0271 404-0, -1201, -1217, -1233, -1264, -1268, -1298, -1314, -1387, -1228
+Email: buergerbuero@siegen.de
+
+
+# Bürgeramt Siegen Weidenau
+Weidenauer Str. 211-213
+Rathaus Weidenau
+57076 Siegen
+Telefon: 0271 404-2024, -2025
+Email: buergerbuero@siegen.de
+
+
+# Bürgeramt Siegen Eiserfeld
+Siegtalstr. 2
+im Gebäude der Sparkasse
+57080 Siegen
+Telefon: 0271 404-1701, -1702
+Email: buergerbuero@siegen.de
+
+
+
+# Bürgeramt Gütersloh
+Berliner Str. 70
+Erdgeschoss, Rathaus II,
+33330 Gütersloh
+Telefon: 05241 82-2282, -2283
+Email: buergerbuero@guetersloh.de
+
+
+
+# Bürgeramt Hildesheim Stadtbüro
+Markt 2
+Erdgeschoss Zimmer B 21
+31134 Hildesheim
+Telefon: 05121 301-0, -2700
+Email: stadtbuero@stadt-hildesheim.de
+
+
+
+# Bürgeramt Hanau, Brüder-Grimm-Stadt Stadtladen
+Am Markt 14-18
+63450 Hanau
+Telefon: 06181 295-640
+Email: stadtladen@hanau.de
+
+
+# Bürgeramt Hanau Stadtteilladen Großauheim
+Hans-Gruber-Platz 2
+63457 Hanau
+Telefon: 06181 530-66
+Email: stadtladen@hanau.de
+
+
+# Bürgeramt Hanau Stadtteilladen Steinheim
+Ludwigstr. 92
+63456 Hanau
+Telefon: 06181 6457
+Email: stadtladen@hanau.de
+
+
+# Bürgeramt Hanau Stadtteilladen Mittelbuchen
+Wachenbuchener Str. 17
+63454 Hanau
+Telefon: 06181 712-37
+Email: stadtladen@hanau.de
+
+
+# Bürgeramt Hanau Stadtteilladen Klein-Auheim
+Schulstr. 15
+63456 Hanau
+Telefon: 06181 66841-799
+Email: stadtladen@hanau.de
+
+
+
+# Bürgeramt Kaiserslautern
+Willy-Brandt-Platz 1
+67657 Kaiserslautern
+Telefon: 0631 365-2538
+Email: buergercenter@kaiserslautern.de
+
+
+
+# Bürgeramt Cottbus Stadtbüro
+Karl-Marx-Str. 67
+03044 Cottbus
+Telefon: 0355 612-2070, -3315
+Email: buergerservice@cottbus.de
+
+
+# Bürgeramt Schwerin
+Am Packhof 2-6
+19053 Schwerin
+Telefon: 0385 545-1111
+Email: buergerbuero@schwerin.de
+
+
+# Bürgeramt Witten
+Marktstr. 16
+58452 Witten
+Telefon: 02302 581-3330
+Email: buergerberatung@stadt-witten.de
+
+
+# Bürgeramt Gera StadtService H35
+Heinrichstr. 35
+07545 Gera
+Telefon: 0365 838-2501
+Email: einwohnerwesen@gera.de
+
+
+# Bürgeramt Gera Test Gera
+Heinrichstr. 35
+07545 Gera
+Telefon: 0456456456
+Email: test@gera.de
+
+
+# Bürgeramt Flensburg
+Rathausplatz 1
+24937 Flensburg
+Telefon: 0461 852-124
+Email: buergerbuero@flensburg.de
+
+
+# Bürgeramt Zwickau
+Hauptmarkt 1
+08056 Zwickau
+Telefon: 0375 83-0
+Email: buergerservice@zwickau.de
+
+
+# Bürgeramt Dessau-Roßlau
+Zerbster Str. 4
+Rathaus, 1. Obergeschoss, Raum 126
+06844 Dessau-Roßlau
+Telefon: 0340 204-1733, -2033, -2733
+Email: ordnungsamt@dessau-rosslau.de
+
+
+# Bürgeramt Wilhelmshaven
+Rathausplatz 10
+RATRiUM (ehemals Cityhaus) 1. OG
+26382 Wilhelmshaven
+Telefon: 04421 16-0, -3232
+Email: buergeramt@wilhelmshaven.de
+
+
+# Bürgeramt Plauen
+Rathausstr. 5
+08523 Plauen
+Telefon: 03741 291-2888
+Email: poststelle@plauen.de
+
+
+
+# Bürgeramt Görlitz
+Hugo-Keller-Str. 14
+02826 Görlitz
+Telefon: 03581 672-737
+Email: einwohnermeldewesen@goerlitz.de
+
+
+# Bürgeramt Rodgau
+Hintergasse 15
+im Rathaus
+63110 Rodgau
+Telefon: 06106 693-0
+Email: buergerservice@rodgau.de
+
+
+# Bürgeramt Wilhelmshaven
+Rathausplatz 10
+RATRiUM (ehemals Cityhaus) 1. OG
+26382 Wilhelmshaven
+Telefon 04421 16-0, -3232
+Email buergeramt@wilhelmshaven.de
+
+
+# Bürgeramt Dessau-Roßlau
+Zerbster Str. 4
+Rathaus, 1. Obergeschoss, Raum 126
+06844 Dessau-Roßlau
+Telefon: 0340 204-1733, -2033, -2733
+Email: ordnungsamt@dessau-rosslau.de
+
+
+# Bürgeramt Flensburg
+Rathausplatz 1
+24937 Flensburg
+Telefon 0461 852-124
+Email buergerbuero@flensburg.de
+
+
+# Bürgeramt Neuruppin
+Karl-Liebknecht-Str. 33/34
+16816 Neuruppin
+Telefon 03391 355-0, -111
+Email buergerbuero@stadtneuruppin.de
+
+
+# Bürgeramt Ludwigsburg
+Wilhelmstr. 9
+71638 Ludwigsburg
+Telefon 07141 910-3015
+Email buergerbuero@ludwigsburg.de
+
+
+# Bürgeramt Ludwigsburg Neckarweihingen
+Neue Str. 23
+71642 Ludwigsburg
+Telefon 07141 9102-551
+Email buergerbuero.nw@ludwigsburg.de
+
+
+# Bürgeramt Ludwigsburg Poppenweiler
+Kelterplatz 10
+71642 Ludwigsburg
+Telefon 07141 9103-650
+Email buergerbuero.pw@ludwigsburg.de
+
+
+# Bürgeramt Ludwigsburg Bauen
+Wilhelmstr. 5
+71638 Ludwigsburg
+Telefon 07141 9102-255
+Email buergerbuerobauen@ludwigsburg.de
+
+
+# Bürgeramt Esslingen Bürgeramt Stadtmitte
+Beblingerstr. 3
+Halle EG
+73728 Esslingen
+Telefon 0711 3512-0
+Email buergeramt@esslingen.de
+
+
+# Bürgeramt Tübingen Stadtmitte
+Schmiedtorstr. 4
+72070 Tübingen
+Telefon 07071 204-2020
+Email buergeramt@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Bebenhausen
+Schönbuchstr. 2
+72074 Tübingen
+Telefon 07071 204-6080
+Email rathaus-bebenhausen@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Bühl
+Bühler Rathausplatz 1
+72072 Tübingen
+Telefon 07071 204-6040
+Email rathaus-buehl@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Derendingen
+Sieben-Höfe-Str. 11
+72072 Tübingen
+Telefon 07071 204-1308
+Email rathaus-derendingen@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Hagelloch
+Hagenloher Str. 1
+72070 Tübingen
+Telefon 07071 204-6070
+Email rathaus-hagelloch@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Hirschau
+Kingersheimer Str. 57
+72070 Tübingen
+Telefon 07071 204-6050
+Email rathaus-hirschau@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Kilchberg
+Tessinstr. 7
+72072 Tübingen
+Telefon 07071 204-6030
+Email rathaus-kilchberg@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Lustnau
+Steige 14
+72074 Tübingen
+Telefon 07071 204-1260
+Email rathaus-lustnau@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Pfrondorf
+Lustnauer Str. 1
+72074 Tübingen
+Telefon 07071 204-6090
+Email rathaus-pfrondorf@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Unterjesingen
+Jesinger Hauptstr. 56
+72070 Tübingen
+Telefon 07071 204-6060
+Email rathaus-unterjesingen@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Weilheim
+Wilonstr. 43
+72072 Tübingen
+Telefon 07071 204-6020
+Email rathaus-weilheim@tuebingen.de
+
+
+# Bürgeramt Iserlohn
+Schillerplatz 7
+58636 Iserlohn
+Telefon 02371 217-0, -1651 bis -1659, -1665, -1666
+Email meldewesen@iserlohn.de
+
+
+# Bürgeramt Iserlohn Letmathe
+Von-der-Kuhlen-Str. 14
+58642 Iserlohn
+Telefon 02374 930-950, -955, -960, -962
+Email meldewesen@iserlohn.de
+
+
+# Bürgeramt Iserlohn Hennen
+Hennener Bahnhofstr. 20a
+58640 Iserlohn
+Telefon 02304 9408-286
+Email hennen@iserlohn.de
+
+
+# Bürgeramt Konstanz
+Untere Laube 24
+78459 Konstanz
+Telefon 07531 900-0
+Email buergerbuero@konstanz.de
+
+
+# Bürgeramt Konstanz Ortsverwaltung Dettingen-Wallhausen
+Kapitän-Romer-Str. 4
+78465 Konstanz
+Telefon 07533 9368-0
+Email dettingen-wallhausen@stadt.konstanz.de
+
+
+# Bürgeramt Konstanz Ortsverwaltung Dingelsdorf
+Rathausplatz 1
+Rathaus
+78465 Konstanz
+Telefon 07533 5295
+Email dingelsdorf@stadt.konstanz.de
+
+
+# Bürgeramt Konstanz Ortsverwaltung Litzelstetten-Mainau
+Großherzog-Friedrich-Str. 10
+78465 Konstanz
+Telefon 07531 942379-0
+Email litzelstetten@stadt.konstanz.de
+
+
+# Bürgeramt Worms
+Adenauerring 1
+67547 Worms
+Telefon 06241 8533-737
+Email buergerservice@worms.de
+
+# Bürgeramt Ratingen Rathaus
+Peter-Brüning-Platz 3
+40878 Ratingen
+Telefon 02102 550-0
+Email buergerbuero@ratingen.de
+
+
+# Bürgeramt Gießen
+Berliner Platz 1
+Erdgeschoss
+35390 Gießen
+Telefon 0641 306-1234
+Email stadtbuero@giessen.de
+
+
+# Bürgeramt Düren
+Markt 2
+52349 Düren
+Telefon 02421 25-2000
+Email stadt@dueren.de
+
+
+# Bürgeramt Tübingen Stadtmitte
+Schmiedtorstr. 4
+72070 Tübingen
+Telefon 07071 204-2020
+Email buergeramt@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Bebenhausen
+Schönbuchstr. 2
+72074 Tübingen
+Telefon 07071 204-6080
+Email rathaus-bebenhausen@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Bühl
+Bühler Rathausplatz 1
+72072 Tübingen
+Telefon 07071 204-6040
+Email rathaus-buehl@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Derendingen
+Sieben-Höfe-Str. 11
+72072 Tübingen
+Telefon 07071 204-1308
+Email rathaus-derendingen@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Hagelloch
+Hagenloher Str. 1
+72070 Tübingen
+Telefon 07071 204-6070
+Email rathaus-hagelloch@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Hirschau
+Kingersheimer Str. 57
+72070 Tübingen
+Telefon 07071 204-6050
+Email rathaus-hirschau@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Kilchberg
+Tessinstr. 7
+72072 Tübingen
+Telefon 07071 204-6030
+Email rathaus-kilchberg@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Lustnau
+Steige 14
+72074 Tübingen
+Telefon 07071 204-1260
+Email rathaus-lustnau@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Pfrondorf
+Lustnauer Str. 1
+72074 Tübingen
+Telefon 07071 204-6090
+Email rathaus-pfrondorf@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Unterjesingen
+Jesinger Hauptstr. 56
+72070 Tübingen
+Telefon 07071 204-6060
+Email rathaus-unterjesingen@tuebingen.de
+
+
+# Bürgeramt Tübingen Verwaltungsstelle Weilheim
+Wilonstr. 43
+72072 Tübingen
+Telefon 07071 204-6020
+Email rathaus-weilheim@tuebingen.de
+
+
+# Bürgeramt Iserlohn
+Schillerplatz 7
+58636 Iserlohn
+Telefon 02371 217-0, -1651 bis -1659, -1665, -1666
+Email meldewesen@iserlohn.de
+
+
+# Bürgeramt Iserlohn Letmathe
+Von-der-Kuhlen-Str. 14
+58642 Iserlohn
+Telefon 02374 930-950, -955, -960, -962
+Email meldewesen@iserlohn.de
+
+
+# Bürgeramt Iserlohn Hennen
+Hennener Bahnhofstr. 20a
+58640 Iserlohn
+Telefon 02304 9408-286
+Email hennen@iserlohn.de
+
+
+# Bürgeramt Villingen-Schwenningen Servicezentrum Villingen
+Rathausgasse 1
+78050 Villingen-Schwenningen
+Telefon 07721 82-3333
+Email buergeramt@villingen-schwenningen.de
+
+
+# Bürgeramt Villingen-Schwenningen Servicezentrum - Schwenningen
+Marktplatz 1
+78054 Villingen-Schwenningen
+Telefon 07720 82-3333
+Email buergeramt@villingen-schwenningen.de
+
+
+# Bürgeramt Ratingen Rathaus
+Peter-Brüning-Platz 3
+40878 Ratingen
+Telefon 02102 550-0
+Email buergerbuero@ratingen.de
+
+
+# Bürgeramt Lünen Lünen
+Willy-Brandt-Platz 1
+Raum 33, EG
+44532 Lünen
+Telefon 02306 104-1561
+Email buergerbuero@luenen.de
+
+
+# Bürgeramt Marl
+Creiler Platz 1
+45768 Marl
+Telefon 02365 99-0
+Email buergerbuero@marl.de
+
+
+# Bürgeramt Minden
+Großer Domhof 2
+32423 Minden
+Telefon 0571 89-0
+Email buergerbuero@minden.de
+
+# Bürgeramt Velbert Mitte
+Thomasstr. 1
+Rathaus
+42551 Velbert
+Telefon 02051 26-0
+Email servicebuero-velbert-mitte@velbert.de
+
+
+# Bürgeramt Velbert Langenberg
+Donnerstr. 13
+42555 Velbert
+Telefon 02052 912-213
+Email servicebuero-langenberg@velbert.de
+
+
+# Bürgeramt Velbert Neviges
+Elberfelder Str. 64
+42553 Velbert
+Telefon 02051 26-0
+Email servicebuero-velbert-mitte@velbert.de
+
+# Bürgeramt Norderstedt
+Rathausallee 50
+Raum 45
+22846 Norderstedt
+Telefon 040 53595-445
+Email meldeamt@norderstedt.de
+
+
+# Bürgeramt Bamberg Rathaus Maxplatz
+Maximiliansplatz 3
+Raum 114
+96047 Bamberg
+Telefon 0951 87-1272
+Email stadtverwaltung@stadt.bamberg.de
+
+
+# Bürgeramt Neumünster
+Großflecken 63
+24534 Neumünster
+Telefon 04321 9422-600
+Email buergerbuero@neumuenster.de
+
+# Bürgeramt Delmenhorst City-Center (CCD)
+Lange Str. 1a
+27749 Delmenhorst
+Telefon 04221 99-1999
+Email buergerbuero@delmenhorst.de
+
+
+
+# Bürgeramt Viersen
+Rathausmarkt 1
+41747 Viersen
+Telefon 02162 101-0, -670
+Email buergerservice@viersen.de
+
+
+# Bürgeramt Rheine
+Klosterstr. 14
+48431 Rheine
+Telefon 05971 939-348
+Email buergerbuero@rheine.de
+
+
+# Bürgeramt Rheine Außenstelle Mesum
+Nielandstr. 7
+48432 Rheine
+Telefon 05975 93-141
+Email ausmesum@rheine.de
+
+
+# Bürgeramt Marburg
+Frauenbergstr. 35
+35039 Marburg
+Telefon 06421 2011-801
+Email stadtbuero@marburg-stadt.de
+
+
+# Bürgeramt Lüneburg Bereich 331
+Bardowicker Str. 23
+21335 Lüneburg
+Telefon 04131 309-3259
+Email buergeramt@stadt.lueneburg.de
+
+
+# Bürgeramt Dorsten
+Halterner Str. 5
+Erdgeschoss des RathausesZimmer 23
+46284 Dorsten
+Telefon 02362 66-0, -3811
+Email buergerbuero@dorsten.de
+
+
+# Bürgeramt Troisdorf
+Kölner Str. 176
+53840 Troisdorf
+Telefon 02241 900-0, -308, -342, -343, -344, -346, -349
+Email rathaus@troisdorf.de
+
+
+# Bürgeramt Gladbeck
+Willy-Brandt-Platz 2
+45964 Gladbeck
+Telefon 02043 992-999
+Email buergeramt@stadt-gladbeck.de
+
+
+# Bürgeramt Landshut
+Luitpoldstr. 29
+84034 Landshut
+Telefon 0871 88-2288
+Email buergerbuero@landshut.de
+
+
+
+# Bürgeramt Detmold
+Grabenstr. 1
+32756 Detmold
+Telefon 05231 977-580
+Email Buergerberatung@detmold.de
+
+
+
+# Bürgeramt Bayreuth
+Luitpoldplatz 13
+Neues Rathaus Zimmer 310
+95444 Bayreuth
+Telefon 0921 25-0, -1515
+Email einwohneramt@stadt.bayreuth.de
+
+
+# Bürgeramt Arnsberg Neheim
+Lange Wende 6a
+59755 Arnsberg
+Telefon 02932 201-1922
+Email stadtbuero@arnsberg.de
+
+
+
+
+# Bürgeramt Arnsberg Oeventrop
+Kirchstr. 47
+59823 Arnsberg
+Telefon 02937 1048
+Email stadtbueroArnsberg@arnsberg.de
+
+
+# Bürgeramt Arnsberg Hüsten
+Marktstr. 3
+(Ludgeripassage)
+59759 Arnsberg
+Telefon 02932 201-1930
+Email stadtbueroHuesten@arnsberg.de
+
+
+# Bürgeramt Arnsberg Altes Rathaus
+Alter Markt 19
+59821 Arnsberg
+Telefon 02931 893-1140
+Email stadtbueroArnsberg@arnsberg.de
+
+
+# Bürgeramt Arnsberg Rathaus
+Rathausplatz 1
+59759 Arnsberg
+Telefon 02932 201-0, -1922
+Email stadtbuero@arnsberg.de
+
+
+# Bürgeramt Castrop-Rauxel
+Europaplatz 1
+Rathaus
+44575 Castrop-Rauxel
+Telefon 02305 106-2333
+Email buergerbuero@castrop-rauxel.de
+
+
+
+# Bürgeramt Brandenburg Ortsteilverwaltung Plaue / Kirchmöser
+Unter den Platanen 2
+14774 Brandenburg
+Telefon 03381 800-110
+Email buergerservice@stadt-brandenburg.de
+
+
+# Bürgeramt Brandenburg Nicolaiplatz
+Nicolaiplatz 30
+14770 Brandenburg
+Telefon 03381 58 13 - 00
+Email Buergerservice@Stadt-Brandenburg.de
+
+
+# Bürgeramt Aschaffenburg
+Dalbergstr. 15
+Erdgeschoss
+63739 Aschaffenburg
+Telefon 06021 330-555
+Email buergerservice@aschaffenburg.de
+
+
+# Bürgeramt Bocholt
+Berliner Platz 1
+46395 Bocholt
+Telefon: 02871-953-456 (Termintelefon), -365, -366
+Email buergerbuero@mail.bocholt.de
+
+
+# Bürgerbüro der Stadt Bocholt
+Neutorplatz 3 (1. Obergeschoss)
+46395 Bocholt
+Telefon: 02871-953-2400
+Email: buergerbuero@bocholt.de
+
+
+# Stadtverwaltung Bocholt
+Kaiser-Wilhelm-Str. 52-58
+46395 Bocholt
+Telefon: 02871-953-0
+Email: stadtverwaltung@bocholt.de
+
+
+# Bürgeramt Lüdenscheid
+Rathausplatz 2
+Rathaus
+58507 Lüdenscheid
+Telefon 02351 17-0, -1666
+Email buergeramt@luedenscheid.de
+
+
+
+# Bürgeramt Celle
+Am Französischen Garten 1
+29221 Celle
+Telefon 05141 12-0, -3300, -3343
+Email buergerbuero@celle.de
+
+
+# Bürgeramt Kempten
+Rathausplatz 22
+Erdgeschoss
+87435 Kempten
+Telefon 0831 2525-0
+Email poststelle@kempten.de
+
+
+# Bürgeramt Fulda
+Schlossstr. 1
+36037 Fulda
+Telefon 0661 102-0, -1111
+Email buergerbuero@fulda.de
+
+
+# Bürgeramt Lippstadt
+Geiststr. 47
+59555 Lippstadt
+Telefon 02941 980-0, -677
+Email post@stadt-lippstadt.de
+
+
+# Bürgeramt Aalen
+Marktplatz 30
+73430 Aalen
+Telefon 07361 52-1087, -1097
+Email buergeramt@aalen.de
+
+
+# Bürgeramt Aalen Rathaus Hofen
+Dorfstr. 9
+73433 Aalen
+Telefon 07361 9771-40
+Email rathaus.hofen@aalen.de
+
+
+# Bürgeramt Aalen Rathaus Fachsenfeld
+Waiblinger Str. 1
+73434 Aalen
+Telefon 07366 9612-12
+Email rathaus.fachsenfeld@aalen.de
+
+
+# Bürgeramt Aalen Rathaus Waldhausen
+Deutschordenstr. 19
+73432 Aalen
+Telefon 07367 9618-11
+Email rathaus.waldhausen@aalen.de
+
+
+# Bürgeramt Aalen Rathaus Wasseralfingen
+Stefansplatz 3
+73433 Aalen
+Telefon 07361 9791-29
+Email rathaus.wasseralfingen@aalen.de
+
+
+# Bürgeramt Dinslaken Stadtmitte
+Friedrich-Ebert-Str. 82-84
+46535 Dinslaken
+Telefon 02064 66-666
+Email buergerbuero@dinslaken.de
+
+
+# Bürgeramt Dinslaken Hiesfeld
+Jahnplatz 1
+Kiosk - Eingang Marschallstraße
+46539 Dinslaken
+Telefon 02064 66-666
+Email Buergerbuero.Hiesfeld@dinslaken.de
+
+
+# Bürgeramt Herford
+Rathausplatz 1
+32052 Herford
+Telefon 05221 189-810
+Email Buergerberatung@herford.de
+
+
+# Bürgeramt Rüsselsheim am Main InnenStadtbüro
+Mainstr. 7
+65428 Rüsselsheim am Main
+Telefon 06142 832-940
+Email buergerservice@ruesselsheim.de
+
+
+# Bürgeramt Rüsselsheim Dicker Busch
+Virchowstr. 5-7
+Einkaufszentrum
+65428 Rüsselsheim
+Telefon 06142 832-900
+Email buergerservice@ruesselsheim.de
+
+
+
+# Bürgeramt Kerpen
+Jahnplatz 1
+50171 Kerpen
+Telefon 02237-58-0
+Email buergerbuero@stadt-kerpen.de
+
+
+# Bürgeramt Kerpen Buir
+Kirchenstr. 9
+50170 Kerpen
+Telefon 02237 58162
+Email buergerbuero@stadt-kerpen.de
+
+
+# Bürgeramt Kerpen Horrem
+Mittelstr. 23-31
+Soziokulturelles Zentrum
+50169 Kerpen
+Telefon 02237 58162
+Email buergerbuero@stadt-kerpen.de
+
+
+# Bürgeramt Kerpen
+Jahnplatz 1
+50171 Kerpen
+Telefon 02237 58-0
+Email buergerbuero@stadt-kerpen.de
+
+
+# Bürgeramt Neuwied
+Engerser Landstr. 17
+56564 Neuwied
+Telefon 02631 802-0
+Email buergerbuero@neuwied.de
+
+
+# Bürgeramt Weimar
+Schwanseestr. 17
+Haus II
+99423 Weimar
+Telefon 03643 762-762
+Email buergerbuero@stadtweimar.de
+
+
+# Bürgeramt Dormagen
+Paul-Wierich-Platz 2
+41539 Dormagen
+Telefon 02133 257-0
+Email buergeramt@stadt-dormagen.de
+
+
+# Bürgeramt Sindelfingen Bezirksamt Maichingen
+Sindelfinger Str. 44
+71069 Sindelfingen
+Telefon 07031 94-110, -131, -150
+Email maichingen@sindelfingen.de
+
+
+# Bürgeramt Sindelfingen Servicepunkt
+Rathausplatz 1
+71063 Sindelfingen
+Telefon 07031 94-0, -468
+Email servicepunkt@sindelfingen.de
+
+
+# Bürgeramt Sindelfingen Bezirksamt Darmsheim
+Widdumstr. 12
+71069 Sindelfingen
+Telefon 07031 94-871, -872
+Email darmsheim@sindelfingen.de
+
+
+
+
+# Bürgeramt Grevenbroich
+Am Markt 3
+'Bernardushaus', EG
+41515 Grevenbroich
+Telefon 02181 608-572
+Email buergerbuero@grevenbroich.de
+
+
+
+# Bürgeramt Rosenheim
+Königstr. 15
+83022 Rosenheim
+Telefon 08031 365-01, -1361
+Email buergeramt@rosenheim.de
+
+
+# Bürgeramt Neubrandenburg
+Friedrich-Engels-Ring 53
+17033 Neubrandenburg
+Telefon 0395 555-1111
+Email buergerservice@neubrandenburg.de
+
+
+
+
+# Bürgeramt Friedrichshafen Fischbach
+Zeppelinstr. 306
+88048 Friedrichshafen
+Telefon 07541 41-546
+Email buergerservice@friedrichshafen.de
+
+
+
+# Bürgeramt Herten
+Kurt-Schumacher-Str. 2
+Erdgeschoss, Raum 031
+45699 Herten
+Telefon 02366 303-500
+Email buergerbuero@herten.de
+
+
+# Bürgeramt Herten-Westerholt Bezirksverwaltungsstelle Westerholt
+Kuhstr. 49
+Freizeit- und Begegnungsstätte, Erdgeschoss
+45701 Herten-Westerholt
+Telefon 02366 303-165
+Email buergerbuero@herten.de
+
+
+
+# Bürgeramt Bergheim
+Bethlehemer Str. 9 - 11
+50126 Bergheim
+Telefon 02271 89-0, -373
+Email buergerservice@bergheim.de
+
+
+# Bürgeramt Schwäbisch Gmünd
+Marktplatz 1
+73525 Schwäbisch Gmünd
+Telefon 07171 603-331
+Email buergerbuero@schwaebisch-gmuend.de
+
+
+
+# Bürgeramt Offenburg
+Fischmarkt 2
+77652 Offenburg
+Telefon 0781 82-2000
+Email buergerbuero@offenburg.de
+
+
+
+# Bürgeramt Garbsen
+Rathausplatz 1
+30823 Garbsen
+Telefon 05131 707-222
+Email buergerbuero@garbsen.de
+
+
+
+# Bürgeramt Wesel
+Klever-Tor-Platz 1
+Team 74
+46483 Wesel
+Telefon 0281 2030
+Email team74@wesel.de
+
+
+
+# Bürgeramt Neu-Ulm
+Petrusplatz 15
+89231 Neu-Ulm
+Telefon 0731 7050-7340
+Email buergerbuero@neu-ulm.de
+
+
+
+# Bürgeramt Hürth
+Friedrich-Ebert-Str. 40
+Rathaus, 1. OG
+50354 Hürth
+Telefon 02233 53-0, -550
+Email rathaus@huerth.de
+
+
+
+# Bürgeramt Unna
+Rathausplatz 1
+59423 Unna
+Telefon 02303 103-325, -329
+Email buergerservice@stadt-unna.de
+
+
+# Bürgeramt Unna Massen
+Massener Hellweg 12
+59427 Unna
+Telefon 02303 953-580 und -582
+Email buergerservice-massen@stadt-unna.de
+
+
+# Bürgeramt Unna Königsborn
+Rollmannstr. 4
+59425 Unna
+Telefon 02303 61-094
+Email buergerservice-koenigsborn@stadt-unna.de
+
+
+# Bürgeramt Unna Lünern
+Lünerner Bahnhofstr. 1
+(in der Sparkasse)
+59427 Unna
+Telefon 02303 103-328
+Email buergerservice-luenern@stadt-unna.de
+
+
+# Bürgeramt Unna Hemmerde
+Hemmerder Dorfstr. 60
+(in der Sparkasse)
+59427 Unna
+Telefon 02303 103-328
+Email buergerservice-hemmerde@stadt-unna.de
+
+
+# Bürgeramt Langenfeld
+Konrad-Adenauer-Platz 1
+40764 Langenfeld
+Telefon 02173 794-0, -4444
+Email buergerbuero@langenfeld.de
+
+
+# Bürgeramt Euskirchen
+Baumstr. 2
+53879 Euskirchen
+Telefon 02251 145-0, -20, -21
+Email buergerbuero@euskirchen.de
+
+
+
+# Bürgeramt Greifswald
+Markt 15
+Haus 1
+17489 Greifswald
+Telefon 03834 8536-0, -4132, -4133, -4134, -4136, -4137, -4138, -4139, -4141
+Email einwohnermeldeabteilung@greifswald.de
+
+
+
+# Bürgeramt Stralsund
+Schillstr. 5-7
+18439 Stralsund
+Telefon 03831 253-728, -735, -745, -758
+Email ordnungsamt@stralsund.de
+
+
+# Bürgeramt Göppingen
+Hauptstr. 1
+73033 Göppingen
+Telefon 07161 650-0, -321
+Email buergerbuero@goeppingen.de
+
+
+# Bürgeramt Göppingen Bezirksamt Bartenbach
+Brunnenstr. 5
+73035 Göppingen
+Telefon 07161 65096-210, -212, -213, -214
+Email bartenbach@goeppingen.de
+
+
+# Bürgeramt Göppingen Bezirksamt Bezgenried
+Badstr. 30
+73035 Göppingen
+Telefon 07161 65096-220, -221
+Email bezgenriet@goeppingen.de
+
+
+# Bürgeramt Göppingen Bezirksamt Faurndau
+Bismarckstr. 6
+73035 Göppingen
+Telefon 07161 65096-270, -276, -277
+Email faurndau@goeppingen.de
+
+
+# Bürgeramt Göppingen Bezirksamt Hohenstaufen
+Reichsdorfstr. 34
+73037 Göppingen
+Telefon 07161 65096-250, -252
+Email hohenstaufen@goeppingen.de
+
+
+# Bürgeramt Göppingen Bezirksamt Holzheim
+Schlater Str. 1
+73037 Göppingen
+Telefon 07161 65096-232, -234
+Email holzheim@goeppingen.de
+
+
+# Bürgeramt Göppingen Bezirksamt Maitis
+Gmünder Str. 32
+73037 Göppingen
+Telefon 07161 65096-260
+Email maitis@goeppingen.de
+
+
+# Bürgeramt Göppingen Bezirksamt Jebenhausen
+Boller Str. 12
+73035 Göppingen
+Telefon 07161 65096-240, -242
+Email jebenhausen@goeppingen.de
+
+
+# Bürgeramt Frankfurt
+Marktplatz 1
+Rathaus
+15230 Frankfurt
+Telefon 0335 552-0, -3301, -3303
+Email buergeramt@frankfurt-oder.de
+
+
+# Bürgeramt Hameln
+Rathausplatz 1
+31785 Hameln
+Telefon 05151 202-1400
+Email buergeramt@hameln.de
+
+
+# Bürgeramt Meerbusch Büderich
+Dr. Franz-Schütz-Platz 1
+40667 Meerbusch
+Telefon 02150 916-166
+Email buergerbuero@meerbusch.de
+
+
+# Bürgeramt Meerbusch Lank-Latum
+Wittenberger Str. 21
+im Bürgerhaus
+40668 Meerbusch
+Telefon 02150 916-166
+Email buergerbuero@meerbusch.de
+
+
+# Bürgeramt Meerbusch Osterath
+Hochstr. 12
+40670 Meerbusch
+Telefon 02150 916-166
+Email buergerbuero@meerbusch.de
+
+
+# Einwohnermeldeamt Heusenstamm
+Im Herrngarten 1
+63150 Heusenstamm
+Telefon 06104 607-0
+Email buergerbuero@heusenstamm.de
+
+
+# Einwohnermeldeamt Dummy

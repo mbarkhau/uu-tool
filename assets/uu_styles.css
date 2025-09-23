@@ -67,13 +67,6 @@ h2 {
   flex-direction: row;
 }
 
-@media screen and (max-device-width: 600px) {
-  .config-options {
-    flex-direction: column;
-  }
-}
-
-
 .config-form .config-option:hover {
   background: #DDD;
 }
@@ -96,12 +89,33 @@ h2 {
 
 .config-form .config-option img {
   display: block;
-  margin: 0.3em auto;
+  margin: 0.5em auto;
+}
+
+
+.config-options {
+  min-height: 4.5em;
+}
+.config-texts {
+  margin: 1em 0 0 0;
+  min-height: 8em;
 }
 
 .config-texts a {
   white-space: nowrap;
 }
+
+@media screen and (max-device-width: 600px) {
+  .config-options {
+    flex-direction: column;
+  }
+  .config-texts {
+    margin: 1em 0 0 0;
+    min-height: 14em;
+  }
+}
+
+
 
 .footer {
   font-size: 0.8em;
@@ -147,15 +161,15 @@ ul, ol {
   min-height: 2.3em;
 }
 
-.admin-address-wrap {
+.buero-address-wrap {
   min-height: 16em;
 }
 
-.admin-address-wrap p {
+.buero-address-wrap p {
   font-size: 1rem;
 }
 
-.admin-address-wrap .ts-wrapper {
+.buero-address-wrap .ts-wrapper {
   width: 17em;
   margin: 0 auto;
 }
@@ -235,29 +249,29 @@ button:enabled:hover {
   display: block;
 }
 
-.admin-address-wrap  {
+.buero-address-wrap  {
   font-size: 0.8em;
   line-height: 1.3em;
 }
-.admin-address-wrap select {
+.buero-address-wrap select {
   display: none;
 }
-.admin-address-wrap .ts-control {
+.buero-address-wrap .ts-control {
   margin: 1em auto;
 }
-.admin-address-wrap .ts-control {
+.buero-address-wrap .ts-control {
   width: 13em;
 }
-.admin-address {
+.buero-address {
   min-height: 4.5em;
   max-width: 18em;
   margin: 0 auto;
 }
-.admin-address-wrap .ts-control input {
+.buero-address-wrap .ts-control input {
   display: none !important;
 }
 
-.admin-address-wrap span {
+.buero-address-wrap span {
   display: inline-block;
   vertical-align: top;
   min-width: 6em;
