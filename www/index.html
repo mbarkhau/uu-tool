@@ -1,191 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
+    <head>
+        <meta charset="utf-8" />
 
-<meta charset="utf-8">
+        <title>UU-Tool - Erstelle deine Unterstützungsunterschrift zur Wahlzulassung</title>
 
-<title>Unterstützungsunterschrift Formular</title>
+        <meta
+            name="description"
+            content="UU-Tool - Erstelle deine Unterstützungsunterschrift zur Wahlzulassung einer Partei."
+        />
 
-<meta name="description" content="Erstelle Unterstützungsunterschriften für die Wahlzulassung deiner Partei/Wahlvorschlag.">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/tom-select.css" />
+        <link rel="stylesheet" href="assets/uu_styles.css" />
 
-<link rel="stylesheet" href="assets/tom-select.css" />
-<link rel="stylesheet" href="assets/uu_styles.css" />
+        <!-- Preload critical data files -->
+        <link rel="prefetch" href="assets/config.json" as="fetch" />
 
-<!-- Preload critical data files -->
-<link rel="prefetch" href="assets/config.json" as="fetch">
-<link rel="prefetch" href="plz_data/postleitzahlen_2023_v3.json" as="fetch">
+        <!-- DNS prefetch for external resources -->
+        <link rel="dns-prefetch" href="//www.youtube.com" />
+        <link rel="dns-prefetch" href="//www.youtube-nocookie.com" />
 
-<!-- DNS prefetch for external resources -->
-<link rel="dns-prefetch" href="//www.youtube.com">
-<link rel="dns-prefetch" href="//www.youtube-nocookie.com">
+        <script type="text/javascript" src="assets/pdf-lib.js"></script>
+        <script type="text/javascript" src="assets/download.js"></script>
+        <script type="text/javascript" src="assets/tom-select.complete.js"></script>
 
-<script type="text/javascript" src="assets/pdf-lib.js"></script>
-<script type="text/javascript" src="assets/download.js"></script>
-<script type="text/javascript" src="assets/tom-select.complete.js"></script>
+    </head>
 
-</head>
+    <body>
+        <div class="main">
+            <div class="breadcrumbs">
+                <a href="index.html"><u>Info</u></a>
+                <span class="breadcrumb-arrow">&gt;</span>
+                <a href="wahl.html">Wahl</a>
+                <span class="breadcrumb-arrow">&gt;</span>
+                <a href="pdf.html">PDF</a>
+            </div>
+        </div>
 
-<body>
-  <div class="main">
+        <div class="footer">
+            <p>
+                Quellcode:
+                <a href="https://github.com/mbarkhau/uu-tool"
+                    >github.com/mbarkhau/uu-tool</a
+                >
+            </p>
+            <p>
+                Erstellt mit freundlicher Unterstützung von
+                <a href="https://die-libertaeren.de">die-libertaeren.de</a>.
+            </p>
+            <p>Copyright © 2025 Manuel Barkhau. Alle Rechte vorbehalten.</p>
+        </div>
+    </body>
 
-  <!--
-  <h1>UU-Tool</h1>
-
-  <h2>Erstelle <u>U</u>nterstützungs<u>u</u>nterschriften für deine Partei/Wahlvorschag</h2>
-
-  <div class="config-option" id="die-partei-eu-2024">
-    <img height="50" src="assets/logo_eu_2024_die-partei.png">
-  </div>
-
-  <div id="js-player">
-    <img src="assets/thumbnail.jpg" loading="lazy">
-  </div>
-
-  -->
-
-  <div class="config-form">
-
-    <div class="config-options">
-      <div class="config-option" id="die-libertaeren-btw-2025">
-        <img height="50" src="assets/logo_btw_2025_die-libertaeren.png">
-      </div>
-
-      <div class="config-option" id="pdv-eu-2024">
-        <img height="50" src="assets/logo_eu_2024_pdv.png">
-      </div>
-
-    </div>
-
-    <div class="config-texts"></div>
-  </div>
-
-  <hr>
-
-  <div class="pseudoform">
-    <div class="form-field">
-      <label for="firstname">Vorname:</label>
-      <input type="text" name="firstname" placeholder="Max" required/>
-    </div>
-
-    <div class="form-field">
-      <label for="lastname">Familienname:</label>
-      <input type="text" name="lastname" placeholder="Mustermann" required/>
-    </div>
-
-    <div class="form-field">
-      <label for="birthday">Geburtsdatum:</label>
-      <input type="date" name="birthday" required/>
-    </div>
-
-    <div class="form-field">
-      <label for="street">Straße, Hausnummer</label>
-      <input type="text" name="street" placeholder="Musterstraße 123a"  required/>
-    </div>
-
-    <div class="form-field postleitzahl">
-      <label for="postleitzahl">Gemeinde/Stadt:</label>
-      <div>
-        <select name="postleitzahl" placeholder=""></select>
-      </div>
-    </div>
-
-    <div class="buero-address-wrap">
-      <p>Zuständes Amt</p>
-      <select id="buero-address-select"></select>
-      <div class="buero-address">-</div>
-    </div>
-
-    <button name="download" disabled onclick="uu_app.downloadPDF()">
-      PDF generieren<br>
-      und herunterladen
-    </button>
-
-  </div>
-
-  <div class="listbox small">
-    <p>
-     Datenschutzhinweis:
-     Um die PDF Datei zu generieren werden Ihrer oben angegebene persönlichen Daten verarbeitet. Diese Verarbeitung findet
-     <em>ausschließlich auf Ihrem Endgerät</em> statt.
-     Eine Übermittlung oder Verarbeitung Ihrer persönlichen Daten an/durch andere Systeme <em>findet nicht statt</em>.
-    </p>
-  </div>
-
-  <div class="listbox">
-    <p>Gerne können Sie die Richtigkeit der Angaben zum Bürgeramt anfragen: <a href="https://www.google.com/search?q=Telefonnummer%20Bürgerbüro" rel="noreferrer noopener" target="_blank">Bürgerbüro anrufen</a>. Fragen Sie dazu nach der "Zuständigkeit für die Bescheinigung des Wahlrechts für eine Unterstützungsunterschrift". Die zuständige Behörde führt dazu ein Wählerverzeichnis.</p>
-    <p>Sollte Ihrem Hauptwohnsitz keine Behörde, oder eine nicht zuständige Behörde zugeordnet werden, bitten wir Sie diesen Fehler auf <a href="https://github.com/mbarkhau/uu-tool/issues/new?title=UU-Tool Fehler&body=Test" rel="noreferrer noopener" target="_blank">Github</a> zu melden.</p>
-  </div>
-
-  <h2 class="center">Vielen Dank für Ihre Unterstützung!</h2>
-
-  <hr>
-
-  <h2 id="voraussetzungen">Voraussetzungen für eine gültige Unterstützungsunterschrift</h2>
-
-  <ul>
-    <li>Sie dürfen <b>nur eine Unterstützungsunterschrift</b> leisten. Sie dürfen nicht mehrere Parteien/Wahlvorschläge zur gleichen Wahl unterstützen.</li>
-    <li>Am Tag der Unterschrift mindestens <b>16 Jahre</b> alt sein.</li>
-    <li>Sie müssen <b>deutscher Staatsbürger</b> sein.</li>
-    <li>Sie müssen mindestens drei Monate mit <b>Erstwohnsitz im Bundesland</b> gemeldet sein.
-    <li>Sie dürfen nicht vom Wahlrecht ausgeschlossen sein.</li>
-  </ul>
-
-  <h2 id="anleitung">Anleitung</h2>
-
-  <div class="listbox">
-    <ul>
-      <li>
-        <b>Anforderungen</b>
-        <ol>
-          <li>Einen Drucker.</li>
-          <li>Drei DIN A4 Seiten.</li>
-          <li>Frankierter Briefumschlag (alternativ: selbst beim Amt abliefern).</li>
-        </ol>
-      </li>
-      <li>
-        <b>Vorbereitung</b>
-        <ol>
-          <li>Füllen Sie unten Ihren Namen, Geburtsdatum und die Adresse von Ihrem Hauptwohnsitz aus.</li>
-          <li>Drucken Sie die pdf Datei aus (idealerweise beidseitig).</li>
-          <li>Falls Sie nicht beidseitig Drucken können, müssen Sie das Formblatt und den Datenschutzhinweis zusammenhefen.</li>
-          <li>Prüfen Sie Ihre Angaben auf Richtigkeit. Wenn Ihre Daten nicht mit den bei Ihrer Gemeindebehörde hinterlegten Daten übereinstimmen, ist Ihre Unterstützungsunterschrift ungültig.</li>
-        </ol>
-      </li>
-      <li>
-        <b>Unterschreiben</b>
-        <ol>
-          <li>Bekunden Sie Ihre Unterstützung, durch Ihre <b>persönliche und handschriftliche Unterschrift</b> auf dem Formblatt.</li>
-          <li>Unterschreiben Sie auch den Datenschutzhinweis auf der Rückseite.</li>
-        </ol>
-      </li>
-      <li>
-        <b>Versand an Ihre Gemeindebehörde</b>
-        <ol>
-          <li>Erstellen Sie den Behördenumschlag, adressiert an Ihre Gemeindebehörde.</li>
-          <li>Legen Sie alle Ausdrucke in den Behördenumschlag.</li>
-          <li>Versenden Sie oder überbringen Sie den Behördenumschlag an Ihre Gemeindebehörde.</li>
-        </ol>
-      </li>
-      <li>
-        <b>Frankierung</b>
-        <p>In der Regel übernimmt die Gemeindebehörde den Versand zur Sammelstelle. Sie können bei der Behörde gerne vorher anfragen, ob das der Fall ist. Sollte das nicht der Fall sein, legen Sie in den Behördenumschlag zusätzlich einen frankierten Antwortumschlag, adressiert an die Sammelstelle der Partei.</p>
-      </li>
-    </ul>
-
-  </div>
-
-
-  </div>
-
-  <div class="footer">
-    <p>Quellcode: <a href="https://github.com/mbarkhau/uu-tool">github.com/mbarkhau/uu-tool</a></p>
-    <p>Erstellt mit freundlicher Unterstützung von <a href="https://die-libertaeren.de">die-libertaeren.de</a>.</p>
-    <p>Copyright © 2025 Manuel Barkhau. Alle Rechte vorbehalten.</p>
-  </div>
-
-</body>
-
-<script type="text/javascript" src="assets/uu_app.js"></script>
+    <script type="text/javascript" src="assets/uu_app.js"></script>
 </html>

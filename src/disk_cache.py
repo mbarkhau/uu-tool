@@ -1,44 +1,69 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.13"
+# dependencies = [ ]
+# ///
+import sys
 import json
+from termios import TIOCPKT_DOSTOP
 import time
 import shelve
-import functools
 import tempfile
+import typing as typ
 import pathlib as pl
+import functools as ft
+import contextlib
+
+CachedDict = dict[str, typ.Any]
+
+_CACHE_BY_FILENAME: dict[str, CachedDict] = {}
+
+cache_sizes: dict[str, int] = {}
 
 
-CACHE: dict = {}
-
-cache_sizes = {}
-
-
-def load_cache(filename):
-    filepath = pl.Path(tempfile.gettempdir()) / filename
-
-    done = False
-    while not done:
-        try:
-            with shelve.open(filepath) as cache_db:
-                CACHE.update(cache_db.items())
-            done = True
-        except PermissionError:
-            time.sleep(0.5)
-
-    # CACHE.clear()
-
-    cache_sizes[filename] = len(CACHE)
+def _cache_filepath(filename: str) -> pl.Path:
+    return pl.Path(tempfile.gettempdir()) / filename
 
 
-def dump_cache(filename) -> None:
-    # if cache_sizes[filename] == len(CACHE):
+def load_cache(filename: str) -> CachedDict:
+    """
+    returns: CachedDict by reference. Mutated dict is persisted by calling dump_cache(filename).
+    """
+    fpath = _cache_filepath(filename)
+
+    # NOTE: Read from cache file can fail if written to concurrently.
+    #       Retry until successful.
+    # TODO: Semaphore?
+    if fpath.exists():
+        done = False
+        while not done:
+            try:
+                with shelve.open(fpath, flag="r") as cache_db:
+                    _CACHE_BY_FILENAME[filename] = dict(cache_db.items())
+                done = True
+            except PermissionError:
+                time.sleep(0.5)
+    else:
+        _CACHE_BY_FILENAME[filename] = {}
+
+    cache_sizes[filename] = len(_CACHE_BY_FILENAME[filename])
+    return _CACHE_BY_FILENAME[filename]
+
+
+def dump_cache(filename: str, cache: CachedDict | None) -> None:
+    # if cache_sizes[filename] == len(_CACHE_BY_FILENAME):
     #     return
 
-    filepath = pl.Path(tempfile.gettempdir()) / filename
+    fpath = _cache_filepath(filename)
+    if cache is None:
+        cache = _CACHE_BY_FILENAME[filename]
 
+    # TODO: Semaphore? eventually consistent?
     done = False
     while not done:
         try:
-            with shelve.open(filepath) as cache_db:
-                for key, val in CACHE.items():
+            with shelve.open(fpath, flag="c") as cache_db:
+                for key, val in cache.items():
                     cache_db[key] = val
             done = True
         except PermissionError:
@@ -46,12 +71,20 @@ def dump_cache(filename) -> None:
             print("cache dump fail")
 
 
-def cache(func):
+@contextlib.contextmanager
+def cache_ctx(filename: str) -> typ.Generator[CachedDict, None, None]:
+    cache = load_cache(filename)
+    yield cache
+    dump_cache(filename)
+
+
+def cache(func: typ.Callable):
     @functools.wraps(func)
-    def dec(*args, **kwargs):
+    def dec(*args, **kwargs) -> typ.Any:
         parts = []
         for arg in args:
             parts.append(str(arg))
+
         for key, val in kwargs.items():
             parts.append(key)
             parts.append(str(val))
@@ -61,9 +94,26 @@ def cache(func):
         #     if '"area_plz"' in CACHE[key]:
         #         CACHE.pop(key)
 
-        if key not in CACHE:
+        cache = _CACHE_BY_FILENAME[filename]
+        if key not in cache:
             result = func(*args, **kwargs)
-            CACHE[key] = json.dumps(result)
-        return json.loads(CACHE[key])
+            cache[key] = json.dumps(result)
+        return json.loads(cache[key])
 
     return dec
+
+
+def _main(args: list[str]) -> int:
+    fname = "test_cache.db"
+    with cache_ctx(fname) as cache:
+        cache["test1"] = 123
+        cache["test2"] = 345
+
+    assert load_cache(fname) == {"test1": 123, "test2": 345}
+    # TODO: actually test cache logic
+
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(_main(sys.argv[1:]))
