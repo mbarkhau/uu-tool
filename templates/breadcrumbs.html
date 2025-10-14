@@ -1,0 +1,17 @@
+<div class="breadcrumbs">
+{% if active == "index.html" %}
+    <a class="tab1 active" href="index.html">Info</a>
+    <a class="tab2" href="select.html">Auswahl</a>
+    <a class="tab3" href="select.html">Formular</a>
+{% elif active == "select.html" %}
+    <a class="tab1" href="index.html">Info</a>
+    <a class="tab2 active" href="select.html">Auswahl</a>
+    <a class="tab3" href="select.html">Formular</a>
+{% elif active == "formular.html" %}
+    <a class="tab1" href="index.html">Info</a>
+    <a class="tab2" href="select.html">Auswahl</a>
+    <a class="tab3 active" href="formular.html">Formular</a>
+{% else %}
+    <span class="error">Fehler</span>
+{% endif %}
+</div>

@@ -1,0 +1,4 @@
+[{"ags": "09162000", "area": 310.7, "email": null, "gemeinde": "München, Landeshauptstadt", "name": null, "ort": "München", "phone": null, "plz": "80313", "population": 1487708, "sitz": "Landeshauptstadt München", "str": null}, 
+{"email": "buergerbuero.kvr@muenchen.de", "name": "München Hauptabteilung II Einwohnerwesen", "ort": "München", "phone": "089-23396-000", "plz": "80337", "prefix": "Bürgeramt", "str": "Ruppertstr. 19"}, 
+{"email": "buergerbuero-leonrodstr.kvr@muenchen.de", "name": "München Leonrodstr.", "ort": "München", "phone": "089-233-960-00", "plz": "80634", "prefix": "Bürgeramt", "str": "Leonrodstr. 21"}, 
+{"email": "buergerbuero-riesenfeldstr.kvr@muenchen.de", "name": "München Riesenfeldstr.", "ort": "München", "phone": "089-233-960-00", "plz": "80809", "prefix": "Bürgeramt", "str": "Riesenfeldstr. 75"}]

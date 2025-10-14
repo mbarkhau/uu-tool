@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+{% block head %}
+<link rel="stylesheet" href="lib/tom-select.css" />
+
+<style>
+.form-container .selections {
+    display: block;
+}
+.form-container .selections > div > div {
+    max-width: 13em;
+    display: block;
+    margin: 0 auto;
+}
+
+.form {
+    max-width: 25em;
+    margin: 1em auto;
+}
+
+.form-field {
+  min-height: 2.3em;
+}
+.form-field > div {
+  display: inline-block;
+}
+
+.form-field label {
+    vertical-align: top;
+    display: inline-block;
+    min-width: 10em;
+    margin: 0.3em 0;
+}
+
+.form-field.postleitzahl {
+    min-height: 2.3em;
+}
+.form-field > div {
+  display: inline-block;
+}
+
+.form-field > input {
+  width: 13em;
+  margin-bottom: 0.5em;
+}
+
+.form-field > input {
+  border: 2px solid #888;
+  padding: 0.3em 1em;
+}
+
+.form-field .ts-wrapper {
+  width: 10.77em;
+}
+
+.form .ts-control {
+  border-radius: 0;
+  border: 2px solid #888;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 0.5em;
+}
+
+.form .ts-control input {
+    font-size: 14px;
+}
+
+div.ts-wrapper div.ts-control {
+  /* hack to match sizing with inputs */
+  box-sizing: unset;
+  padding: 0.3em 1em !important;
+}
+
+.buttons {
+    text-aling: center;
+}
+.buttons a, button {
+  display: inline-block;
+  color: #000;
+  background: #EEE;
+  transition: 300ms background, 300ms border, 300ms box-shadow;
+  padding: 0.3em 1em;
+  box-shadow: none;
+  border: 2px solid #888;
+  text-decoration: none;
+
+  font-size: 14px;
+  line-height: 1.3em;
+  margin: 0 1rem;
+}
+
+button:disabled {
+  background: #FAFAFA;
+  color: #777;
+}
+
+.buttons a, button:enabled {
+  background: #FFF;
+  color: #000;
+  box-shadow: 0 0 5px #888;
+}
+
+.buttons a, button:enabled:hover {
+  cursor: pointer;
+  border: 2px solid #000;
+}
+
+.pseudoform {
+  width: 25em;
+  margin: 1em auto;
+}
+.pseudoform input {
+  font-size: 14px;
+}
+.pseudoform button {
+  margin: 1em auto 3em auto;
+  display: block;
+}
+
+</style>
+{% endblock %}
+
+{% block content %}
+<h2>Auswahl:</h2>
+<div class="form-container">
+    <div class="elections"></div>
+    <div class="selections"></div>
+    <hr>
+    <div class="form">
+        <div class="form-field">
+            <label for="firstname">Vorname:</label>
+            <input
+                type="text"
+                name="firstname"
+                placeholder="Max"
+                required
+            />
+        </div>
+
+        <div class="form-field">
+            <label for="lastname">Familienname:</label>
+            <input
+                type="text"
+                name="lastname"
+                placeholder="Mustermann"
+                required
+            />
+        </div>
+
+        <div class="form-field">
+            <label for="birthday">Geburtsdatum:</label>
+            <input type="date" name="birthday" required />
+        </div>
+
+        <div class="form-field">
+            <label for="street">Straße, Hausnummer</label>
+            <input
+                type="text"
+                name="street"
+                placeholder="Musterstraße 123a"
+                required
+            />
+        </div>
+
+        <div class="form-field postleitzahl">
+            <label for="postleitzahl">PLZ, Ort:</label>
+            <div>
+                <select name="postleitzahl" placeholder=""></select>
+            </div>
+        </div>
+
+        <div class="buero-address-wrap">
+            <p>Zuständes Amt</p>
+            <select id="buero-address-select"></select>
+            <div class="buero-address">-</div>
+        </div>
+
+        <div class="buttons">
+            <button name="download" disabled onclick="uu_app.generatePDF()">
+                PDF generieren<br />
+                und herunterladen
+            </button>
+            <a class="download-pdf-template" target="_blank">
+                Blanko Formular<br />
+                herunterladen
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

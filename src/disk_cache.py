@@ -5,7 +5,6 @@
 # ///
 import sys
 import json
-from termios import TIOCPKT_DOSTOP
 import time
 import shelve
 import tempfile

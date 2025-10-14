@@ -1,0 +1,352 @@
+{
+  "ELECTIONS": {
+    "2026-ltw-bawue": {
+      "name": "Wahl zum 18. Landtag<br>von <b>Baden-W\u00fcrttemberg</b>",
+      "date": "2026-03-08",
+      "deadline": "2025-12-22",
+      "minimum_age": 16,
+      "minimum_support": "2.000",
+      "electorate": "7.671.039",
+      "loadPLZ": [
+        "63",
+        "64",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "88",
+        "89",
+        "97"
+      ],
+      "info_urls": [
+        "https://www.landtagswahl-bw.de/wer-wird-gewaehlt",
+        "https://im.baden-wuerttemberg.de/fileadmin/redaktion/m-im/intern/dateien/pdf/20250530_LTW_2026-Bekanntmachung_der_Landeswahlleiterin_zur_Einreichung_von_Wahlvorschl%C3%A4gen.pdf",
+        "https://www.wahlrecht.de/termine.htm"
+      ],
+      "inactiveSelections": {
+        "2026-ltw-bawue_die-basis": true,
+        "2026-ltw-bawue_tierschutzpartei": true
+      }
+    },
+    "2026-ltw-rlp": {
+      "name": "Wahl zum 18. Landtag<br>von <b>Rheinland-Pfalz</b>",
+      "date": "2026-03-22",
+      "deadline": "2026-01-02",
+      "minimum_age": 18,
+      "minimum_support": "2.000",
+      "electorate": "3.042.414",
+      "loadPLZ": [
+        "51",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "65",
+        "66",
+        "67",
+        "76"
+      ],
+      "info_urls": [],
+      "inactiveSelections": {}
+    },
+    "2026-ltw-sa": {
+      "name": "Wahl zum 18. Landtag<br>von <b>Sachsen Anhalt</b>",
+      "date": "2026-09-06",
+      "deadline": "2026-06-26",
+      "minimum_age": 18,
+      "minimum_support": "1.000",
+      "electorate": "1.788.930",
+      "loadPLZ": [
+        "06",
+        "14",
+        "29",
+        "38",
+        "39"
+      ],
+      "info_urls": []
+    },
+    "2026-ltw-mp": {
+      "name": "Wahl zum 18. Landtag<br>von <b>Mecklenburg-Vorpommern</b>",
+      "inactive": true,
+      "date": "2026-09-20",
+      "deadline": "2026-07-10",
+      "minimum_age": 16,
+      "minimum_support": "1.000",
+      "electorate": "1.312.471",
+      "loadPLZ": [
+        "17",
+        "18",
+        "19",
+        "23"
+      ],
+      "info_urls": []
+    }
+  },
+  "SELECTIONS": {
+    "2026-ltw-bawue_team-freiheit": {
+      "name": "Team Freiheit",
+      "partyHref": "https://www.team-freiheit.de/",
+      "lastResult": 0,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "Verein Team Freiheit",
+        "R\u00f6dgener Stra\u00dfe 100",
+        "04509 Delitzsch"
+      ]
+    },
+    "2026-ltw-bawue_die-partei": {
+      "name": "Die PARTEI - Partei f\u00fcr Arbeit, Rechtsstaat, Tierschutz, Elitenf\u00f6rderung und basisdemokratische Initiative",
+      "partyHref": "https://www.die-partei-bw.de/2025/05/19/wir-brauchen-dich-und-deine-unterschrift/",
+      "lastResult": 59463,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "Ina Schumann \u2013 Die PARTEI",
+        "Bergstr. 128",
+        "70186 Stuttgart"
+      ]
+    },
+    "2026-ltw-bawue_tierschutzpartei": {
+      "name": "Tierschutzpartei - PARTEI MENSCH UMWELT TIERSCHUTZ",
+      "partyHref": "https://www.tierschutzpartei.de/partei/struktur/landesverbaende/baden-wuerttemberg/",
+      "lastResult": 48497,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "PARTEI MENSCH UMWELT TIERSCHUTZ",
+        "Landesverband Baden-W\u00fcrttemberg",
+        "c/o Bastian Thomas R\u00f6hm",
+        "Furttenbachstr. 12",
+        "89077 Ulm"
+      ]
+    },
+    "2026-ltw-bawue_die-basis": {
+      "name": "dieBasis - Basisdemokratische Partei Deutschland",
+      "partyHref": "https://diebasis-bw.de/",
+      "lastResult": 48497,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "Landesverband dieBasis BW",
+        "G\u00f6rlitzer Weg 26",
+        "74321 Bietigheim-Bissingen"
+      ]
+    },
+    "2026-ltw-bawue_oedp": {
+      "name": "\u00d6DP - \u00d6kologisch-Demokratische Partei / Familie und Umwelt",
+      "partyHref": "https://www.oedp-bw.de/wahlen/landtagswahl-2026",
+      "lastResult": 37819,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "\u00d6DP Baden-W\u00fcrttemberg",
+        "Bismarckplatz 4",
+        "70197 Stuttgart"
+      ]
+    },
+    "2026-ltw-bawue_volt": {
+      "name": "Volt",
+      "partyHref": "https://voltdeutschland.org/bw/unterschriftenformulare-ltw26",
+      "lastResult": 22782,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "Volt Deutschland, Landesverband Baden-W\u00fcrttemberg",
+        "Christiane Fichter",
+        "Schwarzwaldstr. 14",
+        "78112 St. Georgen"
+      ]
+    },
+    "2026-ltw-bawue_buendnis-c": {
+      "name": "B\u00fcndnis C",
+      "partyHref": "https://baden-wuerttemberg.buendnis-c.de/willkommen/landtagswahl-2026/",
+      "lastResult": 4081,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "Bundesgesch\u00e4ftsstelle B\u00fcndnis C",
+        "Winterstra\u00dfe 29",
+        "76137 Karlsruhe"
+      ]
+    },
+    "2026-ltw-bawue_piratenpartei": {
+      "name": "Piratenpartei",
+      "partyHref": "https://www.piratenpartei-bw.de/unterstuetzerunterschriften/",
+      "lastResult": 2878,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "Piratenpartei Baden-W\u00fcrttemberg",
+        "Gartenstra\u00dfe 32",
+        "72764 Reutlingen"
+      ]
+    },
+    "2026-ltw-bawue_pdh": {
+      "name": "PdH - Partei der Humanisten",
+      "partyHref": "https://www.pdh.eu/uu/?lv=bw",
+      "lastResult": 976,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "Eric Gildersleeve",
+        "Sundgauallee 46",
+        "Zimmer 0802",
+        "79110 Freiburg"
+      ]
+    },
+    "2026-ltw-bawue_buendnis-deutschland": {
+      "name": "B\u00fcndnis Deutschland",
+      "partyHref": "https://buendnis-bw.de/",
+      "lastResult": 0,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "B\u00fcndnis Deutschland",
+        "Landesverband Baden-W\u00fcrttemberg",
+        "Sparrh\u00e4rmlingweg 35",
+        "70376 Stuttgart"
+      ]
+    },
+    "2026-ltw-bawue_pdf": {
+      "name": "PdF - Partei des Fortschritts",
+      "partyHref": "https://partei-des-fortschritts.de/landtagswahl-baden-wuerttemberg/",
+      "lastResult": 0,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "PdF Landesverband BaW\u00fc",
+        "Hermann-Beuttenm\u00fcller-Stra\u00dfe 10",
+        "75015 Bretten"
+      ]
+    },
+    "2026-ltw-rlp_tierschutzpartei": {
+      "name": "Tierschutzpartei - PARTEI MENSCH UMWELT TIERSCHUTZ",
+      "partyHref": "https://www.tierschutzpartei.de/tierrechte-und-tierschutz-2026-endlich-in-den-mainzer-landtag/",
+      "lastResult": 32527,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "PARTEI MENSCH UMWELT TIERSCHUTZ",
+        "Landesverband Rheinland-Pfalz",
+        "Schillerstra\u00dfe 24",
+        "66989 H\u00f6hfr\u00f6schen"
+      ]
+    },
+    "2026-ltw-rlp_die-partei": {
+      "name": "Die PARTEI - Partei f\u00fcr Arbeit, Rechtsstaat, Tierschutz, Elitenf\u00f6rderung und basisdemokratische Initiative",
+      "partyHref": "https://die-partei.net/rlp/",
+      "lastResult": 20519,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "Die PARTEI LV Rheinland-Pfalz",
+        "c/o Florian Niedt",
+        "Postfach 10 03 02",
+        "56033 Koblenz"
+      ]
+    },
+    "2026-ltw-rlp_volt": {
+      "name": "Volt",
+      "partyHref": "https://voltdeutschland.org/bw/unterschriftenformulare-ltw26",
+      "lastResult": 19286,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "Volt Deutschland Landesverband Rheinland-Pfalz",
+        "Bleichstra\u00dfe 5",
+        "55218 Ingelheim am Rhein"
+      ]
+    },
+    "2026-ltw-rlp_oedp": {
+      "name": "\u00d6DP - \u00d6kologisch-Demokratische Partei / Familie und Umwelt",
+      "partyHref": "https://www.oedp-rlp.de/wahlen/landtagswahl-2026",
+      "lastResult": 13406,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "\u00d6DP Rheinland-Pfalz",
+        "Neckarstr. 27-29",
+        "55118 Mainz"
+      ]
+    },
+    "2026-ltw-rlp_piratenpartei": {
+      "name": "Piratenpartei",
+      "partyHref": "",
+      "lastResult": 10393,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "Piratenpartei KV Koblenz",
+        "Postfach 20 12 11",
+        "56012 Koblenz"
+      ]
+    },
+    "2026-ltw-rlp_pdh": {
+      "name": "PdH - Partei der Humanisten",
+      "lastResult": 0,
+      "partyHref": "https://www.pdh.eu/uu/?lv=rp",
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "Uwe Kr\u00e4mer",
+        "Ringstr. 40",
+        "56564 Neuwied"
+      ]
+    },
+    "2026-ltw-rlp_die-basis": {
+      "name": "dieBasis - Basisdemokratische Partei Deutschland",
+      "partyHref": "https://diebasis-rp.de/unterschriften/",
+      "lastResult": 0,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "dieBasis Landesverband Rheinland-Pfalz",
+        "Bitburger Str. 28a",
+        "54293 Trier"
+      ]
+    },
+    "2026-ltw-sa_die-basis": {
+      "name": "dieBasis - Basisdemokratische Partei Deutschland",
+      "partyHref": "https://www.diebasis-blk.de/wahlen/",
+      "lastResult": 15623,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": []
+    },
+    "2026-ltw-sa_die-partei": {
+      "name": "Die PARTEI - Partei f\u00fcr Arbeit, Rechtsstaat, Tierschutz, Elitenf\u00f6rderung und basisdemokratische Initiative",
+      "partyHref": "https://die-partei-sachsen-anhalt.de/",
+      "lastResult": 7768,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "Die PARTEI Magdeburg",
+        "Eddie Kuczyk",
+        "Postfach 1241",
+        "39002 Magdeburg"
+      ]
+    },
+    "2026-ltw-sa_die-libertaeren": {
+      "name": "DIE LIBERT\u00c4REN",
+      "partyHref": "https://www.die-libertaeren.de",
+      "lastResult": 0,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "DIE LIBERT\u00c4REN e.V.",
+        "Postfach 75 02 07 ",
+        "81332 M\u00fcnchen"
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "ELECTION_CONFIGS": {
+    "2024-eu": {
+      "name": "Europawahl 2024",
+      "date": "2024-03-06",
+      "deadline": "2024-01-05",
+      "minimum_age": "16",
+      "minimum_support": "4.000",
+      "current_support": "0",
+      "electorate": "373.000.000"
+    }
+  }
+}

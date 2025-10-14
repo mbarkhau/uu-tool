@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.4em;
@@ -6,26 +10,6 @@ body {
   margin: 0;
 
   padding-bottom: 4em;
-}
-
-#js-player {cursor: pointer;}
-#js-player img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-iframe, #js-player {
-  display: block;
-  margin: 1.5em auto;
-  width: 320px;
-  height: 180px;
-}
-
-@media screen and (min-device-width: 600px) {
-  iframe, #js-player {
-    width: 560px;
-    height: 315px;
-  }
 }
 
 
@@ -46,11 +30,7 @@ h2 {
   margin-top: 2em;
 }
 
-.center {
-  text-align: center;
-}
-
-.main, .footer {
+.main, .content, .footer {
   max-width: 37em;
   margin: 1em auto;
   padding: 1em 2em;
@@ -62,60 +42,6 @@ h2 {
   box-shadow: 0px 0px 20px #888;
 }
 
-.config-options {
-  display: flex;
-  flex-direction: row;
-}
-
-.config-form .config-option:hover {
-  background: #DDD;
-}
-.config-form .config-option.selected {
-  background: #BBB;
-}
-
-.config-form .config-option {
-  background: #EEE;
-  transition: background 300ms;
-
-  flex: 1;
-  display: block;
-  min-width: 200px;
-  cursor: pointer;
-
-  border-radius: 8px;
-  border: 4px solid white;
-}
-
-.config-form .config-option img {
-  display: block;
-  margin: 0.5em auto;
-}
-
-
-.config-options {
-  min-height: 4.5em;
-}
-.config-texts {
-  margin: 1em 0 0 0;
-  min-height: 8em;
-}
-
-.config-texts a {
-  white-space: nowrap;
-}
-
-@media screen and (max-device-width: 600px) {
-  .config-options {
-    flex-direction: column;
-  }
-  .config-texts {
-    margin: 1em 0 0 0;
-    min-height: 14em;
-  }
-}
-
-
 
 .footer {
   font-size: 0.8em;
@@ -123,160 +49,6 @@ h2 {
 }
 .footer p { margin: 0em; }
 
-.listbox {
-  margin: 1em auto;
-}
-
-ul, ol {
-  padding-inline-start: 20px;
-}
-
-.listbox p, .listbox ul, .listbox ol {
-  margin: 0;
-}
-
-.listbox li {
-  line-height: 1.2em;
-  margin: 0.3em 0;
-}
-
-.small {
-  font-size: 0.7em;
-  line-height: 1.2em;
-  color: #444;
-}
-
-.warn {
-  background: #FF7;
-}
-
-.form-field label {
-  vertical-align: top;
-  display: inline-block;
-  min-width: 10em;
-  margin: 0.3em 0;
-}
-
-.form-field.postleitzahl {
-  min-height: 2.3em;
-}
-
-.buero-address-wrap {
-  min-height: 16em;
-}
-
-.buero-address-wrap p {
-  font-size: 1rem;
-}
-
-.buero-address-wrap .ts-wrapper {
-  width: 17em;
-  margin: 0 auto;
-}
-
-.form-field .ts-wrapper {
-  width: 11.37em;
-}
-
-.ts-control {
-  border-radius: 0;
-  border: 2px solid #888;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  margin-bottom: 0.5em;
-}
-
-div.ts-wrapper div.ts-control {
-  /* hack to match sizing with inputs */
-  box-sizing: unset;
-  padding: 0.3em 1em !important;
-}
-
-.form-field {
-  min-height: 2.3em;
-}
-.form-field > div {
-  display: inline-block;
-}
-
-.form-field > input {
-  width: 13em;
-  margin-bottom: 0.5em;
-}
-
-.form-field > input {
-  border: 2px solid #888;
-  padding: 0.3em 1em;
-}
-
-button {
-  color: #000;
-  background: #EEE;
-  transition: 300ms background, 300ms border, 300ms box-shadow;
-  padding: 0.3em 1em;
-  box-shadow: none;
-}
-
-button {
-  border: 2px solid #888;
-}
-
-button:disabled {
-  background: #FAFAFA;
-  color: #777;
-}
-
-button:enabled {
-  background: #FFF;
-  color: #000;
-  box-shadow: 0 0 5px #888;
-}
-
-button:enabled:hover {
-  cursor: pointer;
-  border: 2px solid #000;
-}
-
-.pseudoform {
-  width: 25em;
-  margin: 1em auto;
-}
-.pseudoform input {
-  font-size: 14px;
-}
-.pseudoform button {
-  margin: 1em auto 3em auto;
-  display: block;
-}
-
-.buero-address-wrap  {
-  font-size: 0.8em;
-  line-height: 1.3em;
-}
-.buero-address-wrap select {
-  display: none;
-}
-.buero-address-wrap .ts-control {
-  margin: 1em auto;
-}
-.buero-address-wrap .ts-control {
-  width: 13em;
-}
-.buero-address {
-  min-height: 4.5em;
-  max-width: 18em;
-  margin: 0 auto;
-}
-.buero-address-wrap .ts-control input {
-  display: none !important;
-}
-
-.buero-address-wrap span {
-  display: inline-block;
-  vertical-align: top;
-  min-width: 6em;
-  max-width: 11em;
-}
 
 @media screen and (max-device-width: 600px) {
   h1 {font-size: 1.8em;}
@@ -289,15 +61,28 @@ button:enabled:hover {
     padding: 1em;
     min-width: unset;
   }
-  .pseudoform {
-    width: 14em;
-  }
-  .form-field label {
-    width: 100%;
-  }
 }
 
 
 .breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
 
+.breadcrumb-arrow {
+    font-size: 1.5rem;
+}
+a {
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    font-weight: bold;
+}
+.active:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }

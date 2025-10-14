@@ -1,0 +1,78 @@
+{
+  "ELECTION_CONFIGS": {
+    "2025-btw": {
+      "name": "Bundestagswahl 2025",
+    },
+    "2024-eu": {
+      "name": "Europawahl 2024",
+      "date": "2024-03-06",
+      "deadline": "2024-01-05",
+      "minimum_age": "16",
+      "minimum_support": "4.000",
+      "current_support": "0",
+      "electorate": "373.000.000"
+    }
+  },
+  "CONFIGS": {
+    "2025-btw-die-libertaeren": {
+      "name": "DIE LIBERTÄREN",
+      "deadline": "30.06.2025",
+      "partyHref": "https://die-libertaeren.de/bundestagswahlen-2025-unterstuetzen/",
+      "partyHrefText": "die-libertären.de/bundestagswahlen-2025/"
+    },
+    "2024-eu-pdv": {
+      "name": "Partei der Vernunft",
+      "deadline": "29.02.2024",
+      "partyHref": "https://parteidervernunft.de/europawahl-2024-unterstuetzen-sie-die-partei-der-vernunft/",
+      "partyHrefText": "parteidervernunft.de/europawahl-2024/",
+      "pdf_form": "pdf_data/EUWahl2024_PDV_UU_Formular_v2.pdf",
+      "pdf_cover_letter": "pdf_data/Gemeindebuero_Anschreiben_PDV_v6.pdf",
+      "download_name": "PDV_Unterstuetzungsunterschrift_EUWahl2024.pdf",
+      "sender_phone": "+49 (0)152 5403 4785",
+      "sender_email": "info@parteidervernunft.de",
+      "sender_addr": [
+        "Florian Handwerker",
+        "Wallbergstr. 4",
+        "83620 Feldkirchen-Westerham",
+        "florian.handwerker@die-libertaeren.de"
+      ],
+      "return_addr": [
+        "Florian Handwerker",
+        "PDV Sammelstelle",
+        "Wallbergstr. 4",
+        "83620 Feldkirchen-Westerham"
+      ],
+      "sender_sign": [
+        "Hochachtungsvoll",
+        "Florian Handwerker",
+        "Bundesgeschäftsführer, DIE LIBERTÄREN e.V."
+      ]
+    },
+    "2024-eu-die-partei": {
+      "name": "Die PARTEI",
+      "election": "Europawahl 2024",
+      "deadline": "29.02.2024",
+      "partyHref": "https://www.die-partei.de/europawahl-2024/",
+      "partyHrefText": "die-partei.de/europawahl-2024/",
+      "minimum_age": "16",
+      "minimum_support": "4.000",
+      "pdf_form": "pdf_data/EU24_Die_Partei_UU_v2.pdf",
+      "pdf_cover_letter": "pdf_data/Gemeindebuero_Anschreiben_PDV_v6.pdf",
+      "download_name": "DIE_PARTEI_Unterstuetzungsunterschrift_EUWahl2024.pdf",
+      "sender_phone": "+49 (0)152 5403 4785",
+      "sender_email": "info@parteidervernunft.de",
+      "sender_addr": [
+        "Die PARTEI",
+        "Kopischstr. 10",
+        "10965 Berlin",
+        "mail@die-partei.de"
+      ],
+      "return_addr": [
+        "Die PARTEI",
+        "Kopischstr. 10",
+        "10965 Berlin"
+      ],
+      "sender_sign": []
+    }
+  }
+}

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="de">
+<head>
+
+<meta charset="utf-8" />
+
+<title>UU-Tool - Deine Unterstützungsunterschrift zur Wahlzulassung einer Kleinpartei</title>
+
+<meta name="description" content="UU-Tool - Erstelle deine Unterstützungsunterschrift zur Wahlzulassung einer Kleinpartei." />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- DNS prefetch for external resources -->
+<link rel="dns-prefetch" href="//www.youtube.com" />
+<link rel="dns-prefetch" href="//www.youtube-nocookie.com" />
+
+<link rel="icon" type="image/png" sizes="24x24" href="img/favicon_24.png?cb=2" />
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon_32.png?cb=2" />
+<link rel="icon" type="image/png" sizes="64x64" href="img/favicon_64.png?cb=2" />
+
+<style inline>
+/* Reset styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.4em;
+  background: #DDD;
+  padding: 0;
+  margin: 0;
+
+  padding-bottom: 4em;
+  overflow-y: scroll;
+}
+
+h1, h2 {
+  line-height: 1.1em;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+/* Layout styles */
+
+.main, .header, .content, .footer {
+  max-width: 37em;
+  margin: 0 auto 1em auto;
+}
+.header {
+  padding-top: 1em;
+}
+
+.header h1, .header h2, .header h3 {
+  margin: 0.5em 1rem;
+}
+
+.content { padding: 2rem; }
+.footer { padding: 1rem; }
+
+body {
+  min-height: 70rem;
+}
+.main {
+  min-height: 50rem;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0px 0px 20px #888;
+}
+
+.footer {
+  font-size: 0.8em;
+  line-height: 1.3em;
+}
+.footer p { margin: 0em; }
+
+
+@media screen and (max-device-width: 600px) {
+  .main {
+    margin: 0;
+    min-width: unset;
+  }
+  .content, .footer {
+    padding: 1em;
+  }
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+}
+.header h2, .header h3 {
+  color: #333;
+  font-weight: normal;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+h1 {font-size: 1.7em;}
+h2 {font-size: 1.5em; margin-top: 2em;}
+hr {margin: 2em;}
+
+.content h2, .content p {
+    margin: 0 1rem 1rem 1rem;
+}
+
+
+@media screen and (max-device-width: 600px) {
+  h1 {font-size: 1.6em;}
+  h2 {font-size: 1.3em; hyphens: auto;}
+}
+
+.breadcrumbs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    overflow: auto;
+}
+
+.breadcrumbs a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    padding: 1.0em;
+}
+
+.breadcrumbs {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 2px solid hsl(0, 0%, 75%);
+}
+
+@media screen and (max-device-width: 600px) {
+    .breadcrumbs {
+        border-radius: unset;
+    }
+}
+
+</style>
+<link rel="stylesheet" href="assets/uu_styles.css" />
+
+{% block head %}{% endblock %}
+</head>
+
+<body>
+    <div class="header">
+        <h1><a href="https://uu-tool.de">UU-Tool.de</a></h1>
+        <h2>
+            Das Tool für deine Unterstützungsunterschrift
+        </h2>
+        <h3>
+            Ausfüllhilfe und Anleitung für Formblätter zur Wahlzulassung von Wahllisten/Parteien.
+        </h3>
+    </div>
+
+    <div class="main">
+        {% include "breadcrumbs.html" %}
+        <div class="content">
+        {% block content %}{% endblock %}
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>
+            Quellcode:
+            <a href="https://github.com/mbarkhau/uu-tool">github.com/mbarkhau/uu-tool</a>
+        </p>
+        <p>Copyright © 2025 Manuel Barkhau. Alle Rechte vorbehalten.</p>
+    </div>
+    <link rel="preload" href="data/config.json" as="fetch" type="application/json" crossorigin="anonymous">
+    <script src="assets/uu_app.js"></script>
+</body>
+</html>

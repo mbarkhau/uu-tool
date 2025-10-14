@@ -1,0 +1,378 @@
+[ELECTIONS.2026-ltw-bawue]
+name = "Wahl zum 18. Landtag<br>von <b>Baden-Württemberg</b>"
+date = "2026-03-08"
+deadline = "2025-12-22"
+minimum_age = 16
+minimum_support = "2.000"
+electorate = "7.671.039"
+loadPLZ = ["63", "64", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "88", "89", "97"]
+info_urls = [
+  "https://www.landtagswahl-bw.de/wer-wird-gewaehlt",
+  "https://im.baden-wuerttemberg.de/fileadmin/redaktion/m-im/intern/dateien/pdf/20250530_LTW_2026-Bekanntmachung_der_Landeswahlleiterin_zur_Einreichung_von_Wahlvorschl%C3%A4gen.pdf",
+  "https://www.wahlrecht.de/termine.htm"
+]
+
+[ELECTIONS.2026-ltw-bawue.inactiveSelections]
+  # couldn't find pdf form for these
+  2026-ltw-bawue_die-basis = true
+  2026-ltw-bawue_tierschutzpartei = true
+  # 2026-ltw-bawue_buendnis-deutschland = true
+  # 2026-ltw-bawue_buendnis-c = true
+  # 2026-ltw-bawue_pdf = true
+  # 2026-ltw-bawue_die-partei = true
+  # 2026-ltw-bawue_piratenpartei = true
+  # 2026-ltw-bawue_volt = true
+  # 2026-ltw-bawue_oedp = true
+  # 2026-ltw-bawue_pdh = true
+
+[ELECTIONS.2026-ltw-rlp]
+name = "Wahl zum 18. Landtag<br>von <b>Rheinland-Pfalz</b>"
+date = "2026-03-22"
+deadline = "2026-01-02"
+minimum_age = 18
+minimum_support = "2.000"
+electorate = "3.042.414"
+loadPLZ = ["51", "53", "54", "55", "56", "57", "65", "66", "67", "76"]
+info_urls = [ ]
+
+[ELECTIONS.2026-ltw-rlp.inactiveSelections]
+
+
+[ELECTIONS.2026-ltw-sa]
+name = "Wahl zum 18. Landtag<br>von <b>Sachsen Anhalt</b>"
+date = "2026-09-06"
+deadline = "2026-06-26"
+minimum_age = 18
+minimum_support = "1.000"
+electorate = "1.788.930"
+loadPLZ = ["06", "14", "29", "38", "39"]
+info_urls = [ ]
+
+[ELECTIONS.2026-ltw-mp]
+name = "Wahl zum 18. Landtag<br>von <b>Mecklenburg-Vorpommern</b>"
+inactive = true
+date = "2026-09-20"
+deadline = "2026-07-10"
+minimum_age = 16
+minimum_support = "1.000"
+electorate = "1.312.471"
+loadPLZ = ["17", "18", "19", "23"]
+info_urls = [ ]
+
+# [ELECTIONS.2026-ltw-berlin]
+# loadPLZ = ["10", "11", "12", "13", "14"]
+
+# [ELECTIONS.2027-ltw-saarland]
+# loadPLZ = ["66"]
+
+# [ELECTIONS.2027-ltw-nrw]
+# loadPLZ = ["32", "33", "34", "37", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "57", "58", "59"]
+
+# [ELECTIONS.2027-ltw-sh]
+# loadPLZ = ["21", "22", "23", "24", "25", "27"]
+
+# [ELECTIONS.2027-ltw-niedersachsen]
+# loadPLZ = ["19", "21", "26", "27", "28", "29", "30", "31", "34", "37", "38", "48", "49"]
+
+# [ELECTIONS.2028-ltw-bremen]
+# loadPLZ = ["27", "28"]
+
+# [ELECTIONS.2028-ltw-bayern]
+# loadPLZ = ["63", "74", "80", "81", "82", "83", "84", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "10", "11", "12", "13", "14"]
+
+# [ELECTIONS.2028-ltw-hessen]
+# loadPLZ = ["34", "35", "36", "37", "55", "59", "60", "61", "62", "63", "64", "65", "68", "69"]
+
+# [ELECTIONS.2029-ltw-sachsen]
+# loadPLZ = ["01", "02", "04", "07", "08", "09"]
+
+# [ELECTIONS.2029-ltw-thueringen]
+# loadPLZ = ["04", "06", "07", "36", "37", "96", "98", "99"]
+
+# [ELECTIONS.2029-ltw-brandenburg]
+# loadPLZ = ["01", "03", "04", "14", "15", "16", "17", "19"]
+
+# [ELECTIONS.2030-ltw-hamburg]
+# loadPLZ = ["20", "21", "22", "27"]
+
+
+[SELECTIONS.2026-ltw-bawue_team-freiheit]
+name = "Team Freiheit"
+partyHref = "https://www.team-freiheit.de/"
+lastResult = 0
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Verein Team Freiheit",
+  "Rödgener Straße 100",
+  "04509 Delitzsch",
+]
+
+[SELECTIONS.2026-ltw-bawue_die-partei]
+name = "Die PARTEI - Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative"
+partyHref = "https://www.die-partei-bw.de/2025/05/19/wir-brauchen-dich-und-deine-unterschrift/"
+lastResult = 59_463
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Ina Schumann – Die PARTEI",
+  "Bergstr. 128",
+  "70186 Stuttgart",
+]
+
+[SELECTIONS.2026-ltw-bawue_tierschutzpartei]
+name = "Tierschutzpartei - PARTEI MENSCH UMWELT TIERSCHUTZ"
+partyHref = "https://www.tierschutzpartei.de/partei/struktur/landesverbaende/baden-wuerttemberg/"
+lastResult = 48_497
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "PARTEI MENSCH UMWELT TIERSCHUTZ",
+  "Landesverband Baden-Württemberg",
+  "c/o Bastian Thomas Röhm",
+  "Furttenbachstr. 12",
+  "89077 Ulm",
+]
+
+[SELECTIONS.2026-ltw-bawue_die-basis]
+name = "dieBasis - Basisdemokratische Partei Deutschland"
+partyHref = "https://diebasis-bw.de/"
+lastResult = 48_497
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Landesverband dieBasis BW",
+  "Görlitzer Weg 26",
+  "74321 Bietigheim-Bissingen",
+]
+
+[SELECTIONS.2026-ltw-bawue_oedp]
+name = "ÖDP - Ökologisch-Demokratische Partei / Familie und Umwelt"
+partyHref = "https://www.oedp-bw.de/wahlen/landtagswahl-2026"
+lastResult = 37_819
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "ÖDP Baden-Württemberg",
+  "Bismarckplatz 4",
+  "70197 Stuttgart",
+]
+
+[SELECTIONS.2026-ltw-bawue_volt]
+name = "Volt"
+partyHref = "https://voltdeutschland.org/bw/unterschriftenformulare-ltw26"
+lastResult = 22_782
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Volt Deutschland, Landesverband Baden-Württemberg",
+  "Christiane Fichter",
+  "Schwarzwaldstr. 14",
+  "78112 St. Georgen",
+]
+
+[SELECTIONS.2026-ltw-bawue_buendnis-c]
+name = "Bündnis C"
+partyHref = "https://baden-wuerttemberg.buendnis-c.de/willkommen/landtagswahl-2026/"
+lastResult = 4_081
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Bundesgeschäftsstelle Bündnis C",
+  "Winterstraße 29",
+  "76137 Karlsruhe",
+]
+
+[SELECTIONS.2026-ltw-bawue_piratenpartei]
+name = "Piratenpartei"
+partyHref = "https://www.piratenpartei-bw.de/unterstuetzerunterschriften/"
+lastResult = 2_878
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Piratenpartei Baden-Württemberg",
+  "Gartenstraße 32",
+  "72764 Reutlingen",
+]
+
+[SELECTIONS.2026-ltw-bawue_pdh]
+name = "PdH - Partei der Humanisten"
+partyHref = "https://www.pdh.eu/uu/?lv=bw"
+lastResult = 976
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Eric Gildersleeve",
+  "Sundgauallee 46",
+  "Zimmer 0802",
+  "79110 Freiburg",
+]
+
+[SELECTIONS.2026-ltw-bawue_buendnis-deutschland]
+name = "Bündnis Deutschland"
+partyHref = "https://buendnis-bw.de/"
+lastResult = 0
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Bündnis Deutschland",
+  "Landesverband Baden-Württemberg",
+  "Sparrhärmlingweg 35",
+  "70376 Stuttgart",
+]
+
+[SELECTIONS.2026-ltw-bawue_pdf]
+name = "PdF - Partei des Fortschritts"
+partyHref = "https://partei-des-fortschritts.de/landtagswahl-baden-wuerttemberg/"
+lastResult = 0
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "PdF Landesverband BaWü",
+  "Hermann-Beuttenmüller-Straße 10",
+  "75015 Bretten",
+]
+
+
+[SELECTIONS.2026-ltw-rlp_tierschutzpartei]
+name = "Tierschutzpartei - PARTEI MENSCH UMWELT TIERSCHUTZ"
+partyHref = "https://www.tierschutzpartei.de/tierrechte-und-tierschutz-2026-endlich-in-den-mainzer-landtag/"
+lastResult = 32_527
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "PARTEI MENSCH UMWELT TIERSCHUTZ",
+  "Landesverband Rheinland-Pfalz",
+  "Schillerstraße 24",
+  "66989 Höhfröschen",
+]
+
+
+[SELECTIONS.2026-ltw-rlp_die-partei]
+name = "Die PARTEI - Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative"
+partyHref = "https://die-partei.net/rlp/"
+lastResult = 20_519
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Die PARTEI LV Rheinland-Pfalz",
+  "c/o Florian Niedt",
+  "Postfach 10 03 02",
+  "56033 Koblenz",
+]
+
+[SELECTIONS.2026-ltw-rlp_volt]
+name = "Volt"
+partyHref = "https://voltdeutschland.org/bw/unterschriftenformulare-ltw26"
+lastResult = 19_286
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Volt Deutschland Landesverband Rheinland-Pfalz",
+  "Bleichstraße 5",
+  "55218 Ingelheim am Rhein",
+]
+
+[SELECTIONS.2026-ltw-rlp_oedp]
+name = "ÖDP - Ökologisch-Demokratische Partei / Familie und Umwelt"
+partyHref = "https://www.oedp-rlp.de/wahlen/landtagswahl-2026"
+lastResult = 13_406
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "ÖDP Rheinland-Pfalz",
+  "Neckarstr. 27-29",
+  "55118 Mainz",
+]
+
+[SELECTIONS.2026-ltw-rlp_piratenpartei]
+name = "Piratenpartei"
+partyHref = ""
+lastResult = 10_393
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Piratenpartei KV Koblenz",
+  "Postfach 20 12 11",
+  "56012 Koblenz",
+]
+
+[SELECTIONS.2026-ltw-rlp_pdh]
+name = "PdH - Partei der Humanisten"
+lastResult = 0
+partyHref = "https://www.pdh.eu/uu/?lv=rp"
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Uwe Krämer",
+  "Ringstr. 40",
+  "56564 Neuwied",
+]
+
+[SELECTIONS.2026-ltw-rlp_die-basis]
+name = "dieBasis - Basisdemokratische Partei Deutschland"
+partyHref = "https://diebasis-rp.de/unterschriften/"
+lastResult = 0
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "dieBasis Landesverband Rheinland-Pfalz",
+  "Bitburger Str. 28a",
+  "54293 Trier",
+]
+
+
+# ergebnisse Sachsen Anhalt
+#   15623   dieBasis
+#   15279   Tierschutzpartei
+#    8583   Gartenpartei
+#    7768   Die PARTEI
+#    6238   TIERSCHUTZ hier!
+#    5109   Tierschutzallianz
+#    3951   Gesundheitsforschung
+#    3815   PIRATEN
+#    2888   NPD
+#    1649   WiR2020
+#    1613   FBM
+#    1405   Die Humanisten
+#    1062   ÖDP
+#     827   Klimaliste ST
+#     475   LKR
+
+
+[SELECTIONS.2026-ltw-sa_die-basis]
+name = "dieBasis - Basisdemokratische Partei Deutschland"
+partyHref = "https://www.diebasis-blk.de/wahlen/"
+lastResult = 15_623
+sender_addr = []
+sender_sign = []
+return_addr = [
+]
+
+
+[SELECTIONS.2026-ltw-sa_die-partei]
+name = "Die PARTEI - Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative"
+partyHref = "https://die-partei-sachsen-anhalt.de/"
+lastResult = 7_768
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Die PARTEI Magdeburg",
+  "Eddie Kuczyk",
+  "Postfach 1241",
+  "39002 Magdeburg",
+]
+
+
+[SELECTIONS.2026-ltw-sa_die-libertaeren]
+name = "DIE LIBERTÄREN"
+partyHref = "https://www.die-libertaeren.de"
+lastResult = 0
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "DIE LIBERTÄREN e.V.",
+  "Postfach 75 02 07 ",
+  "81332 München",
+]
+
