@@ -77,7 +77,6 @@ const completedScripts = new Set();
 function loadScript(url) {
   return new Promise((resolve, reject) => {
     if (completedScripts.has(url)) {
-      console.log("resolve", url)
       resolve();
       return;
     }
@@ -333,7 +332,7 @@ async function initFormularPage() {
   });
   plzSelect.on('change', function(value) {
     plzSelect.blur();
-    setTimeout(() => populateAdminAddress(value));
+    setTimeout(() => populateBueroAddress(value));
   });
   plzSelect.on('dropdown_open', function() {
     plzSelect.clear()
@@ -358,13 +357,18 @@ function getFormField(name) {
 function cityText(city) {
 return `
 Bürgerbüro ${city['name']}<br>
-${city['str']},<br>
+${city['street']},<br>
 ${city['plz']}, ${city['ort']}
 `.trim()
 }
 
 
-async function populateAdminAddress(value) {
+var plzSelect = null;
+
+var bueroSelect = null;
+
+
+async function populateBueroAddress(value) {
   if (!value) {return}
 
   const valueParts = value.split(", ")
@@ -424,18 +428,17 @@ async function populateAdminAddress(value) {
     return b['population'] - a['population']
   });
 
-  function setSelectedAdminAddress(buero) {
-    console.log([buero])
-    const adminAddrNode = document.querySelector('.buero-address')
+  function setSelectedBueroAddress(buero) {
+    const bueroAddrNode = document.querySelector('.buero-address')
     if (buero == null || buero == "<br>") {
-      adminAddrNode.innerHTML = "<div><span>Gemeinde: Unbekannt</span></div>";
+      bueroAddrNode.innerHTML = "<div><span>Gemeinde: Unbekannt</span></div>";
       return
     }
-    adminAddrNode.innerHTML = `
+    bueroAddrNode.innerHTML = `
       <div><span>Gemeinde: </span>
         <span id='city-name'>${buero['name']}</span></div>
       <div><span>Straße: </span>
-        <span id='city-street'>${buero['str']}</span></div>
+        <span id='city-street'>${buero['street']}</span></div>
       <div><span>Ort: </span>
         <span id='city-plz'>${buero['plz']}, ${buero['ort']}</span></div>
       <div><span>Phone: </span>
@@ -466,7 +469,7 @@ async function populateAdminAddress(value) {
     githubIssueRefNode.href = githubIssueURL.href
 
     const teleRefNode = document.querySelector("a[href^='https://www.google.com/search']")
-    const teleQuery = encodeURIComponent(`Telefonnummer Bürgeramt ${buero['ort'] || buero['name']} ${buero['str']} ${buero['PLZ']}, ${buero['ort']}`)
+    const teleQuery = encodeURIComponent(`Telefonnummer Bürgeramt ${buero['ort'] || buero['name']} ${buero['street']} ${buero['PLZ']}, ${buero['ort']}`)
     teleRefNode.href = "https://www.google.com/search?q=" + teleQuery
   }
 
@@ -488,8 +491,6 @@ async function populateAdminAddress(value) {
     });
   }
 
-  let bueroSelect = null;
-
   if (bueroSelect != null) {
     bueroSelect.destroy();
     bueroSelect = null;
@@ -501,7 +502,7 @@ async function populateAdminAddress(value) {
     addressSelectNode.innerHTML = "-";
   } else if (matchingCities.length == 1) {
     addressSelectNode.innerHTML = '';
-    setSelectedAdminAddress(matchingCities[0]);
+    setSelectedBueroAddress(matchingCities[0]);
   } else {
     addressSelectNode.innerHTML = '';
     await loadScript("lib/tom-select.complete.js")
@@ -518,19 +519,20 @@ async function populateAdminAddress(value) {
     });
 
     bueroSelect.on('change', function(text) {
-      setSelectedAdminAddress(null)
+      setSelectedBueroAddress(null)
       bueroSelect.blur();
-      for (var i = adminOptions.length - 1; i >= 0; i--) {
-        if (cityText(adminOptions[i].city) == text) {
-          setSelectedAdminAddress(adminOptions[i].city);
+      for (var i = bueroOptions.length - 1; i >= 0; i--) {
+        if (cityText(bueroOptions[i].city) == text) {
+          setSelectedBueroAddress(bueroOptions[i].city);
         }
       }
     });
 
-    bueroSelect.setValue(adminOptions[0].value);
-    setSelectedAdminAddress(adminOptions[0].city);
+    bueroSelect.setValue(bueroOptions[0].value);
+    setSelectedBueroAddress(bueroOptions[0].city);
   }
 }
+
 
 function validateForm() {
   getFormField('download').disabled = true;
@@ -575,7 +577,6 @@ function validateForm() {
 
 // onclick handler
 async function generatePDF() {
-  console.log("generatePDF")
   await loadScript("lib/pdf-lib.js")
   const { PDFDocument, StandardFonts, rgb } = PDFLib;
 

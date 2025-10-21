@@ -1,32 +1,32 @@
 .breadcrumbs a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .breadcrumbs a {
-    position: relative;
-    overflow-y: clip;
+  position: relative;
+  overflow-y: clip;
 }
 
 .breadcrumbs a::before,
 .breadcrumbs a::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 102%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 102%;
 }
 
 .breadcrumbs a::before {
-    transform: skewX(-15deg);
+  transform: skewX(-15deg);
 }
 .breadcrumbs a::after {
-    transform: skewX(15deg);
+  transform: skewX(15deg);
 }
 
 .breadcrumbs a.active {
-    font-weight: bold;
-    text-decoration: underline;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .breadcrumbs a, .breadcrumbs a::before, .breadcrumbs a::after { transition: background 0.2s ease; }
@@ -41,7 +41,7 @@
 .breadcrumbs a.tab2:hover::before,
 .breadcrumbs a.tab2:hover::after,
 .breadcrumbs a.tab2:hover {
-    background: hsl(0, 0%, 80%);
+  background: hsl(0, 0%, 80%);
 }
 
 .breadcrumbs a.tab3.active,
@@ -50,23 +50,23 @@
 .breadcrumbs a.tab3:hover::before,
 .breadcrumbs a.tab3:hover::after,
 .breadcrumbs a.tab3:hover {
-    background: hsl(0, 0%, 65%);
+  background: hsl(0, 0%, 65%);
 }
 
 .elections {
-    gap: 1rem;
+  gap: 1rem;
 }
 .elections > .election {
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: 3fr 2fr;
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: 2fr 2fr;
 }
 
 .election-header {
-    text-align: center;
+  text-align: center;
 }
 .election-header .logo img {
-    height: 60px;
+  height: 60px;
 }
 
 .election-info span {
@@ -75,68 +75,98 @@
 
 .elections > div,
 .selections > .selection {
-    display: block;
-    margin: 0.5rem;
-    padding: 1rem;
+  display: block;
+  margin: 0.5rem;
+  padding: 1rem;
 
-    background-color: #E6E6E6;
-    box-shadow: 1px 1px 8px #DDDDDD;
-    border-radius: 5px;
+  background-color: #E6E6E6;
+  box-shadow: 1px 1px 8px #DDDDDD;
+  border-radius: 5px;
 
-    cursor: pointer;
-    text-decoration: none;
-    color: #000;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
 }
 
 .selections > .selection div {
-    margin: 0 auto;
-    max-width: 18rem;
+  margin: 0 auto;
+  max-width: 18rem;
 }
 
 .elections > .election.active,
 .elections > div:hover,
 .selections > .selection:hover {
-    background-color: #DDDDDD;
-    box-shadow: 1px 1px 6px #D0D0D0;
+  background-color: #DDDDDD;
+  box-shadow: 1px 1px 6px #D0D0D0;
 }
 
 .election-info {
-    font-size: 0.8em;
-    line-height: 1.5em;
+  font-size: 0.8em;
+  line-height: 1.5em;
 }
 
 .selection {
-    cursor: pointer;
-    min-height: 4rem;
+  cursor: pointer;
+  min-height: 4rem;
 }
 .selections .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .selections .logo img {
-    display: block;
-    height: 4rem;
-    max-width: 100%;
-    object-fit: contain;
-    margin: 1rem;
+  display: block;
+  height: 4rem;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 1rem;
 }
 
 .selections b {
-    overflow: hidden;
-    white-space: pre;
-    text-overflow: ellipsis;
-    display: block;
+  overflow: hidden;
+  white-space: pre;
+  text-overflow: ellipsis;
+  display: block;
 }
 
 .selections {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
 }
 
 @media screen and (max-device-width: 600px) {
-    .selections {
-        display: grid;
-        grid-template-columns: repeat(1, minmax(200px, 1fr));
-    }
+  .selections {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+  .form-field label {
+    width: 100%;
+  }
+}
+
+.listbox {
+  margin: 1em auto;
+}
+
+ul, ol {
+  padding-inline-start: 20px;
+}
+
+.listbox p, .listbox ul, .listbox ol {
+  margin: 0;
+}
+
+.listbox li {
+  line-height: 1.2em;
+  margin: 0.3em 0;
+}
+
+.small {
+  font-size: 0.7em;
+  line-height: 1.2em;
+  color: #444;
+}
+
+.warn {
+  background: #FF7;
 }

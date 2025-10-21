@@ -1,5 +1,5 @@
-[{"ags": "02000000", "area": 755.09, "email": null, "gemeinde": "Hamburg, Freie und Hansestadt", "name": null, "ort": "Hamburg", "phone": null, "plz": "20038", "population": 1853935, "sitz": "Senat der Freien und Hansestadt Hamburg", "str": "Postfach 105520"}, 
-{"email": "kundenzentrum@hamburg-mitte.hamburg.de", "name": "Hamburg Mitte", "ort": "Hamburg", "phone": "040-42854-5454", "plz": "20355", "prefix": "Bürgeramt", "str": "Caffamacherreihe 1-3"}, 
-{"name": "Hamburg St. Pauli", "ort": "Hamburg", "phone": "040-42854-7966", "plz": "20359", "prefix": "Bürgeramt", "str": "Simon-von-Utrecht-Str. 4a\nRaum: EG"}, 
-{"email": "kundenzentrum@eimsbuettel.hamburg.de", "name": "Hamburg Eimsbüttel", "ort": "Hamburg", "phone": "040-42801-2102", "plz": "20144", "prefix": "Bürgeramt", "str": "Grindelberg 62-66"}, 
-{"email": "kundenzentrum@hamburg-nord.hamburg.de", "name": "Hamburg Nord", "ort": "Hamburg", "phone": "040-42804-2000", "plz": "20249", "prefix": "Bürgeramt", "str": "Lenhartzstr. 28\nRaum: Kundenzentrum"}]
+[{"plz": "20038", "ort": "Hamburg", "name": "Hamburg, Freie und Hansestadt", "street": "Postfach 105520"}, 
+{"plz": "20144", "ort": "Hamburg", "name": "Hamburg Eimsbüttel", "street": "Grindelberg 62-66", "phone": "040-42801-2102", "email": "kundenzentrum@eimsbuettel.hamburg.de"}, 
+{"plz": "20249", "ort": "Hamburg", "name": "Hamburg Nord", "street": "Lenhartzstr. 28\nRaum: Kundenzentrum", "phone": "040-42804-2000", "email": "kundenzentrum@hamburg-nord.hamburg.de"}, 
+{"plz": "20355", "ort": "Hamburg", "name": "Hamburg Mitte", "street": "Caffamacherreihe 1-3", "phone": "040-42854-5454", "email": "kundenzentrum@hamburg-mitte.hamburg.de"}, 
+{"plz": "20359", "ort": "Hamburg", "name": "Hamburg St. Pauli", "street": "Simon-von-Utrecht-Str. 4a\nRaum: EG", "phone": "040-42854-7966"}]

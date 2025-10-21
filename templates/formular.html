@@ -31,6 +31,17 @@
     margin: 0.3em 0;
 }
 
+.buero-address-wrap {
+  min-height: 16em;
+}
+
+.buero-address-wrap span {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 6em;
+  max-width: 11em;
+}
+
 .form-field.postleitzahl {
     min-height: 2.3em;
 }
@@ -122,68 +133,108 @@ button:disabled {
 {% block content %}
 <h2>Auswahl:</h2>
 <div class="form-container">
-    <div class="elections"></div>
-    <div class="selections"></div>
-    <hr>
-    <div class="form">
-        <div class="form-field">
-            <label for="firstname">Vorname:</label>
-            <input
-                type="text"
-                name="firstname"
-                placeholder="Max"
-                required
-            />
-        </div>
-
-        <div class="form-field">
-            <label for="lastname">Familienname:</label>
-            <input
-                type="text"
-                name="lastname"
-                placeholder="Mustermann"
-                required
-            />
-        </div>
-
-        <div class="form-field">
-            <label for="birthday">Geburtsdatum:</label>
-            <input type="date" name="birthday" required />
-        </div>
-
-        <div class="form-field">
-            <label for="street">Straße, Hausnummer</label>
-            <input
-                type="text"
-                name="street"
-                placeholder="Musterstraße 123a"
-                required
-            />
-        </div>
-
-        <div class="form-field postleitzahl">
-            <label for="postleitzahl">PLZ, Ort:</label>
-            <div>
-                <select name="postleitzahl" placeholder=""></select>
-            </div>
-        </div>
-
-        <div class="buero-address-wrap">
-            <p>Zuständes Amt</p>
-            <select id="buero-address-select"></select>
-            <div class="buero-address">-</div>
-        </div>
-
-        <div class="buttons">
-            <button name="download" disabled onclick="uu_app.generatePDF()">
-                PDF generieren<br />
-                und herunterladen
-            </button>
-            <a class="download-pdf-template" target="_blank">
-                Blanko Formular<br />
-                herunterladen
-            </a>
-        </div>
+  <div class="elections"></div>
+  <div class="selections"></div>
+  <hr>
+  <div class="form">
+    <div class="form-field">
+      <label for="firstname">Vorname:</label>
+      <input
+          type="text"
+          name="firstname"
+          placeholder="Max"
+          required
+      />
     </div>
+
+    <div class="form-field">
+      <label for="lastname">Familienname:</label>
+      <input
+          type="text"
+          name="lastname"
+          placeholder="Mustermann"
+          required
+      />
+    </div>
+
+    <div class="form-field">
+      <label for="birthday">Geburtsdatum:</label>
+      <input type="date" name="birthday" required />
+    </div>
+
+    <div class="form-field">
+      <label for="street">Straße, Hausnummer</label>
+      <input
+          type="text"
+          name="street"
+          placeholder="Musterstraße 123a"
+          required
+      />
+    </div>
+
+    <div class="form-field postleitzahl">
+      <label for="postleitzahl">PLZ, Ort:</label>
+      <div>
+        <select name="postleitzahl" placeholder=""></select>
+      </div>
+    </div>
+
+    <div class="buero-address-wrap">
+      <select id="buero-address-select" autocomplete="off"></select>
+      <p>Zuständes Amt</p>
+      <div class="buero-address">-</div>
+    </div>
+
+    <div class="buttons">
+      <button name="download" disabled onclick="uu_app.generatePDF()">
+        PDF generieren<br />
+        und herunterladen
+      </button>
+      <a class="download-pdf-template" target="_blank">
+        Blanko Formular<br />
+        herunterladen
+      </a>
+    </div>
+  </div>
 </div>
+
+<div class="listbox small">
+<p>
+    Datenschutzhinweis: Um die PDF Datei zu generieren werden
+    Ihrer oben angegebene persönlichen Daten verarbeitet. Diese
+    Verarbeitung findet
+    <em>ausschließlich auf Ihrem Endgerät</em> statt. Eine
+    Übermittlung oder Verarbeitung Ihrer persönlichen Daten
+    an/durch andere Systeme <em>findet nicht statt</em>.
+</p>
+</div>
+
+<div class="listbox">
+<p>
+    Gerne können Sie die Richtigkeit der Angaben zum Bürgeramt
+    anfragen:
+    <a
+        href="https://www.google.com/search?q=Telefonnummer%20Bürgerbüro"
+        rel="noreferrer noopener"
+        target="_blank"
+        >Bürgerbüro anrufen</a
+    >. Fragen Sie dazu nach der "Zuständigkeit für die
+    Bescheinigung des Wahlrechts für eine
+    Unterstützungsunterschrift". Die zuständige Behörde führt
+    dazu ein Wählerverzeichnis.
+</p>
+<p>
+    Sollte Ihrem Hauptwohnsitz keine Behörde, oder eine nicht
+    zuständige Behörde zugeordnet werden, bitten wir Sie diesen
+    Fehler auf
+    <a
+        href="https://github.com/mbarkhau/uu-tool/issues/new?title=UU-Tool Fehler&body=Test"
+        rel="noreferrer noopener"
+        target="_blank"
+        >Github</a
+    >
+    zu melden.
+</p>
+</div>
+
 {% endblock %}

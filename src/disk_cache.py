@@ -11,6 +11,7 @@ import tempfile
 import typing as typ
 import pathlib as pl
 import functools as ft
+import hashlib as hl
 import contextlib
 
 CachedDict = dict[str, typ.Any]
@@ -78,7 +79,10 @@ def cache_ctx(filename: str) -> typ.Generator[CachedDict, None, None]:
 
 
 def cache(func: typ.Callable):
-    @functools.wraps(func)
+    fname_txt = __file__ + "::" + func.__name__
+    filename = hl.sha1(fname_txt.encode("ascii")).hexdigest()
+
+    @ft.wraps(func)
     def dec(*args, **kwargs) -> typ.Any:
         parts = []
         for arg in args:
@@ -93,10 +97,11 @@ def cache(func: typ.Callable):
         #     if '"area_plz"' in CACHE[key]:
         #         CACHE.pop(key)
 
-        cache = _CACHE_BY_FILENAME[filename]
+        cache = load_cache(filename)
         if key not in cache:
             result = func(*args, **kwargs)
             cache[key] = json.dumps(result)
+            dump_cache(filename, cache)
         return json.loads(cache[key])
 
     return dec

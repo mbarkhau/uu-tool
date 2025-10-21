@@ -32,7 +32,6 @@ www/assets/uu_styles.min.css: www/assets/uu_styles.css
 	@bun install --silent --global clean-css-cli
 	cleancss --format 'keep-breaks' www/assets/uu_styles.css > www/assets/uu_styles.min.css
 
-
 .PHONY: buero-data
 buero-data:
 	./src/update_json.py buero-data
@@ -54,11 +53,15 @@ www/index.html: \
 .PHONY: build_www
 build_www: \
 	www/index.html \
-	www/lib/htmx.min.js \
 	www/assets/uu_app.min.js \
 	www/assets/uu_styles.min.css \
 	www/data/config.json
+	@echo "done"
 
+
+.PHONY: dev_build_www
+dev_build_www: \
+	www/index.html
 	@echo "done"
 
 
