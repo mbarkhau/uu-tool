@@ -38,8 +38,25 @@
 .button:hover {
     background: hsl(0, 0%, 85%);
 }
+body {
+    display: none;
+}
 </style>
-{% endblock %} {% block content %}
+{% endblock %}
+
+{% block content %}
+<script>
+  const correctPassword = "raub";
+
+  let input = prompt("Nicht für die Öffentlichkeit. Steuern sind?");
+
+  if (input.toLowerCase() !== correctPassword) {
+    document.body.innerHTML = "<h1 style='color:red;text-align:center;margin-top:20vh;'>Access denied</h1>";
+    // or redirect: window.location = "https://example.com";
+  }
+  document.body.style.display = "block";
+</script>
+
 <div class="vid-container">
     <div id="js-player">
         <img src="img/thumbnail.jpg" loading="lazy" onload="this.style.opacity = '1';" />

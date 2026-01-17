@@ -63,6 +63,13 @@ info_urls = [ ]
 # loadPLZ = ["10", "11", "12", "13", "14"]
 
 # [ELECTIONS.2027-ltw-saarland]
+# name = "Wahl zum 18. Landtag<br>des <b>Saarlandes</b>"
+# inactive = true
+# date = "2027-03-07"   # frühstmöglich
+# deadline = "2026-02-07"
+# minimum_age = 18
+# minimum_support = "800"
+# electorate = "746.307"
 # loadPLZ = ["66"]
 
 # [ELECTIONS.2027-ltw-nrw]
