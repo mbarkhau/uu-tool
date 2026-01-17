@@ -1,15 +1,3 @@
-
-  const correctPassword = "raub";
-
-  let input = prompt("Nicht für die Öffentlichkeit. Steuern sind?");
-
-  if (input.toLowerCase() !== correctPassword) {
-    document.body.innerHTML = "<h1 style='color:red;text-align:center;margin-top:20vh;'>Access denied</h1>";
-    // or redirect: window.location = "https://example.com";
-  }
-  document.body.style.display = "block";
-;
-
 var uu_app = (function () {
 
 // function fuzzyEqualsString(a, b) {
