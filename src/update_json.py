@@ -13,7 +13,7 @@ import typing as typ
 import collections
 
 
-OUT_DIR = pl.Path("www") / "data"
+OUT_DIR = pl.Path("docs") / "data"
 
 
 def pretty_json(data: dict | list) -> str:
@@ -131,7 +131,7 @@ def main(args: list[str]) -> int:
         _chunk_plz_data(all_plz_data)
 
     if "buero-data" in args:
-        buero_path = pl.Path("www") / "data" / f"buero_data.json"
+        buero_path = pl.Path("docs") / "data" / f"buero_data.json"
         with buero_path.open(mode='r') as fobj:
             all_buero_data = json.load(fobj)
 

@@ -18,9 +18,9 @@ import jinja2
 OUTPUT_DIR = pl.Path(__file__).parent.parent
 
 OUTPUTS = [
-    OUTPUT_DIR / "www" / "index.html",
-    OUTPUT_DIR / "www" / "select.html",
-    OUTPUT_DIR / "www" / "formular.html",
+    OUTPUT_DIR / "docs" / "index.html",
+    OUTPUT_DIR / "docs" / "select.html",
+    OUTPUT_DIR / "docs" / "formular.html",
 ]
 
 
@@ -60,8 +60,8 @@ def _format_html(html: str) -> str:
 
 
 def _config_toml_to_json() -> None:
-    config_in_path = OUTPUT_DIR / "www" / "data" / "config.toml"
-    config_out_path = OUTPUT_DIR / "www" / "data" / "config.json"
+    config_in_path = OUTPUT_DIR / "docs" / "data" / "config.toml"
+    config_out_path = OUTPUT_DIR / "docs" / "data" / "config.json"
     with config_in_path.open(mode="rb") as fobj:
         data = tomllib.load(fobj)
 
@@ -79,11 +79,11 @@ def _main(args: list[str]) -> int:
     base_tmpl = env.get_template("base.html")
     breadcrumbs_tmpl = env.get_template("breadcrumbs.html")
 
-    script_path = OUTPUT_DIR / "www" / "assets" / "uu_app.js"
-    styles_path = OUTPUT_DIR / "www" / "assets" / "uu_styles.css"
+    script_path = OUTPUT_DIR / "docs" / "assets" / "uu_app.js"
+    styles_path = OUTPUT_DIR / "docs" / "assets" / "uu_styles.css"
 
-    script_base_path = OUTPUT_DIR / "www" / "assets" / "uu_app_base.js"
-    styles_base_path = OUTPUT_DIR / "www" / "assets" / "uu_styles_base.css"
+    script_base_path = OUTPUT_DIR / "docs" / "assets" / "uu_app_base.js"
+    styles_base_path = OUTPUT_DIR / "docs" / "assets" / "uu_styles_base.css"
 
     scripts = set()
     scripts.add(open(script_base_path).read())

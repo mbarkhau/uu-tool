@@ -13,24 +13,24 @@ deps:
 	@echo "TODO: bun and python deps"
 
 
-www/assets/uu_app.js:
+docs/assets/uu_app.js:
 	@echo "TODO: uu_app.js"
 	uv run --script src/build_html.py
 
 
-www/lib/htmx.min.js: www/lib/htmx.js
+docs/lib/htmx.min.js: docs/lib/htmx.js
 	@bun install --silent --global uglify-js
-	uglifyjs www/lib/htmx.js > www/lib/htmx.min.js
+	uglifyjs docs/lib/htmx.js > docs/lib/htmx.min.js
 
 
-www/assets/uu_app.min.js: www/assets/uu_app.js
+docs/assets/uu_app.min.js: docs/assets/uu_app.js
 	@bun install --silent --global uglify-js
-	uglifyjs www/assets/uu_app.js > www/assets/uu_app.min.js
+	uglifyjs docs/assets/uu_app.js > docs/assets/uu_app.min.js
 
 
-www/assets/uu_styles.min.css: www/assets/uu_styles.css
+docs/assets/uu_styles.min.css: docs/assets/uu_styles.css
 	@bun install --silent --global clean-css-cli
-	cleancss --format 'keep-breaks' www/assets/uu_styles.css > www/assets/uu_styles.min.css
+	cleancss --format 'keep-breaks' docs/assets/uu_styles.css > docs/assets/uu_styles.min.css
 
 .PHONY: buero-data
 buero-data:
@@ -41,31 +41,31 @@ plz-data:
 	./src/update_json.py plz-data
 
 
-www/index.html: \
+docs/index.html: \
 	templates/*.html \
-	www/assets/uu_styles_base.css \
-	www/assets/uu_app_base.js \
-	www/data/config.toml \
+	docs/assets/uu_styles_base.css \
+	docs/assets/uu_app_base.js \
+	docs/data/config.toml \
 	src/build_www.py
 	uv run --script src/build_www.py
 
 
 .PHONY: build_www
 build_www: \
-	www/index.html \
-	www/assets/uu_app.min.js \
-	www/assets/uu_styles.min.css \
-	www/data/config.json
+	docs/index.html \
+	docs/assets/uu_app.min.js \
+	docs/assets/uu_styles.min.css \
+	docs/data/config.json
 	@echo "done"
 
 
 .PHONY: dev_build_www
 dev_build_www: \
-	www/index.html
+	docs/index.html
 	@echo "done"
 
 
 .PHONY: serve
 serve:
 	@echo "http://localhost:8080"
-	@python3 -m http.server 8080 -d www
+	@python3 -m http.server 8080 -d docs
