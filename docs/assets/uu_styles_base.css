@@ -20,6 +20,7 @@
 .breadcrumbs a::before {
   transform: skewX(-15deg);
 }
+
 .breadcrumbs a::after {
   transform: skewX(15deg);
 }
@@ -29,11 +30,29 @@
   text-decoration: underline;
 }
 
-.breadcrumbs a, .breadcrumbs a::before, .breadcrumbs a::after { transition: background 0.2s ease; }
+.breadcrumbs a,
+.breadcrumbs a::before,
+.breadcrumbs a::after {
+  transition: background 0.2s ease;
+}
 
-.breadcrumbs a.tab1, .breadcrumbs a.tab1::before, .breadcrumbs a.tab1::after { background: hsl(0, 0%, 95%); }
-.breadcrumbs a.tab2, .breadcrumbs a.tab2::before, .breadcrumbs a.tab2::after { background: hsl(0, 0%, 75%); }
-.breadcrumbs a.tab3, .breadcrumbs a.tab3::before, .breadcrumbs a.tab3::after { background: hsl(0, 0%, 60%); }
+.breadcrumbs a.tab1,
+.breadcrumbs a.tab1::before,
+.breadcrumbs a.tab1::after {
+  background: hsl(0, 0%, 95%);
+}
+
+.breadcrumbs a.tab2,
+.breadcrumbs a.tab2::before,
+.breadcrumbs a.tab2::after {
+  background: hsl(0, 0%, 75%);
+}
+
+.breadcrumbs a.tab3,
+.breadcrumbs a.tab3::before,
+.breadcrumbs a.tab3::after {
+  background: hsl(0, 0%, 60%);
+}
 
 .breadcrumbs a.tab2.active,
 .breadcrumbs a.tab2.active::before,
@@ -56,7 +75,8 @@
 .elections {
   gap: 1rem;
 }
-.elections > .election {
+
+.elections>.election {
   display: grid;
   flex-direction: column;
   grid-template-columns: 2fr 2fr;
@@ -65,6 +85,7 @@
 .election-header {
   text-align: center;
 }
+
 .election-header .logo img {
   height: 60px;
 }
@@ -73,8 +94,8 @@
   white-space: nowrap;
 }
 
-.elections > div,
-.selections > .selection {
+.elections>div,
+.selections>.selection {
   display: block;
   margin: 0.5rem;
   padding: 1rem;
@@ -86,34 +107,45 @@
   cursor: pointer;
   text-decoration: none;
   color: #000;
+  border: 1px solid transparent;
 }
 
-.selections > .selection div {
+.selections>.selection div {
   margin: 0 auto;
   max-width: 18rem;
 }
 
-.elections > .election.active,
-.elections > div:hover,
-.selections > .selection:hover {
+.elections>.election.active,
+.elections>div:hover,
+.selections>.selection:hover {
   background-color: #DDDDDD;
   box-shadow: 1px 1px 6px #D0D0D0;
+  border: 1px solid black;
 }
 
 .election-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 1em;
   font-size: 0.8em;
   line-height: 1.5em;
+}
+
+.election-info>div {
+  display: contents;
 }
 
 .selection {
   cursor: pointer;
   min-height: 4rem;
 }
+
 .selections .logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .selections .logo img {
   display: block;
   height: 4rem;
@@ -139,6 +171,7 @@
     display: grid;
     grid-template-columns: repeat(1, minmax(200px, 1fr));
   }
+
   .form-field label {
     width: 100%;
   }
@@ -148,11 +181,14 @@
   margin: 1em auto;
 }
 
-ul, ol {
+ul,
+ol {
   padding-inline-start: 20px;
 }
 
-.listbox p, .listbox ul, .listbox ol {
+.listbox p,
+.listbox ul,
+.listbox ol {
   margin: 0;
 }
 

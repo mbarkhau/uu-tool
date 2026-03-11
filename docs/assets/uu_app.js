@@ -225,8 +225,9 @@ async function initSelectPage() {
       return bResult - aResult;
     });
 
+    const cleanedName = electionCfg.name.replaceAll("-<br>", "").replaceAll("<br>", " ")
     const headerDiv = document.querySelector(".selections-description")
-    headerDiv.innerHTML = `Parteien die zur ${electionCfg.name} antreten wollen.`
+    headerDiv.innerHTML = `Parteien die zur ${cleanedName} antreten wollen.`
 
     selections.forEach((selectionID) => {
       let selectionNode = uu_app.renderSelection(configs, selectionID)

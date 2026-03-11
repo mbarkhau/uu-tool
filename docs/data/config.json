@@ -1,65 +1,7 @@
 {
   "ELECTIONS": {
-    "2026-ltw-bawue": {
-      "name": "Wahl zum 18. Landtag<br>von <b>Baden-W\u00fcrttemberg</b>",
-      "date": "2026-03-08",
-      "deadline": "2025-12-22",
-      "minimum_age": 16,
-      "minimum_support": "2.000",
-      "electorate": "7.671.039",
-      "loadPLZ": [
-        "63",
-        "64",
-        "68",
-        "69",
-        "70",
-        "71",
-        "72",
-        "73",
-        "74",
-        "75",
-        "76",
-        "77",
-        "78",
-        "79",
-        "88",
-        "89",
-        "97"
-      ],
-      "info_urls": [
-        "https://www.landtagswahl-bw.de/wer-wird-gewaehlt",
-        "https://im.baden-wuerttemberg.de/fileadmin/redaktion/m-im/intern/dateien/pdf/20250530_LTW_2026-Bekanntmachung_der_Landeswahlleiterin_zur_Einreichung_von_Wahlvorschl%C3%A4gen.pdf",
-        "https://www.wahlrecht.de/termine.htm"
-      ],
-      "inactiveSelections": {
-        "2026-ltw-bawue_die-basis": true,
-        "2026-ltw-bawue_tierschutzpartei": true
-      }
-    },
-    "2026-ltw-rlp": {
-      "name": "Wahl zum 18. Landtag<br>von <b>Rheinland-Pfalz</b>",
-      "date": "2026-03-22",
-      "deadline": "2026-01-02",
-      "minimum_age": 18,
-      "minimum_support": "2.000",
-      "electorate": "3.042.414",
-      "loadPLZ": [
-        "51",
-        "53",
-        "54",
-        "55",
-        "56",
-        "57",
-        "65",
-        "66",
-        "67",
-        "76"
-      ],
-      "info_urls": [],
-      "inactiveSelections": {}
-    },
     "2026-ltw-sa": {
-      "name": "Wahl zum 18. Landtag<br>von <b>Sachsen Anhalt</b>",
+      "name": "Wahl zum 18. Landtag von<br><b>Sachsen-Anhalt</b>",
       "date": "2026-09-06",
       "deadline": "2026-06-26",
       "minimum_age": 18,
@@ -72,11 +14,13 @@
         "38",
         "39"
       ],
-      "info_urls": []
+      "info_urls": [
+        "https://dawum.de/Sachsen-Anhalt/",
+        "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faqs-zur-landtagswahl-2026"
+      ]
     },
     "2026-ltw-mp": {
-      "name": "Wahl zum 18. Landtag<br>von <b>Mecklenburg-Vorpommern</b>",
-      "inactive": true,
+      "name": "Wahl zum 18. Landtag von<br><b>Mecklenburg-Vorpommern</b>",
       "date": "2026-09-20",
       "deadline": "2026-07-10",
       "minimum_age": 16,
@@ -88,7 +32,29 @@
         "19",
         "23"
       ],
-      "info_urls": []
+      "info_urls": [
+        "https://dawum.de/Mecklenburg-Vorpommern/",
+        "https://www.laiv-mv.de/Wahlen/Landtagswahlen/2026/"
+      ]
+    },
+    "2026-ltw-berlin": {
+      "name": "Wahl zum 20. Abgeordne-<br>tenhaus von <b>Berlin</b>",
+      "date": "2026-09-20",
+      "deadline": "2026-07-10",
+      "minimum_age": 16,
+      "loadPLZ": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "minimum_support": "2.000",
+      "electorate": "2.431.776",
+      "info_urls": [
+        "https://dawum.de/Berlin/",
+        "https://www.berlin.de/wahlen/wahlen/berliner-wahlen-2026/allgemeine-informationen/artikel.1578239.php"
+      ]
     }
   },
   "SELECTIONS": {

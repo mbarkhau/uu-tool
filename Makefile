@@ -36,6 +36,7 @@ docs/assets/uu_styles.min.css: docs/assets/uu_styles.css
 buero-data:
 	./src/update_json.py buero-data
 
+
 .PHONY: plz-data
 plz-data:
 	./src/update_json.py plz-data
@@ -68,4 +69,4 @@ dev_build_www: \
 .PHONY: serve
 serve:
 	@echo "http://localhost:8080"
-	@python3 -m http.server 8080 -d docs
+	@uvx sanic ./docs --simple -p 8080 --access-logs
