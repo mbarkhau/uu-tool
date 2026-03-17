@@ -1,4 +1,9 @@
 {% extends "base.html" %}
+
+{% block scripts %}
+<link rel="preload" href="data/config.json" as="fetch" type="application/json" crossorigin="anonymous">
+{% endblock %}
+
 {% block head %}
 <link rel="stylesheet" href="lib/tom-select.css" />
 
@@ -186,7 +191,7 @@ button:disabled {
     </div>
 
     <div class="buttons">
-      <button name="download" disabled onclick="uu_app.generatePDF()">
+      <button name="download" onclick="uu_app.generatePDF()">
         PDF generieren<br />
         und herunterladen
       </button>

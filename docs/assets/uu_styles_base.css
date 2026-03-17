@@ -83,6 +83,7 @@
 }
 
 .election-header {
+  padding: 0 1rem;
   text-align: center;
 }
 
@@ -115,6 +116,10 @@
   max-width: 18rem;
 }
 
+.selections>.selection div span:last-child {
+  font-weight: bold;
+}
+
 .elections>.election.active,
 .elections>div:hover,
 .selections>.selection:hover {
@@ -128,7 +133,13 @@
   grid-template-columns: auto 1fr;
   column-gap: 1em;
   font-size: 0.8em;
-  line-height: 1.5em;
+  line-height: 1.2em;
+}
+
+.election-info span:last-child {
+  max-width: 5em;
+  text-align: right;
+  font-weight: bold;
 }
 
 .election-info>div {
@@ -205,4 +216,30 @@ ol {
 
 .warn {
   background: #FF7;
+}
+
+.election-info-urls {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #CCC;
+  font-size: 0.85em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 0.8em;
+  row-gap: 0.4em;
+}
+
+.election-info-urls a {
+  color: #333;
+  text-decoration: underline;
+  text-decoration-color: #999;
+  white-space: nowrap;
+}
+
+.election-info-urls a:hover {
+  text-decoration-color: #333;
+  color: #000;
 }

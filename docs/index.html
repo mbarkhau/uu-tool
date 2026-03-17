@@ -30,6 +30,7 @@
 		/* Layout styles */
 		.main, .header, .content, .footer {
 		max-width: 37em;
+		overflow-x: hidden;
 		margin: 0 auto 1em auto;
 		}
 		.header {
@@ -85,6 +86,7 @@
 		h2 {font-size: 1.3em; hyphens: auto;}
 		}
 		.breadcrumbs {
+		width: 100.1%;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		text-align: center;
@@ -154,30 +156,28 @@
 				</li>
 				<li>Sie müssen <b>deutscher Staatsbürger</b> sein.</li>
 				<li>
-					Sie müssen mindestens drei Monate mit
-					<b>Erstwohnsitz im Bundesland</b> gemeldet sein.
+					Sie müssen mindestens <b>drei Monate mit Erstwohnsitz</b>
+					in einem Wahlbezirk zur jeweiligen Wahl gemeldet sein.
 				</li>
 			</ul>
 			<h2 id="datenschutz">Datenschutz</h2>
 			<ul>
 				<li>Ihre <b>persönlichen Daten</b> werden durch uu-tool.de <b>nicht
 					gespeichert</b> oder weitergegeben.</li>
-					<li>Die Eingabe Ihrer persönlichen Daten dient <em>ausschließlich</em> der Zuordnung zu
-						Ihrem Bürgerbüro und der Generierung Ihrer personalisierten PDF-Datei.</li>
-						<li>Diese Verarbeitung Ihrer Daten findet <em>ausschließlich</em> auf
-							Ihrem eigenen Endgerät statt, nicht auf unsere Server.</li>
-							<li>Eine Übermittlung Ihrer persönlichen Daten <em>findet nicht statt</em>.</li>
-						</ul>
-					</div>
+					<li>Die Eingabe Ihrer persönlichen Daten ist <em>ausschließlich</em> um das UU-Formular auszufüllen.</li>
+					<li>Diese Verarbeitung Ihrer Daten findet <em>ausschließlich</em> auf
+						Ihrem eigenen Endgerät statt.</li>
+						<li>Eine Übermittlung Ihrer persönlichen Daten <em>findet nicht statt</em>.</li>
+					</ul>
 				</div>
-				<div class="footer">
-					<p>
-						Quellcode:
-						<a href="https://github.com/mbarkhau/uu-tool">github.com/mbarkhau/uu-tool</a>
-					</p>
-					<p>Copyright © 2025 Manuel Barkhau. Alle Rechte vorbehalten.</p>
-				</div>
-				<link rel="preload" href="data/config.json" as="fetch" type="application/json" crossorigin="anonymous">
-					<script src="assets/uu_app.js"></script>
-				</body>
-			</html>
+			</div>
+			<div class="footer">
+				<p>
+					Quellcode:
+					<a href="https://github.com/mbarkhau/uu-tool">github.com/mbarkhau/uu-tool</a>
+				</p>
+				<p>Copyright © 2025 Manuel Barkhau. Alle Rechte vorbehalten.</p>
+			</div>
+			<script src="assets/uu_app.js"></script>
+		</body>
+	</html>

@@ -1,6 +1,12 @@
 {% extends "base.html" %}
+
 {% block head %}
 {% endblock %}
+
+{% block scripts %}
+<link rel="preload" href="data/config.json" as="fetch" type="application/json" crossorigin="anonymous">
+{% endblock %}
+
 
 {% block content %}
 <h2 id="select-election">Welche Wahl?</h2>

@@ -1,9 +1,70 @@
 {
   "ELECTIONS": {
+    "2026-ltw-bawue": {
+      "name": "Wahl zum 18. Landtag<br>von <b>Baden-W\u00fcrttemberg</b>",
+      "inactive": 1,
+      "date": "2026-03-08",
+      "deadline": "2025-12-22",
+      "minimum_age": 16,
+      "minimum_support": "2.000",
+      "electorate": "7.671.039",
+      "loadPLZ": [
+        "63",
+        "64",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "88",
+        "89",
+        "97"
+      ],
+      "info_urls": [
+        {
+          "text": "Wahlprognose",
+          "href": "https://dawum.de/Baden-Wuerttemberg/"
+        },
+        {
+          "text": "Wahlinfos",
+          "href": "https://www.landtagswahl-bw.de/wer-wird-gewaehlt"
+        }
+      ]
+    },
+    "2026-ltw-rlp": {
+      "name": "Wahl zum 18. Landtag<br>von <b>Rheinland-Pfalz</b>",
+      "inactive": 1,
+      "date": "2026-03-22",
+      "deadline": "2026-01-02",
+      "minimum_age": 18,
+      "minimum_support": "2.000",
+      "electorate": "3.042.414",
+      "loadPLZ": [
+        "51",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "65",
+        "66",
+        "67",
+        "76"
+      ],
+      "info_urls": []
+    },
     "2026-ltw-sa": {
-      "name": "Wahl zum 18. Landtag von<br><b>Sachsen-Anhalt</b>",
+      "name": "Wahl zum 18.&nbsp;Landtag&nbsp;von<br><b>Sachsen-Anhalt</b>",
+      "inactive": 0,
       "date": "2026-09-06",
-      "deadline": "2026-06-26",
+      "deadline": "2026-05-31",
       "minimum_age": 18,
       "minimum_support": "1.000",
       "electorate": "1.788.930",
@@ -15,14 +76,33 @@
         "39"
       ],
       "info_urls": [
-        "https://dawum.de/Sachsen-Anhalt/",
-        "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faqs-zur-landtagswahl-2026"
+        {
+          "text": "Wahlprognose",
+          "href": "https://dawum.de/Sachsen-Anhalt/"
+        },
+        {
+          "text": "FAQ zur Landtagswahl 2026",
+          "href": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faqs-zur-landtagswahl-2026"
+        },
+        {
+          "text": "Wahlberechtigung",
+          "href": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/allgemeine-informationen-zur-landtagswahl/wer-kann-waehlen-oder-gewaehlt-werden"
+        },
+        {
+          "text": "Wahlberechtigte nach Kreis",
+          "href": "https://wahlergebnisse.sachsen-anhalt.de/wahlen/lt21/erg/wbet/lt.wber.wkr.php"
+        },
+        {
+          "text": "Ergebnisse LTW 2021",
+          "href": "https://wahlergebnisse.sachsen-anhalt.de/wahlen/lt21/erg/kreis/lt.15.ergtab.php"
+        }
       ]
     },
     "2026-ltw-mp": {
-      "name": "Wahl zum 18. Landtag von<br><b>Mecklenburg-Vorpommern</b>",
+      "name": "Wahl zum 18.&nbsp;Landtag&nbsp;von<br><b>Mecklenburg-Vorpommern</b>",
+      "inactive": 0,
       "date": "2026-09-20",
-      "deadline": "2026-07-10",
+      "deadline": "2026-05-15",
       "minimum_age": 16,
       "minimum_support": "1.000",
       "electorate": "1.312.471",
@@ -33,12 +113,19 @@
         "23"
       ],
       "info_urls": [
-        "https://dawum.de/Mecklenburg-Vorpommern/",
-        "https://www.laiv-mv.de/Wahlen/Landtagswahlen/2026/"
+        {
+          "text": "Wahlprognose",
+          "href": "https://dawum.de/Mecklenburg-Vorpommern/"
+        },
+        {
+          "text": "Wahlinfo",
+          "href": "https://www.laiv-mv.de/Wahlen/Landtagswahlen/2026/"
+        }
       ]
     },
-    "2026-ltw-berlin": {
-      "name": "Wahl zum 20. Abgeordne-<br>tenhaus von <b>Berlin</b>",
+    "2026-ahw-berlin": {
+      "name": "Wahl zum 20.&nbsp;Abgeordne&shy;tenhaus&nbsp;von <b>Berlin</b>",
+      "inactive": 1,
       "date": "2026-09-20",
       "deadline": "2026-07-10",
       "minimum_age": 16,
@@ -52,9 +139,28 @@
       "minimum_support": "2.000",
       "electorate": "2.431.776",
       "info_urls": [
-        "https://dawum.de/Berlin/",
-        "https://www.berlin.de/wahlen/wahlen/berliner-wahlen-2026/allgemeine-informationen/artikel.1578239.php"
+        {
+          "text": "Wahlprognose",
+          "href": "https://dawum.de/Berlin/"
+        },
+        {
+          "text": "Wahlinfo",
+          "href": "https://www.berlin.de/wahlen/wahlen/berliner-wahlen-2026/allgemeine-informationen/artikel.1578239.php"
+        }
       ]
+    },
+    "2027-ltw-saarland": {
+      "name": "Wahl zum 18. Landtag<br>des <b>Saarlandes</b>",
+      "inactive": 1,
+      "date": "2027-04-18",
+      "deadline": "2026-02-07",
+      "minimum_age": 18,
+      "minimum_support": "800",
+      "electorate": "746.307",
+      "loadPLZ": [
+        "66"
+      ],
+      "info_urls": []
     }
   },
   "SELECTIONS": {
@@ -96,18 +202,6 @@
         "89077 Ulm"
       ]
     },
-    "2026-ltw-bawue_die-basis": {
-      "name": "dieBasis - Basisdemokratische Partei Deutschland",
-      "partyHref": "https://diebasis-bw.de/",
-      "lastResult": 48497,
-      "sender_addr": [],
-      "sender_sign": [],
-      "return_addr": [
-        "Landesverband dieBasis BW",
-        "G\u00f6rlitzer Weg 26",
-        "74321 Bietigheim-Bissingen"
-      ]
-    },
     "2026-ltw-bawue_oedp": {
       "name": "\u00d6DP - \u00d6kologisch-Demokratische Partei / Familie und Umwelt",
       "partyHref": "https://www.oedp-bw.de/wahlen/landtagswahl-2026",
@@ -124,14 +218,13 @@
       "name": "Volt",
       "partyHref": "https://voltdeutschland.org/bw/unterschriftenformulare-ltw26",
       "lastResult": 22782,
-      "sender_addr": [],
-      "sender_sign": [],
       "return_addr": [
         "Volt Deutschland, Landesverband Baden-W\u00fcrttemberg",
         "Christiane Fichter",
         "Schwarzwaldstr. 14",
         "78112 St. Georgen"
-      ]
+      ],
+      "sender_sign": []
     },
     "2026-ltw-bawue_buendnis-c": {
       "name": "B\u00fcndnis C",
@@ -193,6 +286,18 @@
         "PdF Landesverband BaW\u00fc",
         "Hermann-Beuttenm\u00fcller-Stra\u00dfe 10",
         "75015 Bretten"
+      ]
+    },
+    "2026-ltw-bawue_die-basis": {
+      "name": "dieBasis - Basisdemokratische Partei Deutschland",
+      "partyHref": "https://diebasis-bw.de/",
+      "lastResult": 48497,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "Landesverband dieBasis BW",
+        "G\u00f6rlitzer Weg 26",
+        "74321 Bietigheim-Bissingen"
       ]
     },
     "2026-ltw-rlp_tierschutzpartei": {
@@ -281,38 +386,117 @@
         "54293 Trier"
       ]
     },
-    "2026-ltw-sa_die-basis": {
-      "name": "dieBasis - Basisdemokratische Partei Deutschland",
-      "partyHref": "https://www.diebasis-blk.de/wahlen/",
-      "lastResult": 15623,
+    "2026-ltw-sa_volt": {
+      "name": "Volt",
+      "partyHref": "https://voltdeutschland.org/sachsen-anhalt/unterstuetze-uns-zur-landtagswahl-in-sachsen-anhalt-2026",
+      "lastResult": 0,
+      "return_addr": [
+        "Volt Deutschland,",
+        "Landesverband Sachsen-Anhalt",
+        "Postfach 32 01 17",
+        "39040 Magdeburg"
+      ],
+      "sender_sign": [],
+      "pdfCoords": {
+        "person_x": 180,
+        "person_y": 510,
+        "person_y_steps": [
+          18.5,
+          18.5,
+          26,
+          18.5
+        ],
+        "return_x": 220,
+        "return_y": 320
+      }
+    },
+    "2026-ltw-sa_pdv": {
+      "name": "Partei der Vernunft",
+      "partyHref": "",
+      "lastResult": 0,
       "sender_addr": [],
       "sender_sign": [],
       "return_addr": []
+    },
+    "2026-ltw-sa_die-basis": {
+      "name": "dieBasis - Basisdemokratische Partei Deutschland",
+      "partyHref": "https://www.diebasis-lsa.de/wahlen/",
+      "lastResult": 15623,
+      "return_addr": [
+        "Marco Zimmermann",
+        "PF 1304",
+        "06603 Naumburg"
+      ],
+      "sender_sign": [],
+      "pdfCoords": {
+        "person_x": 175,
+        "person_y": 507,
+        "person_y_steps": [
+          18.5,
+          18.5,
+          26,
+          18.5
+        ],
+        "return_x": 220,
+        "return_y": 320
+      }
     },
     "2026-ltw-sa_die-partei": {
       "name": "Die PARTEI - Partei f\u00fcr Arbeit, Rechtsstaat, Tierschutz, Elitenf\u00f6rderung und basisdemokratische Initiative",
       "partyHref": "https://die-partei-sachsen-anhalt.de/",
       "lastResult": 7768,
-      "sender_addr": [],
-      "sender_sign": [],
       "return_addr": [
         "Die PARTEI Magdeburg",
         "Eddie Kuczyk",
         "Postfach 1241",
         "39002 Magdeburg"
-      ]
+      ],
+      "sender_sign": [],
+      "pdfCoords": {
+        "person_x": 175,
+        "person_y": 497,
+        "person_y_steps": [
+          18.5,
+          18.5,
+          26,
+          18.5
+        ],
+        "return_x": 340,
+        "return_y": 330,
+        "return_y_steps": [
+          18.5,
+          18.5,
+          26,
+          18.5
+        ]
+      }
     },
     "2026-ltw-sa_die-libertaeren": {
       "name": "DIE LIBERT\u00c4REN",
       "partyHref": "https://www.die-libertaeren.de",
       "lastResult": 0,
-      "sender_addr": [],
-      "sender_sign": [],
       "return_addr": [
         "DIE LIBERT\u00c4REN e.V.",
         "Postfach 75 02 07 ",
         "81332 M\u00fcnchen"
-      ]
+      ],
+      "sender_sign": [
+        "Florian Handwerker, M.A.",
+        "Bundesgesch\u00e4ftsf\u00fchrer",
+        "DIE LIBERT\u00c4REN e.V."
+      ],
+      "pdfCoords": {
+        "person_x": 175,
+        "person_y": 497,
+        "person_y_steps": [
+          18.5,
+          18.5,
+          26,
+          18.5
+        ],
+        "return_x": 220,
+        "return_y": 320
+      }
     }
   }
 }

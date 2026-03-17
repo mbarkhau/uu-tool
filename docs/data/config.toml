@@ -1,16 +1,19 @@
-# [ELECTIONS.2026-ltw-bawue]
-# name = "Wahl zum 18. Landtag<br>von <b>Baden-Württemberg</b>"
-# date = "2026-03-08"
-# deadline = "2025-12-22"
-# minimum_age = 16
-# minimum_support = "2.000"
-# electorate = "7.671.039"
-# loadPLZ = ["63", "64", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "88", "89", "97"]
-# info_urls = [
-#   "https://www.landtagswahl-bw.de/wer-wird-gewaehlt",
-#   "https://im.baden-wuerttemberg.de/fileadmin/redaktion/m-im/intern/dateien/pdf/20250530_LTW_2026-Bekanntmachung_der_Landeswahlleiterin_zur_Einreichung_von_Wahlvorschl%C3%A4gen.pdf",
-#   "https://www.wahlrecht.de/termine.htm"
-# ]
+# https://www.wahlrecht.de/termine.htm
+
+
+[ELECTIONS.2026-ltw-bawue]
+name = "Wahl zum 18. Landtag<br>von <b>Baden-Württemberg</b>"
+inactive = 1
+date = "2026-03-08"
+deadline = "2025-12-22"
+minimum_age = 16
+minimum_support = "2.000"
+electorate = "7.671.039"
+loadPLZ = ["63", "64", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "88", "89", "97"]
+info_urls = [
+  {text="Wahlprognose", href="https://dawum.de/Baden-Wuerttemberg/"},
+  {text="Wahlinfos", href="https://www.landtagswahl-bw.de/wer-wird-gewaehlt"},
+]
 
 # [ELECTIONS.2026-ltw-bawue.inactiveSelections]
 #   # couldn't find pdf form for these
@@ -25,47 +28,72 @@
 #   # 2026-ltw-bawue_oedp = true
 #   # 2026-ltw-bawue_pdh = true
 
-# [ELECTIONS.2026-ltw-rlp]
-# name = "Wahl zum 18. Landtag<br>von <b>Rheinland-Pfalz</b>"
-# date = "2026-03-22"
-# deadline = "2026-01-02"
-# minimum_age = 18
-# minimum_support = "2.000"
-# electorate = "3.042.414"
-# loadPLZ = ["51", "53", "54", "55", "56", "57", "65", "66", "67", "76"]
-# info_urls = [ ]
+[ELECTIONS.2026-ltw-rlp]
+name = "Wahl zum 18. Landtag<br>von <b>Rheinland-Pfalz</b>"
+inactive = 1
+date = "2026-03-22"
+deadline = "2026-01-02"
+minimum_age = 18
+minimum_support = "2.000"
+electorate = "3.042.414"
+loadPLZ = ["51", "53", "54", "55", "56", "57", "65", "66", "67", "76"]
+info_urls = [ ]
 
 # [ELECTIONS.2026-ltw-rlp.inactiveSelections]
 
 
 [ELECTIONS.2026-ltw-sa]
-name = "Wahl zum 18. Landtag von<br><b>Sachsen-Anhalt</b>"
+name = "Wahl zum 18.&nbsp;Landtag&nbsp;von<br><b>Sachsen-Anhalt</b>"
+inactive = 0
 date = "2026-09-06"
-deadline = "2026-06-26"
+deadline = "2026-05-31"
 minimum_age = 18
 minimum_support = "1.000"
 electorate = "1.788.930"
 loadPLZ = ["06", "14", "29", "38", "39"]
 info_urls = [
-  "https://dawum.de/Sachsen-Anhalt/",
-  "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faqs-zur-landtagswahl-2026"
+  {text="Wahlprognose", href="https://dawum.de/Sachsen-Anhalt/"},
+  {text="FAQ zur Landtagswahl 2026", href="https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faqs-zur-landtagswahl-2026"},
+  {text="Wahlberechtigung", href="https://wahlen.sachsen-anhalt.de/zu-den-wahlen/allgemeine-informationen-zur-landtagswahl/wer-kann-waehlen-oder-gewaehlt-werden"},
+  {text="Wahlberechtigte nach Kreis", href="https://wahlergebnisse.sachsen-anhalt.de/wahlen/lt21/erg/wbet/lt.wber.wkr.php"},
+  {text="Ergebnisse LTW 2021", href="https://wahlergebnisse.sachsen-anhalt.de/wahlen/lt21/erg/kreis/lt.15.ergtab.php"}
 ]
 
+# ergebnisse Sachsen Anhalt
+#   15623   dieBasis
+#   15279   Tierschutzpartei
+#    8583   Gartenpartei
+#    7768   Die PARTEI
+#    6238   TIERSCHUTZ hier!
+#    5109   Tierschutzallianz
+#    3951   Gesundheitsforschung
+#    3815   PIRATEN
+#    2888   NPD
+#    1649   WiR2020
+#    1613   FBM
+#    1405   Die Humanisten
+#    1062   ÖDP
+#     827   Klimaliste ST
+#     475   LKR
+
+
 [ELECTIONS.2026-ltw-mp]
-name = "Wahl zum 18. Landtag von<br><b>Mecklenburg-Vorpommern</b>"
+name = "Wahl zum 18.&nbsp;Landtag&nbsp;von<br><b>Mecklenburg-Vorpommern</b>"
+inactive = 0
 date = "2026-09-20"
-deadline = "2026-07-10"
+deadline = "2026-05-15"
 minimum_age = 16
 minimum_support = "1.000"
 electorate = "1.312.471"
 loadPLZ = ["17", "18", "19", "23"]
 info_urls = [
-  "https://dawum.de/Mecklenburg-Vorpommern/",
-  "https://www.laiv-mv.de/Wahlen/Landtagswahlen/2026/"
+  {text="Wahlprognose", href="https://dawum.de/Mecklenburg-Vorpommern/"},
+  {text="Wahlinfo", href="https://www.laiv-mv.de/Wahlen/Landtagswahlen/2026/"}
 ]
 
-[ELECTIONS.2026-ltw-berlin]
-name = "Wahl zum 20. Abgeordne-<br>tenhaus von <b>Berlin</b>"
+[ELECTIONS.2026-ahw-berlin]
+name = "Wahl zum 20.&nbsp;Abgeordne&shy;tenhaus&nbsp;von <b>Berlin</b>"
+inactive = 1
 date = "2026-09-20"
 deadline = "2026-07-10"
 minimum_age = 16
@@ -73,19 +101,20 @@ loadPLZ = ["10", "11", "12", "13", "14"]
 minimum_support = "2.000"
 electorate = "2.431.776"
 info_urls = [
-  "https://dawum.de/Berlin/",
-  "https://www.berlin.de/wahlen/wahlen/berliner-wahlen-2026/allgemeine-informationen/artikel.1578239.php"
+  {text="Wahlprognose", href="https://dawum.de/Berlin/"},
+  {text="Wahlinfo", href="https://www.berlin.de/wahlen/wahlen/berliner-wahlen-2026/allgemeine-informationen/artikel.1578239.php"}
 ]
 
-# [ELECTIONS.2027-ltw-saarland]
-# name = "Wahl zum 18. Landtag<br>des <b>Saarlandes</b>"
-# inactive = true
-# date = "2027-03-07"   # frühstmöglich
-# deadline = "2026-02-07"
-# minimum_age = 18
-# minimum_support = "800"
-# electorate = "746.307"
-# loadPLZ = ["66"]
+[ELECTIONS.2027-ltw-saarland]
+name = "Wahl zum 18. Landtag<br>des <b>Saarlandes</b>"
+inactive = 1
+date = "2027-04-18"
+deadline = "2026-02-07"
+minimum_age = 18
+minimum_support = "800"
+electorate = "746.307"
+loadPLZ = ["66"]
+info_urls = []
 
 # [ELECTIONS.2027-ltw-nrw]
 # loadPLZ = ["32", "33", "34", "37", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "57", "58", "59"]
@@ -116,6 +145,11 @@ info_urls = [
 
 # [ELECTIONS.2030-ltw-hamburg]
 # loadPLZ = ["20", "21", "22", "27"]
+
+
+################################
+# 2026 LTW Baden-Würtemberg
+################################
 
 
 [SELECTIONS.2026-ltw-bawue_team-freiheit]
@@ -156,17 +190,6 @@ return_addr = [
   "89077 Ulm",
 ]
 
-[SELECTIONS.2026-ltw-bawue_die-basis]
-name = "dieBasis - Basisdemokratische Partei Deutschland"
-partyHref = "https://diebasis-bw.de/"
-lastResult = 48_497
-sender_addr = []
-sender_sign = []
-return_addr = [
-  "Landesverband dieBasis BW",
-  "Görlitzer Weg 26",
-  "74321 Bietigheim-Bissingen",
-]
 
 [SELECTIONS.2026-ltw-bawue_oedp]
 name = "ÖDP - Ökologisch-Demokratische Partei / Familie und Umwelt"
@@ -184,14 +207,13 @@ return_addr = [
 name = "Volt"
 partyHref = "https://voltdeutschland.org/bw/unterschriftenformulare-ltw26"
 lastResult = 22_782
-sender_addr = []
-sender_sign = []
 return_addr = [
   "Volt Deutschland, Landesverband Baden-Württemberg",
   "Christiane Fichter",
   "Schwarzwaldstr. 14",
   "78112 St. Georgen",
 ]
+sender_sign = []
 
 [SELECTIONS.2026-ltw-bawue_buendnis-c]
 name = "Bündnis C"
@@ -254,6 +276,22 @@ return_addr = [
   "Hermann-Beuttenmüller-Straße 10",
   "75015 Bretten",
 ]
+
+[SELECTIONS.2026-ltw-bawue_die-basis]
+name = "dieBasis - Basisdemokratische Partei Deutschland"
+partyHref = "https://diebasis-bw.de/"
+lastResult = 48_497
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Landesverband dieBasis BW",
+  "Görlitzer Weg 26",
+  "74321 Bietigheim-Bissingen",
+]
+
+################################
+# 2026 LTW Rheinland Pfalz
+################################
 
 
 [SELECTIONS.2026-ltw-rlp_tierschutzpartei]
@@ -331,6 +369,7 @@ return_addr = [
   "56564 Neuwied",
 ]
 
+
 [SELECTIONS.2026-ltw-rlp_die-basis]
 name = "dieBasis - Basisdemokratische Partei Deutschland"
 partyHref = "https://diebasis-rp.de/unterschriften/"
@@ -343,58 +382,99 @@ return_addr = [
   "54293 Trier",
 ]
 
-
-# ergebnisse Sachsen Anhalt
-#   15623   dieBasis
-#   15279   Tierschutzpartei
-#    8583   Gartenpartei
-#    7768   Die PARTEI
-#    6238   TIERSCHUTZ hier!
-#    5109   Tierschutzallianz
-#    3951   Gesundheitsforschung
-#    3815   PIRATEN
-#    2888   NPD
-#    1649   WiR2020
-#    1613   FBM
-#    1405   Die Humanisten
-#    1062   ÖDP
-#     827   Klimaliste ST
-#     475   LKR
+################################
+# 2026 LTW Sachsen-Anhalt
+################################
 
 
-[SELECTIONS.2026-ltw-sa_die-basis]
-name = "dieBasis - Basisdemokratische Partei Deutschland"
-partyHref = "https://www.diebasis-blk.de/wahlen/"
-lastResult = 15_623
+[SELECTIONS.2026-ltw-sa_volt]
+name = "Volt"
+partyHref = "https://voltdeutschland.org/sachsen-anhalt/unterstuetze-uns-zur-landtagswahl-in-sachsen-anhalt-2026"
+lastResult = 0
+return_addr = [
+  "Volt Deutschland,",
+  "Landesverband Sachsen-Anhalt",
+  "Postfach 32 01 17",
+  "39040 Magdeburg",
+]
+sender_sign = []
+
+[SELECTIONS.2026-ltw-sa_volt.pdfCoords]
+person_x = 180
+person_y = 510
+person_y_steps = [18.5, 18.5, 26, 18.5]
+return_x = 220
+return_y = 320
+
+
+
+[SELECTIONS.2026-ltw-sa_pdv]
+name = "Partei der Vernunft"
+partyHref = ""
+lastResult = 0
 sender_addr = []
 sender_sign = []
 return_addr = [
 ]
+
+[SELECTIONS.2026-ltw-sa_die-basis]
+name = "dieBasis - Basisdemokratische Partei Deutschland"
+partyHref = "https://www.diebasis-lsa.de/wahlen/"
+lastResult = 15_623
+return_addr = [
+  "Marco Zimmermann",
+  "PF 1304",
+  "06603 Naumburg"
+]
+sender_sign = []
+
+[SELECTIONS.2026-ltw-sa_die-basis.pdfCoords]
+person_x = 175
+person_y = 507
+person_y_steps = [18.5, 18.5, 26, 18.5]
+return_x = 220
+return_y = 320
 
 
 [SELECTIONS.2026-ltw-sa_die-partei]
 name = "Die PARTEI - Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative"
 partyHref = "https://die-partei-sachsen-anhalt.de/"
 lastResult = 7_768
-sender_addr = []
-sender_sign = []
 return_addr = [
   "Die PARTEI Magdeburg",
   "Eddie Kuczyk",
   "Postfach 1241",
   "39002 Magdeburg",
 ]
+sender_sign = []
+
+[SELECTIONS.2026-ltw-sa_die-partei.pdfCoords]
+person_x = 175
+person_y = 497
+person_y_steps = [18.5, 18.5, 26, 18.5]
+return_x = 340
+return_y = 330
+return_y_steps = [18.5, 18.5, 26, 18.5]
 
 
 [SELECTIONS.2026-ltw-sa_die-libertaeren]
 name = "DIE LIBERTÄREN"
 partyHref = "https://www.die-libertaeren.de"
 lastResult = 0
-sender_addr = []
-sender_sign = []
 return_addr = [
   "DIE LIBERTÄREN e.V.",
   "Postfach 75 02 07 ",
   "81332 München",
 ]
+sender_sign = [
+  "Florian Handwerker, M.A.",
+  "Bundesgeschäftsführer",
+  "DIE LIBERTÄREN e.V.",
+]
 
+[SELECTIONS.2026-ltw-sa_die-libertaeren.pdfCoords]
+person_x = 175
+person_y = 497
+person_y_steps = [18.5, 18.5, 26, 18.5]
+return_x = 220
+return_y = 320

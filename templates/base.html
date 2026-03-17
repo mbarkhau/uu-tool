@@ -43,6 +43,7 @@ h1 {
 
 .main, .header, .content, .footer {
   max-width: 37em;
+  overflow-x: hidden;
   margin: 0 auto 1em auto;
 }
 .header {
@@ -111,10 +112,11 @@ hr {margin: 2em;}
 }
 
 .breadcrumbs {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    overflow: auto;
+  width: 100.1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  overflow: auto;
 }
 
 .breadcrumbs a {
@@ -167,7 +169,7 @@ hr {margin: 2em;}
         </p>
         <p>Copyright © 2025 Manuel Barkhau. Alle Rechte vorbehalten.</p>
     </div>
-    <link rel="preload" href="data/config.json" as="fetch" type="application/json" crossorigin="anonymous">
+    {% block scripts %}{% endblock %}
     <script src="assets/uu_app.js"></script>
 </body>
 </html>
