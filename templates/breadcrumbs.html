@@ -1,17 +1,25 @@
 <div class="breadcrumbs">
-{% if active == "index.html" %}
+    {% if active == "index.html" %}
     <a class="tab1 active" href="index.html">Info</a>
-    <a class="tab2" href="select.html">Auswahl</a>
-    <a class="tab3" href="select.html">Formular</a>
-{% elif active == "select.html" %}
+    <a class="tab2" href="wahl.html">Wahl</a>
+    <a class="tab3" href="partei.html">Partei</a>
+    <a class="tab4" href="formular.html">Formular</a>
+    {% elif active == "wahl.html" %}
     <a class="tab1" href="index.html">Info</a>
-    <a class="tab2 active" href="select.html">Auswahl</a>
-    <a class="tab3" href="select.html">Formular</a>
-{% elif active == "formular.html" %}
+    <a class="tab2 active" href="wahl.html">Wahl</a>
+    <a class="tab3" href="partei.html">Partei</a>
+    <a class="tab4" href="formular.html">Formular</a>
+    {% elif active == "partei.html" %}
     <a class="tab1" href="index.html">Info</a>
-    <a class="tab2" href="select.html">Auswahl</a>
-    <a class="tab3 active" href="formular.html">Formular</a>
-{% else %}
+    <a class="tab2" href="wahl.html">Wahl</a>
+    <a class="tab3 active" href="partei.html">Partei</a>
+    <a class="tab4" href="formular.html">Formular</a>
+    {% elif active == "formular.html" %}
+    <a class="tab1" href="index.html">Info</a>
+    <a class="tab2" href="wahl.html">Wahl</a>
+    <a class="tab3" href="partei.html">Partei</a>
+    <a class="tab4 active" href="formular.html">Formular</a>
+    {% else %}
     <span class="error">Fehler</span>
-{% endif %}
+    {% endif %}
 </div>

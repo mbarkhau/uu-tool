@@ -1,0 +1,17 @@
+[ELECTIONS.2026-agh-berlin]
+active = 1
+name = "Wahl zum 20. Abgeordnetenhaus von&nbsp;<b>Berlin</b>"
+date = "2026-09-20"
+deadline = "2026-07-10"
+periode = "5 Jahre"
+minimum_age = 16
+loadPLZ = ["10", "11", "12", "13", "14"]
+minimum_support = "2.000"
+electorate = "2.431.776"
+info_urls = [
+  {text="Info", href="https://www.berlin.de/wahlen/wahlen/berliner-wahlen-2026/allgemeine-informationen/artikel.1578239.php"},
+  {text="Umfragen", href="https://dawum.de/Berlin/"},
+  {text="Wahlsystem", href="https://www.wahlrecht.de/landtage/rheinland-pfalz.htm"},
+  {text="Ergebnisse 2023", href="https://www.wahlrecht.de/news/2023/abgeordnetenhauswahl-berlin-2023.html"},
+]
+

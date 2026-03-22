@@ -39,37 +39,29 @@
 .breadcrumbs a.tab1,
 .breadcrumbs a.tab1::before,
 .breadcrumbs a.tab1::after {
-  background: hsl(0, 0%, 95%);
+  background: hsl(0, 0%, 100%);
 }
 
 .breadcrumbs a.tab2,
 .breadcrumbs a.tab2::before,
 .breadcrumbs a.tab2::after {
-  background: hsl(0, 0%, 75%);
+  background: hsl(0, 0%, 85%);
 }
 
 .breadcrumbs a.tab3,
 .breadcrumbs a.tab3::before,
 .breadcrumbs a.tab3::after {
-  background: hsl(0, 0%, 60%);
+  background: hsl(0, 0%, 75%);
 }
 
-.breadcrumbs a.tab2.active,
-.breadcrumbs a.tab2.active::before,
-.breadcrumbs a.tab2.active::after,
-.breadcrumbs a.tab2:hover::before,
-.breadcrumbs a.tab2:hover::after,
-.breadcrumbs a.tab2:hover {
-  background: hsl(0, 0%, 80%);
-}
-
-.breadcrumbs a.tab3.active,
-.breadcrumbs a.tab3.active::before,
-.breadcrumbs a.tab3.active::after,
-.breadcrumbs a.tab3:hover::before,
-.breadcrumbs a.tab3:hover::after,
-.breadcrumbs a.tab3:hover {
+.breadcrumbs a.tab4,
+.breadcrumbs a.tab4::before,
+.breadcrumbs a.tab4::after {
   background: hsl(0, 0%, 65%);
+}
+
+.breadcrumbs a:hover {
+  filter: brightness(0.90);
 }
 
 .elections {
@@ -98,7 +90,7 @@
 .elections>div,
 .selections>.selection {
   display: block;
-  margin: 0.5rem;
+  margin: 1.5rem;
   padding: 1rem;
 
   background-color: #E6E6E6;
@@ -132,6 +124,8 @@
   display: grid;
   grid-template-columns: auto 1fr;
   column-gap: 1em;
+  row-gap: 0.5em;
+  align-items: center;
   font-size: 0.8em;
   line-height: 1.2em;
 }
@@ -159,7 +153,7 @@
 
 .selections .logo img {
   display: block;
-  height: 4rem;
+  height: 5rem;
   max-width: 100%;
   object-fit: contain;
   margin: 1rem;

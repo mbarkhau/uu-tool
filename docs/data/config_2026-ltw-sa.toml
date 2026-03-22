@@ -1,0 +1,162 @@
+[ELECTIONS.2026-ltw-sa]
+active = 1
+name = "Wahl zum 18.&nbsp;Landtag von&nbsp;<b>Sachsen-Anhalt</b>"
+date = "2026-09-06"
+deadline = "2026-05-31"
+periode = "5 Jahre"
+minimum_age = 18
+minimum_support = "1.000"
+electorate = "1.788.930"
+loadPLZ = ["06", "14", "29", "38", "39"]
+info_urls = [
+  {text="Umfrage", href="https://dawum.de/Sachsen-Anhalt/"},
+  {text="Terminkalender zur LTW 2026", href="https://wahlen.sachsen-anhalt.de/fileadmin/Bibliothek/Politik_und_Verwaltung/MI/wahlen/PDF/2026_Terminkalender_fuer_die_Vorbereitung_und_Durchfuehrung_der_Landtagswahl.pdf"},
+  {text="FAQ zur LTW 2026", href="https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faqs-zur-landtagswahl-2026"},
+  {text="Übersicht Ausgabe Formblätter", href="https://wahlen.sachsen-anhalt.de/fileadmin/Bibliothek/Politik_und_Verwaltung/MI/wahlen/PDF/2026_03_06_LTW_Uebersicht_Ausgabe_Formblaetter.pdf"},
+  {text="Wahlberechtigung", href="https://wahlen.sachsen-anhalt.de/zu-den-wahlen/allgemeine-informationen-zur-landtagswahl/wer-kann-waehlen-oder-gewaehlt-werden"},
+  {text="Wahlberechtigte nach Kreis", href="https://wahlergebnisse.sachsen-anhalt.de/wahlen/lt21/erg/wbet/lt.wber.wkr.php"},
+  {text="Ergebnisse LTW 2021", href="https://wahlergebnisse.sachsen-anhalt.de/wahlen/lt21/erg/kreis/lt.15.ergtab.php"},
+]
+
+# ergebnisse Sachsen Anhalt
+#   15623   dieBasis
+#   15279   Tierschutzpartei
+#    8583   Gartenpartei
+#    7768   Die PARTEI
+#    6238   TIERSCHUTZ hier!
+#    5109   Tierschutzallianz
+#    3951   Gesundheitsforschung
+#    3815   PIRATEN
+#    2888   NPD
+#    1649   WiR2020
+#    1613   FBM
+#    1405   Die Humanisten
+#    1062   ÖDP
+#     827   Klimaliste ST
+#     475   LKR
+
+
+################################
+# 2026 LTW Sachsen-Anhalt
+################################
+
+
+[SELECTIONS.2026-ltw-sa_volt]
+name = "Volt"
+partyHref = "https://voltdeutschland.org/sachsen-anhalt/unterstuetze-uns-zur-landtagswahl-in-sachsen-anhalt-2026"
+lastResult = 0
+return_addr = [
+  "Volt Deutschland,",
+  "Landesverband Sachsen-Anhalt",
+  "Postfach 32 01 17",
+  "39040 Magdeburg",
+]
+sender_sign = []
+
+[SELECTIONS.2026-ltw-sa_volt.pdfCoords]
+person_x = 180
+person_y = 510
+person_y_steps = [18.5, 18.5, 26, 18.5]
+return_x = 220
+return_y = 320
+
+
+
+[SELECTIONS.2026-ltw-sa_pdv]
+name = "Partei der Vernunft"
+partyHref = ""
+lastResult = 0
+sender_addr = []
+sender_sign = []
+return_addr = [
+]
+
+[SELECTIONS.2026-ltw-sa_die-basis]
+name = "dieBasis - Basisdemokratische Partei Deutschland"
+partyHref = "https://www.diebasis-lsa.de/wahlen/"
+lastResult = 15_623
+return_addr = [
+  "Marco Zimmermann",
+  "PF 1304",
+  "06603 Naumburg"
+]
+sender_sign = []
+
+[SELECTIONS.2026-ltw-sa_die-basis.pdfCoords]
+person_x = 175
+person_y = 507
+person_y_steps = [18.5, 18.5, 26, 18.5]
+return_x = 220
+return_y = 320
+
+
+[SELECTIONS.2026-ltw-sa_die-partei]
+name = "Die PARTEI - Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative"
+partyHref = "https://die-partei-sachsen-anhalt.de/"
+lastResult = 7_768
+return_addr = [
+  "Die PARTEI Magdeburg",
+  "Eddie Kuczyk",
+  "Postfach 1241",
+  "39002 Magdeburg",
+]
+sender_sign = []
+
+[SELECTIONS.2026-ltw-sa_die-partei.pdfCoords]
+person_x = 175
+person_y = 497
+person_y_steps = [18.5, 18.5, 26, 18.5]
+return_x = 340
+return_y = 330
+return_y_steps = [18.5, 18.5, 26, 18.5]
+
+
+[SELECTIONS.2026-ltw-sa_die-libertaeren]
+name = "DIE LIBERTÄREN"
+partyHref = "https://www.die-libertaeren.de"
+lastResult = 0
+return_addr = [
+  "DIE LIBERTÄREN e.V.",
+  "Postfach 75 02 07 ",
+  "81332 München",
+]
+sender_sign = [
+  "Florian Handwerker, M.A.",
+  "Bundesgeschäftsführer",
+  "DIE LIBERTÄREN e.V.",
+]
+
+[SELECTIONS.2026-ltw-sa_die-libertaeren.pdfCoords]
+person_x = 175
+person_y = 497
+person_y_steps = [18.5, 18.5, 26, 18.5]
+return_x = 220
+return_y = 320
+
+[SELECTIONS.2026-ltw-sa_buendnis-deutschland]
+name = "Bündnis Deutschland"
+partyHref = "https://lsa.buendnis-deutschland.de/unterstuetzerunterschriften-2026"
+lastResult = 0
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Bündnis Deutschland",
+  "Auf den Steinen 9",
+  "06485 Quedlinburg"
+]
+
+[SELECTIONS.2026-ltw-sa_buendnis-deutschland.pdfCoords]
+person_x = 175
+person_y = 495
+person_y_steps = [18.5, 18.5, 26, 18.5]
+return_x = 220
+return_y = 315
+
+
+[SELECTIONS.2026-ltw-sa_tierschutzallianz]
+name = "Allianz für Menschenrechte, Tier- und Naturschutz"
+partyHref = "https://www.tierschutzallianz.de/"
+lastResult = 0
+return_addr = []
+sender_sign = []
+

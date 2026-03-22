@@ -1,43 +1,46 @@
 {% extends "base.html" %}
 {% block head %}
 <style>
-.vid-container {
-    position: relative;
-    max-width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    border: 1px solid #888;
-}
-#js-player {
-    position: absolute;
-    max-width: 100%;
-    top: 0;
-    height: 100%;
-    background:
-        url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSI0MDkgMjc4IDUxMiAxMTQiPgo8cGF0aCBmaWxsPSJyZWQiIGQ9Ik01NjkgMjk2YTIwIDIwIDAgMCAwLTE0LTE1Yy0xMy0zLTY0LTMtNjQtM3MtNTEgMC02NCAzYTIwIDIwIDAgMCAwLTE0IDE1Yy00IDEyLTQgMzktNCAzOXMwIDI3IDQgMzlhMjAgMjAgMCAwIDAgMTQgMTVjMTMgMyA2NCAzIDY0IDNzNTEgMCA2NC0zYTIwIDIwIDAgMCAwIDE0LTE1YzQtMTIgNC0zOSA0LTM5czAtMjctNC0zOVoiIC8+CjxwYXRoIGZpbGw9IiNmZmYiIGQ9Im00NzUgMzU5IDQyLTI0LTQyLTI1djQ5WiIvPgo8L3N2Zz4=)
-        #DDD 139px 76px/180px no-repeat;
-}
-#js-player img {
-    max-width: 100%;
-    opacity: 0;
-    transition: opacity 200ms ease-in-out;
-}
-.button {
-    display: block;
-    text-align: center;
-    margin: 2rem auto;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    padding: 1em;
-    max-width: 20em;
-    background: hsl(0, 0%, 75%);
-    border: 2px solid hsl(0, 0%, 75%);
-    border-radius: 4px;
-}
-.button:hover {
-    background: hsl(0, 0%, 85%);
-}
+    .vid-container {
+        position: relative;
+        max-width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        border: 1px solid #888;
+    }
+
+    #js-player {
+        position: absolute;
+        max-width: 100%;
+        top: 0;
+        height: 100%;
+        background:
+            url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSI0MDkgMjc4IDUxMiAxMTQiPgo8cGF0aCBmaWxsPSJyZWQiIGQ9Ik01NjkgMjk2YTIwIDIwIDAgMCAwLTE0LTE1Yy0xMy0zLTY0LTMtNjQtM3MtNTEgMC02NCAzYTIwIDIwIDAgMCAwLTE0IDE1Yy00IDEyLTQgMzktNCAzOXMwIDI3IDQgMzlhMjAgMjAgMCAwIDAgMTQgMTVjMTMgMyA2NCAzIDY0IDNzNTEgMCA2NC0zYTIwIDIwIDAgMCAwIDE0LTE1YzQtMTIgNC0zOSA0LTM5czAtMjctNC0zOVoiIC8+CjxwYXRoIGZpbGw9IiNmZmYiIGQ9Im00NzUgMzU5IDQyLTI0LTQyLTI1djQ5WiIvPgo8L3N2Zz4=) #DDD 215px 117px/275px no-repeat;
+    }
+
+    #js-player img {
+        max-width: 100%;
+        opacity: 0;
+        transition: opacity 200ms ease-in-out;
+    }
+
+    .button {
+        display: block;
+        text-align: center;
+        margin: 2rem auto;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        padding: 1em;
+        max-width: 20em;
+        background: hsl(0, 0%, 75%);
+        border: 2px solid hsl(0, 0%, 75%);
+        border-radius: 4px;
+    }
+
+    .button:hover {
+        background: hsl(0, 0%, 85%);
+    }
 </style>
 {% endblock %}
 {% block content %}
@@ -47,7 +50,7 @@
         <img src="img/thumbnail.jpg" loading="lazy" onload="this.style.opacity = '1';" />
     </div>
 </div>
-<a class="button" href="select.html">Zur Parteiauswahl ➤</a>
+<a class="button" href="wahl.html">Zur Auswahl ➤</a>
 
 <h2>Anforderungen</h2>
 
@@ -72,7 +75,7 @@
         Sie müssen am Tag der Unterschrift das <b>Mindestalter</b> erreicht
         haben.
     </li>
-    <li>Sie müssen <b>deutscher Staatsbürger</b> sein.</li>
+    <li>Sie müssen <b>deutscher Staatsbürger</b> sein. <a href="https://www.bmi.bund.de/DE/themen/verfassung/wahlrecht/auslaenderwahlrecht/auslaenderwahlrecht-node.html">(Ausnahme EU-Bürger bei Kommunalwahlen.)</a></li>
     <li>
         Sie müssen mindestens <b>drei Monate mit Erstwohnsitz</b>
         in einem Wahlbezirk zur jeweiligen Wahl gemeldet sein.
@@ -83,10 +86,10 @@
 
 <ul>
     <li>Ihre <b>persönlichen Daten</b> werden durch uu-tool.de <b>nicht
-    gespeichert</b> oder weitergegeben.</li>
+            gespeichert</b> oder weitergegeben.</li>
     <li>Die Eingabe Ihrer persönlichen Daten ist <em>ausschließlich</em> um das UU-Formular auszufüllen.</li>
     <li>Diese Verarbeitung Ihrer Daten findet <em>ausschließlich</em> auf
-    Ihrem eigenen Endgerät statt.</li>
+        Ihrem eigenen Endgerät statt.</li>
     <li>Eine Übermittlung Ihrer persönlichen Daten <em>findet nicht statt</em>.</li>
 </ul>
 

@@ -144,62 +144,24 @@
 		</div>
 		<div class="main">
 			<div class="breadcrumbs">
-				<a class="tab1 active" href="index.html">Info</a>
+				<a class="tab1" href="index.html">Info</a>
 				<a class="tab2" href="wahl.html">Wahl</a>
-				<a class="tab3" href="partei.html">Partei</a>
+				<a class="tab3 active" href="partei.html">Partei</a>
 				<a class="tab4" href="formular.html">Formular</a>
 			</div>
 			<div class="content">
-				<div class="vid-container">
-					<div id="js-player">
-						<img src="img/thumbnail.jpg" loading="lazy" onload="this.style.opacity = '1';" />
-					</div>
-				</div>
-				<a class="button" href="wahl.html">Zur Auswahl ➤</a>
-				<h2>Anforderungen</h2>
-				<ol>
-					<li>Drucker</li>
-					<li>Drei DIN A4 Seiten</li>
-					<li>Briefumschlag (ggf. mit Frankierung)</li>
-				</ol>
-				<h2 id="voraussetzungen">
-					Voraussetzungen für eine gültige Unterstützungsunterschrift
-				</h2>
-				<ul>
-					<li>
-						Sie dürfen
-						<b>nur eine Unterstützungsunterschrift</b> leisten. Sie dürfen nicht
-						mehrere Parteien/Wahlvorschläge zur gleichen Wahl unterstützen.
-					</li>
-					<li>Sie dürfen nicht vom Wahlrecht ausgeschlossen sein.</li>
-					<li>
-						Sie müssen am Tag der Unterschrift das <b>Mindestalter</b> erreicht
-						haben.
-					</li>
-					<li>Sie müssen <b>deutscher Staatsbürger</b> sein. <a href="https://www.bmi.bund.de/DE/themen/verfassung/wahlrecht/auslaenderwahlrecht/auslaenderwahlrecht-node.html">(Ausnahme EU-Bürger bei Kommunalwahlen.)</a></li>
-					<li>
-						Sie müssen mindestens <b>drei Monate mit Erstwohnsitz</b>
-						in einem Wahlbezirk zur jeweiligen Wahl gemeldet sein.
-					</li>
-				</ul>
-				<h2 id="datenschutz">Datenschutz</h2>
-				<ul>
-					<li>Ihre <b>persönlichen Daten</b> werden durch uu-tool.de <b>nicht
-						gespeichert</b> oder weitergegeben.</li>
-						<li>Die Eingabe Ihrer persönlichen Daten ist <em>ausschließlich</em> um das UU-Formular auszufüllen.</li>
-						<li>Diese Verarbeitung Ihrer Daten findet <em>ausschließlich</em> auf
-							Ihrem eigenen Endgerät statt.</li>
-							<li>Eine Übermittlung Ihrer persönlichen Daten <em>findet nicht statt</em>.</li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer">
-					<p>
-						Quellcode:
-						<a href="https://github.com/mbarkhau/uu-tool">github.com/mbarkhau/uu-tool</a>
-					</p>
-					<p>Copyright © 2025 Manuel Barkhau. Alle Rechte vorbehalten.</p>
-				</div>
-				<script src="assets/uu_app.js"></script>
-			</body>
-		</html>
+				<p class="selections-description"></p>
+				<div class="selections"></div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				Quellcode:
+				<a href="https://github.com/mbarkhau/uu-tool">github.com/mbarkhau/uu-tool</a>
+			</p>
+			<p>Copyright © 2025 Manuel Barkhau. Alle Rechte vorbehalten.</p>
+		</div>
+		<link rel="preload" href="data/config.json" as="fetch" type="application/json" crossorigin="anonymous">
+			<script src="assets/uu_app.js"></script>
+		</body>
+	</html>

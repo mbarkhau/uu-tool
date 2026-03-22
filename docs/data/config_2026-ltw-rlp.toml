@@ -1,0 +1,107 @@
+[ELECTIONS.2026-ltw-rlp]
+active = 0
+name = "Wahl zum 18. Landtag von&nbsp;<b>Rheinland-Pfalz</b>"
+date = "2026-03-22"
+deadline = "2026-01-02"
+periode = "5 Jahre"
+minimum_age = 18
+minimum_support = "2.000"
+electorate = "3.042.414"
+loadPLZ = ["51", "53", "54", "55", "56", "57", "65", "66", "67", "76"]
+info_urls = [
+  {text="Info", href="https://landtag-rlp.de/de/parlament/der-landtag-und-seine-aufgaben/das-wahlsystem.htm"},
+  {text="Umfragen", href="https://dawum.de/Rheinland-Pfalz/"},
+  {text="Ergebnis", href="https://landtag-rlp.de/de/parlament/statistik.htm"},
+  {text="Hochrechnung", href="https://www.wahlrecht.de/news/2026/landtagswahl-rheinland-pfalz-2026.html#prognosen-hochrechnungen"},
+]
+
+# [ELECTIONS.2026-ltw-rlp.inactiveSelections]
+
+[SELECTIONS.2026-ltw-rlp_tierschutzpartei]
+name = "Tierschutzpartei - PARTEI MENSCH UMWELT TIERSCHUTZ"
+partyHref = "https://www.tierschutzpartei.de/tierrechte-und-tierschutz-2026-endlich-in-den-mainzer-landtag/"
+lastResult = 32_527
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "PARTEI MENSCH UMWELT TIERSCHUTZ",
+  "Landesverband Rheinland-Pfalz",
+  "Schillerstraße 24",
+  "66989 Höhfröschen",
+]
+
+
+[SELECTIONS.2026-ltw-rlp_die-partei]
+name = "Die PARTEI - Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative"
+partyHref = "https://die-partei.net/rlp/"
+lastResult = 20_519
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Die PARTEI LV Rheinland-Pfalz",
+  "c/o Florian Niedt",
+  "Postfach 10 03 02",
+  "56033 Koblenz",
+]
+
+[SELECTIONS.2026-ltw-rlp_volt]
+name = "Volt"
+partyHref = "https://voltdeutschland.org/bw/unterschriftenformulare-ltw26"
+lastResult = 19_286
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Volt Deutschland Landesverband Rheinland-Pfalz",
+  "Bleichstraße 5",
+  "55218 Ingelheim am Rhein",
+]
+
+[SELECTIONS.2026-ltw-rlp_oedp]
+name = "ÖDP - Ökologisch-Demokratische Partei / Familie und Umwelt"
+partyHref = "https://www.oedp-rlp.de/wahlen/landtagswahl-2026"
+lastResult = 13_406
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "ÖDP Rheinland-Pfalz",
+  "Neckarstr. 27-29",
+  "55118 Mainz",
+]
+
+[SELECTIONS.2026-ltw-rlp_piratenpartei]
+name = "Piratenpartei"
+partyHref = ""
+lastResult = 10_393
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Piratenpartei KV Koblenz",
+  "Postfach 20 12 11",
+  "56012 Koblenz",
+]
+
+[SELECTIONS.2026-ltw-rlp_pdh]
+name = "PdH - Partei der Humanisten"
+lastResult = 0
+partyHref = "https://www.pdh.eu/uu/?lv=rp"
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Uwe Krämer",
+  "Ringstr. 40",
+  "56564 Neuwied",
+]
+
+
+[SELECTIONS.2026-ltw-rlp_die-basis]
+name = "dieBasis - Basisdemokratische Partei Deutschland"
+partyHref = "https://diebasis-rp.de/unterschriften/"
+lastResult = 0
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "dieBasis Landesverband Rheinland-Pfalz",
+  "Bitburger Str. 28a",
+  "54293 Trier",
+]
+

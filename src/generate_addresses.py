@@ -6,16 +6,20 @@
 # ]
 # ///
 # Quelle:
-#
 # https://www.statistikportal.de/de/veroeffentlichungen/anschriftenverzeichnis
 #
 import json
 import pathlib as pl
 import openpyxl
 
-IN_FILE = "Anschriften_der_Gemeinde_und_Stadtverwaltungen_Stand_31012023_final.xlsx"
+ADDRESSES_URL = "https://www.statistikportal.de/sites/default/files/2023-11/Anschriften_der_Gemeinde_und_Stadtverwaltungen_Stand_31012023_final.xlsx"
 
-wb = openpyxl.load_workbook(IN_FILE)
+DATA_DIR = pl.Path(__file__).parent.parent / "plz_data"
+ADDRESS_FILE = DATA_DIR / "Anschriften_der_Gemeinde_und_Stadtverwaltungen_Stand_31012023_final.xlsx"
+PLZ_IN_PATH = DATA_DIR / "postleitzahlen_2023.json"
+PLZ_OUT_PATH = DATA_DIR / "postleitzahlen_2023_v4.json"
+
+wb = openpyxl.load_workbook(ADDRESS_FILE)
 ws = wb['Anschriften_31_01_2023']
 
 COL_NAMES = [
@@ -94,7 +98,8 @@ for _, entries in entries_by_plz_prefix.items():
         valid_items.add((entry['PLZ'], entry['ort'].replace("", "")))
         valid_items.add((entry['PLZ'], entry['gemeinde'].replace("", "")))
 
-with pl.Path("postleitzahlen_2023.json").open(mode='r') as fobj:
+
+with PLZ_IN_PATH.open(mode='r') as fobj:
     plz_data = json.loads(fobj.read())
 
 new_plz_data = []
@@ -107,7 +112,8 @@ for plz, name in plz_data:
     # else:
     #     print("unsearchable", plz, ",", name)
 
-with pl.Path("postleitzahlen_2023_v2.json").open(mode='w') as fobj:
+
+with PLZ_OUT_PATH.open(mode='w') as fobj:
     fobj.write(json.dumps(new_plz_data).replace("], [", "],\n ["))
 
 print("  searchable entries", len(new_plz_data))

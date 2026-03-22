@@ -146,11 +146,31 @@ var uu_app = (function () {
     return loadJSONData("data/config.json")
   }
 
+  function filterElectionSelections(configs, electionID) {
+    let selections = Object.keys(configs.SELECTIONS);
+    selections = selections.filter((selectionID) => {
+      return selectionID.startsWith(electionID);
+    });
+
+    selections.sort((a, b) => {
+      const aCfg = configs.SELECTIONS[a];
+      const bCfg = configs.SELECTIONS[b];
+      const aResult = aCfg.lastResult || 0;
+      const bResult = bCfg.lastResult || 0;
+      if (aResult == 0 && bResult == 0) {
+        return aCfg.name.localeCompare(bCfg.name);
+      }
+      return bResult - aResult;
+    });
+    return selections
+  }
+
   function renderElection(configs, electionID) {
     const electionCfg = configs.ELECTIONS[electionID]
     const electionDiv = document.createElement("div");
     electionDiv.classList.add("election");
     const logo = `img/logo_${electionID.split("-").slice(1).join("-")}.png`
+    const selections = filterElectionSelections(configs, electionID)
 
     electionDiv.innerHTML = `
     <div class="election-header">
@@ -169,12 +189,20 @@ var uu_app = (function () {
         <span>${formatDateDe(electionCfg.deadline)}</span>
       </div>
       <div>
+        <span>Wahlperiode:</span>
+        <span>${formatDateDe(electionCfg.periode)}</span>
+      </div>
+      <div>
         <span>Mindestalter:</span>
         <span>${electionCfg.minimum_age}</span>
       </div>
       <div>
         <span>Wahlberechtigte:</span>
         <span>${electionCfg.electorate}</span>
+      </div>
+      <div>
+        <span>Parteien/Wahllisten</span>
+        <span>${selections.length}</span>
       </div>
       <div>
         <span>Benötigte<br>Unterschriften:</span>
@@ -241,95 +269,73 @@ ${electionCfg.info_urls && electionCfg.info_urls.length > 0 ? `    <div class="e
     });
   }
 
-  async function initSelectPage() {
+  async function initWahlPage() {
     const electionsDiv = document.querySelector(".elections");
-    const selectionsDiv = document.querySelector(".selections");
-
     if (!electionsDiv) { return; }
 
-    async function renderSelections() {
-      const electionDiv = document.querySelector(".elections .active");
-      const electionID = electionDiv.dataset.electionID;
-      const configs = await uu_app.getConfigs();
-      const electionCfg = configs.ELECTIONS[electionID];
-
-      selectionsDiv.innerHTML = "";
-      let selections = Object.keys(configs.SELECTIONS);
-      selections = selections.filter((selectionID) => {
-        return selectionID.startsWith(electionID);
-      });
-
-      selections.sort((a, b) => {
-        const aCfg = configs.SELECTIONS[a];
-        const bCfg = configs.SELECTIONS[b];
-        const aResult = aCfg.lastResult || 0;
-        const bResult = bCfg.lastResult || 0;
-        if (aResult == 0 && bResult == 0) {
-          return aCfg.name.localeCompare(bCfg.name);
-        }
-        return bResult - aResult;
-      });
-
-      const cleanedName = (
-        electionCfg.name
-          .replaceAll("-<br>", "")
-          .replaceAll("<br>", " ")
-          .replaceAll("&nbsp;", " ")
-      )
-      const selectionsHeaderDiv = document.querySelector(".selections-description")
-      selectionsHeaderDiv.innerHTML = `Parteien die zur ${cleanedName} antreten wollen.`
-
-      selections.forEach((selectionID) => {
-        let selectionNode = uu_app.renderSelection(configs, selectionID)
-        selectionsDiv.appendChild(selectionNode)
-      })
-    }
-
-    // the first election is the default
     const configs = await uu_app.getConfigs();
     electionsDiv.innerHTML = "";
 
     const activeElections = [];
     Object.entries(configs.ELECTIONS).forEach(([electionID, electionCfg]) => {
-      if (!electionCfg.inactive) {
+      if (1 || electionCfg.active) {
         electionCfg.id = electionID;
         activeElections.push(electionCfg)
       }
     })
+    activeElections.sort((a, b) => b.date.localeCompare(a.date))
 
     const electionHeaderDiv = document.querySelector("#select-election")
     if (activeElections.length === 0) {
-      electionHeaderDiv.style.display = "none"
+      if (electionHeaderDiv) electionHeaderDiv.style.display = "none"
       return
     } else {
-      electionHeaderDiv.style.display = "block"
+      if (electionHeaderDiv) electionHeaderDiv.style.display = "block"
     }
 
     activeElections.forEach((electionCfg, i) => {
-      let electionDiv = uu_app.renderElection(configs, electionCfg.id)
-      if (i === 0) {
-        electionDiv.classList.add("active");
-      }
+      let electionDiv = renderElection(configs, electionCfg.id)
 
       electionDiv.addEventListener("click", function (event) {
-        let target = event.target;
-        while (!target.classList.contains("election")) {
-          target = target.parentElement;
-        }
-
-        const electionDivs = document.querySelectorAll(".elections > div");
-        electionDivs.forEach(function (electionDiv) {
-          electionDiv.classList.remove("active")
-        })
-        target.classList.add("active")
-        renderSelections()
-        document.querySelector("#select-party")
-          .scrollIntoView({ alignToTop: true, behavior: 'smooth' })
+        window.location.href = `/partei.html?electionID=${electionCfg.id}`;
       })
       electionsDiv.appendChild(electionDiv);
     })
+  }
 
-    renderSelections()
+  async function initParteiPage() {
+    const selectionsDiv = document.querySelector(".selections");
+    if (!selectionsDiv) { return; }
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const electionID = urlParams.get("electionID");
+
+    if (!electionID) {
+      window.location.href = "/wahl.html";
+      return;
+    }
+
+    const configs = await uu_app.getConfigs();
+    const electionCfg = configs.ELECTIONS[electionID];
+
+    const selections = filterElectionSelections(configs, electionID)
+    selectionsDiv.innerHTML = "";
+
+    const cleanedName = (
+      electionCfg.name
+        .replaceAll("-<br>", "")
+        .replaceAll("<br>", " ")
+        .replaceAll("&nbsp;", " ")
+    )
+    const selectionsHeaderDiv = document.querySelector(".selections-description")
+    if (selectionsHeaderDiv) {
+      selectionsHeaderDiv.innerHTML = `Parteien die zur ${cleanedName} antreten wollen.`
+    }
+
+    selections.forEach((selectionID) => {
+      let selectionNode = renderSelection(configs, selectionID)
+      selectionsDiv.appendChild(selectionNode)
+    })
   }
 
   function makePLZOptions(plzData) {
@@ -352,31 +358,50 @@ ${electionCfg.info_urls && electionCfg.info_urls.length > 0 ? `    <div class="e
     }
   }
 
+  function getFormField(name) {
+    var field = document.getElementsByName(name)[0];
+    if (!field) {
+      field = document.getElementById(name);
+    }
+    return field;
+  }
+
   async function initFormularPage() {
     const configs = await uu_app.getConfigs()
 
     const urlParams = new URLSearchParams(window.location.search);
     const selectionID = urlParams.get("selectionID");
+    if (!selectionID) {
+      window.location.href = "/wahl.html";
+      return;
+    }
+
     const electionID = selectionID.split("_")[0];
 
     const electionCfg = configs.ELECTIONS[electionID];
     const selectionCfg = configs.SELECTIONS[selectionID];
 
+    // preload scripts and plz data
+    setTimeout(function () {
+      loadScript("lib/download.js")
+      loadScript("lib/pdf-lib.js")
+
+      for (const plzPrefix of (electionCfg.loadPLZ || [])) {
+        var urls = plzUrls(plzPrefix)
+        loadJSONData(urls.plzData)
+        loadJSONData(urls.bueroData)
+      }
+    }, 2000)
+
     // set href on template node
     const downloadPdfTemplate = document.querySelector(".download-pdf-template")
     downloadPdfTemplate.href = `/pdf/${selectionID}.pdf`
 
-    const electionDiv = uu_app.renderElection(configs, electionID)
-    const selectionDiv = uu_app.renderSelection(configs, selectionID)
+    const electionDiv = renderElection(configs, electionID)
+    const selectionDiv = renderSelection(configs, selectionID)
 
     document.querySelector(".elections").appendChild(electionDiv)
     document.querySelector(".selections").appendChild(selectionDiv)
-
-    // preload scripts
-    setTimeout(function () {
-      loadScript("lib/download.js")
-      loadScript("lib/pdf-lib.js")
-    }, 2000)
 
     await loadScript("lib/tom-select.complete.js")
 
@@ -409,22 +434,15 @@ ${electionCfg.info_urls && electionCfg.info_urls.length > 0 ? `    <div class="e
       plzSelect.clear()
     });
 
-    // lazy prefetch plz data
-    for (const plzPrefix of (electionCfg.loadPLZ || [])) {
-      var urls = plzUrls(plzPrefix)
-      loadJSONData(urls.plzData)
-      loadJSONData(urls.bueroData)
-    }
-  }
+    ['lastname', 'firstname', 'birthday', 'street'].forEach(name => {
+      const field = getFormField(name);
+      if (field) {
+        field.addEventListener('change', validateForm);
+        field.addEventListener('input', validateForm);
+      }
+    });
 
-  function getFormField(name) {
-    var field = document.getElementsByName(name)[0];
-    if (!field) {
-      field = document.getElementById(name);
-    }
-    return field;
   }
-
 
   function cityText(city) {
     return `
@@ -434,11 +452,8 @@ ${city['plz']}, ${city['ort']}
 `.trim()
   }
 
-
   var plzSelect = null;
-
   var bueroSelect = null;
-
 
   async function populateBueroAddress(value) {
     if (!value) { return }
@@ -608,43 +623,49 @@ ${city['plz']}, ${city['ort']}
   }
 
   function validateForm() {
-    getFormField('download').disabled = false;
+    let downloadDisabled = false
 
     const lastnameField = getFormField('lastname');
     if (lastnameField.value.length == 0) {
-      return lastnameField.classList.add('warn');
+      downloadDisabled = true;
+      lastnameField.classList.add('warn');
     } else {
       lastnameField.classList.remove('warn');
     }
 
     const firstnameField = getFormField('firstname');
     if (firstnameField.value.length == 0) {
-      return firstnameField.classList.add('warn');
+      downloadDisabled = true;
+      firstnameField.classList.add('warn');
     } else {
       firstnameField.classList.remove('warn');
     }
 
     const birthdayField = getFormField('birthday');
     if (birthdayField.value.length == 0 && birthdayField.value.length != 10) {
-      return birthdayField.classList.add('warn')
+      downloadDisabled = true;
+      birthdayField.classList.add('warn')
     } else {
       birthdayField.classList.remove('warn')
     }
 
     const streetField = getFormField('street');
     if (streetField.value.length == 0) {
-      return streetField.classList.add('warn');
+      downloadDisabled = true;
+      streetField.classList.add('warn');
     } else {
       streetField.classList.remove('warn');
     }
 
     const plzField = getFormField('postleitzahl');
-    if (plzField.value.length == 0 && plzField.value.length == 6) {
-      return plzField.classList.add('warn');
+    if (!/^[0-9]{5}.*/.test(plzField.value)) {
+      downloadDisabled = true;
+      plzField.classList.add('warn');
     } else {
       plzField.classList.remove('warn');
     }
-    getFormField('download').disabled = false;
+
+    getFormField('download').disabled = downloadDisabled;
   }
 
   // onclick handler
@@ -788,7 +809,7 @@ ${city['plz']}, ${city['ort']}
         drawText(page3, 71, 642, sansRegular, cityPlzField.innerText)
       } catch (err) { console.log(err) }
 
-      if (1) {
+      if (0) {
         drawDebugGrid(page1)
         drawDebugGrid(page2)
         drawDebugGrid(page3)
@@ -816,7 +837,8 @@ ${city['plz']}, ${city['ort']}
 
   const ROUTES = {
     "/index.html": initIndexPage,
-    "/select.html": initSelectPage,
+    "/wahl.html": initWahlPage,
+    "/partei.html": initParteiPage,
     "/formular.html": initFormularPage
   }
 
@@ -828,8 +850,6 @@ ${city['plz']}, ${city['ort']}
 
   return {
     getConfigs: getConfigs,
-    renderElection: renderElection,
-    renderSelection: renderSelection,
     generatePDF: generatePDF,
   };
 

@@ -1,0 +1,15 @@
+[ELECTIONS.2026-ltw-mp]
+active = 1
+name = "Wahl zum 18.&nbsp;Landtag&nbsp;von<br><b>Mecklenburg-Vorpommern</b>"
+date = "2026-09-20"
+deadline = "2026-05-15"
+periode = "5 Jahre"
+minimum_age = 16
+minimum_support = "1.000"
+electorate = "1.312.471"
+loadPLZ = ["17", "18", "19", "23"]
+info_urls = [
+  {text="Wahlprognose", href="https://dawum.de/Mecklenburg-Vorpommern/"},
+  {text="Wahlinfo", href="https://www.laiv-mv.de/Wahlen/Landtagswahlen/2026/"}
+]
+

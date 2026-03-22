@@ -46,7 +46,7 @@ docs/index.html: \
 	templates/*.html \
 	docs/assets/uu_styles_base.css \
 	docs/assets/uu_app_base.js \
-	docs/data/config.toml \
+	docs/data/config*.toml \
 	src/build_www.py
 	uv run --script src/build_www.py
 

@@ -19,7 +19,8 @@ OUTPUT_DIR = pl.Path(__file__).parent.parent
 
 OUTPUTS = [
     OUTPUT_DIR / "docs" / "index.html",
-    OUTPUT_DIR / "docs" / "select.html",
+    OUTPUT_DIR / "docs" / "wahl.html",
+    OUTPUT_DIR / "docs" / "partei.html",
     OUTPUT_DIR / "docs" / "formular.html",
 ]
 
@@ -60,10 +61,21 @@ def _format_html(html: str) -> str:
 
 
 def _config_toml_to_json() -> None:
-    config_in_path = OUTPUT_DIR / "docs" / "data" / "config.toml"
-    config_out_path = OUTPUT_DIR / "docs" / "data" / "config.json"
-    with config_in_path.open(mode="rb") as fobj:
-        data = tomllib.load(fobj)
+    data = {}
+    config_dir = OUTPUT_DIR / "docs" / "data"
+    config_out_path = config_dir / "config.json"
+    
+    for config_in_path in sorted(config_dir.glob("config_*.toml")):
+        with config_in_path.open(mode="rb") as fobj:
+            file_data = tomllib.load(fobj)
+            
+        for key, value in file_data.items():
+            if key not in data:
+                data[key] = value
+            elif isinstance(value, dict) and isinstance(data[key], dict):
+                data[key].update(value)
+            else:
+                data[key] = value
 
     with config_out_path.open(mode="w") as fobj:
         json.dump(data, fobj, indent=2)
