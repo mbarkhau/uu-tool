@@ -2,7 +2,7 @@
 active = 0
 name = "Wahl zum 18. Landtag<br>des <b>Saarlandes</b>"
 date = "2027-04-18"
-deadline = "2026-02-07"
+deadline = "2027-03-01"
 periode = "5 Jahre"
 minimum_age = 18
 minimum_support = "800"

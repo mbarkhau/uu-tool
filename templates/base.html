@@ -20,6 +20,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_32.png?cb=2" />
   <link rel="icon" type="image/png" sizes="64x64" href="img/favicon_64.png?cb=2" />
 
+  <link rel="preload" href="/assets/uu_styles.css" as="style">
+
   <style inline>
     /* Reset styles */
     body {
@@ -33,11 +35,14 @@
       overflow-y: scroll;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
       line-height: 1.1em;
     }
 
-    h1 {font-weight: bold;}
+    h1 {
+      font-weight: bold;
+    }
 
     /* Layout styles */
 
@@ -60,8 +65,13 @@
       margin: 0.5em 1rem;
     }
 
-    .content {padding: 1rem;}
-    .footer {padding: 1rem;}
+    .content {
+      padding: 1rem;
+    }
+
+    .footer {
+      padding: 1rem;
+    }
 
     body {
       min-height: 70rem;
@@ -168,8 +178,6 @@
       }
     }
   </style>
-  <link rel="stylesheet" href="assets/uu_styles.css" />
-
   {% block head %}{% endblock %}
 </head>
 
@@ -184,14 +192,14 @@
     </h3>
   </div>
 
-  <div class="main">
+  <div class="main" role="main">
     {% include "breadcrumbs.html" %}
     <div class="content">
       {% block content %}{% endblock %}
     </div>
   </div>
 
-  <div class="footer">
+  <div class="footer" role="contentinfo">
     <p>
       Quellcode:
       <a href="https://github.com/mbarkhau/uu-tool">github.com/mbarkhau/uu-tool</a>
@@ -199,7 +207,8 @@
     <p>Copyright © 2025 Manuel Barkhau. Alle Rechte vorbehalten.</p>
   </div>
   {% block scripts %}{% endblock %}
-  <script src="assets/uu_app.js"></script>
+  <link rel="stylesheet" href="assets/uu_styles.css" />
+  <script src="assets/uu_app.js" defer></script>
 </body>
 
 </html>

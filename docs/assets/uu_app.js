@@ -165,12 +165,44 @@ var uu_app = (function () {
     return selections
   }
 
-  function renderElection(configs, electionID) {
+  function pageFlipper(url) {
+    return function (event) {
+      sessionStorage.setItem('lastScrollYTime', +new Date());
+      sessionStorage.setItem('lastScrollYPos', window.scrollY);
+      window.location.href = url;
+    }
+  }
+
+  function repositionScroll() {
+    const scrollTime = sessionStorage.getItem("lastScrollYTime");
+    if (scrollTime && (+new Date() - parseInt(scrollTime)) < 500) {
+      const scrollY = Math.min(250, parseInt(sessionStorage.getItem("lastScrollYPos")))
+      window.scrollTo({ behavior: 'instant', top: scrollY })
+    }
+    sessionStorage.removeItem("lastScrollYTime");
+    sessionStorage.removeItem("lastScrollYPos");
+  }
+
+  function renderElection(configs, electionID, options) {
+    options = options || {}
+
     const electionCfg = configs.ELECTIONS[electionID]
     const electionDiv = document.createElement("div");
     electionDiv.classList.add("election");
     const logo = `img/logo_${electionID.split("-").slice(1).join("-")}.png`
     const selections = filterElectionSelections(configs, electionID)
+    const today = new Date().toISOString().split("T")[0];
+    const isCurrent = electionCfg.deadline.localeCompare(today) > 0
+    const isActive = isCurrent && selections.length > 0
+
+    if (isCurrent) {
+      electionDiv.classList.add("current")
+    } else {
+      electionDiv.classList.add("past")
+    }
+    if (isActive) {
+      electionDiv.classList.add("active")
+    }
 
     electionDiv.innerHTML = `
     <div class="election-header">
@@ -201,19 +233,18 @@ var uu_app = (function () {
         <span>${electionCfg.electorate}</span>
       </div>
       <div>
-        <span>Parteien/Wahllisten</span>
-        <span>${selections.length}</span>
-      </div>
-      <div>
         <span>Benötigte<br>Unterschriften:</span>
         <span>${electionCfg.minimum_support}</span>
       </div>
     </div>
-${electionCfg.info_urls && electionCfg.info_urls.length > 0 ? `    <div class="election-info-urls">
+${electionCfg.info_urls && electionCfg.info_urls.length > 0 ? `    <div class="election-info-links">
       ${electionCfg.info_urls.map(url => `<a href="${url.href}" target="_blank" rel="noopener">${url.text}</a>`).join("\n      &bull;\n      ")}
     </div>` : ''}`;
 
     electionDiv.dataset.electionID = electionID;
+    if (options.addLink) {
+      electionDiv.addEventListener('click', pageFlipper(`/partei.html?electionID=${electionCfg.id}`))
+    }
     return electionDiv;
   }
 
@@ -222,7 +253,7 @@ ${electionCfg.info_urls && electionCfg.info_urls.length > 0 ? `    <div class="e
     // "2026-ltw-bawue_buendnis-c" -> ["2026-ltw-bawue", "buendnis-c"]
     const logo = "img/logo_" + selectionID.split("_")[1] + ".png";
 
-    const selectionNode = document.createElement("a");
+    const selectionNode = document.createElement("span");
     selectionNode.innerHTML = `
   <div class="logo">
       <img src="${logo}" alt="${selectionCfg.name}">
@@ -233,12 +264,12 @@ ${electionCfg.info_urls && electionCfg.info_urls.length > 0 ? `    <div class="e
   <div>
       <span>Letztes Ergebnis:</span> <span>${formatNumber(selectionCfg.lastResult || "-")}</span>
   </div>
-  <div>
+  <div class="selection-links">
       <a href="${selectionCfg.partyHref}">Webseite</a>
   </div>
   `
     selectionNode.classList.add("selection")
-    selectionNode.href = `/formular.html?selectionID=${selectionID}`
+    selectionNode.addEventListener('click', pageFlipper(`/formular.html?selectionID=${selectionID}`))
     selectionNode.dataset.selectionID = selectionID;
     return selectionNode
   }
@@ -294,11 +325,7 @@ ${electionCfg.info_urls && electionCfg.info_urls.length > 0 ? `    <div class="e
     }
 
     activeElections.forEach((electionCfg, i) => {
-      let electionDiv = renderElection(configs, electionCfg.id)
-
-      electionDiv.addEventListener("click", function (event) {
-        window.location.href = `/partei.html?electionID=${electionCfg.id}`;
-      })
+      let electionDiv = renderElection(configs, electionCfg.id, { addLink: true })
       electionsDiv.appendChild(electionDiv);
     })
   }
@@ -311,7 +338,7 @@ ${electionCfg.info_urls && electionCfg.info_urls.length > 0 ? `    <div class="e
     const electionID = urlParams.get("electionID");
 
     if (!electionID) {
-      window.location.href = "/wahl.html";
+      pageFlipper("/wahl.html")()
       return;
     }
 
@@ -372,11 +399,12 @@ ${electionCfg.info_urls && electionCfg.info_urls.length > 0 ? `    <div class="e
     const urlParams = new URLSearchParams(window.location.search);
     const selectionID = urlParams.get("selectionID");
     if (!selectionID) {
-      window.location.href = "/wahl.html";
+      pageFlipper("/wahl.html")()
       return;
     }
 
     const electionID = selectionID.split("_")[0];
+    document.querySelector("a.tab3").href += "?electionID=" + electionID
 
     const electionCfg = configs.ELECTIONS[electionID];
     const selectionCfg = configs.SELECTIONS[selectionID];
@@ -675,6 +703,7 @@ ${city['plz']}, ${city['ort']}
 
     btn.disabled = true;
     let progress = 0;
+    // TODO: animate progress
     const updateProgress = (text) => {
       btn.innerHTML = `PDF wird generiert<br/>(${progress}/5) ... ${text}`;
       progress++;
@@ -845,6 +874,8 @@ ${city['plz']}, ${city['ort']}
   function selectRoute(event) {
     ROUTES[window.location.pathname](event)
   }
+
+  repositionScroll()
 
   document.addEventListener("DOMContentLoaded", selectRoute);
 

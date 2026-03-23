@@ -69,4 +69,4 @@ dev_build_www: \
 .PHONY: serve
 serve:
 	@echo "http://localhost:8080"
-	@uvx sanic ./docs --simple -p 8080 --access-logs
+	@uvx sanic ./docs --fast --simple -p 8080 --access-logs

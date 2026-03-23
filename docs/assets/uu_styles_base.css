@@ -30,12 +30,6 @@
   text-decoration: underline;
 }
 
-.breadcrumbs a,
-.breadcrumbs a::before,
-.breadcrumbs a::after {
-  transition: background 0.2s ease;
-}
-
 .breadcrumbs a.tab1,
 .breadcrumbs a.tab1::before,
 .breadcrumbs a.tab1::after {
@@ -62,6 +56,24 @@
 
 .breadcrumbs a:hover {
   filter: brightness(0.90);
+}
+
+.button {
+  display: block;
+  text-align: center;
+  margin: 2rem auto;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  padding: 1em;
+  max-width: 20em;
+  background: hsl(0, 0%, 75%);
+  border: 2px solid hsl(0, 0%, 75%);
+  border-radius: 4px;
+}
+
+.button:hover {
+  background: hsl(0, 0%, 85%);
 }
 
 .elections {
@@ -93,31 +105,26 @@
   margin: 1.5rem;
   padding: 1rem;
 
-  background-color: #E6E6E6;
-  box-shadow: 1px 1px 8px #DDDDDD;
-  border-radius: 5px;
+  background-color: #F9F9F9;
+  box-shadow: 0px 1px 9px #AAA;
+  border-radius: 8px;
 
-  cursor: pointer;
   text-decoration: none;
   color: #000;
-  border: 1px solid transparent;
+  border: 1px solid #CCC;
 }
 
-.selections>.selection div {
+.selection>div {
   margin: 0 auto;
   max-width: 18rem;
 }
 
-.selections>.selection div span:last-child {
+.selection>div span:last-child {
   font-weight: bold;
 }
 
-.elections>.election.active,
-.elections>div:hover,
-.selections>.selection:hover {
-  background-color: #DDDDDD;
-  box-shadow: 1px 1px 6px #D0D0D0;
-  border: 1px solid black;
+.elections>div.past {
+  background-color: #CCC;
 }
 
 .election-info {
@@ -141,7 +148,6 @@
 }
 
 .selection {
-  cursor: pointer;
   min-height: 4rem;
 }
 
@@ -212,13 +218,17 @@ ol {
   background: #FF7;
 }
 
-.election-info-urls {
-  grid-column: 1 / -1;
-  text-align: center;
+.selection>.selection-links,
+.election>.election-info-links {
   margin-top: 1rem;
   padding-top: 0.8rem;
   border-top: 1px solid #CCC;
   font-size: 0.85em;
+}
+
+.election-info-links {
+  grid-column: 1 / -1;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -226,14 +236,14 @@ ol {
   row-gap: 0.4em;
 }
 
-.election-info-urls a {
+.election-info-links a {
   color: #333;
   text-decoration: underline;
   text-decoration-color: #999;
   white-space: nowrap;
 }
 
-.election-info-urls a:hover {
+.election-info-links a:hover {
   text-decoration-color: #333;
   color: #000;
 }
