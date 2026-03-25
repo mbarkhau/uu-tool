@@ -2,9 +2,9 @@
   "ELECTIONS": {
     "2026-agh-berlin": {
       "active": 1,
-      "name": "Wahl zum 20. Abgeordnetenhaus von&nbsp;<b>Berlin</b>",
+      "name": "Wahl zum 20. Abgeordneten&shy;haus von&nbsp;<b>Berlin</b>",
       "date": "2026-09-20",
-      "deadline": "2026-07-10",
+      "deadline": "2026-07-01",
       "periode": "5 Jahre",
       "minimum_age": 16,
       "loadPLZ": [
@@ -75,6 +75,10 @@
         {
           "text": "Ergebnis",
           "href": "https://www.landtagswahl-bw.de/ergebnisse-2026"
+        },
+        {
+          "text": "Wahlvorschl\u00e4ge",
+          "href": "https://www.landtagswahl-bw.de/parteien-uebersicht"
         }
       ]
     },
@@ -82,7 +86,7 @@
       "active": 1,
       "name": "Wahl zum 18.&nbsp;Landtag&nbsp;von<br><b>Mecklenburg-Vorpommern</b>",
       "date": "2026-09-20",
-      "deadline": "2026-05-15",
+      "deadline": "2026-07-01",
       "periode": "5 Jahre",
       "minimum_age": 16,
       "minimum_support": "1.000",
@@ -141,6 +145,10 @@
         {
           "text": "Hochrechnung",
           "href": "https://www.wahlrecht.de/news/2026/landtagswahl-rheinland-pfalz-2026.html#prognosen-hochrechnungen"
+        },
+        {
+          "text": "Wahlvorschl\u00e4ge",
+          "href": "https://www.wahlen.rlp.de/nachrichten/nachichtendetailseite/zwoelf-wahlvorschlagstraeger-bewerben-sich-um-den-einzug-in-den-rheinland-pfaelzischen-landtag"
         }
       ]
     },
@@ -148,7 +156,7 @@
       "active": 1,
       "name": "Wahl zum 18.&nbsp;Landtag von&nbsp;<b>Sachsen-Anhalt</b>",
       "date": "2026-09-06",
-      "deadline": "2026-05-31",
+      "deadline": "2026-06-15",
       "periode": "5 Jahre",
       "minimum_age": 18,
       "minimum_support": "1.000",
@@ -166,11 +174,11 @@
           "href": "https://dawum.de/Sachsen-Anhalt/"
         },
         {
-          "text": "Terminkalender zur LTW 2026",
+          "text": "Terminkalender",
           "href": "https://wahlen.sachsen-anhalt.de/fileadmin/Bibliothek/Politik_und_Verwaltung/MI/wahlen/PDF/2026_Terminkalender_fuer_die_Vorbereitung_und_Durchfuehrung_der_Landtagswahl.pdf"
         },
         {
-          "text": "FAQ zur LTW 2026",
+          "text": "FAQ",
           "href": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faqs-zur-landtagswahl-2026"
         },
         {
@@ -436,6 +444,7 @@
     },
     "2026-ltw-sa_volt": {
       "name": "Volt",
+      "hasLongName": false,
       "partyHref": "https://voltdeutschland.org/sachsen-anhalt/unterstuetze-uns-zur-landtagswahl-in-sachsen-anhalt-2026",
       "lastResult": 0,
       "return_addr": [
@@ -460,6 +469,7 @@
     },
     "2026-ltw-sa_pdv": {
       "name": "Partei der Vernunft",
+      "hasLongName": false,
       "partyHref": "",
       "lastResult": 0,
       "sender_addr": [],
@@ -468,6 +478,7 @@
     },
     "2026-ltw-sa_die-basis": {
       "name": "dieBasis - Basisdemokratische Partei Deutschland",
+      "hasLongName": true,
       "partyHref": "https://www.diebasis-lsa.de/wahlen/",
       "lastResult": 15623,
       "return_addr": [
@@ -491,6 +502,7 @@
     },
     "2026-ltw-sa_die-partei": {
       "name": "Die PARTEI - Partei f\u00fcr Arbeit, Rechtsstaat, Tierschutz, Elitenf\u00f6rderung und basisdemokratische Initiative",
+      "hasLongName": true,
       "partyHref": "https://die-partei-sachsen-anhalt.de/",
       "lastResult": 7768,
       "return_addr": [
@@ -521,6 +533,7 @@
     },
     "2026-ltw-sa_die-libertaeren": {
       "name": "DIE LIBERT\u00c4REN",
+      "hasLongName": false,
       "partyHref": "https://www.die-libertaeren.de",
       "lastResult": 0,
       "return_addr": [
@@ -548,6 +561,7 @@
     },
     "2026-ltw-sa_buendnis-deutschland": {
       "name": "B\u00fcndnis Deutschland",
+      "hasLongName": false,
       "partyHref": "https://lsa.buendnis-deutschland.de/unterstuetzerunterschriften-2026",
       "lastResult": 0,
       "sender_addr": [],
@@ -572,6 +586,7 @@
     },
     "2026-ltw-sa_tierschutzallianz": {
       "name": "Allianz f\u00fcr Menschenrechte, Tier- und Naturschutz",
+      "hasLongName": true,
       "partyHref": "https://www.tierschutzallianz.de/",
       "lastResult": 0,
       "return_addr": [],

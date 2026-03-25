@@ -13,6 +13,7 @@ info_urls = [
   {text="Umfragen", href="https://dawum.de/Rheinland-Pfalz/"},
   {text="Ergebnis", href="https://landtag-rlp.de/de/parlament/statistik.htm"},
   {text="Hochrechnung", href="https://www.wahlrecht.de/news/2026/landtagswahl-rheinland-pfalz-2026.html#prognosen-hochrechnungen"},
+  {text="Wahlvorschläge", href="https://www.wahlen.rlp.de/nachrichten/nachichtendetailseite/zwoelf-wahlvorschlagstraeger-bewerben-sich-um-den-einzug-in-den-rheinland-pfaelzischen-landtag"},
 ]
 
 # [ELECTIONS.2026-ltw-rlp.inactiveSelections]

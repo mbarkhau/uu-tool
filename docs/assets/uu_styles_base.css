@@ -1,79 +1,80 @@
-.breadcrumbs a:hover {
-  text-decoration: underline;
-}
-
 .breadcrumbs a {
   position: relative;
   overflow-y: clip;
+}
+
+.breadcrumbs a:nth-child(1) {
+  z-index: 10;
+}
+
+.breadcrumbs a:nth-child(2) {
+  z-index: 9;
+}
+
+.breadcrumbs a:nth-child(3) {
+  z-index: 8;
+}
+
+.breadcrumbs a:nth-child(4) {
+  z-index: 7;
+}
+
+.breadcrumbs a:nth-child(5) {
+  z-index: 6;
 }
 
 .breadcrumbs a::before,
 .breadcrumbs a::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
+  right: -10px;
   width: 20px;
-  height: 102%;
+  height: 51%;
 }
 
 .breadcrumbs a::before {
-  transform: skewX(-15deg);
-}
-
-.breadcrumbs a::after {
+  top: 0;
   transform: skewX(15deg);
 }
 
-.breadcrumbs a.active {
-  font-weight: bold;
-  text-decoration: underline;
+.breadcrumbs a::after {
+  bottom: 0;
+  transform: skewX(-15deg);
 }
 
-.breadcrumbs a.tab1,
-.breadcrumbs a.tab1::before,
-.breadcrumbs a.tab1::after {
+.breadcrumbs a:last-child::before,
+.breadcrumbs a:last-child::after {
+  display: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs a::before,
+.breadcrumbs a::after {
   background: hsl(0, 0%, 100%);
 }
 
-.breadcrumbs a.tab2,
-.breadcrumbs a.tab2::before,
-.breadcrumbs a.tab2::after {
+.breadcrumbs a.active~a,
+.breadcrumbs a.active~a::before,
+.breadcrumbs a.active~a::after {
   background: hsl(0, 0%, 85%);
 }
 
-.breadcrumbs a.tab3,
-.breadcrumbs a.tab3::before,
-.breadcrumbs a.tab3::after {
-  background: hsl(0, 0%, 75%);
+.breadcrumbs a {
+  --shadow: drop-shadow(1px 0px 2px #999);
+  filter: var(--shadow);
 }
 
-.breadcrumbs a.tab4,
-.breadcrumbs a.tab4::before,
-.breadcrumbs a.tab4::after {
-  background: hsl(0, 0%, 65%);
+.breadcrumbs a.active,
+.breadcrumbs a.active~a {
+  --shadow: drop-shadow(1px 0px 2px #999) drop-shadow(3px 0px 5px rgba(0, 0, 0, 0.15));
+}
+
+.breadcrumbs a:last-child {
+  --shadow: drop-shadow(0 0 0 transparent);
 }
 
 .breadcrumbs a:hover {
-  filter: brightness(0.90);
-}
-
-.button {
-  display: block;
-  text-align: center;
-  margin: 2rem auto;
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-  padding: 1em;
-  max-width: 20em;
-  background: hsl(0, 0%, 75%);
-  border: 2px solid hsl(0, 0%, 75%);
-  border-radius: 4px;
-}
-
-.button:hover {
-  background: hsl(0, 0%, 85%);
+  filter: brightness(0.90) var(--shadow);
 }
 
 .elections {
@@ -83,7 +84,7 @@
 .elections>.election {
   display: grid;
   flex-direction: column;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .election-header {
@@ -95,27 +96,29 @@
   height: 60px;
 }
 
-.election-info span {
-  white-space: nowrap;
-}
-
 .elections>div,
 .selections>.selection {
-  display: block;
-  margin: 1.5rem;
+  margin: 1.5rem 1rem;
   padding: 1rem;
+  min-height: 10rem;
 
-  background-color: #F9F9F9;
-  box-shadow: 0px 1px 9px #AAA;
+  background-color: #FBFBFB;
+  box-shadow: 0px 1px 7px #DDD;
   border-radius: 8px;
 
   text-decoration: none;
   color: #000;
-  border: 1px solid #CCC;
+  border: 1px solid #DDD;
 }
 
-.selection>div {
-  margin: 0 auto;
+.active.election,
+.active.selection {
+  border: 1px solid #888;
+  box-shadow: 0px 2px 9px #AAA;
+}
+
+.selection .logo {
+  margin: auto;
   max-width: 18rem;
 }
 
@@ -123,8 +126,12 @@
   font-weight: bold;
 }
 
+.selection div.metadata {
+  padding-bottom: 1em;
+}
+
 .elections>div.past {
-  background-color: #CCC;
+  background-color: #EEE;
 }
 
 .election-info {
@@ -149,6 +156,8 @@
 
 .selection {
   min-height: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .selections .logo {
@@ -159,10 +168,10 @@
 
 .selections .logo img {
   display: block;
-  height: 5rem;
+  height: 6rem;
   max-width: 100%;
   object-fit: contain;
-  margin: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .selections b {
@@ -178,6 +187,12 @@
 }
 
 @media screen and (max-device-width: 600px) {
+  .selections>.selection {
+    margin: 1rem 0.5rem;
+  }
+}
+
+@media screen and (max-device-width: 550px) {
   .selections {
     display: grid;
     grid-template-columns: repeat(1, minmax(200px, 1fr));
@@ -218,22 +233,54 @@ ol {
   background: #FF7;
 }
 
-.selection>.selection-links,
-.election>.election-info-links {
+.election-footer {
   margin-top: 1rem;
   padding-top: 0.8rem;
   border-top: 1px solid #CCC;
-  font-size: 0.85em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.election-footer {
+  grid-column: 1 / -1;
+}
+
+.selections>a.selection,
+.elections>.election.clickable {
+  border: 1px solid #AAA;
+  box-shadow: 0px 2px 9px #CCC;
+  transition: all 0.2s ease-in-out;
+}
+
+.elections>.election.clickable {
+  cursor: pointer;
+}
+
+.selections>a.selection:hover,
+.elections>.election.clickable:hover {
+  border: 1px solid #888;
+  box-shadow: 0px 4px 12px #AAA;
+  transform: translateY(-2px);
 }
 
 .election-info-links {
-  grid-column: 1 / -1;
+  flex: 1;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 0.8em;
-  row-gap: 0.4em;
+  font-size: 0.85em;
+  line-height: 2.0em;
+  cursor: default;
+}
+
+.election-footer a.button {
+  margin: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .election-footer {
+    flex-direction: column;
+  }
 }
 
 .election-info-links a {
@@ -241,9 +288,62 @@ ol {
   text-decoration: underline;
   text-decoration-color: #999;
   white-space: nowrap;
+  margin-right: 1em;
 }
 
 .election-info-links a:hover {
   text-decoration-color: #333;
   color: #000;
+}
+
+@media screen and (max-width: 460px) {
+  .elections>.election {
+    grid-template-columns: 3fr 4fr;
+    margin: 1.5rem 0.5rem;
+    line-height: 1.1em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .elections>.election {
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .elections>.election {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .elections>.election {
+    font-size: 0.9rem;
+  }
+}
+
+
+a.button {
+  display: block;
+  text-align: center;
+  line-height: 1.3em;
+  margin: 2rem auto;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  padding: 1em;
+  max-width: 20em;
+  background: hsl(0, 0%, 75%);
+  border: 2px solid hsl(0, 0%, 75%);
+  border-radius: 4px;
+}
+
+.button:hover {
+  background: hsl(0, 0%, 85%);
+}
+
+.button[disabled] {
+  opacity: 0.7;
+  pointer-events: none;
+  padding: 0.5em 1em;
 }

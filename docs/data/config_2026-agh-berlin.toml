@@ -1,8 +1,8 @@
 [ELECTIONS.2026-agh-berlin]
 active = 1
-name = "Wahl zum 20. Abgeordnetenhaus von&nbsp;<b>Berlin</b>"
+name = "Wahl zum 20. Abgeordneten&shy;haus von&nbsp;<b>Berlin</b>"
 date = "2026-09-20"
-deadline = "2026-07-10"
+deadline = "2026-07-01"
 periode = "5 Jahre"
 minimum_age = 16
 loadPLZ = ["10", "11", "12", "13", "14"]

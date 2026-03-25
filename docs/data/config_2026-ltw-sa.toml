@@ -2,7 +2,7 @@
 active = 1
 name = "Wahl zum 18.&nbsp;Landtag von&nbsp;<b>Sachsen-Anhalt</b>"
 date = "2026-09-06"
-deadline = "2026-05-31"
+deadline = "2026-06-15"
 periode = "5 Jahre"
 minimum_age = 18
 minimum_support = "1.000"
@@ -10,8 +10,8 @@ electorate = "1.788.930"
 loadPLZ = ["06", "14", "29", "38", "39"]
 info_urls = [
   {text="Umfrage", href="https://dawum.de/Sachsen-Anhalt/"},
-  {text="Terminkalender zur LTW 2026", href="https://wahlen.sachsen-anhalt.de/fileadmin/Bibliothek/Politik_und_Verwaltung/MI/wahlen/PDF/2026_Terminkalender_fuer_die_Vorbereitung_und_Durchfuehrung_der_Landtagswahl.pdf"},
-  {text="FAQ zur LTW 2026", href="https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faqs-zur-landtagswahl-2026"},
+  {text="Terminkalender", href="https://wahlen.sachsen-anhalt.de/fileadmin/Bibliothek/Politik_und_Verwaltung/MI/wahlen/PDF/2026_Terminkalender_fuer_die_Vorbereitung_und_Durchfuehrung_der_Landtagswahl.pdf"},
+  {text="FAQ", href="https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faqs-zur-landtagswahl-2026"},
   {text="Übersicht Ausgabe Formblätter", href="https://wahlen.sachsen-anhalt.de/fileadmin/Bibliothek/Politik_und_Verwaltung/MI/wahlen/PDF/2026_03_06_LTW_Uebersicht_Ausgabe_Formblaetter.pdf"},
   {text="Wahlberechtigung", href="https://wahlen.sachsen-anhalt.de/zu-den-wahlen/allgemeine-informationen-zur-landtagswahl/wer-kann-waehlen-oder-gewaehlt-werden"},
   {text="Wahlberechtigte nach Kreis", href="https://wahlergebnisse.sachsen-anhalt.de/wahlen/lt21/erg/wbet/lt.wber.wkr.php"},
@@ -43,6 +43,7 @@ info_urls = [
 
 [SELECTIONS.2026-ltw-sa_volt]
 name = "Volt"
+hasLongName = false
 partyHref = "https://voltdeutschland.org/sachsen-anhalt/unterstuetze-uns-zur-landtagswahl-in-sachsen-anhalt-2026"
 lastResult = 0
 return_addr = [
@@ -64,6 +65,7 @@ return_y = 320
 
 [SELECTIONS.2026-ltw-sa_pdv]
 name = "Partei der Vernunft"
+hasLongName = false
 partyHref = ""
 lastResult = 0
 sender_addr = []
@@ -73,6 +75,7 @@ return_addr = [
 
 [SELECTIONS.2026-ltw-sa_die-basis]
 name = "dieBasis - Basisdemokratische Partei Deutschland"
+hasLongName = true
 partyHref = "https://www.diebasis-lsa.de/wahlen/"
 lastResult = 15_623
 return_addr = [
@@ -92,6 +95,7 @@ return_y = 320
 
 [SELECTIONS.2026-ltw-sa_die-partei]
 name = "Die PARTEI - Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative"
+hasLongName = true
 partyHref = "https://die-partei-sachsen-anhalt.de/"
 lastResult = 7_768
 return_addr = [
@@ -113,6 +117,7 @@ return_y_steps = [18.5, 18.5, 26, 18.5]
 
 [SELECTIONS.2026-ltw-sa_die-libertaeren]
 name = "DIE LIBERTÄREN"
+hasLongName = false
 partyHref = "https://www.die-libertaeren.de"
 lastResult = 0
 return_addr = [
@@ -135,6 +140,7 @@ return_y = 320
 
 [SELECTIONS.2026-ltw-sa_buendnis-deutschland]
 name = "Bündnis Deutschland"
+hasLongName = false
 partyHref = "https://lsa.buendnis-deutschland.de/unterstuetzerunterschriften-2026"
 lastResult = 0
 sender_addr = []
@@ -155,6 +161,7 @@ return_y = 315
 
 [SELECTIONS.2026-ltw-sa_tierschutzallianz]
 name = "Allianz für Menschenrechte, Tier- und Naturschutz"
+hasLongName = true
 partyHref = "https://www.tierschutzallianz.de/"
 lastResult = 0
 return_addr = []

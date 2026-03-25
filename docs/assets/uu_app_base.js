@@ -203,6 +203,20 @@ var uu_app = (function () {
     if (isActive) {
       electionDiv.classList.add("active")
     }
+    const linkList = (electionCfg.info_urls || []).map(
+      url => `&bull;&nbsp;<a href="${url.href}" target="_blank" rel="noopener">${url.text}</a>`
+    )
+
+    let buttonHtml = '';
+    if (options.addLink) {
+      if (!isCurrent) {
+        buttonHtml = `<a class="button" disabled>Frist abgelaufen</a>`;
+      } else if (!isActive) {
+        buttonHtml = `<a class="button" disabled>In Vorbereitung</a>`;
+      } else {
+        buttonHtml = `<a class="button" href="/partei.html?electionID=${electionCfg.id}">Zur&nbsp;Auswahl&nbsp;➤</a>`;
+      }
+    }
 
     electionDiv.innerHTML = `
     <div class="election-header">
@@ -229,7 +243,7 @@ var uu_app = (function () {
         <span>${electionCfg.minimum_age}</span>
       </div>
       <div>
-        <span>Wahlberechtigte:</span>
+        <span>Wahl&shy;berechtigte:</span>
         <span>${electionCfg.electorate}</span>
       </div>
       <div>
@@ -237,39 +251,59 @@ var uu_app = (function () {
         <span>${electionCfg.minimum_support}</span>
       </div>
     </div>
-${electionCfg.info_urls && electionCfg.info_urls.length > 0 ? `    <div class="election-info-links">
-      ${electionCfg.info_urls.map(url => `<a href="${url.href}" target="_blank" rel="noopener">${url.text}</a>`).join("\n      &bull;\n      ")}
-    </div>` : ''}`;
+    <div class="election-footer">
+      ${(linkList.length == 0) ? '' : `<div class="election-info-links">${linkList.join("\n")}</div>`}
+      ${buttonHtml ? `<div>${buttonHtml}</div>` : ''}
+    </div>
+    `;
 
     electionDiv.dataset.electionID = electionID;
-    if (options.addLink) {
-      electionDiv.addEventListener('click', pageFlipper(`/partei.html?electionID=${electionCfg.id}`))
+    if (options.addLink && isCurrent && isActive) {
+      electionDiv.onclick = function (event) {
+        if (event.target.closest('.election-info-links')) {
+          return;
+        }
+        pageFlipper(`/partei.html?electionID=${electionCfg.id}`)(event);
+      };
+      electionDiv.classList.add("clickable");
     }
     return electionDiv;
   }
 
-  function renderSelection(configs, selectionID) {
+  function renderSelection(configs, selectionID, options) {
+    options = options || {};
     const selectionCfg = configs.SELECTIONS[selectionID];
     // "2026-ltw-bawue_buendnis-c" -> ["2026-ltw-bawue", "buendnis-c"]
     const logo = "img/logo_" + selectionID.split("_")[1] + ".png";
 
-    const selectionNode = document.createElement("span");
+    const selectionNode = document.createElement(options.addLink ? "a" : "div");
+    if (options.addLink) {
+      selectionNode.href = `/formular.html?selectionID=${selectionID}`;
+    }
     selectionNode.innerHTML = `
-  <div class="logo">
-      <img src="${logo}" alt="${selectionCfg.name}">
-  </div>
-  <div>
-      <b title="${selectionCfg.name}">${selectionCfg.name}</b>
-  </div>
-  <div>
-      <span>Letztes Ergebnis:</span> <span>${formatNumber(selectionCfg.lastResult || "-")}</span>
-  </div>
-  <div class="selection-links">
-      <a href="${selectionCfg.partyHref}">Webseite</a>
-  </div>
-  `
+    <div class="logo">
+        <img src="${logo}" alt="${selectionCfg.name}">
+    </div>
+    `
+    if (selectionCfg.hasLongName) {
+      selectionNode.innerHTML += `
+      <div class="metadata">
+          <b title="${selectionCfg.name}">${selectionCfg.name}</b>
+      </div>
+      `
+    }
+    if (selectionCfg.lastResult) {
+      selectionNode.innerHTML += `
+      <div class="metadata">
+          <span>Letztes Ergebnis:</span> <span>${formatNumber(selectionCfg.lastResult || "-")}</span>
+      </div>
+      `
+    }
+
     selectionNode.classList.add("selection")
-    selectionNode.addEventListener('click', pageFlipper(`/formular.html?selectionID=${selectionID}`))
+    if (options.active) {
+      selectionNode.classList.add("active")
+    }
     selectionNode.dataset.selectionID = selectionID;
     return selectionNode
   }
@@ -314,7 +348,7 @@ ${electionCfg.info_urls && electionCfg.info_urls.length > 0 ? `    <div class="e
         activeElections.push(electionCfg)
       }
     })
-    activeElections.sort((a, b) => b.date.localeCompare(a.date))
+    activeElections.sort((a, b) => a.date.localeCompare(b.date))
 
     const electionHeaderDiv = document.querySelector("#select-election")
     if (activeElections.length === 0) {
@@ -336,6 +370,8 @@ ${electionCfg.info_urls && electionCfg.info_urls.length > 0 ? `    <div class="e
 
     const urlParams = new URLSearchParams(window.location.search);
     const electionID = urlParams.get("electionID");
+    document.querySelector("a.tab3").href += "?electionID=" + electionID
+    document.querySelector("a.tab4").href += "?electionID=" + electionID
 
     if (!electionID) {
       pageFlipper("/wahl.html")()
@@ -344,6 +380,13 @@ ${electionCfg.info_urls && electionCfg.info_urls.length > 0 ? `    <div class="e
 
     const configs = await uu_app.getConfigs();
     const electionCfg = configs.ELECTIONS[electionID];
+
+    const electionsDiv = document.querySelector(".elections");
+    if (electionsDiv) {
+      electionsDiv.innerHTML = "";
+      let electionDiv = renderElection(configs, electionID, { addLink: false });
+      electionsDiv.appendChild(electionDiv);
+    }
 
     const selections = filterElectionSelections(configs, electionID)
     selectionsDiv.innerHTML = "";
@@ -360,7 +403,7 @@ ${electionCfg.info_urls && electionCfg.info_urls.length > 0 ? `    <div class="e
     }
 
     selections.forEach((selectionID) => {
-      let selectionNode = renderSelection(configs, selectionID)
+      let selectionNode = renderSelection(configs, selectionID, { addLink: true })
       selectionsDiv.appendChild(selectionNode)
     })
   }
@@ -398,13 +441,19 @@ ${electionCfg.info_urls && electionCfg.info_urls.length > 0 ? `    <div class="e
 
     const urlParams = new URLSearchParams(window.location.search);
     const selectionID = urlParams.get("selectionID");
+    let electionID = urlParams.get("electionID");
     if (!selectionID) {
-      pageFlipper("/wahl.html")()
+      if (!electionID) {
+        pageFlipper("/wahl.html")()
+      } else {
+        pageFlipper(`/partei.html?electionID=${electionID}`)()
+      }
       return;
     }
 
-    const electionID = selectionID.split("_")[0];
+    electionID = selectionID.split("_")[0];
     document.querySelector("a.tab3").href += "?electionID=" + electionID
+    document.querySelector("a.tab4").href += "?selectionID=" + selectionID
 
     const electionCfg = configs.ELECTIONS[electionID];
     const selectionCfg = configs.SELECTIONS[selectionID];
@@ -426,7 +475,7 @@ ${electionCfg.info_urls && electionCfg.info_urls.length > 0 ? `    <div class="e
     downloadPdfTemplate.href = `/pdf/${selectionID}.pdf`
 
     const electionDiv = renderElection(configs, electionID)
-    const selectionDiv = renderSelection(configs, selectionID)
+    const selectionDiv = renderSelection(configs, selectionID, { active: true })
 
     document.querySelector(".elections").appendChild(electionDiv)
     document.querySelector(".selections").appendChild(selectionDiv)
@@ -550,7 +599,9 @@ ${city['plz']}, ${city['ort']}
         return
       }
       bueroAddrNode.innerHTML = `
-      <div><span>Gemeinde: </span>
+      <div>
+      <h3>Zuständiges Amt/Büro</h3>
+      <span>Gemeinde: </span>
         <span id='city-name'>${buero['name']}</span></div>
       <div><span>Straße: </span>
         <span id='city-street'>${buero['street']}</span></div>
@@ -560,11 +611,13 @@ ${city['plz']}, ${city['ort']}
         <span id='city-phone'>${buero['phone'] || "-"}</span></div>
       <div><span>Email: </span>
         <span id='city-email'>${buero['email'] || "-"}</span></div>
-    `
+      <div><span>Maps: </span>
+        <a id='city-map' href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(buero['street'] + ', ' + buero['plz'] + ' ' + buero['ort'])}" target="_blank" rel="noopener noreferrer">Auf Google Maps anzeigen</a></div>
+      `
 
-      const title = encodeURIComponent(`Datenfehler für ${plz}, ${ort}`);
+      const title = encodeURIComponent(`Datenfehler für ${plz}, ${ort} `);
       const body = encodeURIComponent([
-        `Für die PLZ: "${plz}" und Ort/Stadt: "${ort}" wurde die falsche Behörde aufgelöst.`,
+        `Für die PLZ: "${plz}" und Ort / Stadt: "${ort}" wurde die falsche Behörde aufgelöst.`,
         "",
         "Folgende Korrekturen sind nötig:",
         "",
@@ -868,14 +921,22 @@ ${city['plz']}, ${city['ort']}
     "/index.html": initIndexPage,
     "/wahl.html": initWahlPage,
     "/partei.html": initParteiPage,
-    "/formular.html": initFormularPage
+    "/formular.html": initFormularPage,
   }
 
   function selectRoute(event) {
     ROUTES[window.location.pathname](event)
+    setTimeout(() => {
+      // Once .main is populated, we can allow content 
+      // to determine page height. The inital minHeight
+      // makes sure the scroll position exists before content
+      // is available. This prevents scroll issues when
+      // hitting refresh.
+      document.querySelector("body").style.minHeight = "unset";
+    }, 100);
   }
 
-  repositionScroll()
+  // repositionScroll()
 
   document.addEventListener("DOMContentLoaded", selectRoute);
 

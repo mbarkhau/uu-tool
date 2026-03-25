@@ -7,137 +7,140 @@
 {% block head %}
 <link rel="stylesheet" href="lib/tom-select.css" />
 
-<style>
-  .form-container .selections {
-    display: block;
-  }
+<style inline>
+.form-container .selections {
+  display: block;
+}
 
-  .form-container .selections>div>div {
-    max-width: 13em;
-    display: block;
-    margin: 0 auto;
-  }
+.selections .selection b {
+  text-overflow: unset;
+  white-space: normal;
+  text-align: center;
+}
 
-  .form {
-    max-width: 25em;
-    margin: 1em auto;
-  }
+.form {
+  max-width: 25em;
+  margin: 1em auto;
+}
 
-  .form-field {
-    min-height: 2.3em;
-  }
+.form-field {
+  min-height: 2.3em;
+}
 
-  .form-field>div {
-    display: inline-block;
-  }
+.form-field>div {
+  display: inline-block;
+}
 
-  .form-field label {
-    vertical-align: top;
-    display: inline-block;
-    min-width: 10em;
-    margin: 0.3em 0;
-  }
+.form-field label {
+  vertical-align: top;
+  display: inline-block;
+  min-width: 10em;
+  margin: 0.3em 0;
+}
 
-  .buero-address-wrap {
-    min-height: 16em;
-  }
+#buero-address-select {
+  visibility: hidden;
+}
 
-  .buero-address-wrap span {
-    display: inline-block;
-    vertical-align: top;
-    min-width: 6em;
-    max-width: 11em;
-  }
+.buero-address-wrap {
+  min-height: 12em;
+}
 
-  .form-field.postleitzahl {
-    min-height: 2.3em;
-  }
+.buero-address-wrap span {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 6em;
+  max-width: 11em;
+}
 
-  .form-field>div {
-    display: inline-block;
-  }
+.form-field.postleitzahl {
+  min-height: 2.3em;
+}
 
-  .form-field>input {
-    width: 13em;
-    margin-bottom: 0.5em;
-  }
+.form-field>div {
+  display: inline-block;
+}
 
-  .form-field>input {
-    border: 2px solid #888;
-    padding: 0.3em 1em;
-  }
+.form-field>input {
+  width: 13em;
+  margin-bottom: 0.5em;
+}
 
-  .form-field .ts-wrapper {
-    width: 10.77em;
-  }
+.form-field>input {
+  border: 2px solid #888;
+  padding: 0.3em 1em;
+}
 
-  .form .ts-control {
-    border-radius: 0;
-    border: 2px solid #888;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    margin-bottom: 0.5em;
-  }
+.form-field .ts-wrapper {
+  width: 10.77em;
+}
 
-  .form .ts-control input {
-    font-size: 14px;
-  }
+.form .ts-control {
+  border-radius: 0;
+  border: 2px solid #888;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 0.5em;
+}
 
-  div.ts-wrapper div.ts-control {
-    /* hack to match sizing with inputs */
-    box-sizing: unset;
-    padding: 0.3em 1em !important;
-  }
+.form .ts-control input {
+  font-size: 14px;
+}
 
-  .buttons a,
-  button {
-    text-align: center;
-    display: block;
+div.ts-wrapper div.ts-control {
+  /* hack to match sizing with inputs */
+  box-sizing: unset;
+  padding: 0.3em 1em !important;
+}
 
-    font-size: 14px;
-    line-height: 1.3em;
-    margin: 1rem auto;
-  }
+.buttons a,
+button {
+  text-align: center;
+  display: block;
 
-  .buttons button {
-    color: #000;
-    background: #EEE;
-    transition: 300ms background, 300ms border, 300ms box-shadow;
-    padding: 0.3em 1em;
-    box-shadow: none;
-    border: 2px solid #888;
-    text-decoration: none;
-  }
+  line-height: 1.3em;
+  margin: 1rem auto;
+}
 
-  .buttons button:disabled {
-    background: #FAFAFA;
-    color: #777;
-  }
+.buttons button {
+  color: #000;
+  background: #EEE;
+  transition: 300ms background, 300ms border, 300ms box-shadow;
+  padding: 0.3em 1em;
+  box-shadow: none;
+  border: 2px solid #888;
+  text-decoration: none;
+}
 
-  .buttons button:enabled {
-    background: #FFF;
-    color: #000;
-    box-shadow: 0 0 5px #888;
-  }
+.buttons button:disabled {
+  background: #FAFAFA;
+  color: #777;
+}
 
-  .buttons button:enabled:hover {
-    cursor: pointer;
-    border: 2px solid #000;
-  }
+.buttons button:enabled {
+  background: #FFF;
+  color: #000;
+  box-shadow: 0 0 5px #888;
+}
 
-  .pseudoform {
-    width: 25em;
-    margin: 1em auto;
-  }
+.buttons button:enabled:hover {
+  cursor: pointer;
+  border: 2px solid #000;
+}
 
-  .pseudoform input {
-    font-size: 14px;
-  }
+.pseudoform {
+  width: 25em;
+  margin: 1em auto;
+}
 
-  .pseudoform button {
-    margin: 1em auto 3em auto;
-    display: block;
-  }
+.pseudoform input {
+  font-size: 14px;
+}
+
+.pseudoform button {
+  margin: 1em auto 3em auto;
+  display: block;
+}
 </style>
 {% endblock %}
 
@@ -147,6 +150,27 @@
   <div class="selections"></div>
   <hr>
   <div class="form">
+    <h3>Bürgerbüro Suche</h3>
+    <div class="form-field postleitzahl">
+      <label for="postleitzahl">PLZ, Ort:</label>
+      <div>
+        <select name="postleitzahl" placeholder=""></select>
+      </div>
+    </div>
+
+    <div class="buero-address-wrap">
+      <select id="buero-address-select" autocomplete="off"></select>
+      <div class="buero-address"></div>
+    </div>
+
+    <div class="buttons">
+      <a class="download-pdf-template" target="_blank">
+        Blanko Formular herunterladen
+      </a>
+    </div>
+
+    <hr>
+
     <div class="form-field">
       <label for="firstname">Vorname:</label>
       <input type="text" name="firstname" placeholder="Max" required />
@@ -167,27 +191,11 @@
       <input type="text" name="street" placeholder="Musterstraße 123a" required />
     </div>
 
-    <div class="form-field postleitzahl">
-      <label for="postleitzahl">PLZ, Ort:</label>
-      <div>
-        <select name="postleitzahl" placeholder=""></select>
-      </div>
-    </div>
-
-    <div class="buero-address-wrap">
-      <select id="buero-address-select" autocomplete="off"></select>
-      <p>Zuständes Amt</p>
-      <div class="buero-address">-</div>
-    </div>
-
     <div class="buttons">
       <button name="download" onclick="uu_app.generatePDF()" disabled>
         PDF generieren<br />
         und herunterladen
       </button>
-      <a class="download-pdf-template" target="_blank">
-        Blanko Formular herunterladen
-      </a>
     </div>
   </div>
 </div>
