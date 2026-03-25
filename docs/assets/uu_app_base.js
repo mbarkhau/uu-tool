@@ -165,22 +165,8 @@ var uu_app = (function () {
     return selections
   }
 
-  function pageFlipper(url) {
-    return function (event) {
-      sessionStorage.setItem('lastScrollYTime', +new Date());
-      sessionStorage.setItem('lastScrollYPos', window.scrollY);
-      window.location.href = url;
-    }
-  }
-
-  function repositionScroll() {
-    const scrollTime = sessionStorage.getItem("lastScrollYTime");
-    if (scrollTime && (+new Date() - parseInt(scrollTime)) < 500) {
-      const scrollY = Math.min(250, parseInt(sessionStorage.getItem("lastScrollYPos")))
-      window.scrollTo({ behavior: 'instant', top: scrollY })
-    }
-    sessionStorage.removeItem("lastScrollYTime");
-    sessionStorage.removeItem("lastScrollYPos");
+  function pageFlip(url) {
+    window.location.href = url;
   }
 
   function renderElection(configs, electionID, options) {
@@ -263,7 +249,7 @@ var uu_app = (function () {
         if (event.target.closest('.election-info-links')) {
           return;
         }
-        pageFlipper(`/partei.html?electionID=${electionCfg.id}`)(event);
+        pageFlip(`/partei.html?electionID=${electionCfg.id}`);
       };
       electionDiv.classList.add("clickable");
     }
@@ -374,7 +360,7 @@ var uu_app = (function () {
     document.querySelector("a.tab4").href += "?electionID=" + electionID
 
     if (!electionID) {
-      pageFlipper("/wahl.html")()
+      pageFlip("/wahl.html")
       return;
     }
 
@@ -444,9 +430,9 @@ var uu_app = (function () {
     let electionID = urlParams.get("electionID");
     if (!selectionID) {
       if (!electionID) {
-        pageFlipper("/wahl.html")()
+        pageFlip("/wahl.html")
       } else {
-        pageFlipper(`/partei.html?electionID=${electionID}`)()
+        pageFlip(`/partei.html?electionID=${electionID}`)
       }
       return;
     }
@@ -918,14 +904,13 @@ ${city['plz']}, ${city['ort']}
   }
 
   const ROUTES = {
-    "/index.html": initIndexPage,
     "/wahl.html": initWahlPage,
     "/partei.html": initParteiPage,
     "/formular.html": initFormularPage,
   }
 
   function selectRoute(event) {
-    ROUTES[window.location.pathname](event)
+    (ROUTES[window.location.pathname] || initIndexPage)(event)
     setTimeout(() => {
       // Once .main is populated, we can allow content 
       // to determine page height. The inital minHeight

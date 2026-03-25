@@ -6,348 +6,347 @@
 	<meta name="description"
 		content="UU-Tool - Erstelle deine Unterstützungsunterschrift zur Wahlzulassung einer Kleinpartei." />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style inline>
+			/* Reset styles */
+			body {
+			font-family: Arial, sans-serif;
+			line-height: 1.4em;
+			background: #DDD;
+			padding: 0;
+			margin: 0;
+			padding-bottom: 4em;
+			overflow-y: scroll;
+			}
+			h1,
+			h2 {
+			line-height: 1.1em;
+			}
+			h1 {
+			font-weight: bold;
+			}
+			/* Layout styles */
+			.main,
+			.header,
+			.content,
+			.footer {
+			max-width: 37em;
+			overflow-x: hidden;
+			margin: 0 auto 1em auto;
+			}
+			.header {
+			padding-top: 1em;
+			}
+			.header h1,
+			.header h2,
+			.header h3 {
+			margin: 0.5em 1rem;
+			}
+			.content {
+			padding: 1rem;
+			}
+			.footer {
+			padding: 1rem;
+			}
+			body {min-height: 200rem;}
+			.main {
+			background: white;
+			border-radius: 4px;
+			box-shadow: 0px 0px 20px #888;
+			}
+			.footer {
+			font-size: 0.8em;
+			line-height: 1.3em;
+			}
+			.footer p {
+			margin: 0em;
+			}
+			@media screen and (max-device-width: 600px) {
+			.main {
+			margin: 0;
+			min-width: unset;
+			}
+			.content,
+			.footer {
+			padding: 1em;
+			}
+			}
+			.header a {
+			text-decoration: none;
+			color: black;
+			}
+			.header h2,
+			.header h3 {
+			color: #333;
+			font-weight: normal;
+			}
+			.header a:hover {
+			text-decoration: underline;
+			}
+			h1 {
+			font-size: 1.7em;
+			}
+			h2 {
+			font-size: 1.5em;
+			margin-top: 2em;
+			}
+			hr {
+			margin: 2em;
+			}
+			.content h2,
+			.content p {
+			margin: 0 1rem 1rem 1rem;
+			}
+			@media screen and (max-device-width: 600px) {
+			h1 {
+			font-size: 1.6em;
+			}
+			h2 {
+			font-size: 1.3em;
+			hyphens: auto;
+			}
+			}
+			.breadcrumbs {
+			width: 100.1%;
+			display: grid;
+			grid-template-columns: 6fr 7fr 7fr 9fr;
+			text-align: center;
+			overflow: auto;
+			}
+			.breadcrumbs a {
+			text-decoration: none;
+			cursor: pointer;
+			color: black;
+			padding: 1em 0 1em 1em;
+			}
+			.breadcrumbs {
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+			border-bottom: 2px solid hsl(0, 0%, 75%);
+			}
+			@media screen and (max-device-width: 600px) {
+			.breadcrumbs {
+			border-radius: unset;
+			}
+			}
+		</style>
 		<link rel="dns-prefetch" href="//www.youtube.com" />
 		<link rel="dns-prefetch" href="//www.youtube-nocookie.com" />
 		<link rel="icon" type="image/png" sizes="24x24" href="img/favicon_24.png?cb=2" />
 		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon_32.png?cb=2" />
 		<link rel="icon" type="image/png" sizes="64x64" href="img/favicon_64.png?cb=2" />
-		<link rel="preload" href="/assets/uu_styles.css" as="style">
-			<style inline>
-				/* Reset styles */
-				body {
-				font-family: Arial, sans-serif;
-				line-height: 1.4em;
-				background: #DDD;
-				padding: 0;
-				margin: 0;
-				padding-bottom: 4em;
-				overflow-y: scroll;
-				}
-				h1,
-				h2 {
-				line-height: 1.1em;
-				}
-				h1 {
-				font-weight: bold;
-				}
-				/* Layout styles */
-				.main,
-				.header,
-				.content,
-				.footer {
-				max-width: 37em;
-				overflow-x: hidden;
-				margin: 0 auto 1em auto;
-				}
-				.header {
-				padding-top: 1em;
-				}
-				.header h1,
-				.header h2,
-				.header h3 {
-				margin: 0.5em 1rem;
-				}
-				.content {
-				padding: 1rem;
-				}
-				.footer {
-				padding: 1rem;
-				}
-				body {min-height: 200rem;}
-				.main {
-				background: white;
-				border-radius: 4px;
-				box-shadow: 0px 0px 20px #888;
-				}
-				.footer {
-				font-size: 0.8em;
-				line-height: 1.3em;
-				}
-				.footer p {
-				margin: 0em;
-				}
-				@media screen and (max-device-width: 600px) {
-				.main {
-				margin: 0;
-				min-width: unset;
-				}
-				.content,
-				.footer {
-				padding: 1em;
-				}
-				}
-				.header a {
-				text-decoration: none;
-				color: black;
-				}
-				.header h2,
-				.header h3 {
-				color: #333;
-				font-weight: normal;
-				}
-				.header a:hover {
-				text-decoration: underline;
-				}
-				h1 {
-				font-size: 1.7em;
-				}
-				h2 {
-				font-size: 1.5em;
-				margin-top: 2em;
-				}
-				hr {
-				margin: 2em;
-				}
-				.content h2,
-				.content p {
-				margin: 0 1rem 1rem 1rem;
-				}
-				@media screen and (max-device-width: 600px) {
-				h1 {
-				font-size: 1.6em;
-				}
-				h2 {
-				font-size: 1.3em;
-				hyphens: auto;
-				}
-				}
-				.breadcrumbs {
-				width: 100.1%;
-				display: grid;
-				grid-template-columns: 6fr 7fr 7fr 9fr;
-				text-align: center;
-				overflow: auto;
-				}
-				.breadcrumbs a {
-				text-decoration: none;
-				cursor: pointer;
-				color: black;
-				padding: 1em 0 1em 1em;
-				}
-				.breadcrumbs {
-				border-top-left-radius: 4px;
-				border-top-right-radius: 4px;
-				border-bottom: 2px solid hsl(0, 0%, 75%);
-				}
-				@media screen and (max-device-width: 600px) {
-				.breadcrumbs {
-				border-radius: unset;
-				}
-				}
-			</style>
-			<link rel="stylesheet" href="lib/tom-select.css" />
-			<style inline>
-				.form-container .selections {
-				display: block;
-				}
-				.selections .selection b {
-				text-overflow: unset;
-				white-space: normal;
-				text-align: center;
-				}
-				.form {
-				max-width: 25em;
-				margin: 1em auto;
-				}
-				.form-field {
-				min-height: 2.3em;
-				}
-				.form-field>div {
-				display: inline-block;
-				}
-				.form-field label {
-				vertical-align: top;
-				display: inline-block;
-				min-width: 10em;
-				margin: 0.3em 0;
-				}
-				#buero-address-select {
-				visibility: hidden;
-				}
-				.buero-address-wrap {
-				min-height: 12em;
-				}
-				.buero-address-wrap span {
-				display: inline-block;
-				vertical-align: top;
-				min-width: 6em;
-				max-width: 11em;
-				}
-				.form-field.postleitzahl {
-				min-height: 2.3em;
-				}
-				.form-field>div {
-				display: inline-block;
-				}
-				.form-field>input {
-				width: 13em;
-				margin-bottom: 0.5em;
-				}
-				.form-field>input {
-				border: 2px solid #888;
-				padding: 0.3em 1em;
-				}
-				.form-field .ts-wrapper {
-				width: 10.77em;
-				}
-				.form .ts-control {
-				border-radius: 0;
-				border: 2px solid #888;
-				font-family: Arial, sans-serif;
-				font-size: 14px;
-				margin-bottom: 0.5em;
-				}
-				.form .ts-control input {
-				font-size: 14px;
-				}
-				div.ts-wrapper div.ts-control {
-				/* hack to match sizing with inputs */
-				box-sizing: unset;
-				padding: 0.3em 1em !important;
-				}
-				.buttons a,
-				button {
-				text-align: center;
-				display: block;
-				line-height: 1.3em;
-				margin: 1rem auto;
-				}
-				.buttons button {
-				color: #000;
-				background: #EEE;
-				transition: 300ms background, 300ms border, 300ms box-shadow;
-				padding: 0.3em 1em;
-				box-shadow: none;
-				border: 2px solid #888;
-				text-decoration: none;
-				}
-				.buttons button:disabled {
-				background: #FAFAFA;
-				color: #777;
-				}
-				.buttons button:enabled {
-				background: #FFF;
-				color: #000;
-				box-shadow: 0 0 5px #888;
-				}
-				.buttons button:enabled:hover {
-				cursor: pointer;
-				border: 2px solid #000;
-				}
-				.pseudoform {
-				width: 25em;
-				margin: 1em auto;
-				}
-				.pseudoform input {
-				font-size: 14px;
-				}
-				.pseudoform button {
-				margin: 1em auto 3em auto;
-				display: block;
-				}
-			</style>
-		</head>
-		<body>
-			<div class="header">
-				<h1><a href="https://uu-tool.de">UU-Tool.de</a></h1>
-				<h3>
-					Hilfe zu Formblättern für <b>U</b>nterstützungs<b>U</b>nterschriften
-				</h3>
+		<link rel="stylesheet" href="lib/tom-select.css" />
+		<style inline>
+			.form-container .selections {
+			display: block;
+			}
+			.selections .selection b {
+			text-overflow: unset;
+			white-space: normal;
+			text-align: center;
+			}
+			.form {
+			max-width: 25em;
+			margin: 1em auto;
+			}
+			.form-field {
+			min-height: 2.3em;
+			}
+			.form-field>div {
+			display: inline-block;
+			}
+			.form-field label {
+			vertical-align: top;
+			display: inline-block;
+			min-width: 10em;
+			margin: 0.3em 0;
+			}
+			#buero-address-select {
+			visibility: hidden;
+			}
+			.buero-address-wrap {
+			min-height: 12em;
+			}
+			.buero-address-wrap span {
+			display: inline-block;
+			vertical-align: top;
+			min-width: 6em;
+			max-width: 11em;
+			}
+			.form-field.postleitzahl {
+			min-height: 2.3em;
+			}
+			.form-field>div {
+			display: inline-block;
+			}
+			.form-field>input {
+			width: 13em;
+			margin-bottom: 0.5em;
+			}
+			.form-field>input {
+			border: 2px solid #888;
+			padding: 0.3em 1em;
+			}
+			.form-field .ts-wrapper {
+			width: 10.77em;
+			}
+			.form .ts-control {
+			border-radius: 0;
+			border: 2px solid #888;
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			margin-bottom: 0.5em;
+			}
+			.form .ts-control input {
+			font-size: 14px;
+			}
+			div.ts-wrapper div.ts-control {
+			/* hack to match sizing with inputs */
+			box-sizing: unset;
+			padding: 0.3em 1em !important;
+			}
+			.buttons a,
+			button {
+			text-align: center;
+			display: block;
+			line-height: 1.3em;
+			margin: 1rem auto;
+			}
+			.buttons button {
+			color: #000;
+			background: #EEE;
+			transition: 300ms background, 300ms border, 300ms box-shadow;
+			padding: 0.3em 1em;
+			box-shadow: none;
+			border: 2px solid #888;
+			text-decoration: none;
+			}
+			.buttons button:disabled {
+			background: #FAFAFA;
+			color: #777;
+			}
+			.buttons button:enabled {
+			background: #FFF;
+			color: #000;
+			box-shadow: 0 0 5px #888;
+			}
+			.buttons button:enabled:hover {
+			cursor: pointer;
+			border: 2px solid #000;
+			}
+			.pseudoform {
+			width: 25em;
+			margin: 1em auto;
+			}
+			.pseudoform input {
+			font-size: 14px;
+			}
+			.pseudoform button {
+			margin: 1em auto 3em auto;
+			display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<h1><a href="https://uu-tool.de">UU-Tool.de</a></h1>
+			<h3>
+				Hilfe zu Formblättern für <b>U</b>nterstützungs<b>U</b>nterschriften
+			</h3>
+		</div>
+		<div class="main" role="main">
+			<div class="breadcrumbs" role="navigation">
+				<a class="tab1" href="index.html">Info</a>
+				<a class="tab2" href="wahl.html">Wahl</a>
+				<a class="tab3" href="partei.html">Partei</a>
+				<a class="tab4 active" href="formular.html">Formular</a>
 			</div>
-			<div class="main" role="main">
-				<div class="breadcrumbs" role="navigation">
-					<a class="tab1" href="index.html">Info</a>
-					<a class="tab2" href="wahl.html">Wahl</a>
-					<a class="tab3" href="partei.html">Partei</a>
-					<a class="tab4 active" href="formular.html">Formular</a>
-				</div>
-				<div class="content">
-					<div class="form-container">
-						<div class="elections"></div>
-						<div class="selections"></div>
-						<hr>
-							<div class="form">
-								<h3>Bürgerbüro Suche</h3>
-								<div class="form-field postleitzahl">
-									<label for="postleitzahl">PLZ, Ort:</label>
-									<div>
-										<select name="postleitzahl" placeholder=""></select>
-									</div>
+			<div class="content">
+				<div class="form-container">
+					<div class="elections"></div>
+					<div class="selections"></div>
+					<hr>
+						<div class="form">
+							<h3>Bürgerbüro Suche</h3>
+							<div class="form-field postleitzahl">
+								<label for="postleitzahl">PLZ, Ort:</label>
+								<div>
+									<select name="postleitzahl" placeholder=""></select>
 								</div>
-								<div class="buero-address-wrap">
-									<select id="buero-address-select" autocomplete="off"></select>
-									<div class="buero-address"></div>
+							</div>
+							<div class="buero-address-wrap">
+								<select id="buero-address-select" autocomplete="off"></select>
+								<div class="buero-address"></div>
+							</div>
+							<div class="buttons">
+								<a class="download-pdf-template" target="_blank">
+									Blanko Formular herunterladen
+								</a>
+							</div>
+							<hr>
+								<div class="form-field">
+									<label for="firstname">Vorname:</label>
+									<input type="text" name="firstname" placeholder="Max" required />
+								</div>
+								<div class="form-field">
+									<label for="lastname">Familienname:</label>
+									<input type="text" name="lastname" placeholder="Mustermann" required />
+								</div>
+								<div class="form-field">
+									<label for="birthday">Geburtsdatum:</label>
+									<input type="date" name="birthday" min="1800-01-01" max="2999-12-31" required />
+								</div>
+								<div class="form-field">
+									<label for="street">Straße, Hausnummer</label>
+									<input type="text" name="street" placeholder="Musterstraße 123a" required />
 								</div>
 								<div class="buttons">
-									<a class="download-pdf-template" target="_blank">
-										Blanko Formular herunterladen
-									</a>
-								</div>
-								<hr>
-									<div class="form-field">
-										<label for="firstname">Vorname:</label>
-										<input type="text" name="firstname" placeholder="Max" required />
-									</div>
-									<div class="form-field">
-										<label for="lastname">Familienname:</label>
-										<input type="text" name="lastname" placeholder="Mustermann" required />
-									</div>
-									<div class="form-field">
-										<label for="birthday">Geburtsdatum:</label>
-										<input type="date" name="birthday" min="1800-01-01" max="2999-12-31" required />
-									</div>
-									<div class="form-field">
-										<label for="street">Straße, Hausnummer</label>
-										<input type="text" name="street" placeholder="Musterstraße 123a" required />
-									</div>
-									<div class="buttons">
-										<button name="download" onclick="uu_app.generatePDF()" disabled>
-											PDF generieren<br />
-											und herunterladen
-										</button>
-									</div>
+									<button name="download" onclick="uu_app.generatePDF()" disabled>
+										PDF generieren<br />
+										und herunterladen
+									</button>
 								</div>
 							</div>
-							<div class="listbox small">
-								<p>
-									Datenschutzhinweis: Um die PDF Datei zu generieren werden
-									Ihrer oben angegebene persönlichen Daten verarbeitet. Diese
-									Verarbeitung findet
-									<em>ausschließlich auf Ihrem Endgerät</em> statt. Eine
-									Übermittlung oder Verarbeitung Ihrer persönlichen Daten
-									an/durch andere Systeme <em>findet nicht statt</em>.
+						</div>
+						<div class="listbox small">
+							<p>
+								Datenschutzhinweis: Um die PDF Datei zu generieren werden
+								Ihrer oben angegebene persönlichen Daten verarbeitet. Diese
+								Verarbeitung findet
+								<em>ausschließlich auf Ihrem Endgerät</em> statt. Eine
+								Übermittlung oder Verarbeitung Ihrer persönlichen Daten
+								an/durch andere Systeme <em>findet nicht statt</em>.
+							</p>
+						</div>
+						<div class="listbox">
+							<p>
+								Gerne können Sie die Richtigkeit der Angaben zum Bürgeramt
+								anfragen:
+								<a href="https://www.google.com/search?q=Telefonnummer%20Bürgerbüro" rel="noreferrer noopener"
+									target="_blank">Bürgerbüro anrufen</a>. Fragen Sie dazu nach der "Zuständigkeit für die
+									Bescheinigung des Wahlrechts für eine
+									Unterstützungsunterschrift". Die zuständige Behörde führt
+									dazu ein Wählerverzeichnis.
 								</p>
-							</div>
-							<div class="listbox">
 								<p>
-									Gerne können Sie die Richtigkeit der Angaben zum Bürgeramt
-									anfragen:
-									<a href="https://www.google.com/search?q=Telefonnummer%20Bürgerbüro" rel="noreferrer noopener"
-										target="_blank">Bürgerbüro anrufen</a>. Fragen Sie dazu nach der "Zuständigkeit für die
-										Bescheinigung des Wahlrechts für eine
-										Unterstützungsunterschrift". Die zuständige Behörde führt
-										dazu ein Wählerverzeichnis.
+									Sollte Ihrem Hauptwohnsitz keine Behörde, oder eine nicht
+									zuständige Behörde zugeordnet werden, bitten wir Sie diesen
+									Fehler auf
+									<a href="https://github.com/mbarkhau/uu-tool/issues/new?title=UU-Tool Fehler&body=Test" rel="noreferrer noopener"
+										target="_blank">Github</a>
+										zu melden.
 									</p>
-									<p>
-										Sollte Ihrem Hauptwohnsitz keine Behörde, oder eine nicht
-										zuständige Behörde zugeordnet werden, bitten wir Sie diesen
-										Fehler auf
-										<a href="https://github.com/mbarkhau/uu-tool/issues/new?title=UU-Tool Fehler&body=Test" rel="noreferrer noopener"
-											target="_blank">Github</a>
-											zu melden.
-										</p>
-									</div>
 								</div>
 							</div>
-							<div class="footer" role="contentinfo">
-								<p>
-									Quellcode:
-									<a href="https://github.com/mbarkhau/uu-tool">github.com/mbarkhau/uu-tool</a>
-								</p>
-								<p>Copyright © 2025 Manuel Barkhau. Alle Rechte vorbehalten.</p>
-							</div>
-							<link rel="preload" href="data/config.json" as="fetch" type="application/json" crossorigin="anonymous">
-								<link rel="stylesheet" href="assets/uu_styles.css" />
-								<script src="assets/uu_app.js" defer></script>
-							</body>
-						</html>
+						</div>
+						<div class="footer" role="contentinfo">
+							<p>
+								Quellcode:
+								<a href="https://github.com/mbarkhau/uu-tool">github.com/mbarkhau/uu-tool</a>
+							</p>
+							<p>Copyright © 2025 Manuel Barkhau. Alle Rechte vorbehalten.</p>
+						</div>
+						<link rel="preload" href="data/config.json" as="fetch" type="application/json" crossorigin="anonymous">
+							<link rel="stylesheet" href="assets/uu_styles.css" />
+							<script src="assets/uu_app.js" defer></script>
+						</body>
+					</html>
