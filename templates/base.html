@@ -12,6 +12,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <link href="/assets/uu_styles.css" as="style" rel="preload" onload="this.onload=null;this.rel='stylesheet'" >
+  <script src="assets/uu_app.js" defer></script>
+
   <style inline>
     /* Reset styles */
     body {
@@ -165,10 +168,6 @@
     }
   </style>
 
-  <!-- DNS prefetch for external resources -->
-  <link rel="dns-prefetch" href="//www.youtube.com" />
-  <link rel="dns-prefetch" href="//www.youtube-nocookie.com" />
-
   <link rel="icon" type="image/png" sizes="24x24" href="img/favicon_24.png?cb=2" />
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_32.png?cb=2" />
   <link rel="icon" type="image/png" sizes="64x64" href="img/favicon_64.png?cb=2" />
@@ -199,8 +198,6 @@
     <p>Copyright © 2025 Manuel Barkhau. Alle Rechte vorbehalten.</p>
   </div>
   {% block scripts %}{% endblock %}
-  <link rel="stylesheet" href="assets/uu_styles.css" />
-  <script src="assets/uu_app.js" defer></script>
 </body>
 
 </html>
