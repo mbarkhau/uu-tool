@@ -598,7 +598,7 @@ ${city['plz']}, ${city['ort']}
       <div><span>Email: </span>
         <span id='city-email'>${buero['email'] || "-"}</span></div>
       <div><span>Maps: </span>
-        <a id='city-map' href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(buero['street'] + ', ' + buero['plz'] + ' ' + buero['ort'])}" target="_blank" rel="noopener noreferrer">Auf Google Maps anzeigen</a></div>
+        <a id='city-map' href="https://www.google.com/maps/search/?api=1&query=Bürgerbüro,${encodeURIComponent(buero['street'] + ', ' + buero['plz'] + ' ' + buero['ort'])}" target="_blank" rel="noopener noreferrer">Auf Google Maps anzeigen</a></div>
       `
 
       const title = encodeURIComponent(`Datenfehler für ${plz}, ${ort} `);

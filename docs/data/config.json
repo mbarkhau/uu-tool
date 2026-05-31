@@ -183,7 +183,7 @@
         },
         {
           "text": "\u00dcbersicht Ausgabe Formbl\u00e4tter",
-          "href": "https://wahlen.sachsen-anhalt.de/fileadmin/Bibliothek/Politik_und_Verwaltung/MI/wahlen/PDF/2026_03_06_LTW_Uebersicht_Ausgabe_Formblaetter.pdf"
+          "href": "https://wahlen.sachsen-anhalt.de/fileadmin/Bibliothek/Politik_und_Verwaltung/MI/wahlen/PDF/2026_03_20_LTW_Uebersicht_Ausgabe_Formblaetter.pdf"
         },
         {
           "text": "Wahlberechtigung",
@@ -467,14 +467,13 @@
         "return_y": 320
       }
     },
-    "2026-ltw-sa_pdv": {
-      "name": "Partei der Vernunft",
-      "hasLongName": false,
-      "partyHref": "",
+    "2026-ltw-sa_bsw": {
+      "name": "B\u00fcndnis Sahra Wagenknecht",
+      "hasLongName": true,
+      "partyHref": "https://st.bsw-vg.de/formblatt-fuer-den-listenantritt-des-bsw-zur-landtagswahl/",
       "lastResult": 0,
-      "sender_addr": [],
-      "sender_sign": [],
-      "return_addr": []
+      "return_addr": [],
+      "sender_sign": []
     },
     "2026-ltw-sa_die-basis": {
       "name": "dieBasis - Basisdemokratische Partei Deutschland",
@@ -503,6 +502,7 @@
     "2026-ltw-sa_die-partei": {
       "name": "Die PARTEI - Partei f\u00fcr Arbeit, Rechtsstaat, Tierschutz, Elitenf\u00f6rderung und basisdemokratische Initiative",
       "hasLongName": true,
+      "disabled": true,
       "partyHref": "https://die-partei-sachsen-anhalt.de/",
       "lastResult": 7768,
       "return_addr": [
@@ -559,38 +559,35 @@
         "return_y": 320
       }
     },
-    "2026-ltw-sa_buendnis-deutschland": {
-      "name": "B\u00fcndnis Deutschland",
-      "hasLongName": false,
-      "partyHref": "https://lsa.buendnis-deutschland.de/unterstuetzerunterschriften-2026",
+    "2026-ltw-sa_tierschutzallianz": {
+      "name": "Allianz f\u00fcr Menschenrechte, Tier- und Naturschutz",
+      "hasLongName": true,
+      "partyHref": "https://www.tierschutzallianz.de/",
       "lastResult": 0,
-      "sender_addr": [],
-      "sender_sign": [],
       "return_addr": [
-        "B\u00fcndnis Deutschland",
-        "Auf den Steinen 9",
-        "06485 Quedlinburg"
+        "Tierschutz Allianz",
+        "Gutenbergstra\u00dfe 24",
+        "39106 Magdeburg"
       ],
+      "sender_sign": [],
       "pdfCoords": {
         "person_x": 175,
-        "person_y": 495,
+        "person_y": 497,
         "person_y_steps": [
           18.5,
           18.5,
           26,
           18.5
         ],
-        "return_x": 220,
-        "return_y": 315
+        "return_x": 340,
+        "return_y": 330,
+        "return_y_steps": [
+          18.5,
+          18.5,
+          26,
+          18.5
+        ]
       }
-    },
-    "2026-ltw-sa_tierschutzallianz": {
-      "name": "Allianz f\u00fcr Menschenrechte, Tier- und Naturschutz",
-      "hasLongName": true,
-      "partyHref": "https://www.tierschutzallianz.de/",
-      "lastResult": 0,
-      "return_addr": [],
-      "sender_sign": []
     }
   }
 }

@@ -12,7 +12,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link href="/assets/uu_styles.css" as="style" rel="preload" onload="this.onload=null;this.rel='stylesheet'" >
+  <link rel="preload" href="data/config.json" as="fetch" type="application/json" crossorigin="anonymous">
+  <link href="/assets/uu_styles.css" as="style" rel="preload" onload="this.onload=null;this.rel='stylesheet'">
   <script src="assets/uu_app.js" defer></script>
 
   <style inline>
@@ -66,7 +67,10 @@
       padding: 1rem;
     }
 
-    body {min-height: 200rem;}
+    body {
+      min-height: 200rem;
+    }
+
     .main {
       background: white;
       border-radius: 4px;
@@ -195,7 +199,7 @@
       Quellcode:
       <a href="https://github.com/mbarkhau/uu-tool">github.com/mbarkhau/uu-tool</a>
     </p>
-    <p>Copyright © 2025 Manuel Barkhau. Alle Rechte vorbehalten.</p>
+    <p>Copyright © 2026 Manuel Barkhau. Alle Rechte vorbehalten.</p>
   </div>
   {% block scripts %}{% endblock %}
 </body>

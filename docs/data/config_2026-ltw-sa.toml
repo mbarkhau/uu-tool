@@ -12,7 +12,7 @@ info_urls = [
   {text="Umfrage", href="https://dawum.de/Sachsen-Anhalt/"},
   {text="Terminkalender", href="https://wahlen.sachsen-anhalt.de/fileadmin/Bibliothek/Politik_und_Verwaltung/MI/wahlen/PDF/2026_Terminkalender_fuer_die_Vorbereitung_und_Durchfuehrung_der_Landtagswahl.pdf"},
   {text="FAQ", href="https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faqs-zur-landtagswahl-2026"},
-  {text="Übersicht Ausgabe Formblätter", href="https://wahlen.sachsen-anhalt.de/fileadmin/Bibliothek/Politik_und_Verwaltung/MI/wahlen/PDF/2026_03_06_LTW_Uebersicht_Ausgabe_Formblaetter.pdf"},
+  {text="Übersicht Ausgabe Formblätter", href="https://wahlen.sachsen-anhalt.de/fileadmin/Bibliothek/Politik_und_Verwaltung/MI/wahlen/PDF/2026_03_20_LTW_Uebersicht_Ausgabe_Formblaetter.pdf"},
   {text="Wahlberechtigung", href="https://wahlen.sachsen-anhalt.de/zu-den-wahlen/allgemeine-informationen-zur-landtagswahl/wer-kann-waehlen-oder-gewaehlt-werden"},
   {text="Wahlberechtigte nach Kreis", href="https://wahlergebnisse.sachsen-anhalt.de/wahlen/lt21/erg/wbet/lt.wber.wkr.php"},
   {text="Ergebnisse LTW 2021", href="https://wahlergebnisse.sachsen-anhalt.de/wahlen/lt21/erg/kreis/lt.15.ergtab.php"},
@@ -36,11 +36,6 @@ info_urls = [
 #     475   LKR
 
 
-################################
-# 2026 LTW Sachsen-Anhalt
-################################
-
-
 [SELECTIONS.2026-ltw-sa_volt]
 name = "Volt"
 hasLongName = false
@@ -62,16 +57,25 @@ return_x = 220
 return_y = 320
 
 
-
-[SELECTIONS.2026-ltw-sa_pdv]
-name = "Partei der Vernunft"
-hasLongName = false
-partyHref = ""
+[SELECTIONS.2026-ltw-sa_bsw]
+name = "Bündnis Sahra Wagenknecht"
+hasLongName = true
+# partyHref = "https://st.bsw-vg.de/"
+partyHref = "https://st.bsw-vg.de/formblatt-fuer-den-listenantritt-des-bsw-zur-landtagswahl/"
 lastResult = 0
-sender_addr = []
+return_addr = []
 sender_sign = []
-return_addr = [
-]
+
+
+# [SELECTIONS.2026-ltw-sa_pdv]
+# name = "Partei der Vernunft"
+# hasLongName = false
+# partyHref = ""
+# lastResult = 0
+# sender_addr = []
+# sender_sign = []
+# return_addr = [
+# ]
 
 [SELECTIONS.2026-ltw-sa_die-basis]
 name = "dieBasis - Basisdemokratische Partei Deutschland"
@@ -96,6 +100,7 @@ return_y = 320
 [SELECTIONS.2026-ltw-sa_die-partei]
 name = "Die PARTEI - Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative"
 hasLongName = true
+disabled = true
 partyHref = "https://die-partei-sachsen-anhalt.de/"
 lastResult = 7_768
 return_addr = [
@@ -138,25 +143,25 @@ person_y_steps = [18.5, 18.5, 26, 18.5]
 return_x = 220
 return_y = 320
 
-[SELECTIONS.2026-ltw-sa_buendnis-deutschland]
-name = "Bündnis Deutschland"
-hasLongName = false
-partyHref = "https://lsa.buendnis-deutschland.de/unterstuetzerunterschriften-2026"
-lastResult = 0
-sender_addr = []
-sender_sign = []
-return_addr = [
-  "Bündnis Deutschland",
-  "Auf den Steinen 9",
-  "06485 Quedlinburg"
-]
+# [SELECTIONS.2026-ltw-sa_buendnis-deutschland]
+# name = "Bündnis Deutschland"
+# hasLongName = false
+# partyHref = "https://lsa.buendnis-deutschland.de/unterstuetzerunterschriften-2026"
+# lastResult = 0
+# sender_addr = []
+# sender_sign = []
+# return_addr = [
+#   "Bündnis Deutschland",
+#   "Auf den Steinen 9",
+#   "06485 Quedlinburg"
+# ]
 
-[SELECTIONS.2026-ltw-sa_buendnis-deutschland.pdfCoords]
-person_x = 175
-person_y = 495
-person_y_steps = [18.5, 18.5, 26, 18.5]
-return_x = 220
-return_y = 315
+# [SELECTIONS.2026-ltw-sa_buendnis-deutschland.pdfCoords]
+# person_x = 175
+# person_y = 495
+# person_y_steps = [18.5, 18.5, 26, 18.5]
+# return_x = 220
+# return_y = 315
 
 
 [SELECTIONS.2026-ltw-sa_tierschutzallianz]
@@ -164,6 +169,18 @@ name = "Allianz für Menschenrechte, Tier- und Naturschutz"
 hasLongName = true
 partyHref = "https://www.tierschutzallianz.de/"
 lastResult = 0
-return_addr = []
-sender_sign = []
+return_addr = [
+  "Tierschutz Allianz",
+  "Gutenbergstraße 24",
+  "39106 Magdeburg",
+]
+sender_sign = [
+]
 
+[SELECTIONS.2026-ltw-sa_tierschutzallianz.pdfCoords]
+person_x = 175
+person_y = 497
+person_y_steps = [18.5, 18.5, 26, 18.5]
+return_x = 340
+return_y = 330
+return_y_steps = [18.5, 18.5, 26, 18.5]
