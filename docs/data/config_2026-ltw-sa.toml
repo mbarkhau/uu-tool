@@ -63,19 +63,25 @@ hasLongName = true
 # partyHref = "https://st.bsw-vg.de/"
 partyHref = "https://st.bsw-vg.de/formblatt-fuer-den-listenantritt-des-bsw-zur-landtagswahl/"
 lastResult = 0
-return_addr = []
 sender_sign = []
 
+return_addr = [
+  "Landesgeschäftsstelle",
+  "BSW Sachsen-Anhalt",
+  "Otto-von-Guericke-Straße 61",
+  "39104 Magdeburg",
+]
 
-# [SELECTIONS.2026-ltw-sa_pdv]
-# name = "Partei der Vernunft"
-# hasLongName = false
-# partyHref = ""
-# lastResult = 0
-# sender_addr = []
-# sender_sign = []
-# return_addr = [
-# ]
+[SELECTIONS.2026-ltw-sa_pdv]
+name = "Partei der Vernunft"
+hasLongName = false
+disabled = true
+partyHref = ""
+lastResult = 0
+sender_addr = []
+sender_sign = []
+return_addr = [
+]
 
 [SELECTIONS.2026-ltw-sa_die-basis]
 name = "dieBasis - Basisdemokratische Partei Deutschland"
@@ -126,15 +132,18 @@ hasLongName = false
 partyHref = "https://www.die-libertaeren.de"
 lastResult = 0
 return_addr = [
-  "DIE LIBERTÄREN e.V.",
-  "Postfach 75 02 07 ",
-  "81332 München",
+  # "DIE LIBERTÄREN e.V.",
+  # "Postfach 75 02 07 ",
+  # "81332 München",
+  "DIE LIBERTÄREN",
+  "Wallbergstr. 4",
+  "83620 Feldkirchen-Westerham",
 ]
-sender_sign = [
-  "Florian Handwerker, M.A.",
-  "Bundesgeschäftsführer",
-  "DIE LIBERTÄREN e.V.",
-]
+# sender_sign = [
+#   "Florian Handwerker, M.A.",
+#   "Bundesgeschäftsführer",
+#   "DIE LIBERTÄREN e.V.",
+# ]
 
 [SELECTIONS.2026-ltw-sa_die-libertaeren.pdfCoords]
 person_x = 175
@@ -143,33 +152,35 @@ person_y_steps = [18.5, 18.5, 26, 18.5]
 return_x = 220
 return_y = 320
 
-# [SELECTIONS.2026-ltw-sa_buendnis-deutschland]
-# name = "Bündnis Deutschland"
-# hasLongName = false
-# partyHref = "https://lsa.buendnis-deutschland.de/unterstuetzerunterschriften-2026"
-# lastResult = 0
-# sender_addr = []
-# sender_sign = []
-# return_addr = [
-#   "Bündnis Deutschland",
-#   "Auf den Steinen 9",
-#   "06485 Quedlinburg"
-# ]
+[SELECTIONS.2026-ltw-sa_buendnis-deutschland]
+name = "Bündnis Deutschland"
+hasLongName = false
+partyHref = "https://lsa.buendnis-deutschland.de/unterstuetzerunterschriften-2026"
+lastResult = 0
+disabled = true
+sender_addr = []
+sender_sign = []
+return_addr = [
+  "Bündnis Deutschland",
+  "Auf den Steinen 9",
+  "06485 Quedlinburg"
+]
 
-# [SELECTIONS.2026-ltw-sa_buendnis-deutschland.pdfCoords]
-# person_x = 175
-# person_y = 495
-# person_y_steps = [18.5, 18.5, 26, 18.5]
-# return_x = 220
-# return_y = 315
+[SELECTIONS.2026-ltw-sa_buendnis-deutschland.pdfCoords]
+person_x = 175
+person_y = 495
+person_y_steps = [18.5, 18.5, 26, 18.5]
+return_x = 220
+return_y = 315
 
 
 [SELECTIONS.2026-ltw-sa_tierschutzallianz]
 name = "Allianz für Menschenrechte, Tier- und Naturschutz"
 hasLongName = true
 partyHref = "https://www.tierschutzallianz.de/"
-lastResult = 0
+lastResult = 5109
 return_addr = [
+  "Landesgeschäftsstelle",
   "Tierschutz Allianz",
   "Gutenbergstraße 24",
   "39106 Magdeburg",
@@ -184,3 +195,26 @@ person_y_steps = [18.5, 18.5, 26, 18.5]
 return_x = 340
 return_y = 330
 return_y_steps = [18.5, 18.5, 26, 18.5]
+
+
+[SELECTIONS.2026-ltw-sa_pdf]
+name = "Partei des Fortschritts"
+hasLongName = true
+partyHref = "https://partei-des-fortschritts.de/landtagswahl-sachsen-anhalt-2026/#unterschriften"
+lastResult = 0
+return_addr = [
+  "Partei des Fortschritts - FMB",
+  "Rödgen 2",
+  "06343 Mansfeld OT Großörner",
+]
+sender_sign = [
+]
+
+[SELECTIONS.2026-ltw-sa_pdh]
+name = "Partei des Fortschritts"
+hasLongName = true
+disabled = true
+partyHref = "https://pdh.eu"
+lastResult = 1405
+return_addr = []
+sender_sign = []

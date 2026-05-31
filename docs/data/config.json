@@ -472,8 +472,23 @@
       "hasLongName": true,
       "partyHref": "https://st.bsw-vg.de/formblatt-fuer-den-listenantritt-des-bsw-zur-landtagswahl/",
       "lastResult": 0,
-      "return_addr": [],
-      "sender_sign": []
+      "sender_sign": [],
+      "return_addr": [
+        "Landesgesch\u00e4ftsstelle",
+        "BSW Sachsen-Anhalt",
+        "Otto-von-Guericke-Stra\u00dfe 61",
+        "39104 Magdeburg"
+      ]
+    },
+    "2026-ltw-sa_pdv": {
+      "name": "Partei der Vernunft",
+      "hasLongName": false,
+      "disabled": true,
+      "partyHref": "",
+      "lastResult": 0,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": []
     },
     "2026-ltw-sa_die-basis": {
       "name": "dieBasis - Basisdemokratische Partei Deutschland",
@@ -537,14 +552,9 @@
       "partyHref": "https://www.die-libertaeren.de",
       "lastResult": 0,
       "return_addr": [
-        "DIE LIBERT\u00c4REN e.V.",
-        "Postfach 75 02 07 ",
-        "81332 M\u00fcnchen"
-      ],
-      "sender_sign": [
-        "Florian Handwerker, M.A.",
-        "Bundesgesch\u00e4ftsf\u00fchrer",
-        "DIE LIBERT\u00c4REN e.V."
+        "DIE LIBERT\u00c4REN",
+        "Wallbergstr. 4",
+        "83620 Feldkirchen-Westerham"
       ],
       "pdfCoords": {
         "person_x": 175,
@@ -559,12 +569,39 @@
         "return_y": 320
       }
     },
+    "2026-ltw-sa_buendnis-deutschland": {
+      "name": "B\u00fcndnis Deutschland",
+      "hasLongName": false,
+      "partyHref": "https://lsa.buendnis-deutschland.de/unterstuetzerunterschriften-2026",
+      "lastResult": 0,
+      "disabled": true,
+      "sender_addr": [],
+      "sender_sign": [],
+      "return_addr": [
+        "B\u00fcndnis Deutschland",
+        "Auf den Steinen 9",
+        "06485 Quedlinburg"
+      ],
+      "pdfCoords": {
+        "person_x": 175,
+        "person_y": 495,
+        "person_y_steps": [
+          18.5,
+          18.5,
+          26,
+          18.5
+        ],
+        "return_x": 220,
+        "return_y": 315
+      }
+    },
     "2026-ltw-sa_tierschutzallianz": {
       "name": "Allianz f\u00fcr Menschenrechte, Tier- und Naturschutz",
       "hasLongName": true,
       "partyHref": "https://www.tierschutzallianz.de/",
-      "lastResult": 0,
+      "lastResult": 5109,
       "return_addr": [
+        "Landesgesch\u00e4ftsstelle",
         "Tierschutz Allianz",
         "Gutenbergstra\u00dfe 24",
         "39106 Magdeburg"
@@ -588,6 +625,27 @@
           18.5
         ]
       }
+    },
+    "2026-ltw-sa_pdf": {
+      "name": "Partei des Fortschritts",
+      "hasLongName": true,
+      "partyHref": "https://partei-des-fortschritts.de/landtagswahl-sachsen-anhalt-2026/#unterschriften",
+      "lastResult": 0,
+      "return_addr": [
+        "Partei des Fortschritts - FMB",
+        "R\u00f6dgen 2",
+        "06343 Mansfeld OT Gro\u00df\u00f6rner"
+      ],
+      "sender_sign": []
+    },
+    "2026-ltw-sa_pdh": {
+      "name": "Partei des Fortschritts",
+      "hasLongName": true,
+      "disabled": true,
+      "partyHref": "https://pdh.eu",
+      "lastResult": 1405,
+      "return_addr": [],
+      "sender_sign": []
     }
   }
 }

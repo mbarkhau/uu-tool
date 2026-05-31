@@ -14,7 +14,6 @@
   .selections .selection b {
     text-overflow: unset;
     white-space: normal;
-    text-align: center;
   }
 
   .form {
@@ -190,6 +189,11 @@
       <input type="text" name="street" placeholder="Musterstraße 123a" required />
     </div>
 
+    <div class="form-field">
+      <label for="plz">PLZ, Ort</label>
+      <input type="text" name="plz" placeholder="01234 Musterhausen" required />
+    </div>
+
     <div class="buttons">
       <button name="download" onclick="uu_app.generatePDF()" disabled>
         PDF generieren<br />
@@ -205,7 +209,7 @@
     Ihrer oben angegebene persönlichen Daten verarbeitet. Diese
     Verarbeitung findet
     <em>ausschließlich auf Ihrem Endgerät</em> statt. Eine
-    Übermittlung oder Verarbeitung Ihrer persönlichen Daten
+    Übermittlung oder Verarbeitung Ihrer personenbezogenen Daten
     an/durch andere Systeme <em>findet nicht statt</em>.
   </p>
 </div>

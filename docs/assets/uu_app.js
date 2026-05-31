@@ -259,11 +259,13 @@ var uu_app = (function () {
   function renderSelection(configs, selectionID, options) {
     options = options || {};
     const selectionCfg = configs.SELECTIONS[selectionID];
+    const isDisabled = !!selectionCfg.disabled;
     // "2026-ltw-bawue_buendnis-c" -> ["2026-ltw-bawue", "buendnis-c"]
     const logo = "img/logo_" + selectionID.split("_")[1] + ".png";
 
-    const selectionNode = document.createElement(options.addLink ? "a" : "div");
-    if (options.addLink) {
+    const isLink = options.addLink && !isDisabled;
+    const selectionNode = document.createElement(isLink ? "a" : "div");
+    if (isLink) {
       selectionNode.href = `/formular.html?selectionID=${selectionID}`;
     }
     selectionNode.innerHTML = `
@@ -271,24 +273,56 @@ var uu_app = (function () {
         <img src="${logo}" alt="${selectionCfg.name}">
     </div>
     `
-    if (selectionCfg.hasLongName) {
-      selectionNode.innerHTML += `
-      <div class="metadata">
+    if (options.active) {
+      const metaNode = document.createElement("div")
+      metaNode.classList.add("metadata")
+      selectionNode.appendChild(metaNode)
+
+      if (selectionCfg.hasLongName) {
+        metaNode.innerHTML += `
+        <div class="name">
           <b title="${selectionCfg.name}">${selectionCfg.name}</b>
-      </div>
-      `
-    }
-    if (selectionCfg.lastResult) {
-      selectionNode.innerHTML += `
-      <div class="metadata">
+        </div>
+        `
+      }
+      if (selectionCfg.lastResult) {
+        metaNode.innerHTML += `
+        <div class="last-result">
           <span>Letztes Ergebnis:</span> <span>${formatNumber(selectionCfg.lastResult || "-")}</span>
-      </div>
-      `
+        </div>
+        `
+      }
+
+      if (selectionCfg.partyHref) {
+        let displayUrl = selectionCfg.partyHref;
+        try {
+          displayUrl = new URL(selectionCfg.partyHref).hostname;
+        } catch (e) {
+          // fallback
+        }
+        metaNode.innerHTML += `
+        <div class="party-website">
+          <a href="${selectionCfg.partyHref}" target="_blank" rel="noopener noreferrer">${displayUrl}</a>
+        </div>
+        `;
+      }
+      if (selectionCfg.return_addr && selectionCfg.return_addr.length > 0) {
+        const addrHtml = selectionCfg.return_addr.join("<br>");
+        metaNode.innerHTML += `
+        <div class="party-address">
+          <span>Partei-Sammelstelle:</span><br>
+          <span>${addrHtml}</span>
+        </div>
+        `;
+      }
     }
 
     selectionNode.classList.add("selection")
     if (options.active) {
       selectionNode.classList.add("active")
+    }
+    if (isDisabled) {
+      selectionNode.classList.add("disabled")
     }
     selectionNode.dataset.selectionID = selectionID;
     return selectionNode
@@ -385,7 +419,7 @@ var uu_app = (function () {
     )
     const selectionsHeaderDiv = document.querySelector(".selections-description")
     if (selectionsHeaderDiv) {
-      selectionsHeaderDiv.innerHTML = `Parteien die zur ${cleanedName} antreten wollen.`
+      selectionsHeaderDiv.innerHTML = `Parteien die zur ${cleanedName} antreten wollen und ein UU-Formblatt veröffentlicht haben.`
     }
 
     selections.forEach((selectionID) => {
@@ -497,7 +531,7 @@ var uu_app = (function () {
       plzSelect.clear()
     });
 
-    ['lastname', 'firstname', 'birthday', 'street'].forEach(name => {
+    ['lastname', 'firstname', 'birthday', 'street', 'plz'].forEach(name => {
       const field = getFormField(name);
       if (field) {
         field.addEventListener('change', validateForm);
@@ -678,7 +712,6 @@ ${city['plz']}, ${city['ort']}
         for (var i = bueroOptions.length - 1; i >= 0; i--) {
           if (cityText(bueroOptions[i].city) == text) {
             setSelectedBueroAddress(bueroOptions[i].city);
-            validateForm();
             return
           }
         }
@@ -724,7 +757,7 @@ ${city['plz']}, ${city['ort']}
       streetField.classList.remove('warn');
     }
 
-    const plzField = getFormField('postleitzahl');
+    const plzField = getFormField('plz');
     if (!/^[0-9]{5}.*/.test(plzField.value)) {
       downloadDisabled = true;
       plzField.classList.add('warn');

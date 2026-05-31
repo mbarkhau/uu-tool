@@ -162,6 +162,39 @@
   flex-direction: column;
 }
 
+.selection div.metadata {
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #CCC;
+  font-size: 0.85em;
+  line-height: 1.4em;
+}
+.selection div.metadata div {
+  min-width: 60%;
+  margin-left: 20%;
+}
+
+.selection div.metadata a {
+  color: #333;
+  text-decoration: underline;
+  text-decoration-color: #999;
+}
+
+.selection div.metadata a:hover {
+  text-decoration-color: #333;
+  color: #000;
+}
+
+.selection div.metadata > div {
+  margin-top: 0.5rem;
+}
+
+.selection div.metadata .party-address span:last-child {
+  font-weight: bold;
+  line-height: 1.3em;
+  margin-top: 0.2rem;
+}
+
 .selections .logo {
   display: flex;
   justify-content: center;
@@ -265,6 +298,19 @@ ol {
   border: 1px solid #888;
   box-shadow: 0px 4px 12px #AAA;
   transform: translateY(-2px);
+}
+
+.selections>.selection.disabled {
+  opacity: 0.5;
+  background-color: #f4f4f4;
+  border-color: #e0e0e0;
+  cursor: default;
+}
+
+.selections>.selection.disabled:hover {
+  border-color: #e0e0e0;
+  box-shadow: 0 1px 7px #ddd;
+  transform: none;
 }
 
 .election-info-links {
