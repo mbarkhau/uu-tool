@@ -22,6 +22,7 @@ OUTPUTS = [
     OUTPUT_DIR / "docs" / "wahl.html",
     OUTPUT_DIR / "docs" / "partei.html",
     OUTPUT_DIR / "docs" / "formular.html",
+    OUTPUT_DIR / "docs" / "impressum.html",
 ]
 
 

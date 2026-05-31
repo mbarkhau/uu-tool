@@ -40,6 +40,7 @@ info_urls = [
 name = "Volt"
 hasLongName = false
 partyHref = "https://voltdeutschland.org/sachsen-anhalt/unterstuetze-uns-zur-landtagswahl-in-sachsen-anhalt-2026"
+email = "info@voltsachsenanhalt.org"
 lastResult = 0
 return_addr = [
   "Volt Deutschland,",
@@ -47,24 +48,19 @@ return_addr = [
   "Postfach 32 01 17",
   "39040 Magdeburg",
 ]
-sender_sign = []
 
 [SELECTIONS.2026-ltw-sa_volt.pdfCoords]
 person_x = 180
 person_y = 510
 person_y_steps = [18.5, 18.5, 26, 18.5]
-return_x = 220
-return_y = 320
 
 
 [SELECTIONS.2026-ltw-sa_bsw]
 name = "Bündnis Sahra Wagenknecht"
 hasLongName = true
-# partyHref = "https://st.bsw-vg.de/"
 partyHref = "https://st.bsw-vg.de/formblatt-fuer-den-listenantritt-des-bsw-zur-landtagswahl/"
+email = "geschaeftsstelle@st.bsw-vg.de"
 lastResult = 0
-sender_sign = []
-
 return_addr = [
   "Landesgeschäftsstelle",
   "BSW Sachsen-Anhalt",
@@ -72,35 +68,39 @@ return_addr = [
   "39104 Magdeburg",
 ]
 
+[SELECTIONS.2026-ltw-sa_bsw.pdfCoords]
+person_x = 180
+person_y = 498
+person_y_steps = [18.5, 18.5, 26, 18.5]
+
+
+
 [SELECTIONS.2026-ltw-sa_pdv]
 name = "Partei der Vernunft"
 hasLongName = false
 disabled = true
 partyHref = ""
 lastResult = 0
-sender_addr = []
-sender_sign = []
 return_addr = [
 ]
+
 
 [SELECTIONS.2026-ltw-sa_die-basis]
 name = "dieBasis - Basisdemokratische Partei Deutschland"
 hasLongName = true
 partyHref = "https://www.diebasis-lsa.de/wahlen/"
 lastResult = 15_623
+email = "post@diebasis-st.de"
 return_addr = [
   "Marco Zimmermann",
   "PF 1304",
   "06603 Naumburg"
 ]
-sender_sign = []
 
 [SELECTIONS.2026-ltw-sa_die-basis.pdfCoords]
 person_x = 175
-person_y = 507
+person_y = 506
 person_y_steps = [18.5, 18.5, 26, 18.5]
-return_x = 220
-return_y = 320
 
 
 [SELECTIONS.2026-ltw-sa_die-partei]
@@ -108,6 +108,7 @@ name = "Die PARTEI - Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderu
 hasLongName = true
 disabled = true
 partyHref = "https://die-partei-sachsen-anhalt.de/"
+email = "info@die-partei-sachsen-anhalt.de"
 lastResult = 7_768
 return_addr = [
   "Die PARTEI Magdeburg",
@@ -115,21 +116,18 @@ return_addr = [
   "Postfach 1241",
   "39002 Magdeburg",
 ]
-sender_sign = []
 
 [SELECTIONS.2026-ltw-sa_die-partei.pdfCoords]
 person_x = 175
 person_y = 497
 person_y_steps = [18.5, 18.5, 26, 18.5]
-return_x = 340
-return_y = 330
-return_y_steps = [18.5, 18.5, 26, 18.5]
 
 
 [SELECTIONS.2026-ltw-sa_die-libertaeren]
 name = "DIE LIBERTÄREN"
 hasLongName = false
 partyHref = "https://www.die-libertaeren.de"
+email = "info@die-libertaeren.de"
 lastResult = 0
 return_addr = [
   # "DIE LIBERTÄREN e.V.",
@@ -149,17 +147,15 @@ return_addr = [
 person_x = 175
 person_y = 497
 person_y_steps = [18.5, 18.5, 26, 18.5]
-return_x = 220
-return_y = 320
+
 
 [SELECTIONS.2026-ltw-sa_buendnis-deutschland]
 name = "Bündnis Deutschland"
 hasLongName = false
 partyHref = "https://lsa.buendnis-deutschland.de/unterstuetzerunterschriften-2026"
+email = "kontakt@buendnis-lsa.de"
 lastResult = 0
 disabled = true
-sender_addr = []
-sender_sign = []
 return_addr = [
   "Bündnis Deutschland",
   "Auf den Steinen 9",
@@ -170,14 +166,13 @@ return_addr = [
 person_x = 175
 person_y = 495
 person_y_steps = [18.5, 18.5, 26, 18.5]
-return_x = 220
-return_y = 315
 
 
 [SELECTIONS.2026-ltw-sa_tierschutzallianz]
 name = "Allianz für Menschenrechte, Tier- und Naturschutz"
 hasLongName = true
 partyHref = "https://www.tierschutzallianz.de/"
+email = "vorstand.tierschutzallianz@gmail.com"
 lastResult = 5109
 return_addr = [
   "Landesgeschäftsstelle",
@@ -185,16 +180,11 @@ return_addr = [
   "Gutenbergstraße 24",
   "39106 Magdeburg",
 ]
-sender_sign = [
-]
 
 [SELECTIONS.2026-ltw-sa_tierschutzallianz.pdfCoords]
 person_x = 175
-person_y = 497
+person_y = 506
 person_y_steps = [18.5, 18.5, 26, 18.5]
-return_x = 340
-return_y = 330
-return_y_steps = [18.5, 18.5, 26, 18.5]
 
 
 [SELECTIONS.2026-ltw-sa_pdf]
@@ -202,13 +192,19 @@ name = "Partei des Fortschritts"
 hasLongName = true
 partyHref = "https://partei-des-fortschritts.de/landtagswahl-sachsen-anhalt-2026/#unterschriften"
 lastResult = 0
+email = "sachsen-anhalt@partei-des-fortschritts.de"
 return_addr = [
   "Partei des Fortschritts - FMB",
   "Rödgen 2",
   "06343 Mansfeld OT Großörner",
 ]
-sender_sign = [
-]
+
+
+[SELECTIONS.2026-ltw-sa_pdf.pdfCoords]
+person_x = 175
+person_y = 506
+person_y_steps = [18.5, 18.5, 26, 18.5]
+
 
 [SELECTIONS.2026-ltw-sa_pdh]
 name = "Partei des Fortschritts"
@@ -217,4 +213,3 @@ disabled = true
 partyHref = "https://pdh.eu"
 lastResult = 1405
 return_addr = []
-sender_sign = []

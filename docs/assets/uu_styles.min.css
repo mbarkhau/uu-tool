@@ -10,7 +10,7 @@
 .breadcrumbs a::after{bottom:0;transform:skewX(-15deg)}
 .breadcrumbs a:last-child::after,.breadcrumbs a:last-child::before{display:none}
 .breadcrumbs a,.breadcrumbs a::after,.breadcrumbs a::before{background:#fff}
-.breadcrumbs a.active~a,.breadcrumbs a.active~a::after,.breadcrumbs a.active~a::before{background:#d8d8d8}
+.breadcrumbs a.active~a,.breadcrumbs a.active~a::after,.breadcrumbs a.active~a::before,.breadcrumbs a.inactive,.breadcrumbs a.inactive::after,.breadcrumbs a.inactive::before{background:#d8d8d8}
 .breadcrumbs a{--shadow:drop-shadow(1px 0px 2px #999);filter:var(--shadow)}
 .breadcrumbs a.active,.breadcrumbs a.active~a{--shadow:drop-shadow(1px 0px 2px #999) drop-shadow(3px 0px 5px rgba(0, 0, 0, 0.15))}
 .breadcrumbs a:last-child{--shadow:drop-shadow(0 0 0 transparent)}
@@ -51,7 +51,6 @@ ol,ul{padding-inline-start:20px}
 .listbox ol,.listbox p,.listbox ul{margin:0}
 .listbox li{line-height:1.2em;margin:.3em 0}
 .small{font-size:.7em;line-height:1.2em;color:#444}
-.warn{background:#ff7}
 .election-footer{margin-top:1rem;padding-top:.8rem;border-top:1px solid #ccc;display:flex;align-items:center;justify-content:space-evenly;gap:1rem}
 .election-footer{grid-column:1/-1}
 .elections>.election.clickable,.selections>a.selection{border:1px solid #aaa;box-shadow:0 2px 9px #ccc;transition:all .2s ease-in-out}
@@ -81,3 +80,5 @@ ol,ul{padding-inline-start:20px}
 a.button{display:block;text-align:center;line-height:1.3em;margin:2rem auto;text-decoration:none;font-weight:700;color:#000;padding:1em;max-width:20em;background:#bfbfbf;border:2px solid #bfbfbf;border-radius:4px}
 .button:hover{background:#d8d8d8}
 .button[disabled]{opacity:.7;pointer-events:none;padding:.5em 1em}
+.form-field{position:relative}
+.form-field.valid::after{content:'';display:inline-block;vertical-align:middle;width:1.2em;height:1.2em;margin-left:.5em;margin-bottom:.5em;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2328a745' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");background-repeat:no-repeat;background-position:center;background-size:contain}

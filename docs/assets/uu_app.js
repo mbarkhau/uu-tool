@@ -1,5 +1,8 @@
 var uu_app = (function () {
 
+  const ANSCHREIBEN_PATH = `/pdf/Anschreiben_v8.pdf`;
+  const DEBUG = 0;
+
   // function fuzzyEqualsString(a, b) {
   //   a = a.replaceAll(' ', '').toLowerCase()
   //   b = b.replaceAll(' ', '').toLowerCase()
@@ -531,13 +534,14 @@ var uu_app = (function () {
       plzSelect.clear()
     });
 
-    ['lastname', 'firstname', 'birthday', 'street', 'plz'].forEach(name => {
+    ['lastname', 'firstname', 'birthday', 'street', 'plz', 'ort'].forEach(name => {
       const field = getFormField(name);
       if (field) {
+        // field.addEventListener('input', validateForm);
         field.addEventListener('change', validateForm);
-        field.addEventListener('input', validateForm);
       }
     });
+    getFormField('ort').addEventListener('input', validateForm);
 
   }
 
@@ -650,15 +654,15 @@ ${city['plz']}, ${city['ort']}
         "```",
       ].join("\n"));
 
-      const githubIssueRefNode = document.querySelector("a[href^='https://github.com/']")
-      const githubIssueURL = new URL(githubIssueRefNode.href)
+      // const githubIssueRefNode = document.querySelector("a[href^='https://github.com/']")
+      // const githubIssueURL = new URL(githubIssueRefNode.href)
 
-      githubIssueURL.search = ["?title=", title, "&body=", body].join("");
-      githubIssueRefNode.href = githubIssueURL.href
+      // githubIssueURL.search = ["?title=", title, "&body=", body].join("");
+      // githubIssueRefNode.href = githubIssueURL.href
 
-      const teleRefNode = document.querySelector("a[href^='https://www.google.com/search']")
-      const teleQuery = encodeURIComponent(`Telefonnummer Bürgeramt ${buero['ort'] || buero['name']} ${buero['street']} ${buero['PLZ']}, ${buero['ort']}`)
-      teleRefNode.href = "https://www.google.com/search?q=" + teleQuery
+      // const teleRefNode = document.querySelector("a[href^='https://www.google.com/search']")
+      // const teleQuery = encodeURIComponent(`Telefonnummer Bürgeramt ${buero['ort'] || buero['name']} ${buero['street']} ${buero['PLZ']}, ${buero['ort']}`)
+      // teleRefNode.href = "https://www.google.com/search?q=" + teleQuery
     }
 
     if (matchingCities.length == 0) {
@@ -722,50 +726,77 @@ ${city['plz']}, ${city['ort']}
     }
   }
 
-  function validateForm() {
+  function validateForm(evt) {
     let downloadDisabled = false
 
     const lastnameField = getFormField('lastname');
-    if (lastnameField.value.length == 0) {
-      downloadDisabled = true;
-      lastnameField.classList.add('warn');
-    } else {
-      lastnameField.classList.remove('warn');
+    if (lastnameField) {
+      if (lastnameField.value.trim().length == 0) {
+        downloadDisabled = true;
+        lastnameField.closest('.form-field').classList.remove('valid');
+      } else {
+        lastnameField.closest('.form-field').classList.add('valid');
+      }
     }
 
     const firstnameField = getFormField('firstname');
-    if (firstnameField.value.length == 0) {
-      downloadDisabled = true;
-      firstnameField.classList.add('warn');
-    } else {
-      firstnameField.classList.remove('warn');
+    if (firstnameField) {
+      if (firstnameField.value.trim().length == 0) {
+        downloadDisabled = true;
+        firstnameField.closest('.form-field').classList.remove('valid');
+      } else {
+        firstnameField.closest('.form-field').classList.add('valid');
+      }
     }
 
     const birthdayField = getFormField('birthday');
-    if (birthdayField.value.length == 0 && birthdayField.value.length != 10) {
-      downloadDisabled = true;
-      birthdayField.classList.add('warn')
-    } else {
-      birthdayField.classList.remove('warn')
+    if (birthdayField) {
+      if (birthdayField.value.length != 10) {
+        downloadDisabled = true;
+        birthdayField.closest('.form-field').classList.remove('valid');
+      } else {
+        birthdayField.closest('.form-field').classList.add('valid');
+      }
     }
 
     const streetField = getFormField('street');
-    if (streetField.value.length == 0) {
-      downloadDisabled = true;
-      streetField.classList.add('warn');
-    } else {
-      streetField.classList.remove('warn');
+    if (streetField) {
+      if (streetField.value.trim().length == 0) {
+        downloadDisabled = true;
+        streetField.closest('.form-field').classList.remove('valid');
+      } else {
+        streetField.closest('.form-field').classList.add('valid');
+      }
     }
 
     const plzField = getFormField('plz');
-    if (!/^[0-9]{5}.*/.test(plzField.value)) {
-      downloadDisabled = true;
-      plzField.classList.add('warn');
-    } else {
-      plzField.classList.remove('warn');
+    if (plzField) {
+      if (!/^[0-9]{5}/.test(plzField.value)) {
+        downloadDisabled = true;
+        plzField.closest('.form-field').classList.remove('valid');
+      } else {
+        plzField.closest('.form-field').classList.add('valid');
+      }
     }
 
-    getFormField('download').disabled = downloadDisabled;
+    const ortField = getFormField('ort');
+    if (ortField) {
+      if (ortField.value.trim().length == 0) {
+        downloadDisabled = true;
+        ortField.closest('.form-field').classList.remove('valid');
+      } else {
+        ortField.closest('.form-field').classList.add('valid');
+      }
+    }
+
+    if (DEBUG) {
+      downloadDisabled = false;
+    }
+
+    const downloadBtn = getFormField('download');
+    if (downloadBtn) {
+      downloadBtn.disabled = downloadDisabled;
+    }
   }
 
   // onclick handler
@@ -786,7 +817,7 @@ ${city['plz']}, ${city['ort']}
 
     updateProgress("preloading pdf templates");
     loadPDFData(`/pdf/${selectionID}.pdf`)
-    loadPDFData(`/pdf/Anschreiben_v7.pdf`)
+    loadPDFData(ANSCHREIBEN_PATH)
 
     try {
 
@@ -863,7 +894,7 @@ ${city['plz']}, ${city['ort']}
       updateProgress("loading pdf1");
       const pdfDoc1 = await loadPDF(`/pdf/${selectionID}.pdf`);
       updateProgress("loading pdf2");
-      const pdfDoc2 = await loadPDF(`/pdf/Anschreiben_v7.pdf`);
+      const pdfDoc2 = await loadPDF(ANSCHREIBEN_PATH);
 
       const [page1, page2] = await pdfDoc.copyPages(pdfDoc1, [0, 1]);
       const [page3] = await pdfDoc.copyPages(pdfDoc2, [0]);
@@ -871,23 +902,34 @@ ${city['plz']}, ${city['ort']}
       // Update pdf content from html form fields
       for (var i = 0; i < selectionCfg['return_addr'].length; i++) {
         var line = selectionCfg['return_addr'][i];
-        drawText(page3, coords.return_x, coords.return_y - i * 13, (i ? sansRegular : sansBold), line)
+        drawText(page3, 230, 360 - i * 13, (i ? sansRegular : sansBold), line)
       }
 
-      for (var i = 0; i < selectionCfg['sender_sign'].length; i++) {
-        var line = selectionCfg['sender_sign'][i];
-        drawText(page3, 71, 110 - i * 14, sansRegular, line)
-      }
+      const emailOffset = (selectionCfg['email'].length / 2) * 1.8
+      drawText(page3, 230 - emailOffset, 260, sansBold, selectionCfg['email'])
 
       const lastnameField = getFormField('lastname').value || "Lastname";
       const firstnameField = getFormField('firstname').value || "Firstname";
       const birthdayField = getFormField('birthday');
       const streetField = getFormField('street').value || "Streetname 123a";
-      const plzField = getFormField('postleitzahl').value || "98765";
+      const plzField = getFormField('plz').value || "98765";
+      const ortField = getFormField('ort').value || "Musterhausen";
+
+      const senderSign = [
+        firstnameField + " " + lastnameField, streetField, plzField + ", " + ortField
+      ]
+
+      for (var i = 0; i < senderSign.length; i++) {
+        drawText(page3, 370, 690 - i * 14, sansRegular, senderSign[i])
+      }
+
+      drawText(page3, 71, 120, sansRegular, firstnameField + " " + lastnameField)
 
       const birthdayValue = (birthdayField.value || "1999.12.31").split("-").reverse().join(".")
 
-      const personFieldValues = [lastnameField, firstnameField, birthdayValue, streetField, plzField]
+      const personFieldValues = [
+        lastnameField, firstnameField, birthdayValue, streetField, plzField + ", " + ortField
+      ];
       var y_coord = coords.person_y;
       for (var i = 0; i < personFieldValues.length; i++) {
         drawText(page1, coords.person_x, y_coord, serifBold, personFieldValues[i])
@@ -910,7 +952,7 @@ ${city['plz']}, ${city['ort']}
         drawText(page3, 71, 642, sansRegular, cityPlzField.innerText)
       } catch (err) { console.log(err) }
 
-      if (0) {
+      if (DEBUG) {
         drawDebugGrid(page1)
         drawDebugGrid(page2)
         drawDebugGrid(page3)
@@ -953,8 +995,6 @@ ${city['plz']}, ${city['ort']}
       document.querySelector("body").style.minHeight = "unset";
     }, 100);
   }
-
-  // repositionScroll()
 
   document.addEventListener("DOMContentLoaded", selectRoute);
 

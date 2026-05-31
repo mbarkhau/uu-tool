@@ -284,6 +284,12 @@
 										<select id="buero-address-select" autocomplete="off"></select>
 										<div class="buero-address"></div>
 									</div>
+									<div class="listbox">
+										<p>
+											Sollte Ihrem Hauptwohnsitz keine Behörde, oder eine nicht
+											zuständige Behörde zugeordnet werden, nutzen Sie ggf. das Blanko Formular.
+										</p>
+									</div>
 									<hr>
 										<div class="form-field">
 											<label for="firstname">Vorname:</label>
@@ -302,8 +308,12 @@
 											<input type="text" name="street" placeholder="Musterstraße 123a" required />
 										</div>
 										<div class="form-field">
-											<label for="plz">PLZ, Ort</label>
-											<input type="text" name="plz" placeholder="01234 Musterhausen" required />
+											<label for="plz">Postleitzahl</label>
+											<input type="text" name="plz" placeholder="01234" required />
+										</div>
+										<div class="form-field">
+											<label for="ort">Ort</label>
+											<input type="text" name="ort" placeholder="Musterhausen" required />
 										</div>
 										<div class="buttons">
 											<button name="download" onclick="uu_app.generatePDF()" disabled>
@@ -323,33 +333,15 @@
 										an/durch andere Systeme <em>findet nicht statt</em>.
 									</p>
 								</div>
-								<div class="listbox">
-									<p>
-										Gerne können Sie die Richtigkeit der Angaben zum Bürgeramt
-										anfragen:
-										<a href="https://www.google.com/search?q=Telefonnummer%20Bürgerbüro" rel="noreferrer noopener"
-											target="_blank">Bürgerbüro anrufen</a>. Fragen Sie dazu nach der "Zuständigkeit für die
-											Bescheinigung des Wahlrechts für eine
-											Unterstützungsunterschrift". Die zuständige Behörde führt
-											dazu ein Wählerverzeichnis.
-										</p>
-										<p>
-											Sollte Ihrem Hauptwohnsitz keine Behörde, oder eine nicht
-											zuständige Behörde zugeordnet werden, bitten wir Sie diesen
-											Fehler auf
-											<a href="https://github.com/mbarkhau/uu-tool/issues/new?title=UU-Tool Fehler&body=Test" rel="noreferrer noopener"
-												target="_blank">Github</a>
-												zu melden.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="footer" role="contentinfo">
-									<p>
-										Quellcode:
-										<a href="https://github.com/mbarkhau/uu-tool">github.com/mbarkhau/uu-tool</a>
-									</p>
-									<p>Copyright © 2026 Manuel Barkhau. Alle Rechte vorbehalten.</p>
-								</div>
-							</body>
-						</html>
+							</div>
+						</div>
+						<div class="footer" role="contentinfo">
+							<p>
+								Quellcode:
+								<a href="https://github.com/mbarkhau/uu-tool">github.com/mbarkhau/uu-tool</a>
+								| <a href="/impressum.html">Impressum</a>
+							</p>
+							<p>Copyright © 2026 Manuel Barkhau. Alle Rechte vorbehalten.</p>
+						</div>
+					</body>
+				</html>

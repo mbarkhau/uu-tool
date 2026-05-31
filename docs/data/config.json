@@ -446,6 +446,7 @@
       "name": "Volt",
       "hasLongName": false,
       "partyHref": "https://voltdeutschland.org/sachsen-anhalt/unterstuetze-uns-zur-landtagswahl-in-sachsen-anhalt-2026",
+      "email": "info@voltsachsenanhalt.org",
       "lastResult": 0,
       "return_addr": [
         "Volt Deutschland,",
@@ -453,7 +454,6 @@
         "Postfach 32 01 17",
         "39040 Magdeburg"
       ],
-      "sender_sign": [],
       "pdfCoords": {
         "person_x": 180,
         "person_y": 510,
@@ -462,23 +462,31 @@
           18.5,
           26,
           18.5
-        ],
-        "return_x": 220,
-        "return_y": 320
+        ]
       }
     },
     "2026-ltw-sa_bsw": {
       "name": "B\u00fcndnis Sahra Wagenknecht",
       "hasLongName": true,
       "partyHref": "https://st.bsw-vg.de/formblatt-fuer-den-listenantritt-des-bsw-zur-landtagswahl/",
+      "email": "geschaeftsstelle@st.bsw-vg.de",
       "lastResult": 0,
-      "sender_sign": [],
       "return_addr": [
         "Landesgesch\u00e4ftsstelle",
         "BSW Sachsen-Anhalt",
         "Otto-von-Guericke-Stra\u00dfe 61",
         "39104 Magdeburg"
-      ]
+      ],
+      "pdfCoords": {
+        "person_x": 180,
+        "person_y": 498,
+        "person_y_steps": [
+          18.5,
+          18.5,
+          26,
+          18.5
+        ]
+      }
     },
     "2026-ltw-sa_pdv": {
       "name": "Partei der Vernunft",
@@ -486,8 +494,6 @@
       "disabled": true,
       "partyHref": "",
       "lastResult": 0,
-      "sender_addr": [],
-      "sender_sign": [],
       "return_addr": []
     },
     "2026-ltw-sa_die-basis": {
@@ -495,23 +501,21 @@
       "hasLongName": true,
       "partyHref": "https://www.diebasis-lsa.de/wahlen/",
       "lastResult": 15623,
+      "email": "post@diebasis-st.de",
       "return_addr": [
         "Marco Zimmermann",
         "PF 1304",
         "06603 Naumburg"
       ],
-      "sender_sign": [],
       "pdfCoords": {
         "person_x": 175,
-        "person_y": 507,
+        "person_y": 506,
         "person_y_steps": [
           18.5,
           18.5,
           26,
           18.5
-        ],
-        "return_x": 220,
-        "return_y": 320
+        ]
       }
     },
     "2026-ltw-sa_die-partei": {
@@ -519,6 +523,7 @@
       "hasLongName": true,
       "disabled": true,
       "partyHref": "https://die-partei-sachsen-anhalt.de/",
+      "email": "info@die-partei-sachsen-anhalt.de",
       "lastResult": 7768,
       "return_addr": [
         "Die PARTEI Magdeburg",
@@ -526,19 +531,10 @@
         "Postfach 1241",
         "39002 Magdeburg"
       ],
-      "sender_sign": [],
       "pdfCoords": {
         "person_x": 175,
         "person_y": 497,
         "person_y_steps": [
-          18.5,
-          18.5,
-          26,
-          18.5
-        ],
-        "return_x": 340,
-        "return_y": 330,
-        "return_y_steps": [
           18.5,
           18.5,
           26,
@@ -550,6 +546,7 @@
       "name": "DIE LIBERT\u00c4REN",
       "hasLongName": false,
       "partyHref": "https://www.die-libertaeren.de",
+      "email": "info@die-libertaeren.de",
       "lastResult": 0,
       "return_addr": [
         "DIE LIBERT\u00c4REN",
@@ -564,19 +561,16 @@
           18.5,
           26,
           18.5
-        ],
-        "return_x": 220,
-        "return_y": 320
+        ]
       }
     },
     "2026-ltw-sa_buendnis-deutschland": {
       "name": "B\u00fcndnis Deutschland",
       "hasLongName": false,
       "partyHref": "https://lsa.buendnis-deutschland.de/unterstuetzerunterschriften-2026",
+      "email": "kontakt@buendnis-lsa.de",
       "lastResult": 0,
       "disabled": true,
-      "sender_addr": [],
-      "sender_sign": [],
       "return_addr": [
         "B\u00fcndnis Deutschland",
         "Auf den Steinen 9",
@@ -590,15 +584,14 @@
           18.5,
           26,
           18.5
-        ],
-        "return_x": 220,
-        "return_y": 315
+        ]
       }
     },
     "2026-ltw-sa_tierschutzallianz": {
       "name": "Allianz f\u00fcr Menschenrechte, Tier- und Naturschutz",
       "hasLongName": true,
       "partyHref": "https://www.tierschutzallianz.de/",
+      "email": "vorstand.tierschutzallianz@gmail.com",
       "lastResult": 5109,
       "return_addr": [
         "Landesgesch\u00e4ftsstelle",
@@ -606,19 +599,10 @@
         "Gutenbergstra\u00dfe 24",
         "39106 Magdeburg"
       ],
-      "sender_sign": [],
       "pdfCoords": {
         "person_x": 175,
-        "person_y": 497,
+        "person_y": 506,
         "person_y_steps": [
-          18.5,
-          18.5,
-          26,
-          18.5
-        ],
-        "return_x": 340,
-        "return_y": 330,
-        "return_y_steps": [
           18.5,
           18.5,
           26,
@@ -631,12 +615,22 @@
       "hasLongName": true,
       "partyHref": "https://partei-des-fortschritts.de/landtagswahl-sachsen-anhalt-2026/#unterschriften",
       "lastResult": 0,
+      "email": "sachsen-anhalt@partei-des-fortschritts.de",
       "return_addr": [
         "Partei des Fortschritts - FMB",
         "R\u00f6dgen 2",
         "06343 Mansfeld OT Gro\u00df\u00f6rner"
       ],
-      "sender_sign": []
+      "pdfCoords": {
+        "person_x": 175,
+        "person_y": 506,
+        "person_y_steps": [
+          18.5,
+          18.5,
+          26,
+          18.5
+        ]
+      }
     },
     "2026-ltw-sa_pdh": {
       "name": "Partei des Fortschritts",
@@ -644,8 +638,7 @@
       "disabled": true,
       "partyHref": "https://pdh.eu",
       "lastResult": 1405,
-      "return_addr": [],
-      "sender_sign": []
+      "return_addr": []
     }
   }
 }
