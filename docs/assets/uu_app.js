@@ -1,7 +1,7 @@
 var uu_app = (function () {
 
-  const ANSCHREIBEN_PATH = `/pdf/Anschreiben_v8.pdf`;
-  const DEBUG = 0;
+  const ANSCHREIBEN_PATH = `/pdf/Anschreiben_v9.pdf`;
+  const DEBUG = 1;
 
   // function fuzzyEqualsString(a, b) {
   //   a = a.replaceAll(' ', '').toLowerCase()
@@ -902,11 +902,11 @@ ${city['plz']}, ${city['ort']}
       // Update pdf content from html form fields
       for (var i = 0; i < selectionCfg['return_addr'].length; i++) {
         var line = selectionCfg['return_addr'][i];
-        drawText(page3, 230, 360 - i * 13, (i ? sansRegular : sansBold), line)
+        drawText(page3, 230, 320 - i * 13, (i ? sansRegular : sansBold), line)
       }
 
       const emailOffset = (selectionCfg['email'].length / 2) * 1.8
-      drawText(page3, 230 - emailOffset, 260, sansBold, selectionCfg['email'])
+      drawText(page3, 230 - emailOffset, 220, sansBold, selectionCfg['email'])
 
       const lastnameField = getFormField('lastname').value || "Lastname";
       const firstnameField = getFormField('firstname').value || "Firstname";
@@ -925,12 +925,20 @@ ${city['plz']}, ${city['ort']}
 
       drawText(page3, 71, 120, sansRegular, firstnameField + " " + lastnameField)
 
+      var y_coord = coords.person_y;
+
+      // arrow ->
+      drawText(page1, 220, y_coord - 147 + 5, sansBold, "Unterschrift")
+      page1.drawLine({start: { x: 210, y: y_coord - 147 }, end: { x: 298, y: y_coord - 147 }, thickness: 3, color: rgb(0, 0, 0)});
+      page1.drawLine({start: { x: 290, y: y_coord - 147 + 10 }, end: { x: 299, y: y_coord - 147 - 1 }, thickness: 3, color: rgb(0, 0, 0)});
+      page1.drawLine({start: { x: 290, y: y_coord - 147 - 10 }, end: { x: 299, y: y_coord - 147 + 1 }, thickness: 3, color: rgb(0, 0, 0)});
+
       const birthdayValue = (birthdayField.value || "1999.12.31").split("-").reverse().join(".")
 
       const personFieldValues = [
         lastnameField, firstnameField, birthdayValue, streetField, plzField + ", " + ortField
       ];
-      var y_coord = coords.person_y;
+
       for (var i = 0; i < personFieldValues.length; i++) {
         drawText(page1, coords.person_x, y_coord, serifBold, personFieldValues[i])
         y_coord -= coords.person_y_steps[i]
@@ -952,11 +960,11 @@ ${city['plz']}, ${city['ort']}
         drawText(page3, 71, 642, sansRegular, cityPlzField.innerText)
       } catch (err) { console.log(err) }
 
-      if (DEBUG) {
-        drawDebugGrid(page1)
-        drawDebugGrid(page2)
-        drawDebugGrid(page3)
-      }
+      // if (DEBUG) {
+      //   drawDebugGrid(page1)
+      //   drawDebugGrid(page2)
+      //   drawDebugGrid(page3)
+      // }
 
       pdfDoc.addPage(page1)
       pdfDoc.addPage(page2)

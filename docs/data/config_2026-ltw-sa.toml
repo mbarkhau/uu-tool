@@ -133,9 +133,12 @@ return_addr = [
   # "DIE LIBERTÄREN e.V.",
   # "Postfach 75 02 07 ",
   # "81332 München",
-  "DIE LIBERTÄREN",
-  "Wallbergstr. 4",
-  "83620 Feldkirchen-Westerham",
+  # "DIE LIBERTÄREN",
+  # "Wallbergstr. 4",
+  # "83620 Feldkirchen-Westerham",
+  "Landesverband Sachsen-Anhalt",
+  "Kastanienweg 51",
+  "06406 Bernburg (Saale)-Strenzfeld",
 ]
 # sender_sign = [
 #   "Florian Handwerker, M.A.",
